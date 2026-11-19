@@ -1,0 +1,80 @@
+any,conv,serie,preg,tipus,descripcio
+2014,juny,3,3,OPT,nedador: temps minim
+2014,juny,3,4,INT,area entre y=x^2 y=4x^2 y=9
+2014,juny,4,1,ASI|TAN,asimptotes V/H/O + tangent paral·lela a y=-5x+4
+2014,juny,4,6,PAR|TAN|INT,(b-x)e^(ax): tangent horitzontal + passa per punts -> a i b; integral
+2014,set,5,2,PAR|TAN,dues funcions tangents en x=0 -> a i b
+2014,set,5,4,EXT|INF|INT,f' donada: maxims minims inflexio; f amb primitiva
+2015,juny,2,3,TAN|INT,tangent a y=x^3 en x=2 + area
+2015,juny,2,6,OPT,portalada catedral area maxima
+2015,juny,4,2,TAN|EXT|INF,x^3-4x^2+4x: tangent x=1; extrems i inflexio
+2015,juny,4,4,INT,primitiva de x·sin x
+2015,set,5,3,TEO|EXT,e^x-x-2: Bolzano a [0,2] + monotonia (unicitat)
+2015,set,5,5,OPT,rectangle inscrit en circumferencia
+2016,juny,3,3,TAN|EXT,x·e^(x-1): tangent x=1 + creixement
+2016,juny,3,5,OPT,tetraedre volum maxim
+2016,juny,3,6,INT,area entre dues paraboles amb parametre k
+2016,juny,5,3,EXT|INF|TEO,extrems i inflexio 2x^3-9x^2+12x-4 + raonament tipus Rolle/Bolzano per f'
+2016,juny,5,6,INT,f'=(x+1)e^x i f(0)=2 -> f
+2016,set,1,3,OPT,envas de gelat cost minim
+2016,set,1,4,TAN|INT,sin x: tangents en 0 i pi + area
+2017,juny,1,3,ASI|EXT,1/(x^2-k): domini asimptotes extrems segons k
+2017,juny,1,6,OPT,con aresta minima
+2017,set,2,4,ALTRES,taula de valors f f' g g': regla de la cadena
+2017,set,2,6,INT,primitiva + area
+2018,juny,1,3,TAN|EXT|INF,x^3-x^2: tangent paral·lela a x+3y=0; extrems i inflexio
+2018,juny,1,5,TEO|INT,Bolzano a [0,2] + unicitat amb signe de f' + area
+2018,set,3,1,PAR|EXT,x^3-ax^2+bx+c amb condicions (extrem i tangent) + classificar extrems
+2018,set,3,6,INT,area entre x^2-1 i 3-x^2
+2019,juny,1,1,OPT,pagines llibre superficie impresa maxima
+2019,juny,1,4,CONT|ASI|TEO,(2x^3-5x+4)/(1-x): domini continuitat AV + Bolzano
+2019,juny,1,6,INT,area x^2 1/x x=e
+2019,juny,4,1,OPT,marc de fusta cost minim
+2019,juny,4,4,CONT|INT,funcio a trossos amb parametres n m continua + area
+2019,juny,4,6,INF|EXT|INT,f''=6x: inflexio concavitat minim + trobar f
+2019,set,5,1,INT,area rectes i parabola
+2019,set,5,4,TAN|EXT,1/(1+x^2): tangents horitzontals + pendent maxim
+2019,set,5,6,EXT|INT,ln x/x: domini talls monotonia + area
+2020,juny,1,1,OPT|TAN,tangent a 1+1/x^2 i triangle area minima
+2020,juny,1,4,PAR|ASI|EXT,(ax^2+b)/x: asimptota obliqua pendent 1 + minim en x=2
+2020,juny,1,6,TAN|INT,x^3: tangent paral·lela + area
+2020,juny,3,2,OPT,cova: distancia minima
+2020,juny,3,4,TAN|EXT|INT,1/x+ln x: tangent horitzontal extrem + area
+2020,juny,3,6,CONT|INT,rajola: continua i derivable + area
+2020,set,4,1,INT,area x^3 i ax^2
+2020,set,4,3,GRAF|TAN|EXT,grafica de f': tangent + punts singulars
+2020,set,4,5,OPT,capsules pentagon area maxima
+2021,juny,2,1,TAN|OPT,parabola 4-x^2 tangent en x=a i triangle
+2021,juny,2,4,TAN|EXT|ASI|INT,ln: tangent horitzontal extrem + AH + area
+2021,juny,2,6,EXT|TEO,e^(x-1)-x-1: continuitat extrems monotonia + exactament dues solucions (Bolzano)
+2021,juny,5,2,INT,area x^3-9x i 7x
+2021,juny,5,4,OPT,resistencia biga maxima
+2021,juny,5,6,PAR|TAN,2x^3+mx^2+nx+p extrems en -3 i 1 passa per (3 4) + tangent
+2021,set,1,2,TAN|INT,tangent i NORMAL en x=1 + area
+2023,juny,1,1,PAR|INF|TAN,ax^3+bx^2+cx+d: inflexio (1 0) amb tangent donada + extrem
+2023,juny,1,3,INT|TAN,f' donada -> f + tangent a f'
+2023,juny,1,5,OPT,jardi rectangular
+2023,juny,5,1,INT|TAN,area entre dues paraboles + tangent en (-2 0)
+2023,juny,5,4,OPT,carretera i poble
+2023,juny,5,6,PAR|EXT,a i b: extrem relatiu en x=-1 i passa per un punt
+2023,set,2,2,TAN|OPT,tangent en x=2 i x=k + area del triangle
+2023,set,2,4,TEO|INT,Bolzano f(x)=2 a (-1 0) + area
+2023,set,2,6,OPT,peca metal·lica trapezi
+2024,juny,1,1,EXT|ASI|REP|TAN,f per x>0: monotonia extrems + asimptotes + esbos + tangent x=1
+2024,juny,1,3,INT,terreny: punts de la cubica + area
+2024,juny,1,5,OPT,cobert de fusta cost minim
+2024,set,3,1,TEO|EXT,3x^13+5x^3+2: Bolzano + interval de 0.5 + monotonia -> nombre de zeros
+2024,set,3,3,INT,logotip: areas
+2024,set,3,5,OPT|TAN,rectangle sota e^(-2x) area maxima + tangent x=0
+2025,juny,1,1,ASI|TAN,(x^2-2x)/(x-1): talls asimptotes + tangents en 0 i 2 + tangent de pendent 1
+2025,juny,1,3c,OPT,f(p)=5(p^4-p^5) maxim (dins exercici de probabilitat)
+2025,juny,1,4A,INT,vela: area i cost
+2025,set,3,1,OPT,terreny triangular area minima
+2025,set,3,3c,PAR|INF,ax^3+bx^2+cx: maxim en x=1 (valor 8) + inflexio en x=2
+2025,set,3,4A,INT,vitrall Sagrada Familia: area
+2026,ord,1,1,CONT|INT|TAN,a trossos amb m: continuitat + area + tangent paral·lela a y=-2x
+2026,ord,1,3.3,TEO,S(t) decibels: Bolzano (supera 100 dB?)
+2026,ord,1,4A,OPT,parc infantil cercle + quadrat superficie minima
+2026,ext,2,1,EXT|ASI|REP|TAN,5x/(x^2+1): domini monotonia extrems + asimptotes + esbos + NORMAL en x=2
+2026,ext,2,3.3,INT,pales aerogenerador: area
+2026,ext,2,4A,OPT,capsa de carto 80x50 volum maxim

@@ -1,0 +1,5 @@
+_descarregues/
+data/*/_descarregues/
+__pycache__/
+*.pyc
+.DS_Store
