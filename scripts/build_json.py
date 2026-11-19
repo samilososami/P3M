@@ -1,5 +1,5 @@
 """Build data/matematiques/examens/<any>/<id>.json from the transcription sources examens/matematiques/<any>/<id>.md.
-Validates structure: front matter, item numbering, points and apartats. Usage: python3 -I build_json.py <repo> [--check]"""
+Validates structure: front matter, item numbering, points and apartats. Usage: python3 -I build_json.py <repo> [--check] [fitxer.md ...]"""
 import json, re, sys
 from pathlib import Path
 
@@ -74,7 +74,9 @@ def parse(md: Path):
     return doc, errors
 
 ok = bad = 0
+ONLY = {Path(a).resolve() for a in sys.argv[2:] if a.endswith('.md')}
 for md in sorted(SRC.glob('*/*.md')):
+    if ONLY and md.resolve() not in ONLY: continue
     if md.name == 'README.md': continue
     doc, errors = parse(md)
     if errors: bad += 1; print(f'ERROR {md.relative_to(REPO)}:', *errors, sep='\n  - '); continue
