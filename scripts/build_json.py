@@ -7,7 +7,7 @@ REPO = Path(sys.argv[1]); CHECK_ONLY = '--check' in sys.argv
 SRC = REPO / 'examens' / 'matematiques'; OUT = REPO / 'data' / 'matematiques' / 'examens'
 REQUIRED = ['id', 'any', 'convocatoria', 'serie', 'tribunal', 'estructura', 'enunciat']
 ITEM = re.compile(r'^## (Qüestió|Problema|Exercici)\s+(\d+)(?:,\s*opció\s+([AB]))?\s*\(([\d,\.]+) punts?(?: en total)?\)\s*$')
-APARTAT = re.compile(r'^\*\*([a-z])\)\*\*\s*(?:\(([\d,\.]+) punts?\))?\s*(.*)$')
+APARTAT = re.compile(r'^\*\*([a-z]|\d\.\d)\)\*\*\s*(?:\(([\d,\.]+) punts?\))?\s*(.*)$')
 TIPUS = {'Qüestió': 'questio', 'Problema': 'problema', 'Exercici': 'exercici'}
 def num(s): return float(s.replace(',', '.')) if s else None
 def pdfref(v):
