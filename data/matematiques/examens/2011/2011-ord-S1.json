@@ -94,7 +94,7 @@
         {
           "lletra": "b",
           "punts": 1.0,
-          "enunciat": "Busqueu el valor del paràmetre $a$ perquè aquesta àrea sigui mínima."
+          "enunciat": "Calculeu el valor del paràmetre $a$ perquè aquesta àrea sigui mínima."
         }
       ],
       "figures": [],
