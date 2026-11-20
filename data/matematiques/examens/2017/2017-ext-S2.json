@@ -1,0 +1,190 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2017-ext-S2",
+  "assignatura": "matematiques",
+  "any": 2017,
+  "convocatoria": "extraordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2017/pau_mate17sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2017/pau_mate17sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2017-ext-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el pla $\\pi:\\ x+y+z=1$ i la recta $r$ que passa pels punts $P=(0,0,6)$ i $Q=(1,2,3)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Estudieu la posició relativa de la recta $r$ i el pla $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu la distància entre la recta $r$ i el pla $\\pi$.\n\nNOTA: Podeu calcular la distància d'un punt de coordenades $(x_0,y_0,z_0)$ al pla d'equació $Ax+By+Cz+D=0$ amb l'expressió $\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector normal del pla és $\\vec n=(1,1,1)$ i el vector director de la recta és $\\overrightarrow{PQ}=(1,2,-3)$. Com que $\\vec n\\cdot\\overrightarrow{PQ}=1+2-3=0$, la recta és paral·lela al pla o hi està continguda. El punt $P$ no pertany al pla ($0+0+6=6\\neq1$), per tant la recta és paral·lela al pla i no hi està continguda.\n\nb) Com que la recta i el pla són paral·lels, la distància és la del punt $P$ al pla:\n$$d(r,\\pi)=d(P,\\pi)=\\frac{|1\\cdot0+1\\cdot0+1\\cdot6-1|}{\\sqrt{3}}=\\frac{5}{\\sqrt3}=\\frac{5\\sqrt3}{3}\\simeq2{,}887\\ \\text{u}.$$",
+        "resultat": "a) La recta $r$ és paral·lela al pla $\\pi$ i no hi està continguda. b) $d(r,\\pi)=\\dfrac{5\\sqrt3}{3}\\simeq2{,}887$ unitats."
+      }
+    },
+    {
+      "id": "2017-ext-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin les matrius $A=\\begin{pmatrix} 1 & 1 & 1 \\\\ 0 & -2 & 1 \\\\ 1 & -1 & 1 \\end{pmatrix}$ i $B=\\begin{pmatrix} 3 & 4 & -1 \\\\ -1 & -4 & 3 \\\\ 0 & -4 & 4 \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que satisfan la igualtat $A^2-\\dfrac12A\\cdot B=I$, en què $I$ és la matriu identitat d'ordre 3."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Fent servir la igualtat anterior, trobeu la matriu inversa de $A$: $A^{-1}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2=\\begin{pmatrix} 2 & -2 & 3 \\\\ 1 & 3 & -1 \\\\ 2 & 2 & 1 \\end{pmatrix}$ i $A\\cdot B=\\begin{pmatrix} 2 & -4 & 6 \\\\ 2 & 4 & -2 \\\\ 4 & 4 & 0 \\end{pmatrix}$. Per tant $A^2-\\dfrac12A\\cdot B=\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}=I$.\n\nb) Traient factor comú $A$ per l'esquerra: $A\\cdot\\left(A-\\dfrac12B\\right)=I$, d'on $A^{-1}=A-\\dfrac12B$:\n$$A^{-1}=\\begin{pmatrix} -\\frac12 & -1 & \\frac32 \\\\ \\frac12 & 0 & -\\frac12 \\\\ 1 & 1 & -1 \\end{pmatrix}.$$",
+        "resultat": "a) Comprovat: $A^2-\\frac12A\\cdot B=I$. b) $A^{-1}=\\begin{pmatrix} -\\frac12 & -1 & \\frac32 \\\\ \\frac12 & 0 & -\\frac12 \\\\ 1 & 1 & -1 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2017-ext-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n$$\\begin{cases} x+y+z=3 \\\\ x+y-z=1 \\\\ 2x+ay=2a \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre real $a$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per al cas $a=2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La matriu de coeficients és $A=\\begin{pmatrix} 1 & 1 & 1 \\\\ 1 & 1 & -1 \\\\ 2 & a & 0 \\end{pmatrix}$, amb $\\det A=2a-4$. Per tant $\\det A=0$ només per a $a=2$.\n\nSi $a\\neq2$: $\\operatorname{rang}(A)=\\operatorname{rang}(A')=3$, igual al nombre d'incògnites. El sistema és compatible determinat.\n\nSi $a=2$: $\\operatorname{rang}(A)=2$ (el menor $\\begin{vmatrix} 1 & -1 \\\\ 2 & 0 \\end{vmatrix}=2\\neq0$), i el determinant $\\begin{vmatrix} 1 & 1 & 3 \\\\ 1 & -1 & 1 \\\\ 2 & 0 & 4 \\end{vmatrix}=0$ fa que $\\operatorname{rang}(A')=2$. El sistema és compatible indeterminat amb $3-2=1$ grau de llibertat.\n\nb) Per a $a=2$ el sistema és $x+y+z=3$, $x+y-z=1$ (la tercera equació, $2x+2y=4$, és equivalent a $x+y=2$). Restant les dues primeres, $z=1$; i aleshores $x+y=2$. Triant $y$ com a paràmetre, $x=2-y$.",
+        "resultat": "a) Si $a\\neq2$, sistema compatible determinat; si $a=2$, sistema compatible indeterminat amb un grau de llibertat. b) $(x,y,z)=(2-y,\\ y,\\ 1)$, amb $y\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2017-ext-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "De les funcions $f(x)$, $f'(x)$, $g(x)$ i $g'(x)$, en coneixem els valors següents:\n\n| $x$ | $f(x)$ | $f'(x)$ |  | $x$ | $g(x)$ | $g'(x)$ |\n|---|---|---|---|---|---|---|\n| 0 | 2 | 1 |  | 0 | 1 | 1 |\n| 1 | 0 | $-6$ |  | 1 | 3 | 3 |",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "De la funció $f(x)$ sabem també que el pendent de la recta tangent en un punt d'abscissa $x$ és $4x^3-9x^2-2x+1$. Trobeu $f(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu $(g\\circ f)'(1)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El pendent de la recta tangent és $f'(x)$, per tant $f(x)$ és una primitiva de $4x^3-9x^2-2x+1$:\n$$\\int(4x^3-9x^2-2x+1)\\,dx=x^4-3x^3-x^2+x+C.$$\nCom que $f(0)=2$, $C=2$. Així $f(x)=x^4-3x^3-x^2+x+2$. (Comprovació: $f(1)=0$, d'acord amb la taula.)\n\nb) Per la regla de la cadena, $(g\\circ f)'(1)=g'\\big(f(1)\\big)\\cdot f'(1)=g'(0)\\cdot f'(1)$. Com que $f(1)=0$, $f'(1)=-6$ i $g'(0)=1$, resulta $(g\\circ f)'(1)=1\\cdot(-6)=-6$.",
+        "resultat": "a) $f(x)=x^4-3x^3-x^2+x+2$. b) $(g\\circ f)'(1)=-6$."
+      }
+    },
+    {
+      "id": "2017-ext-S2-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "A $\\mathbb{R}^3$, siguin la recta $r:\\begin{cases} x-z=2 \\\\ 2y+z=4 \\end{cases}$ i el punt $P=(0,1,-1)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació general (és a dir, la que té la forma $Ax+By+Cz=D$) del pla $\\pi$ perpendicular a la recta $r$ que passa pel punt $P$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu el punt simètric del punt $P$ respecte del pla $x+y+z=-3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector director de $r$ és el producte vectorial dels vectors normals dels dos plans: $\\vec v_r=(1,0,-1)\\times(0,2,1)=(2,-1,2)$. Aquest vector és el vector normal de $\\pi$, que té equació $2x-y+2z=D$. Com que passa per $P=(0,1,-1)$: $D=-1-2=-3$.\n\nb) La recta perpendicular al pla $x+y+z=-3$ que passa per $P$ té vector director $(1,1,1)$ i és $(x,y,z)=(t,\\,1+t,\\,-1+t)$. Substituint al pla: $t+(1+t)+(-1+t)=-3$, és a dir $t=-1$. El punt d'intersecció és $Q=(-1,0,-2)$, i el simètric és $P'=P+2\\overrightarrow{PQ}=(0,1,-1)+2(-1,-1,-1)=(-2,-1,-3)$.",
+        "resultat": "a) $2x-y+2z=-3$. b) $P'=(-2,-1,-3)$."
+      }
+    },
+    {
+      "id": "2017-ext-S2-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la funció $f(x)=\\dfrac{\\sin x}{\\cos^2x}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu una primitiva de la funció $f(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea limitada per la funció $f(x)$ i l'eix de les abscisses entre les abscisses $x=0$ i $x=\\dfrac{\\pi}{4}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Fent el canvi de variable $\\cos x=t$, $\\sin x\\,dx=-dt$:\n$$\\int\\frac{\\sin x}{\\cos^2x}\\,dx=\\int\\frac{-dt}{t^2}=\\frac1t+C=\\frac{1}{\\cos x}+C.$$\nUna primitiva és $F(x)=\\dfrac{1}{\\cos x}$.\n\nb) A l'interval $\\left[0,\\dfrac{\\pi}{4}\\right]$ el sinus és positiu i el denominador també, per tant $f(x)\\geq0$ i l'àrea és\n$$A=\\int_0^{\\pi/4}\\frac{\\sin x}{\\cos^2x}\\,dx=\\left[\\frac{1}{\\cos x}\\right]_0^{\\pi/4}=\\frac{1}{\\cos\\frac{\\pi}{4}}-\\frac{1}{\\cos0}=\\sqrt2-1\\simeq0{,}414\\ \\text{u}^2.$$",
+        "resultat": "a) $F(x)=\\dfrac{1}{\\cos x}$ (més una constant). b) $A=\\sqrt2-1\\simeq0{,}414$ unitats quadrades."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

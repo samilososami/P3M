@@ -1,0 +1,197 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2008-ext-S4",
+  "assignatura": "matematiques",
+  "any": 2008,
+  "convocatoria": "extraordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "Responeu a TRES de les quatre qüestions i resoleu UN dels dos problemes següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts, i el problema, 4 punts.\n\nPodeu utilitzar calculadora, però no es poden fer servir calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2008/pau_mate08sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2008/pau_mate08sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2008-ext-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la funció $f(x)=ax^2+x+b$ ($a,b\\in\\mathbb{R}$). Trobeu els valors de $a$ i $b$ que fan que la recta $y=2x+1$ sigui tangent a la gràfica de $f$ quan $x=1$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Si la recta és tangent a la gràfica de $f$ en $x=1$, es compleix $f(1)=2\\cdot1+1=3$ i $f'(1)=2$. Com que $f'(x)=2ax+1$, s'obté el sistema:\n\n$$\\begin{cases} a+b+1=3 \\\\ 2a+1=2 \\end{cases}$$\n\nque té per solució $a=\\dfrac12$ i $b=\\dfrac32$.",
+        "resultat": "$a=\\dfrac12$, $b=\\dfrac32$."
+      }
+    },
+    {
+      "id": "2008-ext-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la matriu $A=\\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & -1 & 0 \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu $A^2$ i $A^3$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu, raonadament, el valor de $A^{60124}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2=A\\cdot A=\\begin{pmatrix} 0 & -1 & 0 \\\\ 0 & 0 & 1 \\\\ -1 & 0 & 0 \\end{pmatrix}$ i $A^3=A^2\\cdot A=\\begin{pmatrix} -1 & 0 & 0 \\\\ 0 & -1 & 0 \\\\ 0 & 0 & -1 \\end{pmatrix}=-I_3$.\n\nb) Com que $A^3=-I_3$, es té $A^6=(A^3)^2=I_3$. Com que $60124=6\\cdot10020+4$:\n\n$$A^{60124}=\\left(A^6\\right)^{10020}\\cdot A^4=I_3\\cdot A^4=A^4=A^3\\cdot A=-A$$",
+        "resultat": "a) $A^2=\\begin{pmatrix} 0 & -1 & 0 \\\\ 0 & 0 & 1 \\\\ -1 & 0 & 0 \\end{pmatrix}$, $A^3=-I_3$; b) $A^{60124}=-A=\\begin{pmatrix} 0 & 0 & -1 \\\\ -1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2008-ext-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu un sistema de dues equacions amb tres incògnites.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Pot ser incompatible?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Pot ser compatible determinat?\n\nRaoneu les respostes."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Sí. Per exemple, el sistema $\\begin{cases} x+y+z=1 \\\\ x+y+z=2 \\end{cases}$ és incompatible. En general, un sistema $\\begin{cases} A_1x+B_1y+C_1z=D_1 \\\\ A_2x+B_2y+C_2z=D_2 \\end{cases}$ és incompatible si i només si $\\dfrac{A_1}{A_2}=\\dfrac{B_1}{B_2}=\\dfrac{C_1}{C_2}\\neq\\dfrac{D_1}{D_2}$, és a dir, quan els dos plans són paral·lels i distints.\n\nb) No. El rang de la matriu del sistema és, com a màxim, 2 (només té dues files), mentre que el nombre d'incògnites és 3. Un sistema compatible determinat ha de tenir rang igual al nombre d'incògnites.",
+        "resultat": "a) sí, pot ser incompatible (dos plans paral·lels distints); b) no, perquè el rang és com a màxim 2 i hi ha 3 incògnites."
+      }
+    },
+    {
+      "id": "2008-ext-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats el punt $P=(7,5,1)$, el pla $\\pi:\\ x-2y-3z=10$ i la recta $r:\\ \\begin{cases} 3x-2y+2z=7 \\\\ x-6y-2z=5 \\end{cases}$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Trobeu la distància de $P$ a $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu la distància de $P$ a $r$."
+        },
+        {
+          "lletra": "c",
+          "punts": 0.5,
+          "enunciat": "Trobeu la distància de $r$ a $\\pi$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $d(P,\\pi)=\\dfrac{|7-2\\cdot5-3\\cdot1-10|}{\\sqrt{1^2+(-2)^2+(-3)^2}}=\\dfrac{|-16|}{\\sqrt{14}}=\\dfrac{16}{\\sqrt{14}}=\\dfrac{8\\sqrt{14}}{7}$.\n\nb) Un punt de $r$ és $Q=(3,0,-1)$ (es troba fent $y=0$ en el sistema). Un vector director és $\\vec v_r=(3,-2,2)\\wedge(1,-6,-2)=(16,8,-16)\\parallel(2,1,-2)$. Amb $\\overrightarrow{PQ}=(-4,-5,-2)$:\n\n$$\\overrightarrow{PQ}\\wedge\\vec v_r=(-4,-5,-2)\\wedge(2,1,-2)=(12,-12,6)$$\n\n$$d(P,r)=\\dfrac{\\|(12,-12,6)\\|}{\\|(2,1,-2)\\|}=\\dfrac{\\sqrt{324}}{3}=\\dfrac{18}{3}=6$$\n\nComprovació: el pla perpendicular a $r$ que passa per $P$ és $2x+y-2z-17=0$, que talla $r$ en $Q'=(5,1,-3)$, i $d(P,Q')=\\sqrt{4+16+16}=6$.\n\nc) El vector director de $r$, $(2,1,-2)$, i el vector normal de $\\pi$, $(1,-2,-3)$, tenen producte escalar $2-2+6=6\\neq0$. Per tant, $r$ no és paral·lela a $\\pi$: la talla, i la distància és zero.",
+        "resultat": "a) $d(P,\\pi)=\\dfrac{16}{\\sqrt{14}}=\\dfrac{8\\sqrt{14}}{7}$; b) $d(P,r)=6$; c) $d(r,\\pi)=0$ (la recta talla el pla)."
+      }
+    },
+    {
+      "id": "2008-ext-S4-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donades les funcions $f(x)=\\dfrac{e^x-e^{-x}}{2}$ i $g(x)=\\dfrac{e^x+e^{-x}}{2}$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que $[g(x)]^2-[f(x)]^2=1$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu també que $f'(x)=g(x)$ i $g'(x)=f(x)$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Comproveu que $f(x+y)=f(x)\\cdot g(y)+f(y)\\cdot g(x)$."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Calculeu $\\displaystyle\\lim_{x\\to\\infty}\\dfrac{f(x)}{g(x)}$ dividint per $e^x$ el numerador i el denominador; amb un procediment similar (però no igual), trobeu $\\displaystyle\\lim_{x\\to-\\infty}\\dfrac{f(x)}{g(x)}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $[g(x)]^2-[f(x)]^2=\\dfrac{e^{2x}+2+e^{-2x}}{4}-\\dfrac{e^{2x}-2+e^{-2x}}{4}=\\dfrac{4}{4}=1$.\n\nb) $f'(x)=\\dfrac{e^x+e^{-x}}{2}=g(x)$ i $g'(x)=\\dfrac{e^x-e^{-x}}{2}=f(x)$.\n\nc) Desenvolupant el membre de la dreta:\n\n$$f(x)g(y)+f(y)g(x)=\\dfrac{e^{x+y}-e^{-(x+y)}}{4}\\cdot2=\\dfrac{e^{x+y}-e^{-(x+y)}}{2}=f(x+y)$$\n\nd) Dividint numerador i denominador per $e^x$:\n\n$$\\lim_{x\\to\\infty}\\dfrac{f(x)}{g(x)}=\\lim_{x\\to\\infty}\\dfrac{1-e^{-2x}}{1+e^{-2x}}=\\dfrac{1}{1}=1$$\n\nPer a $x\\to-\\infty$, es multiplica numerador i denominador per $e^{-x}$:\n\n$$\\lim_{x\\to-\\infty}\\dfrac{f(x)}{g(x)}=\\lim_{x\\to-\\infty}\\dfrac{e^{2x}-1}{e^{2x}+1}=\\dfrac{0-1}{0+1}=-1$$",
+        "resultat": "$[g]^2-[f]^2=1$; $f'=g$ i $g'=f$; $f(x+y)=f(x)g(y)+f(y)g(x)$; $\\displaystyle\\lim_{x\\to\\infty}\\dfrac{f(x)}{g(x)}=1$ i $\\displaystyle\\lim_{x\\to-\\infty}\\dfrac{f(x)}{g(x)}=-1$."
+      }
+    },
+    {
+      "id": "2008-ext-S4-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Les rectes $r_1:\\ \\dfrac{x-a}{2}=\\dfrac{y}{1}=\\dfrac{z+1}{4}$ i $r_2:\\ \\dfrac{x+2}{1}=\\dfrac{y-b}{2}=\\dfrac{z-4}{-1}$ són coplanàries (és a dir, estan incloses en un mateix pla).",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Expliqueu, raonadament, quina és la seva posició relativa."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu la relació que hi ha entre els paràmetres $a$ i $b$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.5,
+          "enunciat": "Trobeu els valors de $a$ i $b$ si el pla que les conté passa pel punt $P=(2,4,6)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Dues rectes coplanàries han de tallar-se o ser paral·leles. Els vectors directors són $(2,1,4)$ i $(1,2,-1)$, que no són proporcionals. Per tant, no són paral·leles, i es tallen en un únic punt, sigui quin sigui el valor de $a$ i de $b$.\n\nb) El punt de tall $Q$ és de les dues rectes: $Q=(a+2\\lambda,\\ \\lambda,\\ -1+4\\lambda)=(-2+\\mu,\\ b+2\\mu,\\ 4-\\mu)$. S'obté el sistema:\n\n$$\\begin{cases} 2\\lambda-\\mu=-2-a \\\\ \\lambda-2\\mu=b \\\\ 4\\lambda+\\mu=5 \\end{cases}$$\n\nque ha de ser compatible determinat. Escalonant la matriu ampliada:\n\n$$\\left(\\begin{array}{cc|c} 2 & -1 & -2-a \\\\ 1 & -2 & b \\\\ 4 & 1 & 5 \\end{array}\\right)\\sim\\left(\\begin{array}{cc|c} 1 & -2 & b \\\\ 0 & 3 & -a-2-2b \\\\ 0 & 0 & 3a+2b+11 \\end{array}\\right)$$\n\nPer tant, la condició és $3a+2b+11=0$.\n\nc) El pla que conté les rectes és $\\pi:\\ (x,y,z)=(a,0,-1)+\\lambda(2,1,4)+\\mu(1,2,-1)$. Imposant que $P=(2,4,6)\\in\\pi$:\n\n$$\\begin{cases} 2\\lambda+\\mu=2-a \\\\ \\lambda+2\\mu=4 \\\\ 4\\lambda-\\mu=7 \\end{cases}$$\n\nDes de la segona i la tercera equacions, $\\lambda=2$ i $\\mu=1$. Substituint a la primera: $5=2-a$, és a dir, $a=-3$. Llavors, de la relació de l'apartat anterior, $-9+2b+11=0$, d'on $b=-1$.",
+        "resultat": "a) les rectes es tallen en un punt; b) $3a+2b+11=0$; c) $a=-3$ i $b=-1$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}
