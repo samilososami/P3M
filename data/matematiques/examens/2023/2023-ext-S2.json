@@ -158,8 +158,7 @@
       "figures": [],
       "solucio": {
         "desenvolupament": "a) La solució de $f(x)=2$ és un zero de $g(x)=f(x)-2=-3x+e^{2x^3-1}-2$. La funció $g$ és contínua en $[-1,0]$, perquè és suma de funcions contínues (polinòmica i exponencial). Com que $g(-1)=3+e^{-3}-2=1+e^{-3}>0$ i $g(0)=e^{-1}-2<0$, pel teorema de Bolzano hi ha un zero de $g$ en $(-1,0)$, és a dir, una solució de $f(x)=2$.\n\nb) Punts de tall: $f(x)=h(x) \\iff -3x=-3x^2 \\iff 3x(x-1)=0$, d'on $x=0$ i $x=1$. En $(0,1)$, $h(x)\\ge f(x)$, i per tant\n$$A=\\int_0^1\\left(h(x)-f(x)\\right)dx=\\int_0^1\\left(-3x^2+3x\\right)dx=\\left[-x^3+\\tfrac{3}{2}x^2\\right]_0^1=\\tfrac12\\ \\text{u}^2.$$",
-        "resultat": "(a) hi ha un zero de $f(x)-2$ en $(-1,0)$ (Bolzano); (b) $A=\\dfrac12$ u$^2$.",
-        "nota": "els criteris de correcció donen com a resultat $2\\ \\text{u}^2$, però la primitiva que hi apareix, $[-x^3+\\tfrac32x^2]_0^1$, val $-1+\\tfrac32=\\tfrac12$. Aquí es manté el càlcul de l'enunciat: $\\tfrac12$ u$^2$."
+        "resultat": "(a) hi ha un zero de $f(x)-2$ en $(-1,0)$ (Bolzano); (b) $A=\\dfrac12$ u$^2$."
       }
     },
     {

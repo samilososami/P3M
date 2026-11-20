@@ -124,7 +124,7 @@
         }
       ],
       "figures": [
-        "logotip amb els punts $A$, $B$ i $C=(3,3)$ i $D$ indicats sobre els eixos i les corbes. Una regió puntejada, delimitada per l'eix d'ordenades, per la corba superior $y=g(x)$ i per la corba $y=f(x)$, entre $x=0$ i $x=3$. Una regió ratllada, situada a la dreta de la puntejada i sota les corbes."
+        "logotip al primer quadrant amb els punts $A$ (sobre l'eix d'abscisses, on la corba $f$ el toca), $B$ (sobre l'eix d'ordenades, extrem esquerre de la corba $g$), $C=(3,3)$ (punt comú de les dues corbes) i $D$ (sobre l'eix d'abscisses, extrem dret de la corba $g$) indicats. Una regió puntejada, delimitada per l'eix d'ordenades, per la corba superior $y=g(x)$ i per la corba $y=f(x)$, entre $x=0$ i $x=3$. Una regió ratllada, situada sota la corba $f$ entre $x=0$ i $x=3$ i sota la corba $g$ entre $x=3$ i $D$."
       ],
       "solucio": {
         "desenvolupament": "a) $f(x)=x(x-2)^2=0$ dona $x=0$ i $x=2$, així que $A=(2,0)$. Per a $g$: $g(x)=0 \\iff (x-1)^2=16 \\iff x=5$ o $x=-3$; descartem la negativa, i $D=(5,0)$. El punt $B$ és el tall de $g$ amb l'eix d'ordenades: $g(0)=-\\dfrac14+4=\\dfrac{15}{4}$, així que $B=\\left(0,\\dfrac{15}{4}\\right)$. (Comprovació: $g(3)=3$, i $C=(3,3)$.)\n\nb) La zona puntejada és entre $g$ (a dalt) i $f$ (a baix) des de $x=0$ fins a $x=3$, i $g\\ge f$ en aquest interval:\n$$A_1=\\int_0^3\\left(g(x)-f(x)\\right)dx=\\int_0^3\\frac{-4x^3+15x^2-14x+15}{4}\\,dx=\\left[\\tfrac14\\left(-x^4+5x^3-7x^2+15x\\right)\\right]_0^3=\\tfrac{36}{4}=9\\ \\text{m}^2.$$\n\nc) L'àrea de la zona ratllada és $\\dfrac{175}{12}-9=\\dfrac{67}{12}\\approx5{,}583\\ \\text{m}^2$. Com que $9>\\dfrac{67}{12}$, necessitaran més pintura de color **blau**.",
