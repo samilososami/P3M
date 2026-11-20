@@ -81,7 +81,7 @@
       ],
       "figures": [],
       "solucio": {
-        "desenvolupament": "a) Equació del pla a partir d'un punt $(2,1,0)$ i els vectors directors $(1,-1,0)$ i $(1,0,1)$:\n$$\\begin{vmatrix} x-2 & 1 & 0 \\\\ y-1 & -1 & 1 \\\\ z & 0 & 1 \\end{vmatrix}=0\\iff -x+2-y+1+z=0\\iff x+y-z=3.$$\n\nb) Un punt genèric de $r$ és $P=(3+2\\alpha,-\\alpha,3-\\alpha)$. Cal que $d(P,\\pi_1)=d(P,\\pi_2)$:\n$$\\frac{|3+2\\alpha-\\alpha+3-\\alpha+1|}{\\sqrt3}=\\frac{|3+2\\alpha-\\alpha-(3-\\alpha)-3|}{\\sqrt3}\\iff |7|=|2\\alpha-3|.$$\nPer tant $2\\alpha-3=7$ (és a dir $\\alpha=5$) o $2\\alpha-3=-7$ (és a dir $\\alpha=-2$).",
+        "desenvolupament": "a) Equació del pla a partir d'un punt $(2,1,0)$ i els vectors directors $(1,-1,0)$ i $(0,1,1)$:\n$$\\begin{vmatrix} x-2 & 1 & 0 \\\\ y-1 & -1 & 1 \\\\ z & 0 & 1 \\end{vmatrix}=0\\iff -x+2-y+1+z=0\\iff x+y-z=3.$$\n\nb) Un punt genèric de $r$ és $P=(3+2\\alpha,-\\alpha,3-\\alpha)$. Cal que $d(P,\\pi_1)=d(P,\\pi_2)$:\n$$\\frac{|3+2\\alpha-\\alpha+3-\\alpha+1|}{\\sqrt3}=\\frac{|3+2\\alpha-\\alpha-(3-\\alpha)-3|}{\\sqrt3}\\iff |7|=|2\\alpha-3|.$$\nPer tant $2\\alpha-3=7$ (és a dir $\\alpha=5$) o $2\\alpha-3=-7$ (és a dir $\\alpha=-2$).",
         "resultat": "a) $x+y-z=3$. b) $P_1=(13,-5,-2)$ (per a $\\alpha=5$) i $P_2=(-1,2,5)$ (per a $\\alpha=-2$)."
       }
     },

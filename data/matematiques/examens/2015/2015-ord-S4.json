@@ -38,7 +38,7 @@
       "tipus": "questio",
       "opcio": null,
       "punts": 2.0,
-      "enunciat": "Considereu el sistema d'equacions següent, en què $m$ és un paràmetre real:\n\n$$\\begin{cases} x-2y-z=0 \\\\ -mx+3y+z=0 \\\\ x+y=4 \\end{cases}$$",
+      "enunciat": "Considereu el sistema d'equacions\n\n$$\\begin{cases} x-2y-z=0 \\\\ -mx+3y+z=0 \\\\ x+y=4 \\end{cases}$$\n\nen què $m$ és un paràmetre real.",
       "apartats": [
         {
           "lletra": "a",

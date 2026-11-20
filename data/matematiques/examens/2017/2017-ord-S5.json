@@ -64,7 +64,7 @@
       "tipus": "questio",
       "opcio": null,
       "punts": 2.0,
-      "enunciat": "Considereu el sistema d'equacions lineals següent, en què $k$ és un paràmetre real:\n$$\\begin{cases} x-y+z=0 \\\\ 2x+kz=1 \\\\ x+(k+1)y+z=k^2-4 \\end{cases}$$",
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n$$\\begin{cases} x-y+z=0 \\\\ 2x+kz=1 \\\\ x+(k+1)y+z=k^2-4 \\end{cases}$$\nen què $k$ és un paràmetre real.",
       "apartats": [
         {
           "lletra": "a",
