@@ -144,3 +144,18 @@ Estos números son solo una brújula. La clasificación real la hará un clasifi
 2. **Las etiquetas manuales solo cubren análisis** (79 ítems, 2014–2026). Para `ALG`, `GEO` y `PRO` no hay verdad de referencia, y habrá que etiquetar a mano una muestra antes de fiarse de las métricas.
 3. **El patrón (nivel 3) no se fija ahora.** Se propone después de clasificar, agrupando los ítems que comparten estructura.
 4. **No se separa «analítico» de «geométrico»** dentro de `GEO` (por ejemplo, `DST` en el plano frente al espacio): en la PAU actual todo es en R³.
+
+## Cuestiones abiertas (v1.2)
+
+Ambigüedades que los agentes encontraron al aplicar las reglas y que siguen sin resolver. Condicionan los ítems de confianza `media`.
+
+1. **Desempate del tipo principal.** «El apartado con más pasos» es subjetivo cuando los apartados son de uno a tres pasos. Es la causa principal de las dudas restantes. Una opción es contar los pasos de cálculo propios, sin los reutilizados del apartado anterior, y desempatar por el primero.
+2. **`PAR` y `CONT`.** La regla incluye «condiciones sobre continuidad» dentro de `PAR`, y `CONT` pide estudiar continuidad. Hay solapamiento cuando solo se fija un parámetro por continuidad.
+3. **`REP` y el dominio dado.** No está dicho si un dominio que viene en el enunciado cuenta como elemento del estudio. Se ha aplicado que no cuenta.
+4. **`parametro` y constantes de integración.** Aplicada al pie de la letra, toda primitiva con condición inicial marcaría `parametro`. Se ha aplicado que no cuenta, salvo que el enunciado nombre la constante.
+5. **`PRJ` y `RPL`.** El punto de contacto o el pie de la perpendicular es a la vez una intersección recta–plano y una proyección. Se ha aplicado `PRJ` cuando el enunciado pide el punto más cercano o el pie desde un punto.
+6. **`teòric:` y confianza alta.** El prefijo en `notas` convive con confianza `alta`; la «nota vacía» se refiere solo a dudas.
+7. **`DST` y recta–plano.** Cuando el trabajo es comprobar que se cortan, el principal es `RPL`.
+8. **Dominio y recorrido.** No tienen tipo propio y se omiten cuando son un apartado aislado.
+9. **`aplicado` con herramientas.** Una hoja de cálculo o una calculadora no cuentan como contexto real; un objeto físico sí.
+10. **`LLG`.** Solo cuando la respuesta describe un conjunto de puntos sin pedir su ecuación como recta o plano.

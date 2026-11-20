@@ -1,6 +1,6 @@
 {
  "schema": "p3m-classificacio/1",
- "taxonomia": "v1.1",
+ "taxonomia": "v1.2",
  "items": [
   {
    "id": "1998-ext-S2-P1",
@@ -28,12 +28,12 @@
    "subtipus": [],
    "atributs": {
     "figura": true,
-    "parametro": false,
+    "parametro": true,
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Geometria analítica plana (circumferències tangents); GPL es el único código que encaja, el enunciado fija k y centros por tangencia."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "1998-ext-S2-Q1",
@@ -132,8 +132,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Cuatro apartados de peso parecido (intersecciones, recta perpendicular, volumen del tetraedro, distancia y área); principal VOL por ser el hilo conductor."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "1998-ext-S5-Q1",
@@ -172,9 +172,9 @@
   },
   {
    "id": "1998-ext-S5-Q3",
-   "bloc": "GEO",
+   "bloc": "TRI",
    "tipus": [
-    "ANG"
+    "GPL"
    ],
    "subtipus": [],
    "atributs": {
@@ -183,8 +183,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "baja",
-   "notas": "Ángulo entre dos vectores del plano (producto escalar). ANG es de GEO pero el ítem es plano: también defendible TRI/GPL. Falta un código de geometría analítica plana."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "1998-ext-S5-Q4",
@@ -222,8 +222,7 @@
    "id": "1998-ord-S3-P2",
    "bloc": "TRI",
    "tipus": [
-    "GPL",
-    "ANG"
+    "GPL"
    ],
    "subtipus": [],
    "atributs": {
@@ -232,8 +231,8 @@
     "aplicado": true,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Geometría analítica plana (reflexión en la banda, rectas y ángulo); sin código propio de analítica plana, GPL es el más cercano."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "1998-ord-S3-Q1",
@@ -255,8 +254,8 @@
    "id": "1998-ord-S3-Q2",
    "bloc": "GEO",
    "tipus": [
-    "EQG",
-    "DST"
+    "DST",
+    "EQG"
    ],
    "subtipus": [],
    "atributs": {
@@ -265,8 +264,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Se pide la ecuación de los planos (EQG) pero la condición es de distancia (DST); peso similar."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "1998-ord-S3-Q3",
@@ -324,7 +323,8 @@
    "tipus": [
     "PRJ",
     "DST",
-    "VOL"
+    "VOL",
+    "RPL"
    ],
    "subtipus": [],
    "atributs": {
@@ -334,7 +334,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Cuatro apartados de peso similar (coplanaridad, área del polígono, simétrico, distancia entre rectas); orden del principal arbitrario."
+   "notas": "Cuatro apartados de peso parecido sin reparto oficial; principal PRJ por ser el apartado con más pasos. Alternativa razonable: RPL (primer apartado) o DST como principal."
   },
   {
    "id": "1999-ext-S2-Q1",
@@ -370,10 +370,10 @@
   },
   {
    "id": "1999-ext-S2-Q3",
-   "bloc": "ALG",
+   "bloc": "GEO",
    "tipus": [
-    "SIS",
-    "RPL"
+    "RPL",
+    "SIS"
    ],
    "subtipus": [],
    "atributs": {
@@ -383,7 +383,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Ejercicio conceptual: discusión por rangos más interpretación geométrica (posiciones relativas de planos)."
+   "notas": "teòric: interpretación geométrica de un sistema con rang A=2 y rang A*=3 (posición relativa de tres planos). Alternativa razonable: bloc ALG con SIS como principal."
   },
   {
    "id": "1999-ext-S2-Q4",
@@ -446,8 +446,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Circunferencia por dos puntos con centro en una recta (analítica plana); GPL por falta de código mejor."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "1999-ext-S5-Q2",
@@ -517,8 +517,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Tres apartados (continuidad 1 pt, extremos 2 pt, área 1 pt); principal EXT por el peso oficial."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "1999-ord-S1-P2",
@@ -552,7 +552,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Sistema 3x2 con k: se resuelve y se impone la compatibilidad; SIS vs RES defendibles como principal."
+   "notas": "Alternativa razonable: RES como principal (el enunciado dice «resoleu»); la discusión de k (SIS) y la resolución pesan parecido."
   },
   {
    "id": "1999-ord-S1-Q2",
@@ -651,8 +651,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Centro y radio de circunferencia (analítica plana); GPL por falta de código mejor."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "1999-ord-S6-Q2",
@@ -718,8 +718,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Optimización geométrica con máximo y mínimo sobre un intervalo cerrado; sin contexto real."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2000-ext-S2-P2",
@@ -780,17 +780,17 @@
    "id": "2000-ext-S2-Q3",
    "bloc": "ALG",
    "tipus": [
-    "DET"
+    "VEC"
    ],
    "subtipus": [],
    "atributs": {
     "figura": false,
-    "parametro": false,
+    "parametro": true,
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Dependencia lineal de vectores de R3 y combinación lineal; se resuelve con determinante/rango. Sin código claro de dependencia lineal (podría verse como GEO)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2000-ext-S2-Q4",
@@ -858,7 +858,7 @@
     "comprobar": false
    },
    "confianza": "baja",
-   "notas": "Reconstruir f a partir de f' a trozos y continuidad; también defendible GRAF (como principal) o INT/PRI. Ningún código lo cubre bien."
+   "notas": "Alternativa razonable: INT (PRI/DEF) como principal, ya que se reconstruye f a partir de f′; o GRAF por el dibujo pedido."
   },
   {
    "id": "2000-ext-S6-Q2",
@@ -906,8 +906,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Circunferencia y tangente en un punto (analítica plana); GPL por falta de código mejor."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2000-ord-S1-P1",
@@ -990,8 +990,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Se piden construir sistemas incompatible/compatible indeterminado sin parámetro; SIS es lo más cercano."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2000-ord-S1-Q4",
@@ -1032,7 +1032,9 @@
    "bloc": "GEO",
    "tipus": [
     "EQG",
-    "VOL"
+    "VOL",
+    "ANG",
+    "VEC"
    ],
    "subtipus": [],
    "atributs": {
@@ -1042,7 +1044,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Sin solución oficial; mezcla perpendicularidad para hallar a, plano, cuarto vértice y área con producto vectorial; principal EQG discutible."
+   "notas": "Cuatro apartados (a perpendicularidad, plano, cuarto vértice, área) de peso parecido y sin solución oficial. Alternativa razonable: ANG (primer apartado) como principal."
   },
   {
    "id": "2000-ord-S3-Q1",
@@ -1231,9 +1233,7 @@
    "id": "2001-ord-S2-P2",
    "bloc": "ANA",
    "tipus": [
-    "REP",
-    "ASI",
-    "EXT"
+    "REP"
    ],
    "subtipus": [],
    "atributs": {
@@ -1577,7 +1577,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Se determina a con la condición de máximo y luego se halla el otro extremo; EXT/PAR casi a la par."
+   "notas": "Alternativa razonable: PAR como principal (determinar a con la condición de máximo es el primer paso)."
   },
   {
    "id": "2002-ord-S2-Q3",
@@ -1676,8 +1676,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Determinar k para que exista el límite y calcularlo: LIM y PAR casi a la par."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2002-ord-S3-Q3",
@@ -1709,8 +1709,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "baja",
-   "notas": "Puntos de una recta a distancia dada de un punto: DST (punto-punto) o LLG (puntos que cumplen una condición); la taxonomía no cubre distancia punto-punto."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2003-ext-S3-P1",
@@ -1799,8 +1799,8 @@
    "id": "2003-ext-S3-Q4",
    "bloc": "GEO",
    "tipus": [
-    "ANG",
-    "DST"
+    "DST",
+    "ANG"
    ],
    "subtipus": [],
    "atributs": {
@@ -1810,7 +1810,7 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "Triángulo en R3 con perpendicularidad y longitudes de lados; ningún tipo de GEO encaja exactamente (ANG/DST por aproximación)."
+   "notas": "El apartado b (igualar longitudes y resolver la cuadrática en a) tiene más pasos que el a. Alternativa razonable: ANG (primer apartado) como principal."
   },
   {
    "id": "2003-ord-S2-P1",
@@ -1882,8 +1882,8 @@
    "id": "2003-ord-S2-Q3",
    "bloc": "GEO",
    "tipus": [
-    "EQG",
-    "PRJ"
+    "PRJ",
+    "EQG"
    ],
    "subtipus": [],
    "atributs": {
@@ -1893,7 +1893,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "El pie de la perpendicular desde P a r es una proyección; EQG o PRJ como principal es discutible."
+   "notas": "El trabajo real es hallar el pie de la perpendicular desde P a r (PRJ). Alternativa razonable: EQG como principal (se pide la ecuación de s)."
   },
   {
    "id": "2003-ord-S2-Q4",
@@ -1926,7 +1926,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Incluye extremo, crecimiento y asíntotas dentro de REP; el parámetro se fija con la condición de extremo."
+   "notas": "Alternativa razonable: sin REP (solo se piden explícitamente crecimiento y asíntotas) y clasificar por partes: EXT/ASI/PAR."
   },
   {
    "id": "2003-ord-S5-P2",
@@ -1957,8 +1957,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Punto de una curva más cercano a otro punto; optimización sin contexto real."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2003-ord-S5-Q2",
@@ -2008,14 +2008,14 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Determinar el parámetro a partir de una solución dada; no hay discusión, se sustituye. SIS o RES."
+   "notas": "Se determina el parámetro sustituyendo una solución dada, sin discutir el sistema. Alternativa razonable: RES como principal."
   },
   {
    "id": "2004-ext-S5-P5",
    "bloc": "ANA",
    "tipus": [
-    "PAR",
-    "REP"
+    "REP",
+    "PAR"
    ],
    "subtipus": [],
    "atributs": {
@@ -2024,8 +2024,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Mitad parámetros por condiciones, mitad esbozo de la gráfica."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2004-ext-S5-P6",
@@ -2042,8 +2042,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Tres apartados de peso parecido; el principal es arbitrario."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2004-ext-S5-Q1",
@@ -2099,8 +2099,7 @@
    "id": "2004-ext-S5-Q4",
    "bloc": "ALG",
    "tipus": [
-    "DET",
-    "RES"
+    "VEC"
    ],
    "subtipus": [],
    "atributs": {
@@ -2109,15 +2108,16 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Base de R2 y coordenadas de un vector: no hay código de espacios vectoriales. Se usa DET (independencia) y RES (sistema 2x2)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2004-ord-S1-P5",
    "bloc": "ANA",
    "tipus": [
     "INT",
-    "TAN"
+    "TAN",
+    "PAR"
    ],
    "subtipus": [
     "ARE"
@@ -2128,8 +2128,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Área con parámetro m y tangente con pendiente dada; ambas partes pesan igual."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2004-ord-S1-P6",
@@ -2162,13 +2162,14 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Discusión sin parámetro y resolución a partir de la matriz de Gauss; SIS se reserva a sistemas con parámetro."
+   "notas": "Alternativa razonable: SIS como principal (primer apartado); la v1.2 admite SIS sin parámetro y los dos apartados pesan parecido."
   },
   {
    "id": "2004-ord-S1-Q2",
    "bloc": "GEO",
    "tipus": [
-    "EQG"
+    "EQG",
+    "RPL"
    ],
    "subtipus": [],
    "atributs": {
@@ -2178,7 +2179,7 @@
     "comprobar": false
    },
    "confianza": "alta",
-   "notas": "k es la coordenada de D que se determina por coplanaridad."
+   "notas": ""
   },
   {
    "id": "2004-ord-S1-Q3",
@@ -2210,8 +2211,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Lados iguales (distancias) y perpendicularidad (producto escalar); 'demostreu' tratado como comprobar."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2004-ord-S3-P5",
@@ -2246,8 +2247,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Apartados de peso parecido; se pide representar los puntos pero no hay figura."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2004-ord-S3-Q1",
@@ -2297,14 +2298,15 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "PAR (condición de extremo) y EXT (naturaleza del extremo) pesan parecido."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2004-ord-S3-Q4",
    "bloc": "ALG",
    "tipus": [
-    "DET"
+    "DET",
+    "RPL"
    ],
    "subtipus": [],
    "atributs": {
@@ -2314,7 +2316,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Razonamiento teórico sobre el rango de un sistema a partir de su conjunto de soluciones; no hay cálculo."
+   "notas": "teòric: rango de un sistema deducido del conjunto de soluciones. Alternativa razonable: RPL (alineación, primer apartado) como principal con bloc GEO, o SIS en lugar de DET."
   },
   {
    "id": "2005-ext-S3-P5",
@@ -2371,6 +2373,7 @@
    "id": "2005-ext-S3-Q2",
    "bloc": "ALG",
    "tipus": [
+    "VEC",
     "DET"
    ],
    "subtipus": [],
@@ -2380,8 +2383,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Base de R3 mediante determinante; sin código de espacios vectoriales."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2005-ext-S3-Q3",
@@ -2398,7 +2401,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "El trabajo real es ver que la recta es perpendicular al plano y lo corta (distancia 0)."
+   "notas": "Alternativa razonable: RPL como principal (el trabajo real es ver que la recta es perpendicular al plano y lo corta; la distancia es 0)."
   },
   {
    "id": "2005-ext-S3-Q4",
@@ -2414,8 +2417,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Triángulo rectángulo en C (condición de perpendicularidad) y su área; ANG o LLG como principal."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2005-ord-S1-P5",
@@ -2505,9 +2508,9 @@
   },
   {
    "id": "2005-ord-S1-Q4",
-   "bloc": "ALTRES",
+   "bloc": "ALG",
    "tipus": [
-    "ALTRES"
+    "VEC"
    ],
    "subtipus": [],
    "atributs": {
@@ -2516,8 +2519,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "División de un segmento en partes iguales con vectores: no encaja en ningún tipo de GEO. Propuesta: tipo VEC (operaciones con vectores y puntos, puntos medios, divisiones, bases)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2005-ord-S4-P5",
@@ -2534,8 +2537,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Enunciado en palabras que se plantea como sistema; la pregunta sobre k es discusión de compatibilidad."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2005-ord-S4-P6",
@@ -2552,7 +2555,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Se pide hacer un gráfico pero no se aporta figura."
+   "notas": "Alternativa razonable: EQG (recta altura) o VEC (cuarto vértice) como principal; los tres apartados pesan poco. Se pide un gráfico pero no se da figura."
   },
   {
    "id": "2005-ord-S4-Q1",
@@ -2723,7 +2726,7 @@
     "comprobar": false
    },
    "confianza": "baja",
-   "notas": "B es el simétrico de A respecto al origen; también razonable RPL (intersección recta-plano) o LLG."
+   "notas": "Alternativa razonable: RPL como principal (corte de la recta simétrica con el plano) o VEC (punto medio dado)."
   },
   {
    "id": "2006-ord-S1-P5",
@@ -2747,7 +2750,7 @@
    "bloc": "ANA",
    "tipus": [
     "PAR",
-    "REP"
+    "EXT"
    ],
    "subtipus": [],
    "atributs": {
@@ -2853,8 +2856,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Parametro a: paralelismo y perpendicularidad (RPL) y angulo de 30 grados (ANG) pesan parecido."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2006-ord-S3-Q1",
@@ -2959,7 +2962,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "PAR vs TAN como principal: la tangencia comun solo aporta las condiciones para hallar a y b."
+   "notas": "Alternativa razonable: INT (área) como principal, por ser el apartado con más pasos; o TAN."
   },
   {
    "id": "2007-ext-S3-Q1",
@@ -2975,8 +2978,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Se pide ecuacion de planos (EQG) pero todo el trabajo es imponer una distancia (DST)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2007-ext-S3-Q2",
@@ -3032,10 +3035,10 @@
   },
   {
    "id": "2007-ord-S1-P5",
-   "bloc": "GEO",
+   "bloc": "ANA",
    "tipus": [
+    "OPT",
     "DST",
-    "EXT",
     "EQG"
    ],
    "subtipus": [],
@@ -3045,8 +3048,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "baja",
-   "notas": "Dos clasificaciones razonables: GEO/DST (distancia punto-recta) o ANA/OPT (minimizar la distancia al cuadrado con derivadas)."
+   "confianza": "media",
+   "notas": "Alternativa razonable: GEO con DST como principal (distancia punto-recta) y EXT/OPT como secundario."
   },
   {
    "id": "2007-ord-S1-P6",
@@ -3095,14 +3098,14 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Puntos alineados no tiene codigo propio; se asimila a RPL."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2007-ord-S1-Q3",
    "bloc": "ANA",
    "tipus": [
-    "REP",
+    "EXT",
     "INT"
    ],
    "subtipus": [
@@ -3114,8 +3117,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "alta",
-   "notas": ""
+   "confianza": "media",
+   "notas": "Alternativa razonable: REP como principal si se cuentan los cortes con los ejes como tercer elemento del estudio."
   },
   {
    "id": "2007-ord-S1-Q4",
@@ -3218,7 +3221,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "PAR (hallar a) vs INF como principal: el calculo pesa en los puntos de inflexion y las pendientes."
+   "notas": "Alternativa razonable: TAN o INF como principal, ya que el cálculo pesa en los puntos de inflexión y las pendientes."
   },
   {
    "id": "2007-ord-S2-Q4",
@@ -3240,7 +3243,9 @@
    "id": "2008-ext-S4-P5",
    "bloc": "ANA",
    "tipus": [
-    "LIM"
+    "LIM",
+    "DER",
+    "ALTRES"
    ],
    "subtipus": [],
    "atributs": {
@@ -3250,7 +3255,7 @@
     "comprobar": true
    },
    "confianza": "baja",
-   "notas": "Casi todo son identidades a comprobar (funciones hiperbolicas, derivadas) y un limite; ningun codigo encaja bien. Tambien podria ser ALTRES."
+   "notas": "Identidades hiperbólicas (a, c) sin tipo que encaje: ALTRES; derivadas (b): DER; límites (d): LIM. Alternativa razonable: ALTRES como principal por peso de las identidades."
   },
   {
    "id": "2008-ext-S4-P6",
@@ -3283,8 +3288,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "PAR vs TAN como principal: la tangencia da las dos condiciones para a y b."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2008-ext-S4-Q2",
@@ -3315,8 +3320,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Discusion teorica de un sistema 2x3 sin parametro."
+   "confianza": "alta",
+   "notas": "teòric: sistema 2x3 sin parámetro; discusión de tipo (SI posible, SCD imposible)."
   },
   {
    "id": "2008-ext-S4-Q4",
@@ -3482,8 +3487,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "PAR vs CONT como principal: continuidad y derivabilidad solo aportan las condiciones para a y b."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2008-ord-S5-Q2",
@@ -3547,8 +3552,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Estudio parcial de funcion sin dibujo; se opta por EXT+ASI en lugar de REP."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2009-ext-S1-P6",
@@ -3636,9 +3641,9 @@
    "id": "2009-ord-S3-P5",
    "bloc": "ANA",
    "tipus": [
-    "PAR",
+    "INT",
     "EXT",
-    "INT"
+    "PAR"
    ],
    "subtipus": [
     "ARE"
@@ -3650,7 +3655,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Cuatro apartados de peso parecido: parámetros por tangente (TAN/PAR), extremos y área. Podría ser TAN o EXT como principal."
+   "notas": "Alternativa razonable: EXT principal (cuatro apartados de peso parecido); PAR no es principal porque solo es el apartado a."
   },
   {
    "id": "2009-ord-S3-P6",
@@ -3667,8 +3672,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Cuatro apartados repartidos: alineación (RPL), recta (EQG) y dos de distancias entre puntos con parámetro; principal DST discutible."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2009-ord-S3-Q1",
@@ -3754,8 +3759,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Tangentes (a) y área del recinto entre curva y tangentes (d); el área pesa algo más pero TAN como principal también es razonable."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2009-ord-S4-P6",
@@ -3827,8 +3832,8 @@
    "id": "2009-ord-S4-Q4",
    "bloc": "ALG",
    "tipus": [
-    "RES",
-    "SIS"
+    "SIS",
+    "RES"
    ],
    "subtipus": [],
    "atributs": {
@@ -3837,8 +3842,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Sistema sin parámetro ya escalonado: se pide su carácter (SIS) y resolverlo (RES); el principal es discutible."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2010-ext-S2-Q1",
@@ -3936,8 +3941,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Puntos de una recta a distancia dada (DST) y área de triángulo con producto vectorial (VOL)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2010-ord-S1-Q1",
@@ -4003,7 +4008,7 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "Apartado a (paralelismo, comprobar) es RPL y b es EQG; principal discutible."
+   "notas": "Alternativa razonable: RPL como principal (apartado a, primero del enunciado, con peso similar al b)."
   },
   {
    "id": "2010-ord-S1-Q5",
@@ -4085,8 +4090,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Relación entre coeficientes de un polinomio y valor de P'(3/2); PAR es lo más cercano."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2010-ord-S4-Q4",
@@ -4125,6 +4130,7 @@
    "id": "2010-ord-S4-Q6",
    "bloc": "ALG",
    "tipus": [
+    "VEC",
     "DET"
    ],
    "subtipus": [],
@@ -4134,8 +4140,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Dependencia lineal de vectores de R3 con parámetro resuelta por determinante; podría verse como GEO."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2010-ord-S5-Q1",
@@ -4150,13 +4156,14 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Cuestión teórica sobre sistemas 2x3 sin parámetro."
+   "confianza": "alta",
+   "notas": "teòric: sistema 2x3 sin parámetro; compatibilidad por rangos."
   },
   {
    "id": "2010-ord-S5-Q2",
    "bloc": "GEO",
    "tipus": [
+    "PRJ",
     "EQG",
     "DST"
    ],
@@ -4168,7 +4175,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Perpendicular por P que corta a r (pie de la perpendicular) y distancia; principal discutible."
+   "notas": "Alternativa razonable: EQG como principal (se pide la ecuación de la recta) con DST secundario."
   },
   {
    "id": "2010-ord-S5-Q3",
@@ -4184,8 +4191,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Determinar parámetros leyendo asíntotas y un punto de la gráfica: PAR o GRAF como principal."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2010-ord-S5-Q4",
@@ -4201,8 +4208,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Cuestión teórica sobre determinantes y matriz invertible."
+   "confianza": "alta",
+   "notas": "teòric: det(AB)=detA·detB y cancelación con A invertible."
   },
   {
    "id": "2010-ord-S5-Q5",
@@ -4287,8 +4294,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Parámetros por condiciones de extremo, inflexión y corte con OX; EXT e INF solo aportan la condición."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2011-ext-S2-Q4",
@@ -4339,8 +4346,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Integral definida con parámetro (comprobar) y mínimo de f(a); EXT principal por el apartado b."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2011-ord-S1-Q1",
@@ -4390,8 +4397,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Área con parámetro (comprobar) y minimización de la área; no es un problema aplicado, por eso EXT y no OPT."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2011-ord-S1-Q4",
@@ -4423,8 +4430,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Perpendicularidad (producto escalar) y punto de corte, ambos con comprobar."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2011-ord-S1-Q6",
@@ -4475,8 +4482,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Dos apartados de peso similar; principal discutible."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2011-ord-S4-Q3",
@@ -4526,7 +4533,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Planos que contienen una recta y forman 45 grados con otro; EQG como principal, ANG como condición."
+   "notas": "Alternativa razonable: ANG principal y EQG secundario, porque lo que pesa es imponer el ángulo de 45º (la v1.2 solo cita distancia y posición relativa para desplazar a EQG)."
   },
   {
    "id": "2011-ord-S4-Q6",
@@ -4574,8 +4581,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Apartado b pide los valores de a y b, pero el trabajo es calcular la asíntota oblicua; PAR principal también sería razonable."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2012-ext-S4-Q3",
@@ -4623,8 +4630,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "a) comprobar secantes (RPL); b) perpendicular común por el punto de corte (EQG), que pesa más."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2012-ext-S4-Q6",
@@ -4641,7 +4648,7 @@
     "comprobar": false
    },
    "confianza": "alta",
-   "notas": "Se pide el valor del parámetro a para que recta y parábola sean tangentes."
+   "notas": ""
   },
   {
    "id": "2012-ord-S1-Q1",
@@ -4755,8 +4762,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Tres planos que se cortan en recta: discusión del sistema 3x3 con parámetro; podría ser SIS principal o secundario."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2012-ord-S3-Q2",
@@ -4773,7 +4780,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "a) abscisa de tangente paralela; b) valor de b para que sea tangente. Reparto parejo; TAN principal."
+   "notas": "Alternativa razonable: PAR principal y TAN secundario (el apartado b, con más pasos, determina b por la condición de tangencia)."
   },
   {
    "id": "2012-ord-S3-Q3",
@@ -4789,8 +4796,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) punto de intersección plano-recta (RPL/resolución de sistema); b) recta en el plano, perpendicular y secante a r (EQG)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2012-ord-S3-Q4",
@@ -4838,8 +4845,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "b) coplanaridad de cuatro puntos: por analogía con la alineación se pone RPL (también se resuelve con el volumen, VOL)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2013-ext-S1-Q1",
@@ -4871,7 +4878,7 @@
     "comprobar": false
    },
    "confianza": "alta",
-   "notas": "Parámetros a partir de extremo y de integral definida de un polinomio; los cálculos de EXT/INT son triviales."
+   "notas": ""
   },
   {
    "id": "2013-ext-S1-Q3",
@@ -4904,7 +4911,7 @@
     "comprobar": false
    },
    "confianza": "alta",
-   "notas": "Tres determinantes nulos y luego sistema lineal 3x3 en los parámetros."
+   "notas": ""
   },
   {
    "id": "2013-ext-S1-Q5",
@@ -4975,7 +4982,8 @@
    "id": "2013-ord-S3-Q3",
    "bloc": "ANA",
    "tipus": [
-    "INT"
+    "INT",
+    "PAR"
    ],
    "subtipus": [
     "ARE"
@@ -4986,8 +4994,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "k aparece como parámetro de la región y se determina a partir del área (PAR secundario sería defendible). Figura: el enunciado pide hacer el esbozo; la figura de 'figures' es de la solución, por eso figura=false según la taxonomía."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2013-ord-S3-Q4",
@@ -5051,8 +5059,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Se imponen los datos del vector solución y se resuelve un sistema lineal con a,b,c como incógnitas; no hay tipo 'sistema como condición', se usa RES."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2013-ord-S4-Q2",
@@ -5135,7 +5143,7 @@
     "comprobar": false
    },
    "confianza": "alta",
-   "notas": "Recta tangente en x=0 y extremos relativos leídos de la gráfica de f'."
+   "notas": ""
   },
   {
    "id": "2013-ord-S5-Q1",
@@ -5192,8 +5200,8 @@
    "id": "2013-ord-S5-Q4",
    "bloc": "ANA",
    "tipus": [
-    "INT",
-    "TAN"
+    "TAN",
+    "INT"
    ],
    "subtipus": [
     "ARE"
@@ -5205,13 +5213,13 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Dos apartados independientes de peso parejo (tangente y área); INT principal por tener más pasos."
+   "notas": "Alternativa razonable: INT principal (subtipo ARE) si se considera que el área pesa igual o más que la tangente."
   },
   {
    "id": "2013-ord-S5-Q5",
    "bloc": "GEO",
    "tipus": [
-    "LLG",
+    "EQG",
     "VEC"
    ],
    "subtipus": [],
@@ -5221,8 +5229,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) plano mediador (lugar geométrico); b) división de un segmento en tres partes (VEC)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2013-ord-S5-Q6",
@@ -5246,7 +5254,8 @@
    "tipus": [
     "DST",
     "EQG",
-    "RPL"
+    "RPL",
+    "ANG"
    ],
    "subtipus": [],
    "atributs": {
@@ -5256,7 +5265,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "a) paralelismo/perpendicularidad (RPL/ANG); b) plano que contiene r y paralelo a s (EQG) y distancia (DST). Pesos parejos."
+   "notas": "Alternativa razonable: EQG principal, ya que el plano que contiene r y es paralelo a s pesa tanto como la distancia."
   },
   {
    "id": "2014-ext-S5-Q2",
@@ -5272,8 +5281,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) dominio y recorrido de una raíz no tiene código en la taxonomía (se omite); b) a,b para que las gráficas sean tangentes en x=0."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2014-ext-S5-Q3",
@@ -5309,8 +5318,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) extremos e inflexión a partir de f' dada por fórmula; b) primitiva con condición inicial."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2014-ext-S5-Q5",
@@ -5427,8 +5436,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Los puntos medios forman un plano (lugar geométrico) y se pide su ecuación."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2014-ord-S3-Q6",
@@ -5494,8 +5503,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "VOL (apartado b, tetraedro independiente de S) pesa más que el plano por tres puntos."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2014-ord-S4-Q4",
@@ -5526,8 +5535,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "teòric: a) es una demostración de identidad matricial sin cálculo; b) comprobación con matrices 2x2. Encaja en MAT."
+   "confianza": "alta",
+   "notas": "teòric: a) demostración de identidad matricial sin cálculo; b) comprobación con matrices 2x2."
   },
   {
    "id": "2014-ord-S4-Q6",
@@ -5545,8 +5554,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Apartados de peso parecido: PAR (a, con gráfica dada) e INT por partes (b); el orden podría invertirse."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2015-ext-S5-Q1",
@@ -5562,8 +5571,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Inversa 3x3 (b) pesa algo más que la condición det≠0 (a)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2015-ext-S5-Q2",
@@ -5599,7 +5608,7 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "Bolzano (a) y monotonía con extremos absolutos en intervalo cerrado (b, trivial por f'>0); b) podría considerarse WEI/EXT."
+   "notas": "Alternativa razonable: EXT principal y TEO secundario, si se considera que el apartado b pesa más que el a."
   },
   {
    "id": "2015-ext-S5-Q4",
@@ -5715,8 +5724,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Pesan parecido la posición relativa de planos (a) y la equidistancia de los puntos de r (b)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2015-ord-S2-Q5",
@@ -5799,8 +5808,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Ambos apartados son de un solo paso; EQG y DST pesan igual."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2015-ord-S4-Q4",
@@ -5833,8 +5842,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "teòric: el apartado a) es una demostración sin cálculo; b) es cálculo de A^3 con parámetro."
+   "confianza": "alta",
+   "notas": "teòric: a) demostración sin cálculo; b) cálculo de A^3 con parámetro."
   },
   {
    "id": "2015-ord-S4-Q6",
@@ -5866,8 +5875,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) construye plano y recta (producto vectorial); b) impone equidistancia. Peso parecido."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2016-ext-S1-Q2",
@@ -5885,7 +5894,7 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "MOD es un paso de una línea (enunciado verbal a sistema homogéneo); sin contexto real."
+   "notas": "Alternativa razonable: omitir MOD por ser el planteo una línea (SIS, RES)."
   },
   {
    "id": "2016-ext-S1-Q3",
@@ -5936,8 +5945,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "teòric: el apartado b) es una justificación sin cálculo; a) halla a y comprueba det=0."
+   "confianza": "alta",
+   "notas": "teòric: el apartado b es una justificación sin cálculo."
   },
   {
    "id": "2016-ext-S1-Q6",
@@ -5953,8 +5962,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "teòric: b) razona sobre la perpendicularidad entre planos (ANG) sin cálculo, con contraejemplo."
+   "confianza": "alta",
+   "notas": "teòric: b) razona sobre la perpendicularidad entre planos con un contraejemplo."
   },
   {
    "id": "2016-ord-S3-Q1",
@@ -5994,8 +6003,8 @@
    "id": "2016-ord-S3-Q3",
    "bloc": "ANA",
    "tipus": [
-    "EXT",
-    "TAN"
+    "TAN",
+    "EXT"
    ],
    "subtipus": [],
    "atributs": {
@@ -6004,8 +6013,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "TAN y EXT de peso parecido, ambos de pocos pasos."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2016-ord-S3-Q4",
@@ -6025,10 +6034,10 @@
   },
   {
    "id": "2016-ord-S3-Q5",
-   "bloc": "ANA",
+   "bloc": "GEO",
    "tipus": [
-    "OPT",
-    "VOL"
+    "VOL",
+    "OPT"
    ],
    "subtipus": [],
    "atributs": {
@@ -6037,8 +6046,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "baja",
-   "notas": "Dos clasificaciones razonables: ANA/OPT (se modeliza V(x) y se maximiza) o GEO/VOL (el peso está en el determinante del apartado a). Elegido OPT por el objetivo final."
+   "confianza": "media",
+   "notas": "Alternativa razonable: ANA con OPT principal y VOL secundario (se modeliza V(x) y se maximiza)."
   },
   {
    "id": "2016-ord-S3-Q6",
@@ -6056,8 +6065,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Se pide k, pero el trabajo es el área entre parábolas en función de k; podría ser PAR principal."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2016-ord-S5-Q1",
@@ -6090,7 +6099,7 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "a) simetría respecto de un plano; b) verificar que puntos medios (VEC) caen en el plano; también podría verse como LLG."
+   "notas": "Alternativa razonable: LLG como secundario en lugar de VEC en el apartado b (puntos medios dentro de un plano)."
   },
   {
    "id": "2016-ord-S5-Q3",
@@ -6143,8 +6152,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) paralelismo/perpendicularidad con vectores directores; b) posición relativa y perpendicular común."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2016-ord-S5-Q6",
@@ -6219,7 +6228,8 @@
    "id": "2017-ext-S2-Q4",
    "bloc": "ANA",
    "tipus": [
-    "INT"
+    "INT",
+    "DER"
    ],
    "subtipus": [
     "PRI"
@@ -6230,8 +6240,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "El apartado b) es regla de la cadena con valores de una tabla; la taxonomía no tiene un tipo para derivadas, no se ha puesto ALTRES como secundario."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2017-ext-S2-Q5",
@@ -6300,8 +6310,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) pesa más (producto vectorial y plano); b) ángulo entre planos de un paso."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2017-ord-S1-Q3",
@@ -6317,8 +6327,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Dominio y asíntotas por casos de k (a) y extremos (b), sin dibujo: no es REP."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2017-ord-S1-Q4",
@@ -6334,8 +6344,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "a) es solo det≠0; b) resuelve por Cramer en función de a."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2017-ord-S1-Q5",
@@ -6352,7 +6362,7 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "a) det>0 siempre; b) inversa 2x2."
+   "notas": "Alternativa razonable: DET principal y MAT secundario (el apartado a, comprobar invertibilidad, pesa lo mismo que la inversa 2x2)."
   },
   {
    "id": "2017-ord-S1-Q6",
@@ -6420,8 +6430,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "El enunciado general viene vacío; el apartado a) es la tangente (dada, comprobar) y el b) el área con dos integrales, que pesa más."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2017-ord-S5-Q4",
@@ -6444,7 +6454,8 @@
    "bloc": "ALG",
    "tipus": [
     "SIS",
-    "RES"
+    "RES",
+    "RPL"
    ],
    "subtipus": [],
    "atributs": {
@@ -6454,7 +6465,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Discusión con interpretación geométrica de planos y paso a forma paramétrica del plano solución; podría añadirse RPL pero no es un paso independiente."
+   "notas": "Alternativa razonable: RPL principal (GEO) por la lectura geométrica pedida de tres planos con parámetro."
   },
   {
    "id": "2017-ord-S5-Q6",
@@ -6521,7 +6532,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Los dos apartados pesan parecido (recta perpendicular y distancia punto-plano)."
+   "notas": "Alternativa razonable: DST principal (b) si se considera que el apartado b tiene más pasos."
   },
   {
    "id": "2018-ext-S3-Q4",
@@ -6537,8 +6548,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) es DET con parámetro (sin valor singular); b) inversa de A^2 pesa algo más."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2018-ext-S3-Q5",
@@ -6554,8 +6565,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) intersección recta-plano (RPL); b) volumen de tetraedro con parámetro de la recta (VOL), más pesado."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2018-ext-S3-Q6",
@@ -6589,8 +6600,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Producto de matrices y determinante en ambos apartados; MAT y DET pesan parecido."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2018-ord-S1-Q2",
@@ -6624,8 +6635,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "b) pide extremos e inflexión (más pasos) y a) tangente paralela a una recta."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2018-ord-S1-Q4",
@@ -6641,8 +6652,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) plano paralelo a recta (EQG); b) m para planos paralelos no coincidentes (RPL con parámetro)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2018-ord-S1-Q5",
@@ -6678,14 +6689,14 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "Hoja de cálculo: escribir el sistema y verificar la solución es trivial; lo sustancial es hallar a33 que hace SI (parámetro). aplicado=false porque la hoja es solo una representación."
+   "notas": "aplicado: la hoja de cálculo es solo una representación (false); alternativa razonable: aplicado=true por el contexto de los estudiantes y el programa."
   },
   {
    "id": "2018-ord-S5-Q1",
    "bloc": "ALG",
    "tipus": [
-    "SIS",
-    "RES"
+    "RES",
+    "SIS"
    ],
    "subtipus": [],
    "atributs": {
@@ -6694,8 +6705,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "a) 'expliqueu que té única solució' (resultado dado) marcado como comprobar; b) Cramer con m."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2018-ord-S5-Q2",
@@ -6711,8 +6722,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) simétrico (PRJ); b) planos paralelos a distancia dada (DST); pesan parecido."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2018-ord-S5-Q3",
@@ -6748,7 +6759,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Ítem de lectura de datos (inflexión => f''=0, tangente => f' y f) y Barrow; sin tipo claro, alternativas TAN o INF como principal."
+   "notas": "Alternativa razonable: INT (DEF) principal o INF como secundario (a pide f''(2)=0 por inflexión)."
   },
   {
    "id": "2018-ord-S5-Q5",
@@ -6764,8 +6775,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) plano que contiene r1 y paralelo a r2 (EQG); b) condición de perpendicularidad por producto escalar (ANG)."
+   "confianza": "alta",
+   "notas": "teòric: b) pide enunciar la condición (v1·v2=0) de existencia del plano antes de comprobarla."
   },
   {
    "id": "2018-ord-S5-Q6",
@@ -6816,8 +6827,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "baja",
-   "notas": "b) pide la posición relativa de tres planos con parámetro, pero la solución es una discusión de rangos (SIS); RPL o SIS como principal."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2019-ext-S5-Q3",
@@ -6833,8 +6844,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "teòric: el apartado b) es una justificación teórica (producto nulo implica det=0); a) es un cálculo directo."
+   "confianza": "alta",
+   "notas": "teòric: b) es una justificación teórica (producto nulo implica det=0 en ambas matrices); a) es cálculo directo."
   },
   {
    "id": "2019-ext-S5-Q4",
@@ -6850,8 +6861,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "b) maximizar la pendiente = extremo de f' (f'' y su signo), más pesado que a)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2019-ext-S5-Q5",
@@ -6886,8 +6897,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) estudio parcial (dominio, cortes, crecimiento) -> EXT; b) área."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2019-ord-S1-Q1",
@@ -6937,7 +6948,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Punto más próximo del plano = proyección ortogonal; recta perpendicular y distancia."
+   "notas": "Alternativa razonable: EQG o DST como principal (el apartado a pide recta y distancia)."
   },
   {
    "id": "2019-ord-S1-Q4",
@@ -6955,8 +6966,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Continuidad de un cociente de polinomios es trivial; no se añade CONT."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2019-ord-S1-Q5",
@@ -7022,8 +7033,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) intersección recta-plano y recta perpendicular (EQG); b) puntos a distancia dada (DST); pesan parecido."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2019-ord-S4-Q3",
@@ -7060,7 +7071,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "a) valores de n y m por continuidad (PAR principal, con CONT como mecanismo); b) área de función a trozos."
+   "notas": "Alternativa razonable: INT principal (b, dos integrales) y PAR secundario."
   },
   {
    "id": "2019-ord-S4-Q5",
@@ -7075,8 +7086,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "baja",
-   "notas": "Posición relativa de tres planos con parámetro resuelta por rangos (SIS); b) pide comprobar una interpretación geométrica dada con figura."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2019-ord-S4-Q6",
@@ -7092,10 +7103,10 @@
     "figura": false,
     "parametro": false,
     "aplicado": false,
-    "comprobar": false
+    "comprobar": true
    },
-   "confianza": "media",
-   "notas": "a) inflexión, concavidad y mínimo por f''; b) reconstruir f integrando dos veces (PRI)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2020-ext-S4-Q1",
@@ -7113,13 +7124,14 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "baja",
-   "notas": "Se pide el valor de a (PAR principal según la regla) pero casi todo el trabajo es el cálculo del área en función de a (INT); dos principales razonables."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2020-ext-S4-Q2",
    "bloc": "GEO",
    "tipus": [
+    "RPL",
     "EQG",
     "DST"
    ],
@@ -7131,7 +7143,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "a) intersección recta-plano y distancia; b) plano perpendicular que contiene una recta (EQG)."
+   "notas": "Alternativa razonable: EQG principal (apartado b, plano que contiene la recta) con RPL y DST secundarios."
   },
   {
    "id": "2020-ext-S4-Q3",
@@ -7148,8 +7160,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Todo se obtiene de la gráfica de f': tangente en x=0 y clasificación de puntos singulares."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2020-ext-S4-Q4",
@@ -7165,8 +7177,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "a) rango con parámetro (DET); b) comprobar A^-1=A^2 (MAT)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2020-ext-S4-Q5",
@@ -7215,8 +7227,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "a) comprobar la función área (tangente y triángulo, modelización); b) minimizar."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2020-ord-S1-Q2",
@@ -7301,8 +7313,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) tangente paralela a recta y dibujo; b) área entre cúbica y recta; pesa más b)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2020-ord-S3-Q1",
@@ -7369,8 +7381,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Apartados de peso similar (extremo/clasificación y área); principal EXT por decisión de desempate."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2020-ord-S3-Q5",
@@ -7407,7 +7419,7 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "El apartado a (f(0)=f(2), f'(0)=f'(2) para empalmar) encaja de forma laxa en CONT; el b es integral definida para comprobar mitades de igual área."
+   "notas": "Alternativa razonable: CONT principal (a, empalme de rajolas) si se considera que a y b pesan igual y manda el primero."
   },
   {
    "id": "2021-ext-S1-Q1",
@@ -7443,15 +7455,15 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Tangente/normal (a) y área con resta de triángulo (b) pesan parecido; principal INT por más pasos."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2021-ext-S1-Q3",
    "bloc": "GEO",
    "tipus": [
-    "VOL",
-    "VEC"
+    "RPL",
+    "VOL"
    ],
    "subtipus": [],
    "atributs": {
@@ -7460,8 +7472,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Coplanaridad de cuatro puntos (det=0, ¿VEC o RPL?) y volumen del tetraedro con parámetro; sin tipo propio para coplanaridad."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2021-ext-S1-Q4",
@@ -7478,7 +7490,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Apartado a es GRAF (esbozar f' a partir de f) y b es PAR (inflexión y derivada); pesos similares."
+   "notas": "Alternativa razonable: GRAF principal (a, esbozo de f' desde la gráfica) si a y b se consideran de igual peso."
   },
   {
    "id": "2021-ext-S1-Q5",
@@ -7494,8 +7506,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Principal MAT (inversa y ecuación matricial); DET (invertible según a) es el primer apartado."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2021-ext-S1-Q6",
@@ -7584,8 +7596,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Tres apartados de peso similar (extremo, asíntota horizontal, área con dibujo); el orden es arbitrario."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2021-ord-S2-Q5",
@@ -7655,15 +7667,15 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Monotonía (a) y área entre curvas (b) pesan parecido; principal INT por más pasos."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2021-ord-S5-Q3",
    "bloc": "GEO",
    "tipus": [
-    "VOL",
-    "VEC"
+    "RPL",
+    "VOL"
    ],
    "subtipus": [],
    "atributs": {
@@ -7672,8 +7684,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Coplanaridad de cuatro puntos con parámetro (VEC) y área de triángulo con producto vectorial (VOL)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2021-ord-S5-Q4",
@@ -7705,8 +7717,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Apartado a: SIS (rangos); b: interpretación geométrica de los tres planos (RPL), con dibujo a realizar."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2021-ord-S5-Q6",
@@ -7729,8 +7741,9 @@
    "id": "2022-ext-S3-Q1",
    "bloc": "GEO",
    "tipus": [
+    "PRJ",
     "EQG",
-    "PRJ"
+    "DST"
    ],
    "subtipus": [],
    "atributs": {
@@ -7740,7 +7753,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Recta perpendicular al plano (EQG) y pie de la perpendicular + longitud (PRJ/DST); pesos parecidos."
+   "notas": "Alternativa razonable: EQG principal (primer apartado, recta del pal) con PRJ|RPL y DST secundarios; el punto de contacto también podría verse como RPL (punto de corte)."
   },
   {
    "id": "2022-ext-S3-Q2",
@@ -7756,8 +7769,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "baja",
-   "notas": "Estudio de dominio, asíntotas, extremos y monotonía más dibujo de f y la tangente: REP (se pide el dibujo) o estudio parcial ASI|EXT|TAN; sin concavidad explícita."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2022-ext-S3-Q3",
@@ -7773,8 +7786,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Rango según a (DET) y sistema homogéneo concreto planteado como ecuación matricial (RES)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2022-ext-S3-Q4",
@@ -7793,8 +7806,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Apartado a: determinar a y b para continuidad y derivabilidad (PAR + CONT); b: primitiva con condición (PRI)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2022-ext-S3-Q5",
@@ -7810,8 +7823,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Principal MAT (inversa/ecuación matricial con a=3); DET es el primer apartado."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2022-ext-S3-Q6",
@@ -7842,12 +7855,12 @@
    ],
    "atributs": {
     "figura": false,
-    "parametro": true,
+    "parametro": false,
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Primitiva con condición (a), inflexión/concavidad (b) y área para hallar el límite a (c); el valor de a es un límite de integración."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2022-ord-S2-Q2",
@@ -7887,12 +7900,12 @@
    "id": "2022-ord-S2-Q4",
    "bloc": "ANA",
    "tipus": [
-    "PAR",
-    "INT"
+    "INT",
+    "PAR"
    ],
    "subtipus": [
-    "ARE",
-    "DEF"
+    "PRI",
+    "ARE"
    ],
    "atributs": {
     "figura": false,
@@ -7901,7 +7914,7 @@
     "comprobar": true
    },
    "confianza": "media",
-   "notas": "a: determinar polinomio a partir de condiciones con g''; b: comprobar raíz/monotonía y calcular el área."
+   "notas": "Alternativa razonable: PAR principal si el apartado a (determinar g por condiciones) pesa igual que el área de b."
   },
   {
    "id": "2022-ord-S2-Q5",
@@ -7964,12 +7977,12 @@
    ],
    "atributs": {
     "figura": false,
-    "parametro": true,
+    "parametro": false,
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Tangente con abscisa variable a (a) y área que fija el valor de a (b); no se añade PAR por ser a la abscisa de tangencia."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2022-ord-S5-Q3",
@@ -7986,8 +7999,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Se pide además la posición relativa de los tres planos (RPL) como interpretación de los casos."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2022-ord-S5-Q4",
@@ -8019,8 +8032,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Alineación de puntos (RPL) más ecuaciones de recta y plano (EQG); principal EQG por más cálculo."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2022-ord-S5-Q6",
@@ -8107,8 +8120,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Bolzano (a) y área entre curvas (b) de peso similar."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2023-ext-S2-Q5",
@@ -8124,8 +8137,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Perpendicular común de dos rectas que se cruzan (EQG) y distancia entre ellas (DST) salen del mismo cálculo; principal EQG."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2023-ext-S2-Q6",
@@ -8294,8 +8307,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "RPL (a) y DST (b) pesan parecido; manda b por más pasos."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2023-ord-S5-Q4",
@@ -8360,10 +8373,10 @@
     "figura": false,
     "parametro": false,
     "aplicado": false,
-    "comprobar": false
+    "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Bolzano (a) y EXT con número de raíces (b) pesan parecido."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2024-ext-S3-Q2",
@@ -8448,14 +8461,15 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) pie de la perpendicular (PRJ); b) y c) distancia punto-plano e imposición de distancia (DST)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2024-ord-S1-Q1",
    "bloc": "ANA",
    "tipus": [
-    "REP",
+    "EXT",
+    "ASI",
     "TAN"
    ],
    "subtipus": [],
@@ -8466,7 +8480,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Piden esbozo con extremos y asíntotas (REP); la tangente en x=1 es apartado aparte. Alternativa: EXT/ASI/TAN por partes."
+   "notas": "Alternativa razonable: REP principal si se cuenta el dominio dado en el enunciado como tercer elemento del estudio."
   },
   {
    "id": "2024-ord-S1-Q2",
@@ -8507,8 +8521,8 @@
    "id": "2024-ord-S1-Q4",
    "bloc": "PRO",
    "tipus": [
-    "DDI",
-    "PRC"
+    "PRC",
+    "DDI"
    ],
    "subtipus": [],
    "atributs": {
@@ -8517,8 +8531,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Urna con letras (sin/con reemplazamiento): a) condicionada sin reemplazo, b) binomial; no se marca aplicado por ser urna abstracta."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2024-ord-S1-Q5",
@@ -8541,6 +8555,7 @@
    "bloc": "GEO",
    "tipus": [
     "DST",
+    "EQG",
     "LLG",
     "VOL"
    ],
@@ -8551,8 +8566,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "baja",
-   "notas": "Reparto parecido entre a) plano mediador y lugar equidistante (EQG/LLG), b) distancias iguales, c) isósceles y área; principal podría ser EQG o LLG."
+   "confianza": "media",
+   "notas": "Alternativa razonable: EQG principal si el apartado a (plano mediador y justificación del lugar) pesa más que las distancias y el área."
   },
   {
    "id": "2024-ord-S5-Q1",
@@ -8571,8 +8586,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "baja",
-   "notas": "Cuatro tareas de peso similar (Bolzano, crecimiento sin derivar, límites, esbozo); el principal podría ser EXT."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2024-ord-S5-Q2",
@@ -8607,8 +8622,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "a) pide el parámetro vía tangente (PAR+TAN); c) área entre parábolas. Principal INT por más cálculo, discutible."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2024-ord-S5-Q4",
@@ -8657,8 +8672,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Recta perpendicular común (EQG) pesa más que la posición relativa y el plano paralelo."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2025-ext-S3-E1",
@@ -8707,8 +8722,8 @@
     "aplicado": true,
     "comprobar": false
    },
-   "confianza": "baja",
-   "notas": "Ítem mixto: 3.1 y 3.2 son PRC; 3.3 es ANA (PAR con máximo e inflexión). Principal PRC por 2 apartados de 3."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2025-ext-S3-E4A",
@@ -8748,8 +8763,8 @@
    "id": "2025-ord-S1-E1",
    "bloc": "ANA",
    "tipus": [
-    "ASI",
-    "TAN"
+    "TAN",
+    "ASI"
    ],
    "subtipus": [],
    "atributs": {
@@ -8759,7 +8774,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "1.1 (cortes y asíntotas) y 1.2-1.3 (tangentes) pesan parecido."
+   "notas": "Alternativa razonable: ASI principal si 1.1 pesa más que 1.2 y 1.3 en el reparto oficial de puntos."
   },
   {
    "id": "2025-ord-S1-E2",
@@ -8793,8 +8808,8 @@
     "aplicado": true,
     "comprobar": true
    },
-   "confianza": "baja",
-   "notas": "Ítem mixto: 3.1 PRC, 3.2 binomial con comprobación, 3.3 máximo de f(p); el principal es discutible."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2025-ord-S1-E4A",
@@ -8818,8 +8833,7 @@
    "id": "2025-ord-S1-E4B",
    "bloc": "GEO",
    "tipus": [
-    "EQG",
-    "LLG"
+    "EQG"
    ],
    "subtipus": [],
    "atributs": {
@@ -8828,8 +8842,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Opción B. 4.2 es lugar equidistante (plano mediador) intersecado con el plano; principal EQG por construir ecuaciones."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2025-ord-S4-E1",
@@ -8862,8 +8876,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Discusión de sistema e interpretación como posición relativa de tres planos."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2025-ord-S4-E3",
@@ -8882,8 +8896,8 @@
     "aplicado": true,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "3.3 es ANA: constante A de una integral definida; principal PRC por 2 apartados de 3."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2025-ord-S4-E4A",
@@ -8932,8 +8946,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Piden dominio, crecimiento, asíntotas y esbozo (REP); la normal se trata como TAN."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ext-S2-E2",
@@ -8950,8 +8964,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "2.3 es interpretación geométrica de tres planos (RPL); en 2.2 se pide comprobar que la solución no depende de k."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ext-S2-E3",
@@ -8970,7 +8984,7 @@
     "comprobar": false
    },
    "confianza": "alta",
-   "notas": "Binomial (3.1, 3.2) y área entre recta y cúbica (3.3)."
+   "notas": ""
   },
   {
    "id": "2026-ext-S2-E4A",
@@ -8993,7 +9007,8 @@
    "bloc": "GEO",
    "tipus": [
     "DST",
-    "PRJ"
+    "PRJ",
+    "VEC"
    ],
    "subtipus": [],
    "atributs": {
@@ -9002,15 +9017,16 @@
     "aplicado": true,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Opción B. Cuarto vértice y longitudes (DST); vértice del plano paralelo por la perpendicular desde A (PRJ) y altura como distancia entre planos."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ord-S1-E1",
    "bloc": "ANA",
    "tipus": [
-    "CONT",
     "INT",
+    "CONT",
+    "PAR",
     "TAN"
    ],
    "subtipus": [
@@ -9022,8 +9038,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Continuidad con parámetro, área de función a trozos y tangente paralela a una recta; tres apartados de peso similar."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ord-S1-E2",
@@ -9040,8 +9056,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Discusión (2.1), interpretación geométrica de los tres planos (2.2) y resolución."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ord-S1-E3",
@@ -9059,8 +9075,8 @@
     "aplicado": true,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Ítem mixto: 3.1 y 3.2 PRC; 3.3 Bolzano con tanteo en un polinomio."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ord-S1-E4A",
@@ -9093,8 +9109,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "Opción B. 4.2 y 4.3 son área y volumen (VOL); 4.1 es EQG; 4.3 da la condición sobre S como lugar (LLG)."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ord-S5-E1",
@@ -9112,8 +9128,8 @@
     "aplicado": false,
     "comprobar": true
    },
-   "confianza": "media",
-   "notas": "1.3 determina y justifica la unicidad de la parábola a partir de condiciones (PAR); principal INT por 1.2."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ord-S5-E2",
@@ -9131,7 +9147,7 @@
     "comprobar": false
    },
    "confianza": "media",
-   "notas": "Invertibilidad de productos de matrices rectangulares (DET/rango) y SCI de un sistema con parámetros; principal discutible entre DET y MAT."
+   "notas": "Alternativa razonable: MAT principal si se prima el cálculo de los productos MN y NM sobre el estudio del determinante."
   },
   {
    "id": "2026-ord-S5-E3",
@@ -9147,8 +9163,8 @@
     "aplicado": true,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Ítem mixto: 3.1 y 3.2 PRC; 3.3 extremos absolutos de una función dada en un intervalo."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ord-S5-E4A",
@@ -9167,8 +9183,8 @@
     "aplicado": false,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Opción A. Se lee f' de la gráfica (GRAF); 4.3 es integral definida de f' (área = f(0)-f(-1))."
+   "confianza": "alta",
+   "notas": ""
   },
   {
    "id": "2026-ord-S5-E4B",
@@ -9184,8 +9200,8 @@
     "aplicado": true,
     "comprobar": false
    },
-   "confianza": "media",
-   "notas": "Opción B. 4.3 es corte recta-plano (se clasifica RPL)."
+   "confianza": "alta",
+   "notas": ""
   }
  ]
 }
