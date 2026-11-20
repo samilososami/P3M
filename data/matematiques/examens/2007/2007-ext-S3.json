@@ -1,0 +1,172 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2007-ext-S3",
+  "assignatura": "matematiques",
+  "any": 2007,
+  "convocatoria": "extraordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "Responeu a TRES de les quatre qüestions i resoleu UN dels dos problemes següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts i el problema 4 punts.\n\nPodeu utilitzar la calculadora científica per al càlcul de funcions exponencials, logarítmiques, trigonomètriques i especials, així com per a realitzar càlculs estadístics. No es poden fer servir, però, calculadores o altres aparells que permetin fer més operacions que les esmentades.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2007/pau_mate07sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2007/pau_mate07sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2007-ext-S3-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu les equacions dels plans paral·lels a $\\pi:\\ 2x-y+2z=3$ situats a 6 unitats de distància d'aquest.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Els plans demanats tenen equacions de la forma $2x-y+2z+D=0$. Un punt del pla $\\pi$ és $(0,-3,0)$. La distància d'aquest punt al pla ha de ser 6:\n\n$$6=\\dfrac{|3+D|}{\\sqrt{4+1+4}}=\\dfrac{|3+D|}{3}\\iff 3+D=\\pm18\\iff D=15\\ \\text{o}\\ D=-21$$",
+        "resultat": "$2x-y+2z+15=0$ i $2x-y+2z-21=0$."
+      }
+    },
+    {
+      "id": "2007-ext-S3-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donada la matriu següent, que depèn d'un paràmetre $m$:\n\n$$A=\\begin{pmatrix} 1 & 1 & 2 \\\\ 2 & m & 2m \\\\ m & 2 & 2+m \\end{pmatrix}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Estudieu-ne el rang segons els valors de $m$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Digueu quina és la posició relativa dels plans $\\pi_1:\\ x+y+2z=2$, $\\pi_2:\\ 2x+my+2mz=2+m$ i $\\pi_3:\\ mx+2y+(2+m)z=0$, segons els valors de $m$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Per Gauss:\n\n$$A\\sim\\begin{pmatrix} 1 & 1 & 2 \\\\ 0 & m-2 & 2m-4 \\\\ 0 & 2-m & 2-m \\end{pmatrix}\\sim\\begin{pmatrix} 1 & 1 & 2 \\\\ 0 & m-2 & 2m-4 \\\\ 0 & 0 & m-2 \\end{pmatrix}$$\n\nEl determinant és $m^2-4m+4=(m-2)^2$, que s'anul·la només per a $m=2$. Per tant, el rang és 3 si $m\\neq2$. Si $m=2$, totes les files són proporcionals a $(1,1,2)$ i el rang és 1.\n\nb) Les matrius de coeficients i de l'ampliada tenen el rang de l'apartat anterior, i per a $m\\neq2$ el sistema és compatible determinat: els tres plans es tallen en un punt.\n\nPer a $m=2$, els plans són $\\pi_1:\\ x+y+2z=2$, $\\pi_2:\\ 2x+2y+4z=4$ (és a dir, $\\pi_2\\equiv\\pi_1$) i $\\pi_3:\\ 2x+2y+4z=0$. Els dos primers coincideixen, i el tercer és paral·lel a ells i distint.",
+        "resultat": "a) rang 3 si $m\\neq2$ i rang 1 si $m=2$; b) per a $m\\neq2$, els tres plans es tallen en un punt; per a $m=2$, $\\pi_1\\equiv\\pi_2$ i $\\pi_3$ és paral·lel i distint."
+      }
+    },
+    {
+      "id": "2007-ext-S3-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la matriu $A=\\begin{pmatrix} 0 & 1 \\\\ p & q \\end{pmatrix}$. Trobeu els valors de $p$ i $q$ que fan que es verifiqui $A^2=A$. En aquest cas, raoneu sense calcular què val $A^{10}$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$$A^2=A\\cdot A=\\begin{pmatrix} 0 & 1 \\\\ p & q \\end{pmatrix}\\begin{pmatrix} 0 & 1 \\\\ p & q \\end{pmatrix}=\\begin{pmatrix} p & q \\\\ pq & p+q^2 \\end{pmatrix}$$\n\nLa igualtat $A^2=A$ dona $p=0$ (primer element), $q=1$ (segon element), i les altres dues components es compleixen: $pq=p$ i $p+q^2=q$ amb $p=0$, $q=1$.\n\nPer tant, $p=0$ i $q=1$. Si $A^2=A$, aleshores $A^3=A\\cdot A^2=A\\cdot A=A$, i així successivament: qualsevol potència de $A$ és igual a $A$. En particular, $A^{10}=A=\\begin{pmatrix} 0 & 1 \\\\ 0 & 1 \\end{pmatrix}$.",
+        "resultat": "$p=0$, $q=1$; $A^{10}=A=\\begin{pmatrix} 0 & 1 \\\\ 0 & 1 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2007-ext-S3-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La funció derivada $F'(x)$ d'una funció contínua $F:\\mathbb{R}\\to\\mathbb{R}$ que passa per l'origen és una funció a trossos formada per les semirectes del dibuix. Escriviu l'expressió de la funció $F(x)$ com una funció a trossos.",
+      "apartats": [],
+      "figures": [
+        "gràfica de $F'(x)$. Per a $x<2$ és una semirecta de pendent 1 que passa pels punts $(1,0)$ i $(2,1)$ (amb $F'(0)=-1$). A partir de $x=2$ és la constant $F'(x)=1$."
+      ],
+      "solucio": {
+        "desenvolupament": "La primera branca és una recta de pendent 1 que passa per $(1,0)$, és a dir, $F'(x)=x-1$ per a $x<2$. La segona és constant, $F'(x)=1$ per a $x\\geq2$. Ambdues branques coincideixen en $x=2$, de manera que $F'$ és contínua i el punt $x=2$ pot assignar-se a qualsevol de les dues.\n\nIntegrant:\n\n$$F(x)=\\begin{cases} \\dfrac{x^2}{2}-x+C & \\text{si } x<2 \\\\ x+K & \\text{si } x\\geq2 \\end{cases}$$\n\nCom que $F(0)=0$, $C=0$. Per continuïtat a $x=2$: $\\dfrac{4}{2}-2=0=2+K$, és a dir, $K=-2$.",
+        "resultat": "$F(x)=\\begin{cases} \\dfrac{x^2}{2}-x & \\text{si } x<2 \\\\ x-2 & \\text{si } x\\geq2 \\end{cases}$"
+      }
+    },
+    {
+      "id": "2007-ext-S3-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Una recta $r$ és paral·lela a la recta $s:\\ x-1=y-1=z-1$, talla en un punt $A$ la recta $t:\\ \\dfrac{x-1}{3}=\\dfrac{y}{2}=z+1$, i en un punt $B$ la recta $l:\\ \\dfrac{x-2}{2}=\\dfrac{y-1}{2}=\\dfrac{z}{3}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació del pla determinat per les rectes $r$ i $t$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculant el punt d'intersecció del pla anterior amb la recta $l$, trobeu el punt $B$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació de la recta $r$."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Trobeu el punt $A$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El pla és paral·lel als vectors directors de $s$, $(1,1,1)$, i de $t$, $(3,2,1)$. El seu vector normal és:\n\n$$(1,1,1)\\wedge(3,2,1)=(-1,2,-1)$$\n\nUn punt del pla és $(1,0,-1)$, que pertany a $t$. Per tant, el pla és $(x-1)-2y+(z+1)=0$, és a dir, $x-2y+z=0$.\n\nb) Les equacions paramètriques de $l$ són $x=2+2\\mu$, $y=1+2\\mu$, $z=3\\mu$. Substituint al pla: $(2+2\\mu)-2(1+2\\mu)+3\\mu=0$, d'on $\\mu=0$. Per tant, $B=(2,1,0)$.\n\nc) La recta $r$ és la paral·lela a $s$ que passa per $B$: $x-2=y-1=z$.\n\nd) Les equacions paramètriques de $r$ són $x=2+\\lambda$, $y=1+\\lambda$, $z=\\lambda$. Substituint a les equacions de $t$: $\\dfrac{1+\\lambda}{2}=\\lambda+1$, que es compleix només per a $\\lambda=-1$. Per tant, $A=(1,0,-1)$.",
+        "resultat": "a) $x-2y+z=0$; b) $B=(2,1,0)$; c) $r:\\ x-2=y-1=z$; d) $A=(1,0,-1)$."
+      }
+    },
+    {
+      "id": "2007-ext-S3-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donades les funcions $f(x)=x^2-ax-4$ i $g(x)=\\dfrac{x^2}{2}+b$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Calculeu $a$ i $b$ de manera que les gràfiques de $f(x)$ i de $g(x)$ siguin tangents en el punt d'abscissa $x=3$, és a dir, que tinguin la mateixa recta tangent en aquest punt."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació de la recta tangent esmentada a l'apartat anterior."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.5,
+          "enunciat": "Pel valor de $a$ obtingut en el primer apartat, calculeu el valor de l'àrea de la regió limitada per l'eix d'abscisses $OX$ i la funció $f(x)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Les gràfiques són tangents en $x=3$ quan $f(3)=g(3)$ i $f'(3)=g'(3)$. Com que $f'(x)=2x-a$ i $g'(x)=x$:\n\n$$\\begin{cases} 9-3a-4=\\dfrac92+b \\\\ 6-a=3 \\end{cases}\\quad\\Rightarrow\\quad a=3,\\quad b=-\\dfrac{17}{2}$$\n\nb) Amb $f(3)=-4$ i $f'(3)=3$, la recta tangent és $y+4=3(x-3)$, és a dir, $y=3x-13$.\n\nc) Amb $a=3$, $f(x)=x^2-3x-4=(x-4)(x+1)$, que talla l'eix $OX$ en $x=-1$ i $x=4$. Entre aquests punts la funció és negativa (és una paràbola amb les branques cap amunt), per tant la regió queda per sota de l'eix:\n\n$$\\text{Àrea}=-\\int_{-1}^{4}\\left(x^2-3x-4\\right)dx=-\\left[\\dfrac{x^3}{3}-\\dfrac{3x^2}{2}-4x\\right]_{-1}^{4}=\\dfrac{125}{6}$$",
+        "resultat": "a) $a=3$, $b=-\\dfrac{17}{2}$; b) $y=3x-13$; c) àrea $=\\dfrac{125}{6}$ unitats d'àrea."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

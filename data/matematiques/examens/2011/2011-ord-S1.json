@@ -1,0 +1,186 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2011-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2011,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts. Podeu utilitzar calculadora, però no es poden fer servir calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2011/pau_mate11jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2011/pau_mate11jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2011-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donada la recta $r:\\ \\begin{cases} 2x-y+3z=2 \\\\ x+z+1=0 \\end{cases}$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu-ne un vector director."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació contínua de la recta paral·lela a $r$ que passa pel punt $P=(1,0,-1)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El producte vectorial dels vectors normals dels dos plans és $\\vec v_r=(2,-1,3)\\times(1,0,1)=(-1,1,1)$, que és un vector director de $r$.\n\nb) La recta paral·lela a $r$ que passa per $P$ és\n$$\\dfrac{x-1}{-1}=\\dfrac{y}{1}=\\dfrac{z+1}{1}.$$",
+        "resultat": "a) $\\vec v_r=(-1,1,1)$ (qualsevol múltiple no nul); b) $\\dfrac{x-1}{-1}=\\dfrac{y}{1}=\\dfrac{z+1}{1}$"
+      }
+    },
+    {
+      "id": "2011-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Si tenim la matriu invertible $A$ i l'equació matricial $X\\cdot A+B=C$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Aïlleu la matriu $X$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu la matriu $X$ quan $A=\\begin{pmatrix} 1 & -2 \\\\ -1 & 1 \\end{pmatrix}$, $B=\\begin{pmatrix} 1 & 1 \\\\ -2 & 1 \\end{pmatrix}$ i $C=\\begin{pmatrix} 3 & 1 \\\\ 1 & -1 \\end{pmatrix}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $X\\cdot A+B=C \\iff X\\cdot A=C-B \\iff X=(C-B)\\cdot A^{-1}$.\n\nb) $C-B=\\begin{pmatrix} 2 & 0 \\\\ 3 & -2 \\end{pmatrix}$ i $A^{-1}=\\begin{pmatrix} -1 & -2 \\\\ -1 & -1 \\end{pmatrix}$ (perquè $\\det A=-1$). Per tant\n$$X=\\begin{pmatrix} 2 & 0 \\\\ 3 & -2 \\end{pmatrix}\\begin{pmatrix} -1 & -2 \\\\ -1 & -1 \\end{pmatrix}=\\begin{pmatrix} -2 & -4 \\\\ -1 & -4 \\end{pmatrix}.$$",
+        "resultat": "a) $X=(C-B)\\cdot A^{-1}$; b) $X=\\begin{pmatrix} -2 & -4 \\\\ -1 & -4 \\end{pmatrix}$"
+      }
+    },
+    {
+      "id": "2011-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Definim les funcions $f(x)=a(1-x^2)$ i $g(x)=\\dfrac{x^2-1}{a}$, en què $a>0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que l'àrea del recinte limitat per les gràfiques de les funcions és $\\dfrac{4(1+a^2)}{3a}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Busqueu el valor del paràmetre $a$ perquè aquesta àrea sigui mínima."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els punts de tall compleixen $a(1-x^2)=\\dfrac{x^2-1}{a}$, és a dir $(a^2+1)(1-x^2)=0$, i per tant $x=\\pm1$. En $[-1,1]$ es té $f(x)>g(x)$ (per exemple $f(0)=a>g(0)=-\\frac{1}{a}$). Així\n$$A=\\int_{-1}^{1}\\big(f(x)-g(x)\\big)\\,dx=\\frac{a^2+1}{a}\\int_{-1}^{1}(1-x^2)\\,dx=\\frac{a^2+1}{a}\\cdot\\frac{4}{3}=\\frac{4(1+a^2)}{3a}.$$\n\nb) Sigui $h(a)=\\dfrac{4(1+a^2)}{3a}$. Aleshores $h'(a)=\\dfrac{4(a^2-1)}{3a^2}$, que s'anul·la per a $a=\\pm1$. Com que $a>0$, només $a=1$. Com que $h''(a)=\\dfrac{8}{3a^3}$, és $h''(1)=\\dfrac{8}{3}>0$, i per tant és un mínim. (També es comprova pel signe de $h'$: negativa per a $a<1$ i positiva per a $a>1$.)",
+        "resultat": "a) $A=\\dfrac{4(1+a^2)}{3a}$; b) $a=1$ (mínim, amb àrea $\\dfrac{8}{3}$)."
+      }
+    },
+    {
+      "id": "2011-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions següent:\n$$\\begin{cases} x+2y-az=-3 \\\\ 2x+(a-5)y+z=4a+2 \\\\ 4x+(a-1)y-3z=4 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu els valors del paràmetre $a$ perquè el sistema no sigui compatible determinat."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Hi ha algun valor de $a$ per al qual $x=1$, $y=-3$, $z=-1$ sigui l'única solució del sistema?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El sistema és compatible determinat si i només si el determinant de la matriu del sistema és no nul. Es té\n$$\\det\\begin{pmatrix} 1 & 2 & -a \\\\ 2 & a-5 & 1 \\\\ 4 & a-1 & -3 \\end{pmatrix}=2(a-2)(a-9).$$\nPer tant el sistema no és compatible determinat per a $a=2$ i per a $a=9$.\n\nb) Substituint $x=1$, $y=-3$, $z=-1$ a les tres equacions s'obté $a=2$ en totes tres, de manera que el punt és solució només si $a=2$. Però per a $a=2$ el sistema és compatible indeterminat (ja s'ha vist a l'apartat anterior), i per tant la solució no és única. Així, no hi ha cap valor de $a$ per al qual el punt donat sigui l'única solució.",
+        "resultat": "a) $a=2$ i $a=9$; b) no existeix cap $a$ que ho compleixi."
+      }
+    },
+    {
+      "id": "2011-ord-S1-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin $r_1:\\ x-2=\\dfrac{y-3}{2}=\\dfrac{1-z}{2}$ i $r_2:\\ \\dfrac{x+3}{2}=y+1=\\dfrac{z+1}{2}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que $r_1$ i $r_2$ són perpendiculars."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu que es tallen mitjançant la determinació del punt de tall."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La forma contínua de $r_1$ és $\\dfrac{x-2}{1}=\\dfrac{y-3}{2}=\\dfrac{z-1}{-2}$, amb vector director $\\vec v_1=(1,2,-2)$. La recta $r_2$ té vector director $\\vec v_2=(2,1,2)$. Com que $\\vec v_1\\cdot\\vec v_2=2+2-4=0$, les rectes són perpendiculars.\n\nb) Les equacions de les dues rectes formen el sistema $2x-y=1$, $y+z=4$, $x-2y=-1$, $x-z=-2$. De la primera, $y=2x-1$; substituint a les altres tres s'obté $2x+z=5$, $-3x=-3$ i $x-z=-2$. Així $x=1$, i aleshores $y=1$ i $z=3$. El punt de tall és $(1,1,3)$.",
+        "resultat": "a) $\\vec v_1\\cdot\\vec v_2=0$, per tant perpendiculars; b) es tallen en el punt $(1,1,3)$."
+      }
+    },
+    {
+      "id": "2011-ord-S1-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $f(x)=x^2e^{-ax}$, quan $a\\neq0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu el valor de $a$ perquè aquesta funció tingui un extrem relatiu en el punt d'abscissa $x=2$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Quan $a=2$, classifiqueu-ne els extrems relatius."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=2xe^{-ax}-ax^2e^{-ax}=e^{-ax}(2x-ax^2)$. Com que l'exponencial no s'anul·la mai, $f'(x)=0$ si i només si $x=0$ o $x=\\dfrac{2}{a}$. Perquè $x=2$ sigui un extrem cal $\\dfrac{2}{a}=2$, és a dir $a=1$. Comprovació: $f''(x)=e^{-ax}(2-4ax+a^2x^2)$ i $f''(2)=-2e^{-2}\\neq0$ per a $a=1$.\n\nb) Quan $a=2$, $f'(x)=0$ en $x=0$ i $x=1$. Com que $f''(x)=e^{-2x}(2-8x+4x^2)$:\n- $f''(0)=2>0$: en $x=0$ hi ha un mínim relatiu, amb $f(0)=0$.\n- $f''(1)=-2e^{-2}<0$: en $x=1$ hi ha un màxim relatiu, amb $f(1)=e^{-2}$.",
+        "resultat": "a) $a=1$; b) mínim relatiu en $(0,0)$ i màxim relatiu en $\\left(1,e^{-2}\\right)$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

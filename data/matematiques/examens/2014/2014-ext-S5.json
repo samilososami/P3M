@@ -1,0 +1,192 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2014-ext-S5",
+  "assignatura": "matematiques",
+  "any": 2014,
+  "convocatoria": "extraordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2014/pau_mate14sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2014/pau_mate14sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2014-ext-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin $r$ i $s$ les rectes de $\\mathbb{R}^3$ que tenen les equacions següents:\n$$r:\\ x+5=y-5=\\dfrac{z-3}{2}\\qquad\\qquad s:\\ \\dfrac{x-3}{2}=\\dfrac{y-2}{3}=\\dfrac{z+1}{-1}.$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Estudieu el paral·lelisme i la perpendicularitat entre les rectes $r$ i $s$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació general (és a dir, que té la forma $Ax+By+Cz=D$) del pla $\\pi$ que conté la recta $r$ i és paral·lel a la recta $s$. Calculeu la distància entre la recta $s$ i el pla $\\pi$ obtingut."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els vectors directors són $\\vec v_r=(1,1,2)$ i $\\vec v_s=(2,3,-1)$. No són proporcionals, per tant les rectes no són paral·leles. Com que $\\vec v_r\\cdot\\vec v_s=2+3-2=3\\neq0$, tampoc són perpendiculars. (A més, el determinant $\\det\\left(\\vec v_r,\\vec v_s,\\overrightarrow{PQ}\\right)=-75\\neq0$, amb $P=(-5,5,3)\\in r$ i $Q=(3,2,-1)\\in s$, per tant les rectes es creuen.)\n\nb) El vector normal de $\\pi$ és $\\vec v_r\\times\\vec v_s=(1,1,2)\\times(2,3,-1)=(-7,5,1)$. Amb $P=(-5,5,3)\\in\\pi$:\n$$7x-5y-z=-63.$$\nCom que $\\pi$ és paral·lel a $s$, la distància de $s$ a $\\pi$ és la distància d'un punt de $s$ a $\\pi$, per exemple $Q=(3,2,-1)$:\n$$d=\\dfrac{|7\\cdot3-5\\cdot2-(-1)+63|}{\\sqrt{49+25+1}}=\\dfrac{75}{\\sqrt{75}}=\\sqrt{75}=5\\sqrt3.$$",
+        "resultat": "a) $r$ i $s$ no són paral·leles ni perpendiculars (es creuen); b) $\\pi:\\ 7x-5y-z=-63$, i la distància és $5\\sqrt3$ u."
+      }
+    },
+    {
+      "id": "2014-ext-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin les funcions $f(x)=\\dfrac{e^{ax}+b}{4}$ i $g(x)=+\\sqrt{3x+4}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Determineu el domini i el recorregut de la funció $g$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu per a quins valors de $a$ i de $b$ les gràfiques de les dues funcions són tangents (és a dir, tenen la mateixa recta tangent) en el punt d'abscissa $x=0$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El radicand ha de ser no negatiu: $3x+4\\geq0$, és a dir, $\\text{Dom}(g)=\\left[-\\tfrac43,+\\infty\\right)$. Per a $y\\geq0$, la igualtat $y=\\sqrt{3x+4}$ té solució $x=\\dfrac{y^2-4}{3}$ per a qualsevol $y\\geq0$, per tant $\\text{Rec}(g)=[0,+\\infty)$.\n\nb) Cal que $f(0)=g(0)$ i $f'(0)=g'(0)$. Com que $f'(x)=\\dfrac{a}{4}e^{ax}$ i $g'(x)=\\dfrac{3}{2\\sqrt{3x+4}}$:\n- $f(0)=\\dfrac{1+b}{4}=g(0)=2$, d'on $b=7$.\n- $f'(0)=\\dfrac a4=g'(0)=\\dfrac34$, d'on $a=3$.",
+        "resultat": "a) $\\text{Dom}(g)=\\left[-\\tfrac43,+\\infty\\right)$, $\\text{Rec}(g)=[0,+\\infty)$; b) $a=3$ i $b=7$."
+      }
+    },
+    {
+      "id": "2014-ext-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals\n$$\\begin{cases} mx-y=m \\\\ 3x+(m-4)y=m+2 \\end{cases}\\qquad\\text{per a } m\\in\\mathbb{R}.$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema d'equacions per als diferents valors del paràmetre $m$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema en aquells casos en què el sistema sigui compatible."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El determinant de la matriu de coeficients és $\\begin{vmatrix} m & -1 \\\\ 3 & m-4 \\end{vmatrix}=m^2-4m+3=(m-1)(m-3)$.\n\n- Si $m\\neq1$ i $m\\neq3$: $\\operatorname{rang}A=2=\\operatorname{rang}A'$, i el sistema és compatible determinat.\n- Si $m=1$: les dues equacions són $x-y=1$ i $3x-3y=3$, que coincideixen. El rang és 1 i el sistema és compatible indeterminat amb un grau de llibertat.\n- Si $m=3$: les equacions són $3x-y=3$ i $3x-y=5$, que són incompatibles. El sistema és incompatible.\n\nb) Per a $m\\neq1$ i $m\\neq3$, la regla de Cramer dona\n$$x=\\dfrac{\\begin{vmatrix} m & -1 \\\\ m+2 & m-4 \\end{vmatrix}}{(m-1)(m-3)}=\\dfrac{(m-1)(m-2)}{(m-1)(m-3)}=\\dfrac{m-2}{m-3},\\qquad y=\\dfrac{\\begin{vmatrix} m & m \\\\ 3 & m+2 \\end{vmatrix}}{(m-1)(m-3)}=\\dfrac{m(m-1)}{(m-1)(m-3)}=\\dfrac{m}{m-3}.$$\nPer a $m=1$, el sistema es redueix a $x-y=1$, i les solucions són de la forma $(x,\\,x-1)$, amb $x\\in\\mathbb{R}$.",
+        "resultat": "a) SCD si $m\\neq1$ i $m\\neq3$; SCI si $m=1$; SI si $m=3$. b) Per a $m\\neq1,3$: $\\left(\\dfrac{m-2}{m-3},\\dfrac{m}{m-3}\\right)$; per a $m=1$: $(x,x-1)$, $x\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2014-ext-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sabem que una funció $f$ té per derivada la funció $f'(x)=(3x-2)^2(x-2)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu els valors de $x$ en què la funció $f$ té un màxim relatiu, un mínim relatiu o un punt d'inflexió, i indiqueu en cada cas de què es tracta."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu la funció $f$ sabent que s'anul·la en el punt d'abscissa $x=2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els candidats a extrem són els zeros de $f'$: $x=\\dfrac23$ (arrel doble) i $x=2$ (arrel simple). Amb $f''(x)=(3x-2)(9x-14)$, els candidats a inflexió són els zeros de $f''$: $x=\\dfrac23$ i $x=\\dfrac{14}{9}$.\n- En $x=2$, $f''(2)=16>0$ i $f'$ passa de negativa a positiva: és un mínim relatiu.\n- En $x=\\dfrac23$, $f'$ no canvia de signe (és $\\le0$ a banda i banda) i $f''$ canvia de signe: és un punt d'inflexió amb tangent horitzontal.\n- En $x=\\dfrac{14}{9}$, $f''$ canvia de signe (és positiva abans i negativa després): és un punt d'inflexió.\n\nb) $f'(x)=9x^3-30x^2+28x-8$, i una primitiva és $\\dfrac94x^4-10x^3+14x^2-8x+C$. Com que $f(2)=0$: $\\dfrac94\\cdot16-10\\cdot8+14\\cdot4-8\\cdot2+C=0$, d'on $C=4$.",
+        "resultat": "a) $x=2$ és un mínim relatiu; $x=\\tfrac23$ i $x=\\tfrac{14}{9}$ són punts d'inflexió; b) $f(x)=\\dfrac94x^4-10x^3+14x^2-8x+4$."
+      }
+    },
+    {
+      "id": "2014-ext-S5-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats els vectors $\\vec u=(2,-1,0)$, $\\vec v=(-1,3,4)$ i $\\vec w=(0,3a-1,4a)$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu els valors del paràmetre $a$ perquè els vectors $\\vec u$, $\\vec v$ i $\\vec w$ siguin linealment dependents."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu els valors del paràmetre $a$ perquè un tetraedre d'arestes $\\vec u$, $\\vec v$ i $\\vec w$ tingui un volum de $\\dfrac23$ unitats cúbiques."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Són linealment dependents si i només si el determinant de la matriu formada pels tres vectors és zero:\n$$\\begin{vmatrix} 2 & -1 & 0 \\\\ -1 & 3 & 4 \\\\ 0 & 3a-1 & 4a \\end{vmatrix}=2(12a-4(3a-1))-(-1)(-4a)=8-4a.$$\nPer tant $8-4a=0$, és a dir, $a=2$.\n\nb) El volum és $V=\\dfrac16\\left|\\det(\\vec u,\\vec v,\\vec w)\\right|=\\dfrac16|8-4a|$. Cal que $\\dfrac16|8-4a|=\\dfrac23$, és a dir, $|8-4a|=4$:\n- Si $8-4a\\geq0$: $8-4a=4$, d'on $a=1$.\n- Si $8-4a<0$: $8-4a=-4$, d'on $a=3$.",
+        "resultat": "a) $a=2$; b) $a=1$ o $a=3$."
+      }
+    },
+    {
+      "id": "2014-ext-S5-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu l'equació matricial $X\\cdot A=B$, en què\n$$A=\\begin{pmatrix} 1 & -1 & 1 \\\\ a & -3 & a-1 \\\\ -1 & 0 & 1 \\end{pmatrix}\\qquad\\text{i}\\qquad B=\\begin{pmatrix} -3 & -2 & -4 \\\\ 5 & -2 & 5 \\end{pmatrix}.$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Per a quins valors del paràmetre $a$ l'equació matricial té una solució única?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu la matriu $X$ que satisfà l'equació matricial quan $a=3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $X$ és una matriu $2\\times3$ i $A$ és $3\\times3$. Cada fila de $X$ és la solució única d'un sistema $3\\times3$ amb matriu $A^T$, de manera que la solució és única si i només si $A$ és invertible. Com que\n$$\\det A=\\begin{vmatrix} 1 & -1 & 1 \\\\ a & -3 & a-1 \\\\ -1 & 0 & 1 \\end{vmatrix}=2a-7,$$\nla solució és única si $a\\neq\\dfrac72$. En aquest cas $X=B\\cdot A^{-1}$.\n\nb) Per a $a=3$, $A=\\begin{pmatrix} 1 & -1 & 1 \\\\ 3 & -3 & 2 \\\\ -1 & 0 & 1 \\end{pmatrix}$ i $\\det A=-1$. La seva inversa és\n$$A^{-1}=\\begin{pmatrix} 3 & -1 & -1 \\\\ 5 & -2 & -1 \\\\ 3 & -1 & 0 \\end{pmatrix}.$$\nPer tant\n$$X=B\\cdot A^{-1}=\\begin{pmatrix} -3 & -2 & -4 \\\\ 5 & -2 & 5 \\end{pmatrix}\\begin{pmatrix} 3 & -1 & -1 \\\\ 5 & -2 & -1 \\\\ 3 & -1 & 0 \\end{pmatrix}=\\begin{pmatrix} -31 & 11 & 5 \\\\ 20 & -6 & -3 \\end{pmatrix}.$$\nComprovació: $X\\cdot A=B$.",
+        "resultat": "a) $a\\neq\\dfrac72$; b) $X=\\begin{pmatrix} -31 & 11 & 5 \\\\ 20 & -6 & -3 \\end{pmatrix}$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

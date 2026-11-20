@@ -1,0 +1,205 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2022-ord-S5",
+  "assignatura": "matematiques",
+  "any": 2022,
+  "convocatoria": "ordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 4",
+  "instruccions": "Responeu a QUATRE de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2,5 punts.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.\n\nPodeu utilitzar les pàgines en blanc (pàgines 14 i 15) per a fer esquemes, esborranys, etc., o per a acabar de respondre a alguna qüestió si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de la qüestió corresponent.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2022/pau_mate22jl.pdf",
+      "pagines": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2022/pau_mate22jp.pdf",
+      "pagines": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2022-ord-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Siguin les matrius $C=\\begin{pmatrix} -1&1\\\\-1&0 \\end{pmatrix}$ i $A=\\begin{pmatrix} 2&0\\\\3&-1 \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Comproveu que $C^3=I_2$, en què $I_2$ és la matriu identitat d'ordre 2, i deduïu que la matriu $C$ és invertible i que $C^{-1}=C^2$. Calculeu $C^{2022}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu l'equació matricial $C\\cdot X=A-2I_2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $C^2=\\begin{pmatrix} 0&-1\\\\1&-1 \\end{pmatrix}$ i $C^3=C^2\\cdot C=\\begin{pmatrix} 1&0\\\\0&1 \\end{pmatrix}=I_2$. Com que $C\\cdot C^2=C^2\\cdot C=I_2$, $C$ és invertible i $C^{-1}=C^2$. Com que $2022=3\\cdot674$, $C^{2022}=(C^3)^{674}=I_2$.\n\nb) $X=C^{-1}(A-2I_2)=C^2(A-2I_2)$, amb $A-2I_2=\\begin{pmatrix} 0&0\\\\3&-3 \\end{pmatrix}$. Aleshores $X=\\begin{pmatrix} 0&-1\\\\1&-1 \\end{pmatrix}\\begin{pmatrix} 0&0\\\\3&-3 \\end{pmatrix}=\\begin{pmatrix} -3&3\\\\-3&3 \\end{pmatrix}$.",
+        "resultat": "a) $C^{-1}=C^2=\\begin{pmatrix} 0&-1\\\\1&-1 \\end{pmatrix}$ i $C^{2022}=I_2$. b) $X=\\begin{pmatrix} -3&3\\\\-3&3 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2022-ord-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la funció $f(x)=x^3$ i sigui $a$ un nombre real estrictament positiu.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'equació de la recta $t$ tangent a la gràfica de la funció $f$ en el punt d'abscissa $x=a$. Trobeu el punt de tall de la recta $t$ amb l'eix de les abscisses (en funció de $a$)."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Feu un esbós de la gràfica de la funció $f$ i la recta $t$. Calculeu el valor de $a$ perquè l'àrea en el primer quadrant limitada per la funció $f$, la recta $t$ i l'eix de les abscisses sigui $108\\ u^2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=3x^2$, i per tant $f'(a)=3a^2$. La tangent és $y=3a^2(x-a)+a^3$, és a dir, $t:\\ y=3a^2x-2a^3$. Amb $y=0$: $x=\\dfrac{2a}{3}$, de manera que el punt de tall és $P=\\left(\\dfrac{2a}{3},0\\right)$.\n\nb) L'esbós: la cúbica $f(x)=x^3$ passa per l'origen i és creixent; la tangent $t$ és creixent, talla l'eix d'abscisses en $x=\\dfrac{2a}{3}$ i toca la corba en $x=a$. L'àrea demanada és la de $f$ entre $0$ i $a$, menys l'àrea del triangle format per $t$ i l'eix d'abscisses entre $x=\\dfrac{2a}{3}$ i $x=a$:\n$$A_T=\\int_0^a x^3\\,dx-\\frac{\\left(a-\\frac{2a}{3}\\right)\\cdot a^3}{2}=\\frac{a^4}{4}-\\frac{a^4}{6}=\\frac{a^4}{12}.$$\nImposant $\\dfrac{a^4}{12}=108$: $a^4=1296$, i per tant $a=6$ (ja que $a>0$).",
+        "resultat": "a) $t:\\ y=3a^2x-2a^3$; punt de tall $\\left(\\dfrac{2a}{3},0\\right)$. b) $a=6$."
+      }
+    },
+    {
+      "id": "2022-ord-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, en què $m$ és un paràmetre real:\n\n$$\\begin{cases} 2x-y+3z=0 \\\\ my+(3-m)z=-6 \\\\ 2x-y+mz=6 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $m$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Resoleu el sistema, si és possible, quan $m=0$ i quan $m=3$. En cada cas, doneu la posició relativa dels tres plans a $\\mathbb{R}^3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $\\det A=\\begin{vmatrix} 2&-1&3\\\\0&m&3-m\\\\2&-1&m \\end{vmatrix}=2m^2-6m=2m(m-3)$, que s'anul·la per a $m=0$ i $m=3$.\n\n- Si $m\\neq0$ i $m\\neq3$: $\\operatorname{rang}A=\\operatorname{rang}A^*=3$, sistema compatible determinat (SCD).\n- Si $m=0$: $\\operatorname{rang}A=\\operatorname{rang}A^*=2<3$, sistema compatible indeterminat (SCI) amb un grau de llibertat.\n- Si $m=3$: $\\operatorname{rang}A=2\\neq\\operatorname{rang}A^*=3$, sistema incompatible (SI).\n\nb) Per a $m=0$, el sistema és $2x-y+3z=0$, $3z=-6$, $2x-y=6$. Per tant $z=-2$ i $2x-y=6$. Prenent $x=k$: $y=2k-6$, i les solucions són $(x,y,z)=(k,\\,2k-6,\\,-2)$, amb $k\\in\\mathbb{R}$. Els tres plans es tallen en la recta $r:\\ (x,y,z)=(k,2k-6,-2)$.\n\nPer a $m=3$, el sistema és incompatible, de manera que no hi ha cap punt comú als tres plans. Els vectors normals dels plans $\\pi_1$ i $\\pi_3$ són $(2,-1,3)$ i $(2,-1,3)$, proporcionals, de manera que $\\pi_1$ i $\\pi_3$ són paral·lels (i diferents, perquè els termes independents són $0$ i $6$), i el pla $\\pi_2$ (que és $y=-2$) els talla.",
+        "resultat": "a) SCD si $m\\neq0,3$; SCI si $m=0$; SI si $m=3$. b) Per a $m=0$: $(x,y,z)=(k,2k-6,-2)$, $k\\in\\mathbb{R}$; els tres plans es tallen en una recta. Per a $m=3$: no hi ha solució; $\\pi_1$ i $\\pi_3$ són paral·lels i $\\pi_2$ els talla."
+      }
+    },
+    {
+      "id": "2022-ord-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu els triangles rectangles que tenen els vèrtexs en els punts $O=(0,0)$, $A=(x,0)$ i $B=(0,y)$, amb $x>0$ i $y>0$, i en què la suma dels catets és $10$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Expresseu l'àrea del triangle $AOB$ en funció de $x$. Per a quin valor de $x$ l'àrea del triangle $AOB$ és la més gran possible? Quin valor té aquesta àrea màxima?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Expresseu la hipotenusa del triangle $AOB$ en funció de $x$. Per a quin valor de $x$ la hipotenusa del triangle $AOB$ és la més petita possible? Quin és aquest valor mínim?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Com que $x+y=10$, $y=10-x$. L'àrea és $A(x)=\\dfrac{x(10-x)}{2}=\\dfrac{10x-x^2}{2}$. Derivant, $A'(x)=\\dfrac{10-2x}{2}=5-x$, que s'anul·la per a $x=5$. Com que $A''(x)=-1<0$, és un màxim. L'àrea màxima és $A(5)=\\dfrac{25}{2}\\ \\text{u}^2$.\n\nb) La hipotenusa és $H(x)=\\sqrt{x^2+(10-x)^2}=\\sqrt{2x^2-20x+100}$. La derivada és $H'(x)=\\dfrac{2x-10}{\\sqrt{2x^2-20x+100}}$, que s'anul·la només per a $x=5$. Com que $H''(5)>0$, és un mínim. El valor mínim és $H(5)=5\\sqrt2$ unitats de longitud.\n\nObservació: també es pot minimitzar $2x^2-20x+100$, sense l'arrel quadrada, ja que l'arrel és creixent.",
+        "resultat": "a) $A(x)=\\dfrac{10x-x^2}{2}$; màxim per a $x=5$, amb $A=\\dfrac{25}{2}$ u$^2$. b) $H(x)=\\sqrt{2x^2-20x+100}$; mínim per a $x=5$, amb $H=5\\sqrt2$."
+      }
+    },
+    {
+      "id": "2022-ord-S5-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Siguin els punts $A=(0,0,1)$, $B=(1,1,1)$, $C=(-1,-1,1)$ i $D=(1,0,1)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Comproveu que tres d'aquests punts estan alineats. Determineu quins són els tres punts i calculeu l'equació contínua i l'equació paramètrica de la recta que defineixen."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'equació general o cartesiana del pla que determinen els quatre punts."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $\\overrightarrow{AB}=(1,1,0)$, $\\overrightarrow{AC}=(-1,-1,0)$ i $\\overrightarrow{AD}=(1,0,0)$. Com que $\\overrightarrow{AB}=-\\overrightarrow{AC}$, els punts $A$, $B$ i $C$ estan alineats, i $D$ no hi està (perquè $\\overrightarrow{AD}$ no és proporcional a $\\overrightarrow{AB}$). La recta que defineixen passa per $A=(0,0,1)$ i té vector director $(1,1,0)$:\n$$\\text{contínua: } \\ x=y=\\frac{z-1}{0}\\qquad\\qquad \\text{paramètrica: } \\ \\begin{cases} x=k\\\\ y=k\\\\ z=1 \\end{cases},\\ k\\in\\mathbb{R}.$$\n\nb) Els quatre punts tenen $z=1$. Amb el pla determinat per $A$, $\\overrightarrow{AB}$ i $\\overrightarrow{AD}$: $\\begin{vmatrix} x&y&z-1\\\\1&1&0\\\\1&0&0 \\end{vmatrix}=0$, és a dir, $-(z-1)=0$. Per tant, el pla és $\\pi:\\ z=1$.",
+        "resultat": "a) Els punts alineats són $A$, $B$ i $C$; recta $x=y=\\dfrac{z-1}{0}$, o bé $(x,y,z)=(k,k,1)$, $k\\in\\mathbb{R}$. b) $\\pi:\\ z=1$."
+      }
+    },
+    {
+      "id": "2022-ord-S5-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "La columna de l'esquerra de la taula següent mostra l'esquema d'un programa informàtic que s'ha elaborat per a trobar solucions aproximades d'una equació $f(x)=0$ en un interval $(a,b)$, sabent que $f(a)\\cdot f(b)<0$. La columna de la dreta recull un exemple de funcionament del programa en què es pot veure com actuaria per trobar una solució de l'equació $x+\\ln(x)=0$ entre els valors $a=0{,}5$ i $b=2$.\n\nEsquema del programa:\n\n1. Escriure «Introduïu un valor $a$».\n2. Escriure «Introduïu un valor $b$».\n3. Escriure «Introduïu una funció $f(x)$».\n4. Calcular $c=(a+b)/2$.\n5. Si $f(a)\\cdot f(c)<0$, aleshores reassignar $b=c$; en cas contrari, reassignar $a=c$.\n6. Repetir els passos 4 i 5 tants cops com faci falta fins que $f(a)-f(b)<0{,}00000001$.\n7. Quan $f(a)-f(b)<0{,}00000001$, escriure: «La solució de l'equació és $c$» i aturar el programa.\n\nExemple: l'usuari introdueix $a=0{,}5$, $b=2$ i $f(x)=x+\\ln(x)$. El programa calcula $c=(0{,}5+2)/2=1{,}25$ i comprova que $f(0{,}5)\\cdot f(1{,}25)=(0{,}5+\\ln(0{,}5))\\cdot(1{,}25+\\ln(1{,}25))<0$; per tant, reassigna $b=1{,}25$. El programa repeteix la comprovació, canviant cada vegada els valors de $a$ o de $b$:\n\n| | $a$ | $b$ |\n|---|---|---|\n| inici | 0,5 | 2 |\n| iteració 1 | 0,5 | 1,25 |\n| iteració 2 | 0,5 | 0,875 |\n| iteració 3 | 0,5 | 0,6875 |\n| iteració 4 | 0,5 | 0,59375 |\n| iteració 5 | 0,546875 | 0,59375 |\n| iteració 6 | 0,546875 | 0,5703125 |\n| iteració 7 | 0,55859375 | 0,5703125 |\n| […] | | |\n\nDesprés d'unes 30 iteracions, el programa escriu: «La solució de l'equació és 0,56714329».",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Expliqueu per què aquest programa és capaç de trobar una solució aproximada de l'equació $x+\\ln(x)=0$ entre els valors $a=0{,}5$ i $b=2$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Volem aplicar aquest programa per a trobar les tres arrels de $f(x)=x^3-3x^2+1$ amb valors de $a$ i $b$ diferents. Trobeu justificadament entre quins valors $a$ i $b$, per a cada arrel, hem d'aplicar el programa per a trobar aproximacions de cadascuna de les tres arrels de la funció."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La funció $f(x)=x+\\ln x$ és contínua a $[0{,}5,2]$, perquè és la suma d'una funció polinòmica i de la funció logarítmica, contínua en tot el seu domini $(0,+\\infty)$. A més, $f(0{,}5)\\cdot f(2)=(0{,}5+\\ln0{,}5)\\cdot(2+\\ln2)<0$, perquè $f(0{,}5)<0$ i $f(2)>0$. Pel teorema de Bolzano, hi ha una arrel a $(0{,}5,2)$. El programa calcula el punt mig $c$ i es queda amb el subinterval on la funció canvia de signe; aquest nou interval continua complint les hipòtesis de Bolzano i té la meitat d'amplada. Repetint el procés, els extrems $a$ i $b$ s'acosten tant com es vulgui a l'arrel.\n\nb) $f'(x)=3x^2-6x=3x(x-2)$, que s'anul·la en $x=0$ (màxim relatiu, $f(0)=1$) i en $x=2$ (mínim relatiu, $f(2)=-3$). La funció creix a $(-\\infty,0)$, decreix a $(0,2)$ i creix a $(2,+\\infty)$. Com que $f(-1)=-3<0$, $f(0)=1>0$, $f(2)=-3<0$ i $f(3)=1>0$, hi ha una arrel a cada un dels intervals $(-1,0)$, $(0,2)$ i $(2,3)$. Com que $f$ és monòtona a cada interval, l'arrel és única en cadascun. Per tant, cal aplicar el programa als intervals $[-1,0]$, $[0,2]$ i $[2,3]$.",
+        "resultat": "a) $f$ és contínua i $f(0{,}5)\\cdot f(2)<0$: Bolzano garanteix una arrel, i el mètode de la bisecció la localitza. b) Intervals: $[-1,0]$, $[0,2]$ i $[2,3]$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

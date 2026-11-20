@@ -1,0 +1,187 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2008-ord-S2",
+  "assignatura": "matematiques",
+  "any": 2008,
+  "convocatoria": "ordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "Responeu a TRES de les quatre qüestions i resoleu UN dels dos problemes següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts, i el problema, 4 punts.\n\nPodeu utilitzar calculadora, però no es poden fer servir calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2008/pau_mate08jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2008/pau_mate08jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2008-ord-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Se sap que certa funció derivable $F(x)$ verifica les condicions següents:\n\n$$F'(x)=\\dfrac{1}{\\sqrt[4]{x}}\\qquad\\text{i}\\qquad F(1)=3$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu $F(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea compresa entre $F(x)$ i l'eix $OX$ des de $x=0$ fins a $x=1$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $F(x)=\\displaystyle\\int x^{-1/4}\\,dx=\\dfrac{x^{3/4}}{3/4}+C=\\dfrac43x^{3/4}+C$. Com que $F(1)=3$, $\\dfrac43+C=3$, d'on $C=\\dfrac53$. Així, $F(x)=\\dfrac43x^{3/4}+\\dfrac53$.\n\nb) La funció és sempre positiva, per tant l'àrea és:\n\n$$\\int_0^1\\left(\\dfrac43x^{3/4}+\\dfrac53\\right)dx=\\left[\\dfrac43\\cdot\\dfrac{4}{7}x^{7/4}+\\dfrac53x\\right]_0^1=\\dfrac{16}{21}+\\dfrac53=\\dfrac{17}{7}$$",
+        "resultat": "a) $F(x)=\\dfrac43x^{3/4}+\\dfrac53$; b) àrea $=\\dfrac{17}{7}$ unitats d'àrea."
+      }
+    },
+    {
+      "id": "2008-ord-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu les matrius $A=\\begin{pmatrix} 1 & -3 \\\\ 2 & 2 \\end{pmatrix}$ i $B=\\begin{pmatrix} 1 & 3 \\\\ 2 & -2 \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu la matriu $M$, quadrada d'ordre 2, tal que $M\\cdot A=B$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu que $M^2=I_2$ (matriu identitat d'ordre 2) i deduïu l'expressió de $M^n$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Com que $\\det A=2+6=8\\neq0$, existeix $A^{-1}=\\dfrac18\\begin{pmatrix} 2 & 3 \\\\ -2 & 1 \\end{pmatrix}$, i:\n\n$$M=B\\cdot A^{-1}=\\begin{pmatrix} 1 & 3 \\\\ 2 & -2 \\end{pmatrix}\\cdot\\dfrac18\\begin{pmatrix} 2 & 3 \\\\ -2 & 1 \\end{pmatrix}=\\begin{pmatrix} -\\dfrac12 & \\dfrac34 \\\\ 1 & \\dfrac12 \\end{pmatrix}$$\n\nTambé es pot obtenir resolent el sistema que resulta d'igualar $M\\cdot A=B$ amb $M=\\begin{pmatrix} x & y \\\\ z & t \\end{pmatrix}$.\n\nb) $M^2=M\\cdot M=\\begin{pmatrix} -\\dfrac12 & \\dfrac34 \\\\ 1 & \\dfrac12 \\end{pmatrix}\\begin{pmatrix} -\\dfrac12 & \\dfrac34 \\\\ 1 & \\dfrac12 \\end{pmatrix}=\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}=I_2$.\n\nPer tant, $M^3=M$, $M^4=I_2$, i en general:\n\n$$M^n=\\begin{cases} M & \\text{si } n \\text{ és senar} \\\\ I_2 & \\text{si } n \\text{ és parell} \\end{cases}$$",
+        "resultat": "a) $M=\\begin{pmatrix} -\\dfrac12 & \\dfrac34 \\\\ 1 & \\dfrac12 \\end{pmatrix}$; b) $M^2=I_2$, i $M^n=M$ si $n$ és senar i $M^n=I_2$ si $n$ és parell."
+      }
+    },
+    {
+      "id": "2008-ord-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Discutiu el sistema d'equacions lineals següent en funció dels valors del paràmetre $m$:\n\n$$\\begin{cases} x+y+(m-1)z=1 \\\\ x+(m-1)y+z=m-1 \\\\ (m-1)x+y+z=m+2 \\end{cases}$$",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Escalonem la matriu ampliada:\n\n$$\\left(\\begin{array}{ccc|c} 1 & 1 & m-1 & 1 \\\\ 1 & m-1 & 1 & m-1 \\\\ m-1 & 1 & 1 & m+2 \\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c} 1 & 1 & m-1 & 1 \\\\ 0 & m-2 & 2-m & m-2 \\\\ 0 & 2-m & 2m-m^2 & 3 \\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c} 1 & 1 & m-1 & 1 \\\\ 0 & m-2 & 2-m & m-2 \\\\ 0 & 0 & 2+m-m^2 & m+1 \\end{array}\\right)$$\n\nEls valors a estudiar per separat són els que anul·len $2+m-m^2=0$, és a dir, $m=-1$ i $m=2$. El mateix resultat s'obté amb el determinant de la matriu de coeficients:\n\n$$\\begin{vmatrix} 1 & 1 & m-1 \\\\ 1 & m-1 & 1 \\\\ m-1 & 1 & 1 \\end{vmatrix}=-m^3+3m^2-4=-(m-2)^2(m+1)$$\n\n- **Si $m\\neq2$ i $m\\neq-1$:** el sistema és compatible determinat (rang 3 per a la matriu de coeficients i per a l'ampliada).\n\n- **Si $m=2$:** la matriu de coeficients és $\\begin{pmatrix} 1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}$, de rang 1, i l'ampliada és $\\left(\\begin{array}{ccc|c} 1&1&1&1\\\\1&1&1&1\\\\1&1&1&4\\end{array}\\right)$, de rang 2. El sistema és **incompatible**.\n\n- **Si $m=-1$:** la matriu escalonada és $\\left(\\begin{array}{ccc|c} 1 & 1 & -2 & 1 \\\\ 0 & -3 & 3 & -3 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right)$. Els rangs de la matriu de coeficients i de l'ampliada valen 2, i el sistema és **compatible indeterminat**. Les solucions són $x=z$, $y=1+z$, amb $z$ lliure.",
+        "resultat": "compatible determinat si $m\\neq2$ i $m\\neq-1$; incompatible si $m=2$; compatible indeterminat si $m=-1$ (solucions $x=z$, $y=1+z$)."
+      }
+    },
+    {
+      "id": "2008-ord-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu l'equació de la recta perpendicular al pla $\\pi:\\ 2x-y+z+3=0$ que passa pel punt $(-1,3,a)$ del pla.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Si el punt $(-1,3,a)$ pertany al pla, ha de complir la seva equació: $2(-1)-3+a+3=0$, d'on $a=2$.\n\nEl vector director de la recta ha de ser paral·lel al vector normal del pla, $(2,-1,1)$. Per tant, la recta és:\n\n$$(x,y,z)=(-1,3,2)+\\lambda\\,(2,-1,1)$$",
+        "resultat": "$(x,y,z)=(-1,3,2)+\\lambda\\,(2,-1,1)$ (amb $a=2$)."
+      }
+    },
+    {
+      "id": "2008-ord-S2-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu una funció tal que la seva representació gràfica a l'interval $(-3,3)$ és la següent:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Determineu les abscisses dels seus punts extrems (màxims i mínims) relatius."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Estudieu el creixement i decreixement de la funció a l'interval $(-3,3)$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Feu un esbós de la gràfica de la derivada d'aquesta funció."
+        },
+        {
+          "lletra": "d",
+          "punts": 2.0,
+          "enunciat": "Sabent que la funció és de la forma $f(x)=ax^4+bx^2+c$, trobeu de quina funció es tracta."
+        }
+      ],
+      "figures": [
+        "gràfica de la funció a l'interval $(-3,3)$. Té màxims relatius a $(-2,1)$ i $(2,1)$ i un mínim relatiu a $(0,-1)$. Als extrems de la finestra, la corba queda fora de la part dibuixada: a l'esquerra baixa des del màxim $(-2,1)$, i a la dreta baixa des del màxim $(2,1)$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Els màxims relatius són a $x=-2$ i $x=2$. El mínim relatiu és a $x=0$.\n\nb) La funció és creixent a $(-3,-2)\\cup(0,2)$ i decreixent a $(-2,0)\\cup(2,3)$.\n\nc) La derivada és positiva a $(-3,-2)$, negativa a $(-2,0)$, positiva a $(0,2)$ i negativa a $(2,3)$, i s'anul·la en $x=-2$, $x=0$ i $x=2$. La corba de la derivada talla, per tant, l'eix $OX$ en aquests tres punts.\n\nd) Sabem que $f(-2)=1$, $f(2)=1$, $f'(-2)=0$, $f'(2)=0$, $f'(0)=0$ i $f(0)=-1$. Amb $f'(x)=4ax^3+2bx$, s'obté el sistema:\n\n$$\\begin{cases} 16a+4b+c=1 \\\\ -32a-4b=0 \\\\ c=-1 \\end{cases}$$\n\nque té per solució $a=-\\dfrac18$, $b=1$ i $c=-1$. Per tant, la funció és $f(x)=-\\dfrac{x^4}{8}+x^2-1$.",
+        "resultat": "a) màxims a $x=-2$ i $x=2$, mínim a $x=0$; b) creix a $(-3,-2)\\cup(0,2)$ i decreix a $(-2,0)\\cup(2,3)$; c) esbós com s'ha descrit; d) $f(x)=-\\dfrac{x^4}{8}+x^2-1$."
+      }
+    },
+    {
+      "id": "2008-ord-S2-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donades les rectes $r:\\ \\dfrac{x-2}{1}=\\dfrac{y+1}{2}=\\dfrac{z}{-1}$ i $s:\\ \\dfrac{x-1}{1}=\\dfrac{y+7}{2}=\\dfrac{z+5}{3}$, i el punt $P=(1,1,-1)$, volem trobar l'equació de la recta que passa per $P$ i talla $r$ i $s$. Per aconseguir-ho, es demana:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació general o cartesiana (és a dir, de la forma $Ax+By+Cz+D=0$) del pla $\\pi$ que conté la recta $r$ i el punt $P$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Busqueu el punt $M$ intersecció entre el pla $\\pi$ i la recta $s$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació de la recta que passa pels punts $P$ i $M$."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Comproveu que la recta trobada a l'apartat anterior és la que estem buscant."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta $r$ té vector director $(1,2,-1)$ i conté el punt $Q=(2,-1,0)$. Amb $\\overrightarrow{PQ}=(1,-2,1)$, el vector normal del pla és $(1,2,-1)\\wedge(1,-2,1)=(0,-2,-4)$, proporcional a $(0,1,2)$. Imposant que el pla passi per $Q$ resulta $D=1$. Per tant, $\\pi:\\ y+2z+1=0$. Comprovació: $P$ compleix l'equació, $1+2(-1)+1=0$.\n\nb) Les equacions paramètriques de $s$ són $x=1+\\lambda$, $y=-7+2\\lambda$, $z=-5+3\\lambda$. Substituint a l'equació del pla: $(-7+2\\lambda)+2(-5+3\\lambda)+1=0$, és a dir, $8\\lambda-16=0$, d'on $\\lambda=2$. Per tant, $M=(3,-3,1)$.\n\nc) La recta que passa per $P=(1,1,-1)$ i $M=(3,-3,1)$ té vector director $\\overrightarrow{PM}=(2,-4,2)$, és a dir, $\\dfrac{x-1}{2}=\\dfrac{y-1}{-4}=\\dfrac{z+1}{2}$.\n\nd) Per construcció, la recta passa per $P$ i talla $s$ en $M$. Cal comprovar que també talla $r$. El punt $(2,-1,0)$ pertany a $r$, i també a la recta de l'apartat c), perquè compleix $\\dfrac{2-1}{2}=\\dfrac{-1-1}{-4}=\\dfrac{0+1}{2}=\\dfrac12$. Per tant, la recta trobada talla $r$ en $(2,-1,0)$ i és la recta buscada.",
+        "resultat": "a) $\\pi:\\ y+2z+1=0$; b) $M=(3,-3,1)$; c) $\\dfrac{x-1}{2}=\\dfrac{y-1}{-4}=\\dfrac{z+1}{2}$; d) la recta talla $r$ en $(2,-1,0)$, per tant és la buscada."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2003-ord-S2",
+  "assignatura": "matematiques",
+  "any": 2003,
+  "convocatoria": "ordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu). En les respostes que doneu heu d'explicar sempre què és el que voleu fer i per què.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2003/pau_mate03jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2003/pau_mate03jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2003-ord-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu les equacions de les dues rectes del pla que passen pel punt $P=(1,-1)$ i que són tangents a la corba d'equació $y=(x-1)^2$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Un punt de la corba és $Q=(x,(x-1)^2)$. La tangent en $Q$ té pendent $2(x-1)$, i la recta $PQ$ té pendent $\\dfrac{(x-1)^2+1}{x-1}$. Igualant:\n$$2(x-1)=\\frac{(x-1)^2+1}{x-1}\\iff(x-1)^2=1\\iff x=0\\ \\text{o}\\ x=2.$$\nPer a $x=0$ el pendent és $-2$, i per a $x=2$ és $2$. Les rectes són $y+1=-2(x-1)$ (és a dir, $2x+y-1=0$) i $y+1=2(x-1)$ (és a dir, $2x-y-3=0$).",
+        "resultat": "$2x+y-1=0$ i $2x-y-3=0$."
+      },
+      "punts_detall": "1,5 punts pel plantejament correcte; 0,5 punts pels càlculs finals."
+    },
+    {
+      "id": "2003-ord-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu\n$$\\int_1^e\\frac{2\\ln^3(x)}{x}\\,dx.$$",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Fent el canvi $t=\\ln x$ (amb $dt=\\frac{dx}{x}$), la integral es converteix en $\\displaystyle\\int_0^1 2t^3\\,dt=\\left[\\tfrac{t^4}{2}\\right]_0^1=\\tfrac12$.",
+        "resultat": "$\\dfrac12$."
+      },
+      "punts_detall": "1 punt pel càlcul correcte de la primitiva; 1 punt pel càlcul final."
+    },
+    {
+      "id": "2003-ord-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el punt $P=(5,-2,9)$ i la recta $r:\\ \\dfrac{x-1}{-2}=\\dfrac{y+1}{-3}=\\dfrac{z}{6}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Calculeu l'equació de la recta $s$ que talla perpendicularment $r$ i que passa per $P$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Calculeu el punt de tall $T$ entre les rectes $r$ i $s$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Els punts de $r$ són de la forma $Q=(1-2\\lambda,\\,-1-3\\lambda,\\,6\\lambda)$, amb vector director $\\vec v=(-2,-3,6)$. El punt $T$ és el de $r$ tal que $\\overrightarrow{PT}\\perp\\vec v$. Com que $\\overrightarrow{PQ}=(-4-2\\lambda,\\ 1-3\\lambda,\\ -9+6\\lambda)$:\n$$0=(-2)(-4-2\\lambda)+(-3)(1-3\\lambda)+6(-9+6\\lambda)=-49+49\\lambda\\iff\\lambda=1.$$\nAixí, $T=(-1,-4,6)$ i $\\overrightarrow{PT}=(-6,-2,-3)$. La recta $s$ passa per $P$ i té aquest vector director (equivalent a $(6,2,3)$):\n$$s:\\ \\frac{x-5}{6}=\\frac{y+2}{2}=\\frac{z-9}{3}.$$\nComprovació: $(6,2,3)\\cdot(-2,-3,6)=0$. Equivalentment, $T$ és la intersecció de $r$ amb el pla perpendicular a $r$ que passa per $P$, $-2x-3y+6z=50$.",
+        "resultat": "a) $s:\\ \\dfrac{x-5}{6}=\\dfrac{y+2}{2}=\\dfrac{z-9}{3}$; b) $T=(-1,-4,6)$."
+      },
+      "punts_detall": "1 punt per cada apartat."
+    },
+    {
+      "id": "2003-ord-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Per a quin o quins valors del paràmetre real $\\lambda$ el sistema d'equacions\n$$\\begin{cases} x+2y+(\\lambda+2)z=0 \\\\ x+(2\\lambda)y+3z=9 \\\\ 2x-z=4 \\end{cases}$$\nés compatible i indeterminat?",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "El determinant de la matriu de coeficients és $-4\\lambda^2-10\\lambda+14$, que s'anul·la per a $\\lambda=1$ i $\\lambda=-\\tfrac72$.\n\nPer a $\\lambda=1$ el sistema és incompatible (les dues primeres equacions són $x+2y+3z=0$ i $x+2y+3z=9$).\n\nPer a $\\lambda=-\\tfrac72$, des de la tercera equació $z=2x-4$; substituint a la primera, $y=x-3$; i la segona queda $9=9$, que és una identitat. Per tant el sistema és compatible indeterminat.\n\nPer a la resta de valors de $\\lambda$ el sistema és compatible determinat.",
+        "resultat": "$\\lambda=-\\dfrac72$."
+      }
+    },
+    {
+      "id": "2003-ord-S2-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Volem unir el punt $M$ situat en un costat d'un carrer de 3 m d'amplada amb el punt $N$ situat a l'altre costat i 9 m més avall, mitjançant dos cables rectes, un des de $M$ fins a un punt $P$ situat a l'altre costat del carrer i un altre des de $P$ fins a $N$ seguint el mateix costat del carrer, segons l'esquema següent.\n\n\nEl cost de la instal·lació del cable $MP$ és de 12 € per metre i del cable $PN$ de 6 € per metre.\n\nQuin punt $P$ haurem d'escollir de manera que la connexió de $M$ amb $N$ sigui tan econòmica com sigui possible? Quin serà aquest cost mínim?",
+      "apartats": [],
+      "figures": [
+        "dues línies horitzontals que representen els costats del carrer, separades 3 m (a l'esquerra, amb l'indicació «3 m»). $M$ és a la línia superior, a l'esquerra. $P$ i $N$ són a la línia inferior; la distància horitzontal entre la vertical de $M$ i $N$ és de 9 m. El cable $MP$ és obliqua i el cable $PN$ és horitzontal."
+      ],
+      "solucio": {
+        "desenvolupament": "Sigui $x$ la distància entre el punt $O$ (just davant de $M$, a l'altre costat del carrer) i $P$. Llavors $MP=\\sqrt{9+x^2}$ i $PN=9-x$, amb $0\\le x\\le9$, i el cost és\n$$C(x)=12\\sqrt{9+x^2}+6(9-x).$$\n$C'(x)=\\dfrac{12x}{\\sqrt{9+x^2}}-6=0\\iff2x=\\sqrt{9+x^2}\\iff x^2=3\\iff x=\\sqrt3$. Com que $C''(x)=\\dfrac{108}{(9+x^2)^{3/2}}>0$, és un mínim.\n\nEl cost mínim és $C(\\sqrt3)=12\\sqrt{12}+6(9-\\sqrt3)=54+18\\sqrt3\\approx85{,}18$ €.",
+        "resultat": "$P$ a $\\sqrt3\\approx1{,}73$ m de $O$ (sobre el costat de $P$ i $N$); cost mínim $54+18\\sqrt3\\approx85{,}18$ €."
+      },
+      "punts_detall": "fins a 2 punts per l'expressió de la funció de cost i el càlcul de la seva derivada; fins a 2 punts més per la determinació del mínim, del punt $P$ i l'avaluació del cost mínim."
+    },
+    {
+      "id": "2003-ord-S2-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "D'un triangle sabem que la suma de les longituds de dos costats $a$ i $b$ és d'11 m, que l'angle $C$ oposat al tercer costat val $30^\\circ$ i que l'àrea és de $7\\ \\text{m}^2$. Calculeu:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "La longitud de cada un dels costats del triangle."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Els angles del triangle."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Amb $a+b=11$ i àrea $\\tfrac12ab\\sin30^\\circ=7$, es té $ab=28$. Així, $a$ i $b$ són les solucions de $t^2-11t+28=0$, és a dir, $7$ i $4$. Prenem $a=7$ i $b=4$ (els dos casos són equivalents). El tercer costat és\n$$c^2=a^2+b^2-2ab\\cos30^\\circ=65-28\\sqrt3,\\qquad c=\\sqrt{65-28\\sqrt3}\\approx4{,}0623\\text{ m}.$$\n\nb) Angle $\\alpha$ oposat a $a=7$: $\\cos\\alpha=\\dfrac{b^2+c^2-a^2}{2bc}\\approx-0{,}50763$, per tant $\\alpha\\approx120{,}51^\\circ$. L'angle $\\beta$ oposat a $b=4$ és $\\beta=180^\\circ-30^\\circ-\\alpha\\approx29{,}49^\\circ$.",
+        "resultat": "a) $a=7$ m, $b=4$ m, $c=\\sqrt{65-28\\sqrt3}\\approx4{,}06$ m; b) $\\alpha\\approx120{,}51^\\circ$ (oposat a $a$), $\\beta\\approx29{,}49^\\circ$ (oposat a $b$) i $C=30^\\circ$."
+      },
+      "punts_detall": "2 punts per cada apartat."
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge i amb càlcul",
+    "revisat_huma": false
+  }
+}

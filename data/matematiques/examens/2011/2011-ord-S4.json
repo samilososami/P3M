@@ -1,0 +1,159 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2011-ord-S4",
+  "assignatura": "matematiques",
+  "any": 2011,
+  "convocatoria": "ordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts. Podeu utilitzar calculadora, però no es poden fer servir calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2011/pau_mate11jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2011/pau_mate11jp.pdf",
+      "pagines": [
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2011-ord-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'àrea del recinte limitat per les corbes d'equació $f(x)=x^2-x+2$ i $g(x)=5-3x$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Els punts de tall compleixen $x^2-x+2=5-3x \\iff x^2+2x-3=0$, és a dir $x=1$ o $x=-3$. Com que $g(0)=5>f(0)=2$, en l'interval $[-3,1]$ es té $g\\ge f$. Així\n$$A=\\int_{-3}^{1}\\big(g(x)-f(x)\\big)\\,dx=\\int_{-3}^{1}\\big(3-2x-x^2\\big)\\,dx=\\Big[3x-x^2-\\tfrac{x^3}{3}\\Big]_{-3}^{1}=\\frac{5}{3}+9=\\frac{32}{3}.$$",
+        "resultat": "$A=\\dfrac{32}{3}$ u²."
+      }
+    },
+    {
+      "id": "2011-ord-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donat el pla $\\pi:\\ 2x+y-z=5$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació del pla paral·lel al pla $\\pi$ que passa pel punt $P=(1,0,-1)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu també la distància entre el punt $P$ i el pla $\\pi$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els plans paral·lels a $\\pi$ tenen la forma $2x+y-z+D=0$. Imposant que passi per $P$: $2\\cdot1+0-(-1)+D=0$, és a dir $D=-3$. El pla és $2x+y-z-3=0$.\n\nb) $d(P,\\pi)=\\dfrac{|2\\cdot1+0-(-1)-5|}{\\sqrt{2^2+1^2+(-1)^2}}=\\dfrac{|-2|}{\\sqrt6}=\\dfrac{2}{\\sqrt6}=\\dfrac{\\sqrt6}{3}\\approx0{,}82$.",
+        "resultat": "a) $2x+y-z-3=0$; b) $d(P,\\pi)=\\dfrac{2}{\\sqrt6}=\\dfrac{\\sqrt6}{3}$"
+      }
+    },
+    {
+      "id": "2011-ord-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La gràfica corresponent a la derivada d'una funció $f(x)$ és la següent:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Expliqueu raonadament quins valors de $x$ corresponen a màxims o a mínims relatius de $f(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Determineu els intervals de creixement i decreixement de la funció $f(x)$."
+        }
+      ],
+      "figures": [
+        "gràfica de $f'(x)$. Talla l'eix d'abscisses en $x=-3$ (pujant), té un màxim positiu entre $x=-3$ i $x=0$, talla l'eix en $x=0$ (baixant), i per a $0<x<2$ és per davall de l'eix. Toca l'eix en $x=2$ sense canviar de signe. Per a $x<-3$ i per a $x>0$ (excepte el contacte en $x=2$) és negativa."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Perquè $f$ tingui un extrem relatiu en un punt, la derivada ha de valer zero en aquest punt: això passa per $x=-3$, $x=0$ i $x=2$. En $x=-3$, $f'$ passa de negativa a positiva, per tant hi ha un mínim relatiu. En $x=0$, $f'$ passa de positiva a negativa, per tant hi ha un màxim relatiu. En $x=2$, $f'$ és negativa als dos costats: no hi ha ni màxim ni mínim, sinó un punt d'inflexió.\n\nb) $f$ és creixent a $(-3,0)$ i decreixent a $(-\\infty,-3)\\cup(0,+\\infty)$.",
+        "resultat": "mínim relatiu en $x=-3$; màxim relatiu en $x=0$; $x=2$ no és extrem (punt d'inflexió). Creixent a $(-3,0)$; decreixent a $(-\\infty,-3)\\cup(0,+\\infty)$."
+      }
+    },
+    {
+      "id": "2011-ord-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Analitzeu, segons els valors del paràmetre $k$, el caràcter (és a dir, si és compatible o no i si és determinat o no) del sistema d'equacions següent:\n$$\\begin{cases} 2x+y-z=k-4 \\\\ (k-6)y+3z=0 \\\\ (k+1)x+2y=3 \\end{cases}$$",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "El determinant de la matriu del sistema és\n$$\\det\\begin{pmatrix} 2 & 1 & -1 \\\\ 0 & k-6 & 3 \\\\ k+1 & 2 & 0 \\end{pmatrix}=k^2-2k-15=(k-5)(k+3),$$\nque s'anul·la per a $k=-3$ i $k=5$.\n\n- Si $k\\neq-3$ i $k\\neq5$: $\\operatorname{rang}A=\\operatorname{rang}(A|b)=3$. El sistema és compatible determinat (SCD).\n- Si $k=-3$: la matriu ampliada és $\\left(\\begin{array}{ccc|c} 2 & 1 & -1 & -7 \\\\ 0 & -9 & 3 & 0 \\\\ -2 & 2 & 0 & 3 \\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c} 2 & 1 & -1 & -7 \\\\ 0 & -3 & 1 & 0 \\\\ 0 & 0 & 0 & -4 \\end{array}\\right)$. Aleshores $\\operatorname{rang}A=2$ i $\\operatorname{rang}(A|b)=3$: el sistema és incompatible (SI).\n- Si $k=5$: la matriu ampliada és $\\left(\\begin{array}{ccc|c} 2 & 1 & -1 & 1 \\\\ 0 & -1 & 3 & 0 \\\\ 6 & 2 & 0 & 3 \\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c} 2 & 1 & -1 & 1 \\\\ 0 & -1 & 3 & 0 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right)$. Aleshores $\\operatorname{rang}A=\\operatorname{rang}(A|b)=2<3$: el sistema és compatible indeterminat (SCI).",
+        "resultat": "SCD si $k\\neq-3$ i $k\\neq5$; SI si $k=-3$; SCI si $k=5$."
+      }
+    },
+    {
+      "id": "2011-ord-S4-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'equació general (és a dir, de la forma $Ax+By+Cz+D=0$) dels plans que contenen la recta $r:\\ \\begin{cases} y=2 \\\\ z=1 \\end{cases}$ i que formen un angle de $45^\\circ$ amb el pla $z=0$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Un punt de $r$ és $P=(0,2,1)$, i el vector director de $r$ és $\\vec v_r=(1,0,0)$. Un pla $\\pi':\\ Ax+By+Cz+D=0$ que contingui $r$ ha de tenir $\\vec v_\\pi'\\cdot\\vec v_r=A=0$. El vector normal del pla $z=0$ és $(0,0,1)$, i l'angle de $45^\\circ$ exigeix\n$$\\frac{|C|}{\\sqrt{B^2+C^2}}=\\frac{\\sqrt2}{2}\\iff B^2=C^2.$$\nPrenent $B=1$, hi ha dues possibilitats: $C=1$ o $C=-1$. Imposant que els plans passin per $P$:\n- $y+z=3$ (amb $C=1$, $D=-3$);\n- $y-z=1$ (amb $C=-1$, $D=-1$).\n\nEs pot comprovar també amb el feix de plans $(y-2)+\\lambda(z-1)=0$, que dóna $\\lambda=\\pm1$ amb el mateix resultat.",
+        "resultat": "$y+z-3=0$ i $y-z-1=0$."
+      }
+    },
+    {
+      "id": "2011-ord-S4-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Dins d'un triangle rectangle, de catets 3 i 4 cm, hi ha un rectangle. Dos costats del rectangle estan situats en els catets del triangle i un dels vèrtex del rectangle és a la hipotenusa del triangle.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Feu un esbós de la situació descrita."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Si $x$ és la longitud del costat del rectangle que està situat en el catet petit i $y$ és l'altre costat del rectangle, comproveu que es compleix que $4x+3y=12$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Determineu les dimensions del rectangle perquè l'àrea sigui màxima.\n\n> Figura (apartat a): triangle rectangle amb el catet de 3 cm horitzontal, el catet de 4 cm vertical i la hipotenusa que els uneix. Dins el triangle, en l'angle recte, un rectangle de costats $x$ (horitzontal, sobre el catet de 3 cm) i $y$ (vertical, sobre el catet de 4 cm); el vèrtex superior dret del rectangle és sobre la hipotenusa."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "b) Per semblança de triangles, $\\dfrac{4-y}{x}=\\dfrac{4}{3}$, és a dir $4x+3y=12$. També es pot obtenir amb la recta de la hipotenusa, que passa per $(3,0)$ i $(0,4)$: $\\dfrac{x-3}{0-3}=\\dfrac{y-0}{4-0}$, és a dir $4x+3y=12$.\n\nc) De la relació anterior, $y=\\dfrac{12-4x}{3}$, i l'àrea és $A(x)=x\\cdot y=\\dfrac{12x-4x^2}{3}$. Derivant, $A'(x)=\\dfrac{12-8x}{3}$, que s'anul·la per a $x=\\dfrac{3}{2}$. Aleshores $y=\\dfrac{12-4\\cdot\\frac{3}{2}}{3}=2$. Com que $A''(x)=-\\dfrac{8}{3}<0$, és un màxim.",
+        "resultat": "b) $4x+3y=12$ (comprovat); c) base $x=\\dfrac{3}{2}$ cm i altura $y=2$ cm (àrea màxima $3$ cm²)."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

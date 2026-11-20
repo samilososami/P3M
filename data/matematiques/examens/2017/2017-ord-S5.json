@@ -1,0 +1,193 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2017-ord-S5",
+  "assignatura": "matematiques",
+  "any": 2017,
+  "convocatoria": "ordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2017/pau_mate17jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2017/pau_mate17jp.pdf",
+      "pagines": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2017-ord-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin les rectes de $\\mathbb{R}^3$ $r:\\begin{cases} 2x-y=1 \\\\ y-2z=0 \\end{cases}$ i $s:\\ x+1=\\dfrac{y-2}{2}=z-1$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que són paral·leles."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació vectorial del pla que les conté."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Un vector director de $r$ es pot obtenir com a producte vectorial dels vectors normals dels dos plans: $\\vec u=(2,-1,0)\\times(0,1,-2)=(2,4,2)\\equiv(1,2,1)$. Un vector director de $s$ és $\\vec v=(1,2,1)$, que és proporcional a $\\vec u$. Un punt de $s$ és $P=(-1,2,1)$, que no pertany a $r$ perquè no satisfà la primera equació ($2\\cdot(-1)-2=-4\\neq1$). Per tant les rectes són paral·leles.\n\nb) Un punt de $r$ és $Q=\\left(\\tfrac12,0,0\\right)$. El pla queda determinat pel punt $P=(-1,2,1)$ i pels vectors $\\overrightarrow{QP}=\\left(-\\tfrac32,2,1\\right)$ i $\\vec v=(1,2,1)$.",
+        "resultat": "a) $r$ i $s$ tenen vectors directors proporcionals i $P\\notin r$: són paral·leles. b) $\\pi:\\ (x,y,z)=(-1,2,1)+\\lambda(1,2,1)+\\mu\\left(-\\tfrac32,2,1\\right)$, amb $\\lambda,\\mu\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2017-ord-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, en què $k$ és un paràmetre real:\n$$\\begin{cases} x-y+z=0 \\\\ 2x+kz=1 \\\\ x+(k+1)y+z=k^2-4 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors de $k$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per al cas $k=-2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Aplicant Gauss a $M|M'$ (ordre de les incògnites $x,y,z$): la segona fila es transforma en $F_2-2F_1$ i la tercera en $F_3-F_1$, i s'obté $\\begin{pmatrix} 1 & -1 & 1 & 0 \\\\ 0 & 2 & k-2 & 1 \\\\ 0 & k+2 & 0 & k^2-4 \\end{pmatrix}$. Intercanviant les columnes 2 i 3 s'obté una matriu triangular: $\\begin{pmatrix} 1 & 1 & -1 & 0 \\\\ 0 & k-2 & 2 & 1 \\\\ 0 & 0 & k+2 & k^2-4 \\end{pmatrix}$. El determinant de $M$ és $\\det M=4-k^2$, que s'anul·la per a $k=2$ i $k=-2$.\n\nSi $k\\neq\\pm2$: $\\operatorname{rang}(M)=\\operatorname{rang}(M|M')=3$, i el sistema és compatible determinat.\n\nSi $k=2$: $\\operatorname{rang}(M)=2$, però $\\operatorname{rang}(M|M')=3$ (la fila $(0\\ 0\\ 4\\mid 0)$ juntament amb $(0\\ 0\\ 2\\mid 1)$ dona una contradicció). El sistema és incompatible.\n\nSi $k=-2$: $\\operatorname{rang}(M)=\\operatorname{rang}(M|M')=2<3$, i el sistema és compatible indeterminat amb $3-2=1$ grau de llibertat.\n\nb) Per a $k=-2$ el sistema és equivalent a $x-y+z=0$, $2y-4z=1$. Triant $z$ com a paràmetre, $y=2z+\\tfrac12$ i $x=y-z=z+\\tfrac12$.",
+        "resultat": "a) Si $k\\neq\\pm2$, sistema compatible determinat; si $k=2$, sistema incompatible; si $k=-2$, sistema compatible indeterminat amb un grau de llibertat. b) $(x,y,z)=\\left(z+\\tfrac12,\\ 2z+\\tfrac12,\\ z\\right)$, amb $z\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2017-ord-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que la recta tangent a la corba $y=x^2$ en el punt d'abscissa $x=2$ és la recta $y=4x-4$, i calculeu els punts d'intersecció d'aquesta recta amb els eixos de coordenades."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea limitada per la corba de l'apartat anterior, la recta tangent en $x=2$ i l'eix de les abscisses."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El punt de tangència és $P=(2,4)$. La funció és $f(x)=x^2$, amb $f'(x)=2x$ i $f'(2)=4$. La recta tangent és $y-4=4(x-2)$, és a dir $y=4x-4$. Amb l'eix $OY$ ($x=0$): $y=-4$. Amb l'eix $OX$ ($y=0$): $x=1$. Els punts d'intersecció són $(0,-4)$ i $(1,0)$.\n\nb) L'àrea és la suma de dues àrees: entre $x=0$ i $x=1$, sota la paràbola i per sobre de l'eix; i entre $x=1$ i $x=2$, entre la paràbola (per sobre) i la tangent:\n$$A=\\int_0^1 x^2\\,dx+\\int_1^2\\big(x^2-(4x-4)\\big)\\,dx=\\left[\\frac{x^3}{3}\\right]_0^1+\\left[\\frac{x^3}{3}-2x^2+4x\\right]_1^2=\\frac13+\\frac13=\\frac23.$$",
+        "resultat": "a) Tangent $y=4x-4$; talls amb els eixos en $(0,-4)$ i $(1,0)$. b) $A=\\dfrac23$ unitats quadrades."
+      }
+    },
+    {
+      "id": "2017-ord-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la matriu $A=\\begin{pmatrix} 0 & -1 & 0 \\\\ 0 & 0 & -1 \\\\ -1 & 0 & 0 \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu les potències $A^2$, $A^3$ i $A^6$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu la inversa de la matriu $A^5$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2=\\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}$ i $A^3=A^2\\cdot A=\\begin{pmatrix} -1 & 0 & 0 \\\\ 0 & -1 & 0 \\\\ 0 & 0 & -1 \\end{pmatrix}=-I$. Per tant $A^6=A^3\\cdot A^3=(-I)(-I)=I$.\n\nb) Com que $A^6=I$, es té $A^5\\cdot A=I$, i per tant $(A^5)^{-1}=A$.",
+        "resultat": "a) $A^2=\\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}$, $A^3=-I$, $A^6=I$. b) $(A^5)^{-1}=A=\\begin{pmatrix} 0 & -1 & 0 \\\\ 0 & 0 & -1 \\\\ -1 & 0 & 0 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2017-ord-S5-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $\\left(\\begin{array}{ccc|c} a & 1 & 1 & 1 \\\\ 1 & a & 1 & a \\\\ 1 & 1 & a & a^2 \\end{array}\\right)$ la matriu ampliada d'un sistema d'equacions lineals.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema segons els valors del paràmetre $a$, i interpreteu el resultat geomètricament."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Per a $a=1$, trobeu la forma paramètrica del pla solució i doneu un punt i dos vectors directors d'aquest pla."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El determinant de la matriu de coeficients és $\\det A=(a-1)^2(a+2)$.\n\nSi $a\\neq1$ i $a\\neq-2$: $\\operatorname{rang}(A)=\\operatorname{rang}(A|b)=3$, nombre d'incògnites. El sistema és compatible determinat. Geomètricament, els tres plans són secants i es tallen en un únic punt.\n\nSi $a=1$: totes les files de $A|b$ són $(1\\ 1\\ 1\\mid 1)$, de manera que $\\operatorname{rang}(A)=\\operatorname{rang}(A|b)=1<3$. El sistema és compatible indeterminat amb dues variables lliures. Geomètricament, els tres plans coincideixen.\n\nSi $a=-2$: amb la reducció per Gauss s'obté $\\begin{pmatrix} 1 & 1 & -2 & 4 \\\\ 0 & -1 & 1 & -2 \\\\ 0 & 0 & 0 & 1 \\end{pmatrix}$, de manera que $\\operatorname{rang}(A)=2<3=\\operatorname{rang}(A|b)$. El sistema és incompatible. Geomètricament, els tres plans no tenen cap punt en comú. Com que tots els menors d'ordre 2 de $A$ són diferents de zero, cada dos plans es tallen en una recta, i aquesta recta és paral·lela (no continguda) al tercer pla.\n\nb) Per a $a=1$ el sistema es redueix a $x+y+z=1$, que en forma paramètrica és $\\pi:\\ (x,y,z)=(1-t-s,\\ t,\\ s)$, amb $t,s\\in\\mathbb{R}$. Un punt del pla és $P=(1,0,0)$ i dos vectors directors són $\\vec v_1=(-1,1,0)$ i $\\vec v_2=(-1,0,1)$.",
+        "resultat": "a) $a\\neq1,-2$: compatible determinat (tres plans que es tallen en un punt); $a=1$: compatible indeterminat (els tres plans coincideixen); $a=-2$: incompatible (tres plans sense punt comú). b) $\\pi:\\ (x,y,z)=(1-t-s,\\ t,\\ s)$; $P=(1,0,0)$, $\\vec v_1=(-1,1,0)$, $\\vec v_2=(-1,0,1)$."
+      }
+    },
+    {
+      "id": "2017-ord-S5-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "El croquis de sota representa la paret d'unes golfes amb el sostre inclinat, en la qual es vol construir un armari rectangular com el de la zona ombrejada.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Expresseu l'àrea del rectangle en funció de la longitud $x$ del segment $AB$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu les dimensions del rectangle si volem que tingui una superfície màxima i calculeu aquesta superfície màxima."
+        }
+      ],
+      "figures": [
+        "la base $AC$ mesura 6 m. En el punt $A$ la paret té una alçada de 1 m, i en el punt $C$, de 3 m; el sostre és el segment inclinat que els uneix. El rectangle ombrejat té la base sobre la recta $AC$, des de $B$ fins a $C$, amb $AB=x$, i el seu costat superior és horitzontal. La longitud $AB=x$ és la distància de $A$ a $B$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) La base del rectangle és $6-x$. El sostre és la recta que passa per $(0,1)$ i $(6,3)$, amb pendent $\\dfrac{3-1}{6-0}=\\dfrac13$, és a dir $y=\\dfrac13x+1$, i l'alçada del rectangle és la del sostre en el punt $B$: $\\dfrac13x+1$. Per tant\n$$A(x)=(6-x)\\left(\\frac13x+1\\right)=-\\frac13x^2+x+6.$$\n\nb) $A'(x)=-\\dfrac23x+1=0\\iff x=\\dfrac32$. Com que $A''(x)=-\\dfrac23<0$, és un màxim relatiu. Les dimensions són base $6-\\dfrac32=\\dfrac92$ m i alçada $\\dfrac13\\cdot\\dfrac32+1=\\dfrac32$ m. L'àrea màxima és $A\\!\\left(\\tfrac32\\right)=\\dfrac92\\cdot\\dfrac32=\\dfrac{27}{4}$ m².",
+        "resultat": "a) $A(x)=-\\dfrac13x^2+x+6$. b) $x=\\dfrac32$ m; el rectangle té base $\\dfrac92$ m i alçada $\\dfrac32$ m; l'àrea màxima és $\\dfrac{27}{4}$ m²."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}
