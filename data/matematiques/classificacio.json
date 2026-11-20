@@ -1,0 +1,9191 @@
+{
+ "schema": "p3m-classificacio/1",
+ "taxonomia": "v1.1",
+ "items": [
+  {
+   "id": "1998-ext-S2-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "REP",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ext-S2-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "GPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Geometria analítica plana (circumferències tangents); GPL es el único código que encaja, el enunciado fija k y centros por tangencia."
+  },
+  {
+   "id": "1998-ext-S2-Q1",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ext-S2-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ext-S2-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ext-S2-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ext-S5-P1",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ext-S5-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "DST",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Cuatro apartados de peso parecido (intersecciones, recta perpendicular, volumen del tetraedro, distancia y área); principal VOL por ser el hilo conductor."
+  },
+  {
+   "id": "1998-ext-S5-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "PAR"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ext-S5-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ext-S5-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "baja",
+   "notas": "Ángulo entre dos vectores del plano (producto escalar). ANG es de GEO pero el ítem es plano: también defendible TRI/GPL. Falta un código de geometría analítica plana."
+  },
+  {
+   "id": "1998-ext-S5-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ord-S3-P1",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Pide un croquis pero no hay figura en el enunciado."
+  },
+  {
+   "id": "1998-ord-S3-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "GPL",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Geometría analítica plana (reflexión en la banda, rectas y ángulo); sin código propio de analítica plana, GPL es el más cercano."
+  },
+  {
+   "id": "1998-ord-S3-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ord-S3-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Se pide la ecuación de los planos (EQG) pero la condición es de distancia (DST); peso similar."
+  },
+  {
+   "id": "1998-ord-S3-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1998-ord-S3-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Tangente paralela a una cuerda; el pendiente de la cuerda se calcula directamente, sin invocar TEO."
+  },
+  {
+   "id": "1999-ext-S2-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "REP"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ext-S2-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ",
+    "DST",
+    "VOL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Cuatro apartados de peso similar (coplanaridad, área del polígono, simétrico, distancia entre rectas); orden del principal arbitrario."
+  },
+  {
+   "id": "1999-ext-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ext-S2-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ext-S2-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Ejercicio conceptual: discusión por rangos más interpretación geométrica (posiciones relativas de planos)."
+  },
+  {
+   "id": "1999-ext-S2-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ext-S5-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ext-S5-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ext-S5-Q1",
+   "bloc": "TRI",
+   "tipus": [
+    "GPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Circunferencia por dos puntos con centro en una recta (analítica plana); GPL por falta de código mejor."
+  },
+  {
+   "id": "1999-ext-S5-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ext-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "PAR"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ext-S5-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S1-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "INT",
+    "CONT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Tres apartados (continuidad 1 pt, extremos 2 pt, área 1 pt); principal EXT por el peso oficial."
+  },
+  {
+   "id": "1999-ord-S1-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S1-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Sistema 3x2 con k: se resuelve y se impone la compatibilidad; SIS vs RES defendibles como principal."
+  },
+  {
+   "id": "1999-ord-S1-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S1-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S6-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "REP"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S6-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S6-Q1",
+   "bloc": "TRI",
+   "tipus": [
+    "GPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Centro y radio de circunferencia (analítica plana); GPL por falta de código mejor."
+  },
+  {
+   "id": "1999-ord-S6-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S6-Q3",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "1999-ord-S6-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ext-S2-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Optimización geométrica con máximo y mínimo sobre un intervalo cerrado; sin contexto real."
+  },
+  {
+   "id": "2000-ext-S2-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "DST",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ext-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "TEO"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "La demostración de b) usa los extremos de a) más Bolzano."
+  },
+  {
+   "id": "2000-ext-S2-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ext-S2-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Dependencia lineal de vectores de R3 y combinación lineal; se resuelve con determinante/rango. Sin código claro de dependencia lineal (podría verse como GEO)."
+  },
+  {
+   "id": "2000-ext-S2-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ext-S6-P1",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ext-S6-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ext-S6-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "CONT",
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "baja",
+   "notas": "Reconstruir f a partir de f' a trozos y continuidad; también defendible GRAF (como principal) o INT/PRI. Ningún código lo cubre bien."
+  },
+  {
+   "id": "2000-ext-S6-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN",
+    "INF"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ext-S6-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ext-S6-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "GPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Circunferencia y tangente en un punto (analítica plana); GPL por falta de código mejor."
+  },
+  {
+   "id": "2000-ord-S1-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S1-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S1-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S1-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S1-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Se piden construir sistemas incompatible/compatible indeterminado sin parámetro; SIS es lo más cercano."
+  },
+  {
+   "id": "2000-ord-S1-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S3-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "REP",
+    "PAR",
+    "ASI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S3-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "VOL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Sin solución oficial; mezcla perpendicularidad para hallar a, plano, cuarto vértice y área con producto vectorial; principal EQG discutible."
+  },
+  {
+   "id": "2000-ord-S3-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S3-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2000-ord-S3-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ext-S4-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ext-S4-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ext-S4-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ext-S4-Q2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ext-S4-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "CONT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ext-S4-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S2-P1",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S2-P2",
+   "bloc": "ANA",
+   "tipus": [
+    "REP",
+    "ASI",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S2-Q2",
+   "bloc": "TRI",
+   "tipus": [
+    "GPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S2-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S2-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S5-P1",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S5-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S5-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S5-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S5-Q3",
+   "bloc": "TRI",
+   "tipus": [
+    "GPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2001-ord-S5-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ext-S1-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ext-S1-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ext-S1-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "PAR"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ext-S1-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ext-S1-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ext-S1-Q4",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S2-P1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S2-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S2-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Se determina a con la condición de máximo y luego se halla el otro extremo; EXT/PAR casi a la par."
+  },
+  {
+   "id": "2002-ord-S2-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "LIM",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S2-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S3-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S3-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S3-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "LIM",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Determinar k para que exista el límite y calcularlo: LIM y PAR casi a la par."
+  },
+  {
+   "id": "2002-ord-S3-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2002-ord-S3-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "baja",
+   "notas": "Puntos de una recta a distancia dada de un punto: DST (punto-punto) o LLG (puntos que cumplen una condición); la taxonomía no cubre distancia punto-punto."
+  },
+  {
+   "id": "2003-ext-S3-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ext-S3-P2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ext-S3-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ext-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ext-S3-Q3",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ext-S3-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "ANG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Triángulo en R3 con perpendicularidad y longitudes de lados; ningún tipo de GEO encaja exactamente (ANG/DST por aproximación)."
+  },
+  {
+   "id": "2003-ord-S2-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ord-S2-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ord-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Tangentes desde un punto exterior a la curva."
+  },
+  {
+   "id": "2003-ord-S2-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ord-S2-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "El pie de la perpendicular desde P a r es una proyección; EQG o PRJ como principal es discutible."
+  },
+  {
+   "id": "2003-ord-S2-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ord-S5-P1",
+   "bloc": "ANA",
+   "tipus": [
+    "REP",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Incluye extremo, crecimiento y asíntotas dentro de REP; el parámetro se fija con la condición de extremo."
+  },
+  {
+   "id": "2003-ord-S5-P2",
+   "bloc": "TRI",
+   "tipus": [
+    "TRI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Pide hacer un esquema pero no se aporta figura."
+  },
+  {
+   "id": "2003-ord-S5-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Punto de una curva más cercano a otro punto; optimización sin contexto real."
+  },
+  {
+   "id": "2003-ord-S5-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ord-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2003-ord-S5-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Determinar el parámetro a partir de una solución dada; no hay discusión, se sustituye. SIS o RES."
+  },
+  {
+   "id": "2004-ext-S5-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "REP"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Mitad parámetros por condiciones, mitad esbozo de la gráfica."
+  },
+  {
+   "id": "2004-ext-S5-P6",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Tres apartados de peso parecido; el principal es arbitrario."
+  },
+  {
+   "id": "2004-ext-S5-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2004-ext-S5-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2004-ext-S5-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2004-ext-S5-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Base de R2 y coordenadas de un vector: no hay código de espacios vectoriales. Se usa DET (independencia) y RES (sistema 2x2)."
+  },
+  {
+   "id": "2004-ord-S1-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Área con parámetro m y tangente con pendiente dada; ambas partes pesan igual."
+  },
+  {
+   "id": "2004-ord-S1-P6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Distancia punto-curva a minimizar; sin contexto real."
+  },
+  {
+   "id": "2004-ord-S1-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "RES",
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Discusión sin parámetro y resolución a partir de la matriz de Gauss; SIS se reserva a sistemas con parámetro."
+  },
+  {
+   "id": "2004-ord-S1-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "k es la coordenada de D que se determina por coplanaridad."
+  },
+  {
+   "id": "2004-ord-S1-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2004-ord-S1-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Lados iguales (distancias) y perpendicularidad (producto escalar); 'demostreu' tratado como comprobar."
+  },
+  {
+   "id": "2004-ord-S3-P5",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Interpretación geométrica de los casos como posición de planos."
+  },
+  {
+   "id": "2004-ord-S3-P6",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Apartados de peso parecido; se pide representar los puntos pero no hay figura."
+  },
+  {
+   "id": "2004-ord-S3-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2004-ord-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2004-ord-S3-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "PAR (condición de extremo) y EXT (naturaleza del extremo) pesan parecido."
+  },
+  {
+   "id": "2004-ord-S3-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Razonamiento teórico sobre el rango de un sistema a partir de su conjunto de soluciones; no hay cálculo."
+  },
+  {
+   "id": "2005-ext-S3-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Se pide hacer un gráfico pero no se aporta figura."
+  },
+  {
+   "id": "2005-ext-S3-P6",
+   "bloc": "ANA",
+   "tipus": [
+    "CONT",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2005-ext-S3-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Razonamiento con rangos sobre dos ecuaciones."
+  },
+  {
+   "id": "2005-ext-S3-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Base de R3 mediante determinante; sin código de espacios vectoriales."
+  },
+  {
+   "id": "2005-ext-S3-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "El trabajo real es ver que la recta es perpendicular al plano y lo corta (distancia 0)."
+  },
+  {
+   "id": "2005-ext-S3-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "ANG",
+    "VOL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Triángulo rectángulo en C (condición de perpendicularidad) y su área; ANG o LLG como principal."
+  },
+  {
+   "id": "2005-ord-S1-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Se pide hacer un gráfico pero no se aporta figura."
+  },
+  {
+   "id": "2005-ord-S1-P6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Se pide hacer un gráfico pero no se aporta figura."
+  },
+  {
+   "id": "2005-ord-S1-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2005-ord-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2005-ord-S1-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2005-ord-S1-Q4",
+   "bloc": "ALTRES",
+   "tipus": [
+    "ALTRES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "División de un segmento en partes iguales con vectores: no encaja en ningún tipo de GEO. Propuesta: tipo VEC (operaciones con vectores y puntos, puntos medios, divisiones, bases)."
+  },
+  {
+   "id": "2005-ord-S4-P5",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "MOD",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Enunciado en palabras que se plantea como sistema; la pregunta sobre k es discusión de compatibilidad."
+  },
+  {
+   "id": "2005-ord-S4-P6",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Se pide hacer un gráfico pero no se aporta figura."
+  },
+  {
+   "id": "2005-ord-S4-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2005-ord-S4-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2005-ord-S4-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2005-ord-S4-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ext-S4-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Incluye vértice y esbozo simple; no se considera REP."
+  },
+  {
+   "id": "2006-ext-S4-P6",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ext-S4-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ext-S4-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ext-S4-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Hay que sacar el vector director de una recta dada como intersección de planos."
+  },
+  {
+   "id": "2006-ext-S4-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "baja",
+   "notas": "B es el simétrico de A respecto al origen; también razonable RPL (intersección recta-plano) o LLG."
+  },
+  {
+   "id": "2006-ord-S1-P5",
+   "bloc": "GEO",
+   "tipus": [
+    "ANG",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S1-P6",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "REP"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S1-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S1-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S1-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "ASI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S3-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "REP"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S3-P6",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Parametro a: paralelismo y perpendicularidad (RPL) y angulo de 30 grados (ANG) pesan parecido."
+  },
+  {
+   "id": "2006-ord-S3-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S3-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2006-ord-S3-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ext-S3-P5",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ext-S3-P6",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "TAN",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "PAR vs TAN como principal: la tangencia comun solo aporta las condiciones para hallar a y b."
+  },
+  {
+   "id": "2007-ext-S3-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Se pide ecuacion de planos (EQG) pero todo el trabajo es imponer una distancia (DST)."
+  },
+  {
+   "id": "2007-ext-S3-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ext-S3-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ext-S3-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "GRAF"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S1-P5",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "EXT",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "baja",
+   "notas": "Dos clasificaciones razonables: GEO/DST (distancia punto-recta) o ANA/OPT (minimizar la distancia al cuadrado con derivadas)."
+  },
+  {
+   "id": "2007-ord-S1-P6",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S1-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S1-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Puntos alineados no tiene codigo propio; se asimila a RPL."
+  },
+  {
+   "id": "2007-ord-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "REP",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S1-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S2-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S2-P6",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RPL",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S2-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S2-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2007-ord-S2-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "INF",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "PAR (hallar a) vs INF como principal: el calculo pesa en los puntos de inflexion y las pendientes."
+  },
+  {
+   "id": "2007-ord-S2-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ext-S4-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "LIM"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "baja",
+   "notas": "Casi todo son identidades a comprobar (funciones hiperbolicas, derivadas) y un limite; ningun codigo encaja bien. Tambien podria ser ALTRES."
+  },
+  {
+   "id": "2008-ext-S4-P6",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ext-S4-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "PAR vs TAN como principal: la tangencia da las dos condiciones para a y b."
+  },
+  {
+   "id": "2008-ext-S4-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ext-S4-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Discusion teorica de un sistema 2x3 sin parametro."
+  },
+  {
+   "id": "2008-ext-S4-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S2-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S2-P6",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S2-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S2-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S2-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S5-P5",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S5-P6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Optimizacion geometrica pura, sin contexto real."
+  },
+  {
+   "id": "2008-ord-S5-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "CONT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "PAR vs CONT como principal: continuidad y derivabilidad solo aportan las condiciones para a y b."
+  },
+  {
+   "id": "2008-ord-S5-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2008-ord-S5-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ext-S1-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "ASI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Estudio parcial de funcion sin dibujo; se opta por EXT+ASI en lugar de REP."
+  },
+  {
+   "id": "2009-ext-S1-P6",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ext-S1-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ext-S1-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ext-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ext-S1-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ord-S3-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "EXT",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Cuatro apartados de peso parecido: parámetros por tangente (TAN/PAR), extremos y área. Podría ser TAN o EXT como principal."
+  },
+  {
+   "id": "2009-ord-S3-P6",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "RPL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Cuatro apartados repartidos: alineación (RPL), recta (EQG) y dos de distancias entre puntos con parámetro; principal DST discutible."
+  },
+  {
+   "id": "2009-ord-S3-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ord-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ord-S3-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ord-S3-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ord-S4-P5",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Tangentes (a) y área del recinto entre curva y tangentes (d); el área pesa algo más pero TAN como principal también es razonable."
+  },
+  {
+   "id": "2009-ord-S4-P6",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ord-S4-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "La intersección recta-plano del apartado b se considera paso trivial de EQG."
+  },
+  {
+   "id": "2009-ord-S4-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ord-S4-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2009-ord-S4-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "RES",
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Sistema sin parámetro ya escalonado: se pide su carácter (SIS) y resolverlo (RES); el principal es discutible."
+  },
+  {
+   "id": "2010-ext-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "ASI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ext-S2-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ext-S2-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "Optimización geométrica abstracta (prisma de volumen V); aplicado=false por no haber contexto real."
+  },
+  {
+   "id": "2010-ext-S2-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ext-S2-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ext-S2-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "VOL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Puntos de una recta a distancia dada (DST) y área de triángulo con producto vectorial (VOL)."
+  },
+  {
+   "id": "2010-ord-S1-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ord-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ord-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Optimización geométrica abstracta (segmento entre ejes); aplicado=false."
+  },
+  {
+   "id": "2010-ord-S1-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Apartado a (paralelismo, comprobar) es RPL y b es EQG; principal discutible."
+  },
+  {
+   "id": "2010-ord-S1-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ord-S1-Q6",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Las incógnitas x,y son entradas de la matriz, no un parámetro discutido."
+  },
+  {
+   "id": "2010-ord-S4-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ord-S4-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ord-S4-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Relación entre coeficientes de un polinomio y valor de P'(3/2); PAR es lo más cercano."
+  },
+  {
+   "id": "2010-ord-S4-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ord-S4-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ord-S4-Q6",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Dependencia lineal de vectores de R3 con parámetro resuelta por determinante; podría verse como GEO."
+  },
+  {
+   "id": "2010-ord-S5-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Cuestión teórica sobre sistemas 2x3 sin parámetro."
+  },
+  {
+   "id": "2010-ord-S5-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Perpendicular por P que corta a r (pie de la perpendicular) y distancia; principal discutible."
+  },
+  {
+   "id": "2010-ord-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "GRAF"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Determinar parámetros leyendo asíntotas y un punto de la gráfica: PAR o GRAF como principal."
+  },
+  {
+   "id": "2010-ord-S5-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Cuestión teórica sobre determinantes y matriz invertible."
+  },
+  {
+   "id": "2010-ord-S5-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2010-ord-S5-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ext-S2-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ext-S2-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ext-S2-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "EXT",
+    "INF"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Parámetros por condiciones de extremo, inflexión y corte con OX; EXT e INF solo aportan la condición."
+  },
+  {
+   "id": "2011-ext-S2-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ext-S2-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ext-S2-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Integral definida con parámetro (comprobar) y mínimo de f(a); EXT principal por el apartado b."
+  },
+  {
+   "id": "2011-ord-S1-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ord-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ord-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "EXT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Área con parámetro (comprobar) y minimización de la área; no es un problema aplicado, por eso EXT y no OPT."
+  },
+  {
+   "id": "2011-ord-S1-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ord-S1-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Perpendicularidad (producto escalar) y punto de corte, ambos con comprobar."
+  },
+  {
+   "id": "2011-ord-S1-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ord-S4-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ord-S4-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Dos apartados de peso similar; principal discutible."
+  },
+  {
+   "id": "2011-ord-S4-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ord-S4-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2011-ord-S4-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Planos que contienen una recta y forman 45 grados con otro; EQG como principal, ANG como condición."
+  },
+  {
+   "id": "2011-ord-S4-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "El enunciado pide un esbozo (la figura descrita pertenece a la solución); figura=false. Geométrico abstracto, aplicado=false."
+  },
+  {
+   "id": "2012-ext-S4-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2012-ext-S4-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "ASI",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Apartado b pide los valores de a y b, pero el trabajo es calcular la asíntota oblicua; PAR principal también sería razonable."
+  },
+  {
+   "id": "2012-ext-S4-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2012-ext-S4-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "El 'comproveu que és un màxim' no da el resultado: no cuenta como comprobar."
+  },
+  {
+   "id": "2012-ext-S4-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "a) comprobar secantes (RPL); b) perpendicular común por el punto de corte (EQG), que pesa más."
+  },
+  {
+   "id": "2012-ext-S4-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Se pide el valor del parámetro a para que recta y parábola sean tangentes."
+  },
+  {
+   "id": "2012-ord-S1-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "a) perpendicularidad con producto escalar (ANG); b) plano por producto vectorial (EQG)."
+  },
+  {
+   "id": "2012-ord-S1-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) es un cálculo trivial de corte con OX."
+  },
+  {
+   "id": "2012-ord-S1-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "teòric: identidades con A^2=O, sin cálculo numérico."
+  },
+  {
+   "id": "2012-ord-S1-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2012-ord-S1-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) es teórico (determinante de orden 2 vs 3); b) det A = det B con parámetro p."
+  },
+  {
+   "id": "2012-ord-S1-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Se resuelve con producto escalar normal-director y detalle del caso m=1; SIS no se añade."
+  },
+  {
+   "id": "2012-ord-S3-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Tres planos que se cortan en recta: discusión del sistema 3x3 con parámetro; podría ser SIS principal o secundario."
+  },
+  {
+   "id": "2012-ord-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) abscisa de tangente paralela; b) valor de b para que sea tangente. Reparto parejo; TAN principal."
+  },
+  {
+   "id": "2012-ord-S3-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) punto de intersección plano-recta (RPL/resolución de sistema); b) recta en el plano, perpendicular y secante a r (EQG)."
+  },
+  {
+   "id": "2012-ord-S3-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "a) comprobar una igualdad con matrices concretas; b) teórico (no conmutatividad)."
+  },
+  {
+   "id": "2012-ord-S3-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Minimiza suma de cuadrados de distancias en un triángulo equilátero; contexto geométrico, no aplicado."
+  },
+  {
+   "id": "2012-ord-S3-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "b) coplanaridad de cuatro puntos: por analogía con la alineación se pone RPL (también se resuelve con el volumen, VOL)."
+  },
+  {
+   "id": "2013-ext-S1-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "VEC"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) dependencia lineal con parámetro; b) coordenadas del vector respecto de V."
+  },
+  {
+   "id": "2013-ext-S1-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Parámetros a partir de extremo y de integral definida de un polinomio; los cálculos de EXT/INT son triviales."
+  },
+  {
+   "id": "2013-ext-S1-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "a) comprobar perpendicularidad normal-director; b) posición relativa según m."
+  },
+  {
+   "id": "2013-ext-S1-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Tres determinantes nulos y luego sistema lineal 3x3 en los parámetros."
+  },
+  {
+   "id": "2013-ext-S1-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "b) punto del plano más cercano a P = proyección ortogonal; a) recta perpendicular, paso previo."
+  },
+  {
+   "id": "2013-ext-S1-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2013-ord-S3-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2013-ord-S3-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) A^2-2A=I con parámetro; b) inversa de matriz 2x2."
+  },
+  {
+   "id": "2013-ord-S3-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "k aparece como parámetro de la región y se determina a partir del área (PAR secundario sería defendible). Figura: el enunciado pide hacer el esbozo; la figura de 'figures' es de la solución, por eso figura=false según la taxonomía."
+  },
+  {
+   "id": "2013-ord-S3-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Área de triángulo con producto vectorial y vértice sobre una recta."
+  },
+  {
+   "id": "2013-ord-S3-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2013-ord-S3-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2013-ord-S4-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Se imponen los datos del vector solución y se resuelve un sistema lineal con a,b,c como incógnitas; no hay tipo 'sistema como condición', se usa RES."
+  },
+  {
+   "id": "2013-ord-S4-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "b) despeja k de una ecuación sencilla; PAR no se añade como secundario."
+  },
+  {
+   "id": "2013-ord-S4-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) teórico (definición de inversa); b) A^-1=A^T, producto A*A^T."
+  },
+  {
+   "id": "2013-ord-S4-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2013-ord-S4-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Punto de una recta que equidista de P y Q."
+  },
+  {
+   "id": "2013-ord-S4-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Recta tangente en x=0 y extremos relativos leídos de la gráfica de f'."
+  },
+  {
+   "id": "2013-ord-S5-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2013-ord-S5-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2013-ord-S5-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2013-ord-S5-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Dos apartados independientes de peso parejo (tangente y área); INT principal por tener más pasos."
+  },
+  {
+   "id": "2013-ord-S5-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "LLG",
+    "VEC"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) plano mediador (lugar geométrico); b) división de un segmento en tres partes (VEC)."
+  },
+  {
+   "id": "2013-ord-S5-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ext-S5-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) paralelismo/perpendicularidad (RPL/ANG); b) plano que contiene r y paralelo a s (EQG) y distancia (DST). Pesos parejos."
+  },
+  {
+   "id": "2014-ext-S5-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) dominio y recorrido de una raíz no tiene código en la taxonomía (se omite); b) a,b para que las gráficas sean tangentes en x=0."
+  },
+  {
+   "id": "2014-ext-S5-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ext-S5-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "INF",
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) extremos e inflexión a partir de f' dada por fórmula; b) primitiva con condición inicial."
+  },
+  {
+   "id": "2014-ext-S5-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "VEC",
+    "VOL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) dependencia lineal con parámetro; b) volumen de tetraedro (VOL)."
+  },
+  {
+   "id": "2014-ext-S5-Q6",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ord-S3-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) rango con parámetro; b) discutir y resolver (el sistema es siempre SCD)."
+  },
+  {
+   "id": "2014-ord-S3-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ord-S3-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ord-S3-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ord-S3-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "LLG",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Los puntos medios forman un plano (lugar geométrico) y se pide su ecuación."
+  },
+  {
+   "id": "2014-ord-S3-Q6",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "a) teórico: demostración A^2=I => invertible; b) matrices de la forma dada con A^2=I."
+  },
+  {
+   "id": "2014-ord-S4-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "ASI",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ord-S4-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ord-S4-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "VOL (apartado b, tetraedro independiente de S) pesa más que el plano por tres puntos."
+  },
+  {
+   "id": "2014-ord-S4-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2014-ord-S4-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "teòric: a) es una demostración de identidad matricial sin cálculo; b) comprobación con matrices 2x2. Encaja en MAT."
+  },
+  {
+   "id": "2014-ord-S4-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Apartados de peso parecido: PAR (a, con gráfica dada) e INT por partes (b); el orden podría invertirse."
+  },
+  {
+   "id": "2015-ext-S5-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Inversa 3x3 (b) pesa algo más que la condición det≠0 (a)."
+  },
+  {
+   "id": "2015-ext-S5-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ext-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "TEO",
+    "EXT"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Bolzano (a) y monotonía con extremos absolutos en intervalo cerrado (b, trivial por f'>0); b) podría considerarse WEI/EXT."
+  },
+  {
+   "id": "2015-ext-S5-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ext-S5-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ext-S5-Q6",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S2-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S2-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S2-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S2-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Pesan parecido la posición relativa de planos (a) y la equidistancia de los puntos de r (b)."
+  },
+  {
+   "id": "2015-ord-S2-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S2-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S4-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S4-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "INF",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S4-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Ambos apartados son de un solo paso; EQG y DST pesan igual."
+  },
+  {
+   "id": "2015-ord-S4-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2015-ord-S4-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "teòric: el apartado a) es una demostración sin cálculo; b) es cálculo de A^3 con parámetro."
+  },
+  {
+   "id": "2015-ord-S4-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2016-ext-S1-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) construye plano y recta (producto vectorial); b) impone equidistancia. Peso parecido."
+  },
+  {
+   "id": "2016-ext-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES",
+    "MOD"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "MOD es un paso de una línea (enunciado verbal a sistema homogéneo); sin contexto real."
+  },
+  {
+   "id": "2016-ext-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2016-ext-S1-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2016-ext-S1-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "teòric: el apartado b) es una justificación sin cálculo; a) halla a y comprueba det=0."
+  },
+  {
+   "id": "2016-ext-S1-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "teòric: b) razona sobre la perpendicularidad entre planos (ANG) sin cálculo, con contraejemplo."
+  },
+  {
+   "id": "2016-ord-S3-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2016-ord-S3-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2016-ord-S3-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "TAN y EXT de peso parecido, ambos de pocos pasos."
+  },
+  {
+   "id": "2016-ord-S3-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "teòric: b) es una justificación sin cálculo."
+  },
+  {
+   "id": "2016-ord-S3-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT",
+    "VOL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "baja",
+   "notas": "Dos clasificaciones razonables: ANA/OPT (se modeliza V(x) y se maximiza) o GEO/VOL (el peso está en el determinante del apartado a). Elegido OPT por el objetivo final."
+  },
+  {
+   "id": "2016-ord-S3-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "PAR"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Se pide k, pero el trabajo es el área entre parábolas en función de k; podría ser PAR principal."
+  },
+  {
+   "id": "2016-ord-S5-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Dos afirmaciones V/F sobre el tipo de sistema (con rango); los términos independientes dados no son parámetros."
+  },
+  {
+   "id": "2016-ord-S5-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ",
+    "VEC"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "a) simetría respecto de un plano; b) verificar que puntos medios (VEC) caen en el plano; también podría verse como LLG."
+  },
+  {
+   "id": "2016-ord-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "INF",
+    "TEO"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "teòric: b) aplica Bolzano a f' sin cálculo."
+  },
+  {
+   "id": "2016-ord-S5-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "teòric: a) es una justificación sin cálculo."
+  },
+  {
+   "id": "2016-ord-S5-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) paralelismo/perpendicularidad con vectores directores; b) posición relativa y perpendicular común."
+  },
+  {
+   "id": "2016-ord-S5-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ext-S2-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ext-S2-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ext-S2-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ext-S2-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "El apartado b) es regla de la cadena con valores de una tabla; la taxonomía no tiene un tipo para derivadas, no se ha puesto ALTRES como secundario."
+  },
+  {
+   "id": "2017-ext-S2-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ext-S2-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "PRI",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ord-S1-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ord-S1-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) pesa más (producto vectorial y plano); b) ángulo entre planos de un paso."
+  },
+  {
+   "id": "2017-ord-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "ASI",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Dominio y asíntotas por casos de k (a) y extremos (b), sin dibujo: no es REP."
+  },
+  {
+   "id": "2017-ord-S1-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "RES",
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "a) es solo det≠0; b) resuelve por Cramer en función de a."
+  },
+  {
+   "id": "2017-ord-S1-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "a) det>0 siempre; b) inversa 2x2."
+  },
+  {
+   "id": "2017-ord-S1-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ord-S5-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ord-S5-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ord-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "El enunciado general viene vacío; el apartado a) es la tangente (dada, comprobar) y el b) el área con dos integrales, que pesa más."
+  },
+  {
+   "id": "2017-ord-S5-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2017-ord-S5-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Discusión con interpretación geométrica de planos y paso a forma paramétrica del plano solución; podría añadirse RPL pero no es un paso independiente."
+  },
+  {
+   "id": "2017-ord-S5-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2018-ext-S3-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2018-ext-S3-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2018-ext-S3-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Los dos apartados pesan parecido (recta perpendicular y distancia punto-plano)."
+  },
+  {
+   "id": "2018-ext-S3-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) es DET con parámetro (sin valor singular); b) inversa de A^2 pesa algo más."
+  },
+  {
+   "id": "2018-ext-S3-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) intersección recta-plano (RPL); b) volumen de tetraedro con parámetro de la recta (VOL), más pesado."
+  },
+  {
+   "id": "2018-ext-S3-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "El esbós de dos parábolas es parcial, no REP."
+  },
+  {
+   "id": "2018-ord-S1-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Producto de matrices y determinante en ambos apartados; MAT y DET pesan parecido."
+  },
+  {
+   "id": "2018-ord-S1-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) es trivial (recta por dos puntos) pero es un apartado explícito."
+  },
+  {
+   "id": "2018-ord-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "INF",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "b) pide extremos e inflexión (más pasos) y a) tangente paralela a una recta."
+  },
+  {
+   "id": "2018-ord-S1-Q4",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) plano paralelo a recta (EQG); b) m para planos paralelos no coincidentes (RPL con parámetro)."
+  },
+  {
+   "id": "2018-ord-S1-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "TEO",
+    "INT"
+   ],
+   "subtipus": [
+    "BOL",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2018-ord-S1-Q6",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Hoja de cálculo: escribir el sistema y verificar la solución es trivial; lo sustancial es hallar a33 que hace SI (parámetro). aplicado=false porque la hoja es solo una representación."
+  },
+  {
+   "id": "2018-ord-S5-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "a) 'expliqueu que té única solució' (resultado dado) marcado como comprobar; b) Cramer con m."
+  },
+  {
+   "id": "2018-ord-S5-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) simétrico (PRJ); b) planos paralelos a distancia dada (DST); pesan parecido."
+  },
+  {
+   "id": "2018-ord-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "ASI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2018-ord-S5-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Ítem de lectura de datos (inflexión => f''=0, tangente => f' y f) y Barrow; sin tipo claro, alternativas TAN o INF como principal."
+  },
+  {
+   "id": "2018-ord-S5-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "ANG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) plano que contiene r1 y paralelo a r2 (EQG); b) condición de perpendicularidad por producto escalar (ANG)."
+  },
+  {
+   "id": "2018-ord-S5-Q6",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2019-ext-S5-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2019-ext-S5-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "baja",
+   "notas": "b) pide la posición relativa de tres planos con parámetro, pero la solución es una discusión de rangos (SIS); RPL o SIS como principal."
+  },
+  {
+   "id": "2019-ext-S5-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "teòric: el apartado b) es una justificación teórica (producto nulo implica det=0); a) es un cálculo directo."
+  },
+  {
+   "id": "2019-ext-S5-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "b) maximizar la pendiente = extremo de f' (f'' y su signo), más pesado que a)."
+  },
+  {
+   "id": "2019-ext-S5-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Puntos de corte con ejes trivial; perímetro (DST) y área del triángulo con producto vectorial (VOL)."
+  },
+  {
+   "id": "2019-ext-S5-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) estudio parcial (dominio, cortes, crecimiento) -> EXT; b) área."
+  },
+  {
+   "id": "2019-ord-S1-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2019-ord-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2019-ord-S1-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Punto más próximo del plano = proyección ortogonal; recta perpendicular y distancia."
+  },
+  {
+   "id": "2019-ord-S1-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "TEO",
+    "ASI"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Continuidad de un cociente de polinomios es trivial; no se añade CONT."
+  },
+  {
+   "id": "2019-ord-S1-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Hallar a con M^2-M-2I=0 y deducir la inversa; parámetro solo como atributo."
+  },
+  {
+   "id": "2019-ord-S1-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2019-ord-S4-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2019-ord-S4-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) intersección recta-plano y recta perpendicular (EQG); b) puntos a distancia dada (DST); pesan parecido."
+  },
+  {
+   "id": "2019-ord-S4-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2019-ord-S4-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "CONT",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) valores de n y m por continuidad (PAR principal, con CONT como mecanismo); b) área de función a trozos."
+  },
+  {
+   "id": "2019-ord-S4-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "baja",
+   "notas": "Posición relativa de tres planos con parámetro resuelta por rangos (SIS); b) pide comprobar una interpretación geométrica dada con figura."
+  },
+  {
+   "id": "2019-ord-S4-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INF",
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) inflexión, concavidad y mínimo por f''; b) reconstruir f integrando dos veces (PRI)."
+  },
+  {
+   "id": "2020-ext-S4-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "PAR"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "baja",
+   "notas": "Se pide el valor de a (PAR principal según la regla) pero casi todo el trabajo es el cálculo del área en función de a (INT); dos principales razonables."
+  },
+  {
+   "id": "2020-ext-S4-Q2",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) intersección recta-plano y distancia; b) plano perpendicular que contiene una recta (EQG)."
+  },
+  {
+   "id": "2020-ext-S4-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF",
+    "EXT",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Todo se obtiene de la gráfica de f': tangente en x=0 y clasificación de puntos singulares."
+  },
+  {
+   "id": "2020-ext-S4-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "a) rango con parámetro (DET); b) comprobar A^-1=A^2 (MAT)."
+  },
+  {
+   "id": "2020-ext-S4-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Contexto de cápsula de café; la modelización geométrica está en a)."
+  },
+  {
+   "id": "2020-ext-S4-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2020-ord-S1-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "a) comprobar la función área (tangente y triángulo, modelización); b) minimizar."
+  },
+  {
+   "id": "2020-ord-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2020-ord-S1-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "a) es el valor de un parámetro puntual (pertenencia al plano)."
+  },
+  {
+   "id": "2020-ord-S1-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "ASI",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2020-ord-S1-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Ecuación matricial e inversa; el 'comproveu' de b) no da el resultado, no es comprobar."
+  },
+  {
+   "id": "2020-ord-S1-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) tangente paralela a recta y dibujo; b) área entre cúbica y recta; pesa más b)."
+  },
+  {
+   "id": "2020-ord-S3-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2020-ord-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2020-ord-S3-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2020-ord-S3-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Apartados de peso similar (extremo/clasificación y área); principal EXT por decisión de desempate."
+  },
+  {
+   "id": "2020-ord-S3-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2020-ord-S3-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "CONT"
+   ],
+   "subtipus": [
+    "DEF",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "El apartado a (f(0)=f(2), f'(0)=f'(2) para empalmar) encaja de forma laxa en CONT; el b es integral definida para comprobar mitades de igual área."
+  },
+  {
+   "id": "2021-ext-S1-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2021-ext-S1-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE",
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Tangente/normal (a) y área con resta de triángulo (b) pesan parecido; principal INT por más pasos."
+  },
+  {
+   "id": "2021-ext-S1-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "VEC"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Coplanaridad de cuatro puntos (det=0, ¿VEC o RPL?) y volumen del tetraedro con parámetro; sin tipo propio para coplanaridad."
+  },
+  {
+   "id": "2021-ext-S1-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "GRAF"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Apartado a es GRAF (esbozar f' a partir de f) y b es PAR (inflexión y derivada); pesos similares."
+  },
+  {
+   "id": "2021-ext-S1-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Principal MAT (inversa y ecuación matricial); DET (invertible según a) es el primer apartado."
+  },
+  {
+   "id": "2021-ext-S1-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "TEO"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2021-ord-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "a es la abscisa variable de tangencia; marcado parametro por el valor a>0 que se determina."
+  },
+  {
+   "id": "2021-ord-S2-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2021-ord-S2-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "PRJ",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2021-ord-S2-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "ASI",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Tres apartados de peso similar (extremo, asíntota horizontal, área con dibujo); el orden es arbitrario."
+  },
+  {
+   "id": "2021-ord-S2-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2021-ord-S2-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "TEO"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2021-ord-S5-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2021-ord-S5-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "EXT"
+   ],
+   "subtipus": [
+    "ARE",
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Monotonía (a) y área entre curvas (b) pesan parecido; principal INT por más pasos."
+  },
+  {
+   "id": "2021-ord-S5-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "VEC"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Coplanaridad de cuatro puntos con parámetro (VEC) y área de triángulo con producto vectorial (VOL)."
+  },
+  {
+   "id": "2021-ord-S5-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2021-ord-S5-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Apartado a: SIS (rangos); b: interpretación geométrica de los tres planos (RPL), con dibujo a realizar."
+  },
+  {
+   "id": "2021-ord-S5-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2022-ext-S3-Q1",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Recta perpendicular al plano (EQG) y pie de la perpendicular + longitud (PRJ/DST); pesos parecidos."
+  },
+  {
+   "id": "2022-ext-S3-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "REP",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "baja",
+   "notas": "Estudio de dominio, asíntotas, extremos y monotonía más dibujo de f y la tangente: REP (se pide el dibujo) o estudio parcial ASI|EXT|TAN; sin concavidad explícita."
+  },
+  {
+   "id": "2022-ext-S3-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Rango según a (DET) y sistema homogéneo concreto planteado como ecuación matricial (RES)."
+  },
+  {
+   "id": "2022-ext-S3-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "CONT",
+    "INT"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Apartado a: determinar a y b para continuidad y derivabilidad (PAR + CONT); b: primitiva con condición (PRI)."
+  },
+  {
+   "id": "2022-ext-S3-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Principal MAT (inversa/ecuación matricial con a=3); DET es el primer apartado."
+  },
+  {
+   "id": "2022-ext-S3-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2022-ord-S2-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "INF"
+   ],
+   "subtipus": [
+    "PRI",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Primitiva con condición (a), inflexión/concavidad (b) y área para hallar el límite a (c); el valor de a es un límite de integración."
+  },
+  {
+   "id": "2022-ord-S2-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2022-ord-S2-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "RPL",
+    "EQG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2022-ord-S2-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE",
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "a: determinar polinomio a partir de condiciones con g''; b: comprobar raíz/monotonía y calcular el área."
+  },
+  {
+   "id": "2022-ord-S2-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2022-ord-S2-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2022-ord-S5-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2022-ord-S5-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE",
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Tangente con abscisa variable a (a) y área que fija el valor de a (b); no se añade PAR por ser a la abscisa de tangencia."
+  },
+  {
+   "id": "2022-ord-S5-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Se pide además la posición relativa de los tres planos (RPL) como interpretación de los casos."
+  },
+  {
+   "id": "2022-ord-S5-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2022-ord-S5-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Alineación de puntos (RPL) más ecuaciones de recta y plano (EQG); principal EQG por más cálculo."
+  },
+  {
+   "id": "2022-ord-S5-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "TEO",
+    "EXT"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Apartado a es en buena parte teórico (por qué funciona la bisección)."
+  },
+  {
+   "id": "2023-ext-S2-Q1",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ext-S2-Q2",
+   "bloc": "ANA",
+   "tipus": [
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ext-S2-Q3",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ext-S2-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "TEO",
+    "INT"
+   ],
+   "subtipus": [
+    "BOL",
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Bolzano (a) y área entre curvas (b) de peso similar."
+  },
+  {
+   "id": "2023-ext-S2-Q5",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Perpendicular común de dos rectas que se cruzan (EQG) y distancia entre ellas (DST) salen del mismo cálculo; principal EQG."
+  },
+  {
+   "id": "2023-ext-S2-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ord-S1-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ord-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "Apartado b es una comprobación teórica con matrices (idempotencia)."
+  },
+  {
+   "id": "2023-ord-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "PRI"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ord-S1-Q4",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Interpretación geométrica en b (tres planos en una recta) tratada como paso trivial."
+  },
+  {
+   "id": "2023-ord-S1-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ord-S1-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ord-S5-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Se pide además dibujar tangente y parábolas, pero son funciones dadas: no se marca REP."
+  },
+  {
+   "id": "2023-ord-S5-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ord-S5-Q3",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "RPL (a) y DST (b) pesan parecido; manda b por más pasos."
+  },
+  {
+   "id": "2023-ord-S5-Q4",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ord-S5-Q5",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2023-ord-S5-Q6",
+   "bloc": "ANA",
+   "tipus": [
+    "PAR",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ext-S3-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "TEO",
+    "EXT"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Bolzano (a) y EXT con número de raíces (b) pesan parecido."
+  },
+  {
+   "id": "2024-ext-S3-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ext-S3-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ext-S3-Q4",
+   "bloc": "PRO",
+   "tipus": [
+    "PRC",
+    "DDI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ext-S3-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "Rectángulo inscrito bajo curva: optimización geométrica con comprobación del máximo dado."
+  },
+  {
+   "id": "2024-ext-S3-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) pie de la perpendicular (PRJ); b) y c) distancia punto-plano e imposición de distancia (DST)."
+  },
+  {
+   "id": "2024-ord-S1-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "REP",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Piden esbozo con extremos y asíntotas (REP); la tangente en x=1 es apartado aparte. Alternativa: EXT/ASI/TAN por partes."
+  },
+  {
+   "id": "2024-ord-S1-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ord-S1-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ord-S1-Q4",
+   "bloc": "PRO",
+   "tipus": [
+    "DDI",
+    "PRC"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Urna con letras (sin/con reemplazamiento): a) condicionada sin reemplazo, b) binomial; no se marca aplicado por ser urna abstracta."
+  },
+  {
+   "id": "2024-ord-S1-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ord-S1-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "LLG",
+    "VOL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "baja",
+   "notas": "Reparto parecido entre a) plano mediador y lugar equidistante (EQG/LLG), b) distancias iguales, c) isósceles y área; principal podría ser EQG o LLG."
+  },
+  {
+   "id": "2024-ord-S5-Q1",
+   "bloc": "ANA",
+   "tipus": [
+    "TEO",
+    "EXT",
+    "LIM"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "baja",
+   "notas": "Cuatro tareas de peso similar (Bolzano, crecimiento sin derivar, límites, esbozo); el principal podría ser EXT."
+  },
+  {
+   "id": "2024-ord-S5-Q2",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Inversa por adjuntos y ecuación matricial."
+  },
+  {
+   "id": "2024-ord-S5-Q3",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "PAR",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "a) pide el parámetro vía tangente (PAR+TAN); c) área entre parábolas. Principal INT por más cálculo, discutible."
+  },
+  {
+   "id": "2024-ord-S5-Q4",
+   "bloc": "PRO",
+   "tipus": [
+    "PRC",
+    "DDI"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ord-S5-Q5",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2024-ord-S5-Q6",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Recta perpendicular común (EQG) pesa más que la posición relativa y el plano paralelo."
+  },
+  {
+   "id": "2025-ext-S3-E1",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "Optimización de área con pendiente como variable (no es parámetro a determinar)."
+  },
+  {
+   "id": "2025-ext-S3-E2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2025-ext-S3-E3",
+   "bloc": "PRO",
+   "tipus": [
+    "PRC",
+    "PAR"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "baja",
+   "notas": "Ítem mixto: 3.1 y 3.2 son PRC; 3.3 es ANA (PAR con máximo e inflexión). Principal PRC por 2 apartados de 3."
+  },
+  {
+   "id": "2025-ext-S3-E4A",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Opción A."
+  },
+  {
+   "id": "2025-ext-S3-E4B",
+   "bloc": "GEO",
+   "tipus": [
+    "DST"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "Opción B."
+  },
+  {
+   "id": "2025-ord-S1-E1",
+   "bloc": "ANA",
+   "tipus": [
+    "ASI",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "1.1 (cortes y asíntotas) y 1.2-1.3 (tangentes) pesan parecido."
+  },
+  {
+   "id": "2025-ord-S1-E2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "2025-ord-S1-E3",
+   "bloc": "PRO",
+   "tipus": [
+    "PRC",
+    "DDI",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "baja",
+   "notas": "Ítem mixto: 3.1 PRC, 3.2 binomial con comprobación, 3.3 máximo de f(p); el principal es discutible."
+  },
+  {
+   "id": "2025-ord-S1-E4A",
+   "bloc": "ANA",
+   "tipus": [
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Opción A."
+  },
+  {
+   "id": "2025-ord-S1-E4B",
+   "bloc": "GEO",
+   "tipus": [
+    "EQG",
+    "LLG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Opción B. 4.2 es lugar equidistante (plano mediador) intersecado con el plano; principal EQG por construir ecuaciones."
+  },
+  {
+   "id": "2025-ord-S4-E1",
+   "bloc": "ANA",
+   "tipus": [
+    "EXT",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Dominio y cortes son parte de un estudio parcial; el valor de a sale de imponer un punto (no se marca parametro)."
+  },
+  {
+   "id": "2025-ord-S4-E2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Discusión de sistema e interpretación como posición relativa de tres planos."
+  },
+  {
+   "id": "2025-ord-S4-E3",
+   "bloc": "PRO",
+   "tipus": [
+    "PRC",
+    "PAR",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "3.3 es ANA: constante A de una integral definida; principal PRC por 2 apartados de 3."
+  },
+  {
+   "id": "2025-ord-S4-E4A",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "Opción A."
+  },
+  {
+   "id": "2025-ord-S4-E4B",
+   "bloc": "ALG",
+   "tipus": [
+    "MAT",
+    "DET"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Opción B. Matrices con parámetro a: conmutación, invertibilidad (determinante) e inversa igual a la matriz."
+  },
+  {
+   "id": "2026-ext-S2-E1",
+   "bloc": "ANA",
+   "tipus": [
+    "REP",
+    "TAN"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Piden dominio, crecimiento, asíntotas y esbozo (REP); la normal se trata como TAN."
+  },
+  {
+   "id": "2026-ext-S2-E2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RES",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "2.3 es interpretación geométrica de tres planos (RPL); en 2.2 se pide comprobar que la solución no depende de k."
+  },
+  {
+   "id": "2026-ext-S2-E3",
+   "bloc": "PRO",
+   "tipus": [
+    "DDI",
+    "INT"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Binomial (3.1, 3.2) y área entre recta y cúbica (3.3)."
+  },
+  {
+   "id": "2026-ext-S2-E4A",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": true
+   },
+   "confianza": "alta",
+   "notas": "Opción A."
+  },
+  {
+   "id": "2026-ext-S2-E4B",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "PRJ"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Opción B. Cuarto vértice y longitudes (DST); vértice del plano paralelo por la perpendicular desde A (PRJ) y altura como distancia entre planos."
+  },
+  {
+   "id": "2026-ord-S1-E1",
+   "bloc": "ANA",
+   "tipus": [
+    "CONT",
+    "INT",
+    "TAN"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Continuidad con parámetro, área de función a trozos y tangente paralela a una recta; tres apartados de peso similar."
+  },
+  {
+   "id": "2026-ord-S1-E2",
+   "bloc": "ALG",
+   "tipus": [
+    "SIS",
+    "RPL",
+    "RES"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Discusión (2.1), interpretación geométrica de los tres planos (2.2) y resolución."
+  },
+  {
+   "id": "2026-ord-S1-E3",
+   "bloc": "PRO",
+   "tipus": [
+    "PRC",
+    "TEO"
+   ],
+   "subtipus": [
+    "BOL"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Ítem mixto: 3.1 y 3.2 PRC; 3.3 Bolzano con tanteo en un polinomio."
+  },
+  {
+   "id": "2026-ord-S1-E4A",
+   "bloc": "ANA",
+   "tipus": [
+    "OPT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "alta",
+   "notas": "Opción A."
+  },
+  {
+   "id": "2026-ord-S1-E4B",
+   "bloc": "GEO",
+   "tipus": [
+    "VOL",
+    "EQG",
+    "LLG"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "Opción B. 4.2 y 4.3 son área y volumen (VOL); 4.1 es EQG; 4.3 da la condición sobre S como lugar (LLG)."
+  },
+  {
+   "id": "2026-ord-S5-E1",
+   "bloc": "ANA",
+   "tipus": [
+    "INT",
+    "PAR"
+   ],
+   "subtipus": [
+    "ARE"
+   ],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": true
+   },
+   "confianza": "media",
+   "notas": "1.3 determina y justifica la unicidad de la parábola a partir de condiciones (PAR); principal INT por 1.2."
+  },
+  {
+   "id": "2026-ord-S5-E2",
+   "bloc": "ALG",
+   "tipus": [
+    "DET",
+    "MAT",
+    "SIS"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": true,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Invertibilidad de productos de matrices rectangulares (DET/rango) y SCI de un sistema con parámetros; principal discutible entre DET y MAT."
+  },
+  {
+   "id": "2026-ord-S5-E3",
+   "bloc": "PRO",
+   "tipus": [
+    "PRC",
+    "EXT"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Ítem mixto: 3.1 y 3.2 PRC; 3.3 extremos absolutos de una función dada en un intervalo."
+  },
+  {
+   "id": "2026-ord-S5-E4A",
+   "bloc": "ANA",
+   "tipus": [
+    "GRAF",
+    "TAN",
+    "INT"
+   ],
+   "subtipus": [
+    "DEF"
+   ],
+   "atributs": {
+    "figura": true,
+    "parametro": false,
+    "aplicado": false,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Opción A. Se lee f' de la gráfica (GRAF); 4.3 es integral definida de f' (área = f(0)-f(-1))."
+  },
+  {
+   "id": "2026-ord-S5-E4B",
+   "bloc": "GEO",
+   "tipus": [
+    "DST",
+    "RPL"
+   ],
+   "subtipus": [],
+   "atributs": {
+    "figura": false,
+    "parametro": false,
+    "aplicado": true,
+    "comprobar": false
+   },
+   "confianza": "media",
+   "notas": "Opción B. 4.3 es corte recta-plano (se clasifica RPL)."
+  }
+ ]
+}

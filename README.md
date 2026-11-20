@@ -31,7 +31,7 @@ Como *x*² − 4*x* + 5 = (*x* − 2)² + 1, el ejercicio es una traslación má
 |---|---|
 | Corpus de Matemàtiques (1998–2026) | Completo |
 | Transcripción a texto estructurado (LaTeX) | En curso |
-| Taxonomía y clasificación de ítems | En curso (taxonomía v1 en borrador) |
+| Taxonomía y clasificación de ítems | En curso (taxonomía v1.1; 540 ítems clasificados, pendientes de revisión) |
 | Atribución de fuentes y predicción | Pendiente |
 | Aplicación web | Pendiente |
 | Resto de asignaturas | Pendiente |
