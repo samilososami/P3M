@@ -7,6 +7,7 @@ Los PDF están en [`examens/matematiques/<año>/`](../../examens/matematiques/),
 |---|---|
 | `manifest.csv` | Un PDF por fila: ruta, año, convocatoria, tipo, series que contiene, páginas, fuente, URL base, sha256 y número de versiones anteriores |
 | `etiquetes_manuals_2014_2026.csv` | 79 preguntas de análisis (PAU 2014–2026) clasificadas a mano por tipo. Sirven para validar el clasificador automático |
+| `TAXONOMIA.md` | Taxonomía v1 (bloques, tipos de ejercicio y atributos) para clasificar los ítems. Borrador pendiente de aprobación |
 
 ## Nombres de los ficheros
 `pau_mate` + año en dos cifras + código:
