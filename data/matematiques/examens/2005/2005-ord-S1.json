@@ -104,7 +104,7 @@
       "tipus": "problema",
       "opcio": null,
       "punts": 4.0,
-      "enunciat": "La recta tangent a la paràbola $y=3-x^2$ en un punt $M$ situat dins del primer quadrant ($x>0$, $y>0$), talla l'eix $OX$ en el punt $B$ i l'eix $OY$ en el punt $A$.",
+      "enunciat": "La recta tangent a la paràbola $y=3-x^2$ en un punt $M$ situat dins del primer quadrant ($x>0$, $y>0$), talla l'eix $OX$ en el punt $A$ i l'eix $OY$ en el punt $B$.",
       "apartats": [
         {
           "lletra": "a",
@@ -120,7 +120,8 @@
       "figures": [],
       "solucio": {
         "desenvolupament": "a) Gràfic: la paràbola $y=3-x^2$ amb el punt $M$ del primer quadrant, la tangent en $M$, i els punts $A$ (sobre $OY$) i $B$ (sobre $OX$) on talla els eixos, formant el triangle $OAB$.\n\nb) Sigui $M=(a,\\,3-a^2)$ amb $a>0$. Com que $y'(a)=-2a$, la recta tangent és $y-(3-a^2)=-2a(x-a)$, és a dir, $2ax+y-3-a^2=0$. Els punts de tall amb els eixos són $B=\\left(\\dfrac{3+a^2}{2a},\\,0\\right)$ i $A=(0,\\,3+a^2)$. El triangle $OAB$ és rectangle en $O$ i la seva àrea és:\n\n$$S(a)=\\dfrac12\\cdot(3+a^2)\\cdot\\dfrac{3+a^2}{2a}=\\dfrac{(3+a^2)^2}{4a}$$\n\n$$S'(a)=\\dfrac{(3+a^2)(3a^2-3)}{4a^2}=0\\iff a=\\pm1$$\n\nDescartem $a=-1$ (ja que $a>0$). Com que $S'$ és negativa per a $a<1$ i positiva per a $a>1$, $a=1$ és un mínim. També $S''(1)>0$.",
-        "resultat": "$M=(1,\\,2)$ (amb àrea mínima $S(1)=4$)"
+        "resultat": "$M=(1,\\,2)$ (amb àrea mínima $S(1)=4$)",
+        "nota": "l'enunciat anomena $A$ el punt de tall amb $OX$ i $B$ el de tall amb $OY$, però els criteris oficials (gràfic i solució) fan el contrari ($B$ sobre $OX$, $A$ sobre $OY$); la solució segueix els criteris."
       }
     },
     {
