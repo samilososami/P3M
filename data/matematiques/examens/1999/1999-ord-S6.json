@@ -38,7 +38,7 @@
       "enunciat": "Sigui $f(x)=1-\\sqrt[3]{x^2}$. Calculeu l'àrea de la regió que limita la gràfica de $f(x)$ i l'eix d'abscisses i que està representada en el dibuix següent:",
       "apartats": [],
       "figures": [
-        "gràfica de $f(x)=1-\\sqrt[3]{x^2}$, amb un màxim en $(0,1)$ i que talla l'eix d'abscisses en $x=-1$ i $x=1$. La regió ombrejada és la que hi ha entre la gràfica i l'eix d'abscisses, entre $x=-1$ i $x=1$."
+        "gràfica de $f(x)=1-\\sqrt[3]{x^2}$, amb un vèrtex punxegut (cúspide) en $(0,1)$ i que talla l'eix d'abscisses en $x=-1$ i $x=1$. La regió ombrejada és la que hi ha entre la gràfica i l'eix d'abscisses, entre $x=-1$ i $x=1$."
       ],
       "solucio": null
     },
@@ -100,7 +100,7 @@
       "enunciat": "Per mesurar l'altura d'un núvol s'han fet simultàniament dues observacions des dels punts $A$ i $B$ distants entre si 1 quilòmetre i situats tots dos al nivell del mar. La inclinació de la visual des de $A$ al núvol respecte a l'horitzontal és de $47^\\circ$. Els angles que formen les visuals des de $A$ i des de $B$ amb la recta $AB$ són, respectivament, de $38^\\circ$ i $53^\\circ$, tal com s'indica a la figura següent:\n\n\nCalculeu l'altura del núvol respecte al nivell del mar.\n\n**Nota:** el PDF de criteris (`pau_mate99jp.pdf`) només conté la solució de la sèrie 1; no hi ha solució oficial per a la sèrie 6 en aquest fitxer.",
       "apartats": [],
       "figures": [
-        "punts $A$ i $B$ al nivell del mar, separats 1 km (segment $AB$ horitzontal). Des de $A$ hi ha una visual cap al núvol que forma $47^\\circ$ amb l'horitzontal i un angle de $38^\\circ$ amb la recta $AB$. Des de $B$ hi ha una visual cap al núvol que forma un angle de $53^\\circ$ amb la recta $BA$."
+        "punts $A$ i $B$ al nivell del mar, separats 1 km (segment $AB$ horitzontal). Des de $A$ la visual cap al núvol forma $47^\\circ$ amb l'horitzontal (línia de punts fins al punt del nivell del mar situat sota el núvol); l'angle entre aquesta projecció horitzontal i la recta $AB$ és de $38^\\circ$. Des de $B$, l'angle entre $BA$ i la projecció horitzontal de la visual cap al núvol és de $53^\\circ$."
       ],
       "solucio": null
     }
