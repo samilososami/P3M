@@ -30,6 +30,7 @@ Los PDF están en [`examens/matematiques/<año>/`](../../examens/matematiques/),
 | aldeaglobal.net/jrillo | 1998–2017 | Los ficheros de 2014–2017 son idénticos (sha256) a los oficiales, o bien versiones oficiales anteriores del mismo PDF |
 
 Cuando había dos copias distintas de un mismo PDF, me he quedado con la que tiene más series. La otra está en `examens/matematiques/_versions_anteriors/`.
+Las copias de selecat.cat que difieren de la principal sin tener más series están en `examens/matematiques/_versions_alternatives/`.
 
 ## Series
 Según el Govern (respuesta parlamentaria recogida por el diario Ara), se preparan **5 series de cada examen** y solo se publican las que se usan:
