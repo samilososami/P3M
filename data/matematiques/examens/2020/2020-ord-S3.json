@@ -1,0 +1,212 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2020-ord-S3",
+  "assignatura": "matematiques",
+  "any": 2020,
+  "convocatoria": "ordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 4",
+  "instruccions": "Responeu a QUATRE de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2,5 punts. Podeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació. Podeu utilitzar les pàgines en blanc (pàgines 14 i 15) per a fer esquemes, esborranys, etc., o per a acabar de respondre a alguna qüestió si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de la qüestió corresponent.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2020/pau_mate20jl.pdf",
+      "pagines": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2020/pau_mate20jp.pdf",
+      "pagines": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2020-ord-S3-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui $A=\\begin{pmatrix} 1 & 0 & 2 \\\\ 1 & -1 & 1 \\\\ 0 & a & 1 \\end{pmatrix}$, en què $a$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Determineu el rang de la matriu $A$ en funció del paràmetre $a$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Comproveu que $\\det(A^2+A)=0$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $\\det A=\\begin{vmatrix} 1 & 0 & 2 \\\\ 1 & -1 & 1 \\\\ 0 & a & 1 \\end{vmatrix}=a-1$. Si $a\\neq1$, $\\operatorname{rang}A=3$. Si $a=1$, $\\operatorname{rang}A=2$, perquè el menor $\\begin{vmatrix}1&0\\\\1&-1\\end{vmatrix}=-1\\neq0$.\n\nb) $A^2=\\begin{pmatrix} 1 & 2a & 4 \\\\ 0 & 1+a & 2 \\\\ a & 0 & 1+a \\end{pmatrix}$, i per tant $A^2+A=\\begin{pmatrix} 2 & 2a & 6 \\\\ 1 & a & 3 \\\\ a & a & 2+a \\end{pmatrix}$. La primera fila és $2$ vegades la segona ($(2,2a,6)=2\\cdot(1,a,3)$), per tant $\\det(A^2+A)=0$.",
+        "resultat": "a) $\\operatorname{rang}A=3$ si $a\\neq1$, i $\\operatorname{rang}A=2$ si $a=1$; b) $\\det(A^2+A)=0$ (la primera fila és el doble de la segona)"
+      }
+    },
+    {
+      "id": "2020-ord-S3-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "S'han trobat unes pintures rupestres en una cova situada en una zona molt pedregosa. Hi ha un camí que voreja parcialment la cova format per l'arc de corba $y=4-x^2$ d'extrems $(0,4)$ i $(2,0)$. La cova està situada en el punt de coordenades $(0,2)$, tal com es mostra en la figura, i es vol habilitar un accés rectilini $d$ des del camí a la cova que sigui el més curt possible.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Identifiqueu a la gràfica de la figura les coordenades de la cova i del punt del camí des d'on es vol habilitar l'accés. Comproveu que la funció $f(x)=\\sqrt{x^4-3x^2+4}$ calcula la distància des de cada punt del camí a la cova."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu les coordenades del punt del camí que queda més a prop de la cova i digueu quina serà la longitud de l'accés $d$."
+        }
+      ],
+      "figures": [
+        "arc de corba $y=4-x^2$ entre $(0,4)$ i $(2,0)$, que és el camí; la cova es marca a $(0,2)$ sobre l'eix d'ordenades, i un segment discontinu $d$ uneix la cova amb un punt del camí."
+      ],
+      "solucio": {
+        "desenvolupament": "a) La cova és $A=(0,2)$. Un punt genèric del camí és $P=(x,4-x^2)$, amb $0\\leq x\\leq2$, i la seva distància a $A$ és $d(A,P)=\\sqrt{x^2+(4-x^2-2)^2}=\\sqrt{x^2+(2-x^2)^2}=\\sqrt{x^4-3x^2+4}=f(x)$.\n\nb) $f'(x)=\\dfrac{2x^3-3x}{\\sqrt{x^4-3x^2+4}}=\\dfrac{x(2x^2-3)}{f(x)}$, que s'anul·la per a $x=0$ i $x=\\sqrt{\\tfrac32}$. Com que $f'<0$ per a $0<x<\\sqrt{3/2}$ i $f'>0$ per a $x>\\sqrt{3/2}$, el punt $x=\\sqrt{3/2}$ és un mínim (i $x=0$, un extrem de l'arc, no és mínim del camí). Per tant el punt del camí més proper és $\\left(\\dfrac{\\sqrt6}{2},\\dfrac52\\right)$, i la distància és $f\\left(\\sqrt{\\tfrac32}\\right)=\\sqrt{\\tfrac94-\\tfrac92+4}=\\sqrt{\\tfrac74}=\\dfrac{\\sqrt7}{2}$. La longitud de l'accés és $d=\\dfrac{\\sqrt7}{2}\\approx1{,}32$.",
+        "resultat": "a) Cova $(0,2)$; b) punt del camí $\\left(\\dfrac{\\sqrt6}{2},\\dfrac52\\right)$, i longitud $d=\\dfrac{\\sqrt7}{2}$"
+      }
+    },
+    {
+      "id": "2020-ord-S3-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\begin{cases} ax+y=a \\\\ x+ay+z=5 \\\\ x+2y+z=5 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $a$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Resoleu el sistema per al cas $a=2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Sigui $A=\\begin{pmatrix} a & 1 & 0 \\\\ 1 & a & 1 \\\\ 1 & 2 & 1 \\end{pmatrix}$, amb $\\det A=a^2-2a=a(a-2)$.\n\n- Si $a\\neq0$ i $a\\neq2$: $\\operatorname{rang}A=\\operatorname{rang}A'=3=$ nombre d'incògnites, i el sistema és compatible determinat (SCD).\n- Si $a=0$: $\\operatorname{rang}A=2$ (el menor $\\begin{vmatrix}0&1\\\\1&0\\end{vmatrix}=-1\\neq0$). La matriu ampliada és $\\begin{pmatrix} 0 & 1 & 0 & 0 \\\\ 1 & 0 & 1 & 5 \\\\ 1 & 2 & 1 & 5 \\end{pmatrix}$ i la tercera fila és la segona més dues vegades la primera, així que $\\operatorname{rang}A'=2$. El sistema és compatible indeterminat (SCI) amb un grau de llibertat.\n- Si $a=2$: $A=\\begin{pmatrix} 2 & 1 & 0 \\\\ 1 & 2 & 1 \\\\ 1 & 2 & 1 \\end{pmatrix}$ té les files segona i tercera iguals, i $\\operatorname{rang}A=\\operatorname{rang}A'=2<3$. El sistema és SCI amb un grau de llibertat.\n\nb) Per a $a=2$ les equacions segona i tercera coincideixen, i el sistema és $\\begin{cases} 2x+y=2 \\\\ x+2y+z=5 \\end{cases}$. Prenent $x=\\lambda$ com a paràmetre, $y=2-2\\lambda$ i $z=5-\\lambda-2y=1+3\\lambda$. La solució és $(x,y,z)=(\\lambda,\\,2-2\\lambda,\\,1+3\\lambda)$, $\\lambda\\in\\mathbb{R}$.",
+        "resultat": "a) SCD si $a\\neq0$ i $a\\neq2$; SCI (un grau de llibertat) si $a=0$ i si $a=2$; b) $(x,y,z)=(\\lambda,\\,2-2\\lambda,\\,1+3\\lambda)$, $\\lambda\\in\\mathbb{R}$"
+      }
+    },
+    {
+      "id": "2020-ord-S3-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui la funció $f(x)=\\dfrac{1}{x}\\cdot\\ln(x)$, en què $\\ln$ indica el logaritme neperià, definida per a $x>0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Calculeu les coordenades del punt de la corba $y=f(x)$ en què la recta tangent a la corba en aquest punt és horitzontal. Estudieu si aquest punt és un extrem relatiu i classifiqueu-lo."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'àrea del recinte delimitat per la corba $y=f(x)$, les rectes verticals $x=1$ i $x=e$ i l'eix de les abscisses."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=\\dfrac{1-\\ln x}{x^2}$, que s'anul·la quan $\\ln x=1$, és a dir, $x=e$. Llavors $f(e)=\\dfrac{1}{e}$, i el punt és $\\left(e,\\tfrac1e\\right)$. Com que $f''(x)=\\dfrac{2\\ln x-3}{x^3}$, $f''(e)=-\\dfrac{1}{e^3}<0$, i per tant és un màxim relatiu.\n\nb) Per a $1\\leq x\\leq e$, $\\ln x\\geq0$ i per tant $f\\geq0$. L'àrea és\n$$A=\\int_1^e\\frac{\\ln x}{x}\\,dx=\\left[\\frac{(\\ln x)^2}{2}\\right]_1^e=\\frac12-0=\\frac12\\ \\text{u}^2.$$",
+        "resultat": "a) Punt $\\left(e,\\tfrac1e\\right)$, màxim relatiu; b) $A=\\dfrac12$ u²"
+      }
+    },
+    {
+      "id": "2020-ord-S3-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la recta $r$ d'equació $\\dfrac{x-1}{2}=\\dfrac{y-3}{-2}=\\dfrac{z}{1}$ i la recta $s$ que passa pel punt $P=(2,-5,1)$ i que té per vector director $(-1,0,-1)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Estudieu la posició relativa de les rectes $r$ i $s$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'equació general del pla que és paral·lel a la recta $r$ i conté la recta $s$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta $r$ passa pel punt $R=(1,3,0)$ i té vector director $\\boldsymbol v_r=(2,-2,1)$; la recta $s$ té vector director $\\boldsymbol v_s=(-1,0,-1)$. Els vectors directors no són proporcionals, per tant les rectes no són paral·leles. El vector $\\overrightarrow{RP}=(1,-8,1)$ i\n$$\\begin{vmatrix} 1 & -8 & 1 \\\\ 2 & -2 & 1 \\\\ -1 & 0 & -1 \\end{vmatrix}=-8\\neq0,$$\nper tant les rectes no són coplanàries: es creuen a l'espai.\n\nb) El vector normal del pla és $\\boldsymbol n=\\boldsymbol v_r\\times\\boldsymbol v_s=(2,1,-2)$. Com que el pla ha de contenir $s$, passa per $P$: $2(x-2)+(y+5)-2(z-1)=0$, és a dir, $2x+y-2z+3=0$.",
+        "resultat": "a) Les rectes es creuen (no són paral·leles ni es tallen); b) $2x+y-2z+3=0$"
+      }
+    },
+    {
+      "id": "2020-ord-S3-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Una empresa de ceràmica vol posar a la venda una rajola quadrada de 20 cm de costat pintada a dos colors, de manera que la superfície de cada color sigui la mateixa i que si es posen les rajoles l'una al costat de l'altra es vegi un dibuix continu (figura 1). Per a fer-ho, l'empresa utilitza en cada rajola la funció $f(x)=x^3-3x^2+2x+1$ enquadrada entre els punts de coordenades $(0,0)$, $(0,2)$, $(2,0)$ i $(2,2)$, tal com es mostra en la figura 2, i fa servir com a unitat de mesura el decímetre.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Justifiqueu que, efectivament, aquesta funció permet ajuntar les rajoles de manera contínua i derivable."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Justifiqueu que aquesta funció divideix el quadrat esmentat en dues parts que tenen la mateixa superfície."
+        }
+      ],
+      "figures": [
+        "quadrat de costat 2 dm amb vèrtexs $(0,0)$, $(2,0)$, $(0,2)$ i $(2,2)$. La gràfica de $f$ va des de $(0,1)$ fins a $(2,1)$ i divideix el quadrat en dues parts: la inferior, sota la gràfica, pintada de fosc, i la superior, en blanc."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Com que $f$ és un polinomi, és contínua i derivable en tot $\\mathbb{R}$. La unió entre dues rajoles és contínua si $f(0)=f(2)$: $f(0)=1=f(2)$. La unió és derivable si $f'(0)=f'(2)$: amb $f'(x)=3x^2-6x+2$, $f'(0)=2=f'(2)$.\n\nb) $\\displaystyle\\int_0^2\\left(x^3-3x^2+2x+1\\right)dx=\\left[\\frac{x^4}{4}-x^3+x^2+x\\right]_0^2=4-8+4+2=2$ dm². Com que l'àrea del quadrat és $2\\cdot2=4$ dm², la funció divideix el quadrat en dues parts de la mateixa superfície.",
+        "resultat": "a) $f(0)=f(2)=1$ i $f'(0)=f'(2)=2$, per tant la unió és contínua i derivable; b) $\\displaystyle\\int_0^2 f(x)\\,dx=2$ dm², que és la meitat de l'àrea del quadrat ($4$ dm²)"
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}
