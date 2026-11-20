@@ -1,0 +1,177 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2004-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2004,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu). En les respostes que doneu heu d'explicar sempre què és el que voleu fer i per què. Puntuació de cada qüestió: 2 punts. Total qüestions: 3 x 2 = 6 punts. Problema: 4 punts.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2004/pau_mate04jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2004/pau_mate04jp.pdf",
+      "pagines": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2004-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La matriu ampliada d'un sistema d'equacions lineals, un cop reduïda pel mètode de Gauss, és\n$$\\left(\\begin{array}{ccc|c} 1&2&-1&0\\\\ 0&1&2&1\\\\ 0&0&0&0 \\end{array}\\right).$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "El sistema és compatible o incompatible? Raoneu la resposta."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "En cas que sigui compatible, resoleu-lo."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El sistema reduït té dues equacions i tres incògnites. El rang de la matriu del sistema i el de la matriu ampliada són 2. Per tant, el sistema és compatible indeterminat amb un grau de llibertat.\n\nb) El sistema reduït és $x+2y-z=0$, $y+2z=1$. Prenent $z$ com a incògnita secundària: $x=5z-2$, $y=1-2z$, $z$ qualsevol.",
+        "resultat": "a) compatible indeterminat, amb un grau de llibertat; b) $x=5z-2$, $y=1-2z$, $z\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2004-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu els punts de l'espai $A(0,0,1)$, $B(1,1,2)$ i $C(0,-1,-1)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Trobeu l'equació del pla $ABC$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Si $D$ és el punt de coordenades $(k,0,0)$, quant ha de valer $k$ per tal que els quatre punts $A$, $B$, $C$ i $D$ siguin coplanaris?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Amb $\\overrightarrow{AB}=(1,1,1)$ i $\\overrightarrow{AC}=(0,-1,-2)$, el determinant\n$$\\begin{vmatrix} x & 1 & 0\\\\ y & 1 & -1\\\\ z-1 & 1 & -2\\end{vmatrix}=0$$\ndona $-x+2y-z+1=0$. Comprovació: $A$, $B$ i $C$ hi pertanyen.\n\nb) Substituint $D=(k,0,0)$ a l'equació del pla: $-k+1=0$, per tant $k=1$.",
+        "resultat": "a) $-x+2y-z+1=0$; b) $k=1$."
+      }
+    },
+    {
+      "id": "2004-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu les matrius\n$$A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},\\qquad B=\\begin{pmatrix}1&2\\\\2&2\\end{pmatrix}.$$\nTrobeu una matriu $X$ que compleixi $A\\cdot X+A=B$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Com que $\\det A=1$, $A^{-1}=\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}$. Des de $AX=B-A$:\n$$X=A^{-1}(B-A)=\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}\\begin{pmatrix}-1&1\\\\1&1\\end{pmatrix}=\\begin{pmatrix}-2&0\\\\3&1\\end{pmatrix}.$$\nComprovació: $A\\cdot X+A=\\begin{pmatrix}-1&1\\\\1&1\\end{pmatrix}+\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix}=B$.",
+        "resultat": "$X=\\begin{pmatrix}-2&0\\\\3&1\\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2004-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Els punts $A(k-3,2,4)$, $B(0,k+2,2)$ i $C(-2,6,k+1)$ són tres dels vèrtexs d'un rombe $ABCD$ (vegeu la figura).",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu el valor de $k$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Demostreu que el rombe és un quadrat."
+        }
+      ],
+      "figures": [
+        "rombe amb $C$ al vèrtex superior, $B$ al vèrtex de la dreta, $A$ al vèrtex inferior i $D$ al vèrtex de l'esquerra."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Com que és un rombe, $d(A,B)=d(B,C)$. Llavors\n$$(k-3)^2+k^2+4=4+(k-4)^2+(k-1)^2 \\iff 2k^2-6k+9=2k^2-10k+17 \\iff k=2.$$\n\nb) Amb $k=2$: $A=(-1,2,4)$, $B=(0,4,2)$, $C=(-2,6,3)$. Els vectors $\\overrightarrow{AB}=(1,2,-2)$ i $\\overrightarrow{BC}=(-2,2,1)$ són perpendiculars, perquè $\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=-2+4-2=0$. Com que el rombe té costats iguals i un angle recte, és un quadrat.",
+        "resultat": "a) $k=2$; b) els costats consecutius són perpendiculars, per tant el rombe és un quadrat."
+      }
+    },
+    {
+      "id": "2004-ord-S1-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considerem la funció $f(x)=x^3+mx^2+1$, amb $m\\ge0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 2.0,
+          "enunciat": "Calculeu el valor de $m$ per tal que l'àrea del recinte limitat per la gràfica de la funció, l'eix $OX$ i les rectes $x=0$ i $x=2$ sigui de 10 unitats quadrades."
+        },
+        {
+          "lletra": "b",
+          "punts": 2.0,
+          "enunciat": "Per a $m=1$, indiqueu el punt o els punts on la recta tangent a la gràfica de la funció forma un angle de $45^\\circ$ amb el semieix positiu de $OX$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Per a $x\\in[0,2]$ i $m\\ge0$, $f(x)\\ge1>0$, de manera que l'àrea és\n$$\\int_0^2\\left(x^3+mx^2+1\\right)dx=\\left[\\frac{x^4}{4}+\\frac{mx^3}{3}+x\\right]_0^2=6+\\frac{8m}{3}.$$\nIgualant a 10: $\\dfrac{8m}{3}=4$, és a dir, $m=\\dfrac32$.\n\nb) Amb $m=1$, $f'(x)=3x^2+2x$. L'angle de $45^\\circ$ amb el semieix positiu de $OX$ exigeix pendent 1: $3x^2+2x=1 \\iff 3x^2+2x-1=0$, amb solucions $x=-1$ i $x=\\tfrac13$. Els punts són $(-1,1)$ i $\\left(\\tfrac13,\\tfrac{31}{27}\\right)$.",
+        "resultat": "a) $m=\\dfrac32$; b) $(-1,1)$ i $\\left(\\tfrac13,\\tfrac{31}{27}\\right)$."
+      }
+    },
+    {
+      "id": "2004-ord-S1-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donats la funció $f(x)=\\sqrt x$ i el punt $A(2,0)$ situat sobre l'eix de les abscisses, es demana:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu la funció que expressa la distància del punt $A$ a un punt qualsevol de la gràfica de la funció."
+        },
+        {
+          "lletra": "b",
+          "punts": 3.0,
+          "enunciat": "Trobeu les coordenades del punt de la gràfica de $f(x)$ més proper a $A$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Un punt qualsevol de la gràfica és $(x,\\sqrt x)$, i la seva distància a $A$ és\n$$d(x)=\\sqrt{(x-2)^2+x}=\\sqrt{x^2-3x+4}.$$\n\nb) Cal minimitzar $d(x)$: $d'(x)=\\dfrac{2x-3}{2\\sqrt{x^2-3x+4}}=0 \\iff x=\\dfrac32$. Com que $d'(x)<0$ per a $x<\\tfrac32$ i $d'(x)>0$ per a $x>\\tfrac32$, és un mínim. El punt és $\\left(\\tfrac32,\\sqrt{\\tfrac32}\\right)=\\left(\\tfrac32,\\tfrac{\\sqrt6}{2}\\right)$.",
+        "resultat": "a) $d(x)=\\sqrt{x^2-3x+4}$; b) $\\left(\\tfrac32,\\tfrac{\\sqrt6}{2}\\right)$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris; les pàgines de criteris revisades com a imatge es indiquen en Nota si cal i amb càlcul",
+    "revisat_huma": false
+  }
+}
