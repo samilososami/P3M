@@ -1,0 +1,157 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "1999-ord-S1",
+  "assignatura": "matematiques",
+  "any": 1999,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu).",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/1999/pau_mate99jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/1999/pau_mate99jp.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "1999-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Resoleu el sistema següent per als valors de $k$ que el facin compatible:\n\n$$\\begin{cases} x+2y=3 \\\\ 2x-y=1 \\\\ 4x+3y=k \\end{cases}$$",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Les dues primeres equacions tenen com a única solució $x=y=1$. Substituint a la tercera: $4+3=k$, és a dir, $k=7$. Per tant, el sistema només és compatible per a $k=7$ (i aleshores la solució és $x=y=1$); per a la resta de valors és incompatible.",
+        "resultat": "compatible només per a $k=7$, amb solució $x=y=1$."
+      }
+    },
+    {
+      "id": "1999-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'àrea determinada per les corbes d'equacions $y=x^4-2x^2$ i $y=2x^2$, representada en el dibuix següent:",
+      "apartats": [],
+      "figures": [
+        "gràfiques de $y=x^4-2x^2$ i $y=2x^2$. Les dues corbes es tallen en $x=-2$, $x=0$ i $x=2$. La regió ombrejada és la compresa entre les dues corbes, a cada costat de l'origen."
+      ],
+      "solucio": {
+        "desenvolupament": "Els punts de tall de les gràfiques són $x=\\pm2$ i $x=0$. Com que $g(x)-f(x)=4x^2-x^4$ és positiva per a $x\\in[-2,2]$, l'àrea és $\\displaystyle\\int_{-2}^{2}(4x^2-x^4)\\,dx=\\frac{128}{15}\\approx 8{,}53$.",
+        "resultat": "àrea $=\\dfrac{128}{15}$ unitats quadrades."
+      }
+    },
+    {
+      "id": "1999-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu raonadament l'expressió d'una funció $f(x)$ tal que $f'(x)=xe^{-x^2}$ i que $f(0)=\\dfrac12$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Les primitives de $xe^{-x^2}$ són de la forma $-\\tfrac12 e^{-x^2}+C$. Imposant $f(0)=\\tfrac12$: $\\tfrac12=-\\tfrac12+C$, d'on $C=1$.",
+        "resultat": "$f(x)=1-\\dfrac12 e^{-x^2}$",
+        "nota": "el criteri oficial escriu la solució com $f(x)=\\tfrac12 e^{-x^2}+1$, sense el signe negatiu. Aquesta expressió no compleix $f'(x)=xe^{-x^2}$ ni $f(0)=\\tfrac12$ (donaria $f(0)=\\tfrac32$), de manera que es tracta d'una errata del criteri. El resultat indicat aquí és el correcte."
+      }
+    },
+    {
+      "id": "1999-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Des d'una certa distància, l'angle amb l'horitzontal de la visual cap al punt més alt d'un arbre és de $60^\\circ$. Ens allunyem 10 metres i l'angle anterior és ara de $30^\\circ$. Quina és l'alçària de l'arbre?",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Amb $h$ l'alçària de l'arbre i $d$ la distància inicial: $\\dfrac{h}{d}=\\tan60^\\circ$ i $\\dfrac{h}{d+10}=\\tan30^\\circ$. D'aquí surt $h=5\\sqrt3\\approx 8{,}66$ m.",
+        "resultat": "$h=5\\sqrt3$ m $\\approx 8{,}66$ m."
+      }
+    },
+    {
+      "id": "1999-ord-S1-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donada la funció $f(x)=x-4+\\dfrac{16}{x+4}$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Estudieu-ne la continuïtat."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Estudieu-ne els intervals de creixement i decreixement i els màxims i mínims locals."
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Calculeu l'àrea limitada per la gràfica de la funció, l'eix $OX$ i les rectes verticals $x=0$ i $x=2$.\n\n**Nota:** els criteris oficials repartixen 1 punt a l'apartat a), 2 punts a l'apartat b) i 1 punt a l'apartat c). L'enunciat no indica aquest repartiment."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) L'única discontinuïtat és a $x=-4$, on s'anul·la el denominador.\n\nb) La derivada és $f'(x)=1-\\dfrac{16}{(x+4)^2}$, que és positiva per a $x<-8$ i per a $x>0$, i negativa per a $-8<x<0$ (excepte $x=-4$, on no és derivable). Hi ha un màxim local en $x=-8$, amb $f(-8)=-16$, i un mínim local en $x=0$, amb $f(0)=0$.\n\nc) La gràfica és positiva entre 0 i 2, per la qual cosa l'àrea és $\\displaystyle\\int_0^2\\left(x-4+\\frac{16}{x+4}\\right)dx=-6+16\\ln\\frac32\\approx 0{,}4874$.",
+        "resultat": "discontinuïtat només en $x=-4$; creixent a $(-\\infty,-8)\\cup(0,+\\infty)$, decreixent a $(-8,-4)\\cup(-4,0)$; màxim local $(-8,-16)$ i mínim local $(0,0)$; àrea $=-6+16\\ln\\frac32$."
+      }
+    },
+    {
+      "id": "1999-ord-S1-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donat el tetràedre de vèrtexs $A=(0,0,0)$, $B=(1,1,1)$, $C=(3,0,0)$ i $D=(0,3,0)$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Calculeu l'equació del pla que conté la cara $BCD$ i la del pla que conté la cara $ACD$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Calculeu les equacions de dues de les altures del tetràedre, la que passa pel vèrtex $A$ i la que passa pel vèrtex $B$, respectivament. (Nota: altura d'un tetràedre és la recta que passa per un vèrtex i és perpendicular al pla que determina la cara oposada.)"
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Comproveu que les dues altures anteriors es tallen en un punt $P$."
+        },
+        {
+          "lletra": "d",
+          "punts": null,
+          "enunciat": "Comproveu si la recta que uneix qualsevol vèrtex del tetràedre amb $P$ és perpendicular a la cara oposada (i és, per tant, una altura del tetràedre).\n\n**Nota:** els criteris oficials assignen 1 punt a cada apartat. L'enunciat no indica aquest repartiment."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Pla $BCD$: $x+y+z=3$ (els quatre punts $B$, $C$ i $D$ compleixen aquesta equació, i $A$ no hi és). Pla $ACD$: $z=0$.\n\nb) Altura pel vèrtex $A$: perpendicular a $BCD$, amb vector director $\\vec v=(1,1,1)$; és la recta $x=y=z$. Altura pel vèrtex $B$: perpendicular a $ACD$, amb vector director $\\vec w=(0,0,1)$; és la recta $x=y=1$.\n\nc) La primera recta és $x=y=z$ i la segona $x=y=1$. Substituint, el punt de tall és $P=(1,1,1)=B$.\n\nd) No és perpendicular en general. Per exemple, el vector normal de la cara $ABC$ és $(0,1,-1)$, mentre que $\\overrightarrow{DP}=\\overrightarrow{DB}=(1,-2,1)$ no és paral·lel a aquest vector. Per tant, la recta $DP$ no és perpendicular a la cara $ABC$.",
+        "resultat": "$BCD\\equiv x+y+z=3$; $ACD\\equiv z=0$; altures $x=y=z$ i $x=y=1$, que es tallen en $P=(1,1,1)$; la recta $DP$ no és perpendicular a $ABC$, de manera que no és, en general, una altura."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

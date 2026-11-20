@@ -1,0 +1,133 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "1998-ext-S2",
+  "assignatura": "matematiques",
+  "any": 1998,
+  "convocatoria": "extraordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu).",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/1998/pau_mate98sl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "1998-ext-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Les diagonals d'un paral·lelogram mesuren 30 cm i 20 cm i es tallen formant un angle de $40^\\circ$. Calculeu-ne els costats.",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1998-ext-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donat el pla $\\pi$ d'equació $2x-y+2z=4$ i el punt $H=(1,3,-2)$, determineu les coordenades de la projecció ortogonal de $H$ sobre $\\pi$. (Recordeu que la projecció ortogonal d'un punt $H$ sobre un pla $\\pi$ és el peu de la perpendicular a $\\pi$ traçada des de $H$.)",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1998-ext-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'àrea limitada per les corbes $y=e^x$, $y=e^{-x}$ i la recta vertical $x=2$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1998-ext-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu el punt de la gràfica de $y=x+\\ln x$ tal que la recta tangent sigui perpendicular a la recta $2x+6y=5$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1998-ext-S2-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Sigui $f(x)=\\dfrac{x+5}{x^2-9}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació de la recta tangent a la gràfica de $f(x)$ en el punt d'abscissa $x=2$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Estudieu el domini de definició de $f(x)$ i les asímptotes."
+        },
+        {
+          "lletra": "c",
+          "punts": 2.0,
+          "enunciat": "Estudieu els intervals de creixement i decreixement. Feu-ne la representació gràfica."
+        }
+      ],
+      "figures": [],
+      "solucio": null,
+      "punts_detall": "1 punt els apartats a) i b), 2 punts l'apartat c)."
+    },
+    {
+      "id": "1998-ext-S2-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu dues circumferències $C_1$ i $C_2$ del pla que compleixen les condicions següents:\n\n- $C_1$ passa pel punt $P=(2,0)$ i en aquest punt té per tangent la recta $y=x-2$.\n- El centre de $C_1$ és a sobre de la recta $y=x$.\n- $C_2$ té per equació $x^2+y^2-8x-8y=k$, on $k$ és una certa constant.\n- Les circumferències $C_1$ i $C_2$ són tangents exteriors, tal com s'indica en la figura següent:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu el centre i el radi de $C_1$ i escriviu l'equació de $C_1$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu les coordenades del centre de $C_2$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Calculeu les coordenades del punt d'intersecció de $C_1$ amb $C_2$."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Calculeu el valor de la constant $k$ de l'equació de $C_2$."
+        }
+      ],
+      "figures": [
+        "circumferència petita $C_1$ i circumferència gran $C_2$, tangents exteriorment. Un segment de punts uneix els dos centres i passa pel punt de tangència entre les dues circumferències."
+      ],
+      "solucio": null,
+      "punts_detall": "1 punt per apartat."
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; sense solució oficial",
+    "revisat_huma": false
+  }
+}

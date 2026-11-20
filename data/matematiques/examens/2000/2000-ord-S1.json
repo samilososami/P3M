@@ -1,0 +1,175 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2000-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2000,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu).",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2000/pau_mate00jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2000/pau_mate00jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2000-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu els valors de $a$ tals que les tangents a la gràfica de la funció $f(x)=ax^3+2x^2+3$ en els punts d'abscisses $x=1$ i $x=-1$ siguin perpendiculars entre si.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$f'(x)=3ax^2+4x$. Els pendents de les tangents en $x=1$ i $x=-1$ són $m_1=f'(1)=3a+4$ i $m_2=f'(-1)=3a-4$. La condició de perpendicularitat $m_1\\cdot m_2=-1$ dona $9a^2-16=-1$, és a dir, $a^2=\\tfrac53$.",
+        "resultat": "$a=\\pm\\sqrt{\\dfrac53}=\\pm\\dfrac{\\sqrt{15}}{3}$"
+      }
+    },
+    {
+      "id": "2000-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'àrea que té l'únic recinte tancat limitat per les gràfiques de les funcions $y=-x^2+7$ i $y=\\dfrac6x$, representat en el dibuix següent:",
+      "apartats": [],
+      "figures": [
+        "gràfiques de $y=-x^2+7$ (paràbola) i de $y=\\dfrac6x$ (hipèrbola, amb la branca de la dreta situada al primer quadrant). La regió ombrejada és el recinte tancat per sobre de la hipèrbola i per sota de la paràbola, entre $x=1$ i $x=2$."
+      ],
+      "solucio": {
+        "desenvolupament": "Els punts de tall satisfan $-x^2+7=\\dfrac6x$, que és equivalent a $x^3-7x+6=0$, és a dir, $(x-1)(x^2+x-6)=0$. Les solucions són $x=-3$, $x=1$ i $x=2$. L'únic recinte tancat del dibuix és el que correspon a $x\\in[1,2]$, i l'àrea és $\\displaystyle\\int_1^2\\left(7-x^2-\\frac6x\\right)dx=\\left[7x-\\frac{x^3}{3}-6\\ln x\\right]_1^2=\\frac{14}{3}-6\\ln2\\approx0{,}5078$.",
+        "resultat": "àrea $=\\dfrac{14}{3}-6\\ln2\\approx0{,}5078$ unitats quadrades."
+      }
+    },
+    {
+      "id": "2000-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donat el sistema d'equacions\n\n$$\\begin{cases} 3x-2y+z=5 \\\\ 2x-3y+z=4 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Afegiu-hi una equació lineal de manera que el sistema resultant sigui incompatible."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Afegiu-hi una equació lineal de manera que el sistema resultant sigui compatible indeterminat. Resoleu el sistema que s'obtingui.\n\n**Nota:** els criteris oficials assignen 1 punt a cada apartat. L'enunciat no indica aquest repartiment."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Basta afegir una equació incompatible amb qualsevol de les dues donades. Per exemple, $3x-2y+z=0$.\n\nb) Restant les dues equacions s'obté $x+y=1$, que es pot afegir al sistema. El sistema resultant és compatible indeterminat (rang 2). Desenvolupament propi, comprovat: de $x+y=1$ surt $y=1-x$, i substituint a la primera $z=7-5x$; per tant, les solucions són $x=\\lambda$, $y=1-\\lambda$, $z=7-5\\lambda$, amb $\\lambda\\in\\mathbb{R}$.",
+        "resultat": "a) per exemple $3x-2y+z=0$; b) $x+y=1$, amb solucions $(\\lambda,\\ 1-\\lambda,\\ 7-5\\lambda)$."
+      }
+    },
+    {
+      "id": "2000-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "El circ és a la ciutat i s'ha d'instal·lar. L'especialista a muntar-lo encara no ha arribat i els altres no saben la quantitat de cable d'acer que necessiten. El més espavilat recorda que, un cop tensat el cable des de l'extrem del pal principal fins a un punt determinat del terra amb el qual forma un angle de $60^\\circ$, calen dos metres més de cable que si forma amb el terra un angle de $70^\\circ$. En total han de posar sis cables tensats formant amb el terra un angle de $60^\\circ$. Quants metres de cable necessiten?",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Siguin $h$ l'alçària del pal i $x$ la llargada de cada un dels cables. Del diagrama: $\\dfrac{h}{x}=\\sin60^\\circ$ i $\\dfrac{h}{x-2}=\\sin70^\\circ$. Dividint: $\\dfrac{x-2}{x}=\\dfrac{\\sin60^\\circ}{\\sin70^\\circ}\\approx0{,}9216$, d'on $x\\approx25{,}5118$ m. Els sis cables sumen $6x\\approx153{,}07$ m.",
+        "resultat": "$6x\\approx153{,}07$ m de cable."
+      }
+    },
+    {
+      "id": "2000-ord-S1-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Un terreny té forma de triangle rectangle, els catets mesuren $AB=60$ m i $AC=45$ m. En aquest terreny es pot construir una casa de planta rectangular com indica la part ombrejada de la figura següent:\n\n\nVoleu vendre aquest terreny i us paguen 5.000 pessetes per cada metre quadrat no edificable i 25.000 pessetes per cada metre quadrat edificable.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Determineu la relació que hi ha entre l'amplada $x$ i la profunditat $y$ del rectangle que determina la part edificable."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Determineu l'expressió que dóna el valor del terreny en funció de l'amplada $x$ del rectangle edificable."
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Quines són les dimensions de la part edificable que ens permeten obtenir un valor màxim per a aquest terreny?"
+        },
+        {
+          "lletra": "d",
+          "punts": null,
+          "enunciat": "Quin és aquest valor màxim?\n\n**Nota:** els criteris oficials assignen 1 punt als apartats a) i b), 1,5 punts a l'apartat c) i 0,5 punts a l'apartat d). L'enunciat no indica aquest repartiment."
+        }
+      ],
+      "figures": [
+        "triangle rectangle $ABC$ amb el angle recte a $A$, $AC=45$ m (vertical) i $AB=60$ m (horitzontal). El rectangle ombrejat té un vèrtex a $A$, la base sobre $AB$, l'amplada $x$ horitzontal, la profunditat $y$ vertical, i el vèrtex superior dret sobre la hipotenusa $BC$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Per triangles semblants, $\\dfrac{x}{60}=\\dfrac{45-y}{45}$, que equival a $y=45-\\dfrac34x$.\n\nb) El valor de l'àrea edificable $xy$ és $V_1(x)=25.000\\,x\\left(45-\\tfrac34x\\right)$. L'àrea no edificable és $60\\cdot\\tfrac{45}{2}-xy=1.350-xy$, i el seu valor és $V_2(x)=5.000\\left(1.350-45x+\\tfrac34x^2\\right)$. El valor total és $V(x)=V_1(x)+V_2(x)=6.750.000+900.000\\,x-15.000\\,x^2$.\n\nc) $V'(x)=900.000-30.000\\,x$, que s'anul·la només per a $x=30$. Com que $V'>0$ per a $x<30$ i $V'<0$ per a $x>30$, és un màxim. Les dimensions són $x=30$ m i $y=45-22{,}5=22{,}5$ m.\n\nd) $V(30)=20.250.000$ pessetes.",
+        "resultat": "$y=45-\\tfrac34x$; $V(x)=6.750.000+900.000\\,x-15.000\\,x^2$; part edificable de $30$ m per $22{,}5$ m; valor màxim $20.250.000$ pessetes."
+      }
+    },
+    {
+      "id": "2000-ord-S1-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donats el pla $\\pi$ d'equació $x+2y+3z-1=0$, la recta $r$ d'equacions\n\n$$\\begin{cases} x=2z-3 \\\\ y=z+4 \\end{cases}$$\n\ni el punt $P=(2,1,1)$, calculeu:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Unes equacions de la recta que passa per $P$ i és perpendicular a $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "L'equació del pla que passa per $P$ i és perpendicular a la recta $r$."
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Unes equacions de la recta que passa per $P$ i talla perpendicularment $r$."
+        },
+        {
+          "lletra": "d",
+          "punts": null,
+          "enunciat": "Unes equacions de la recta que passa per $P$, és paral·lela al pla $\\pi$ i tal que el seu vector director és perpendicular al de $r$.\n\n**Nota:** els criteris oficials assignen 1 punt a cada apartat. L'enunciat no indica aquest repartiment."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector $\\vec n=(1,2,3)$ és perpendicular a $\\pi$ i serà director de la recta: $\\dfrac{x-2}{1}=\\dfrac{y-1}{2}=\\dfrac{z-1}{3}$.\n\nb) El vector director de $r$ és $\\vec v=(2,1,1)$, que és el vector normal del pla buscat: $2x+y+z=d$. Passant per $P$, $d=6$, de manera que el pla és $2x+y+z=6$.\n\nc) Un punt de $r$ és $Q=(2z-3,\\ z+4,\\ z)$. Cal que $\\overrightarrow{PQ}=(2z-5,\\ z+3,\\ z-1)$ sigui perpendicular a $\\vec v$: $4z-10+z+3+z-1=0$, d'on $z=\\tfrac43$ i $\\overrightarrow{PQ}=\\left(-\\tfrac73,\\ \\tfrac{13}3,\\ \\tfrac13\\right)$. La recta és $\\dfrac{x-2}{-7}=\\dfrac{y-1}{13}=\\dfrac{z-1}{1}$.\n\nd) Un vector $\\vec w=(a,b,c)$ ha de ser perpendicular a $(1,2,3)$ i a $(2,1,1)$. El producte vectorial és $\\vec w=(1,2,3)\\times(2,1,1)=(-1,5,-3)$. La recta és $\\dfrac{x-2}{-1}=\\dfrac{y-1}{5}=\\dfrac{z-1}{-3}$.",
+        "resultat": "a) $\\dfrac{x-2}{1}=\\dfrac{y-1}{2}=\\dfrac{z-1}{3}$; b) $2x+y+z=6$; c) $\\dfrac{x-2}{-7}=\\dfrac{y-1}{13}=\\dfrac{z-1}{1}$; d) $\\dfrac{x-2}{-1}=\\dfrac{y-1}{5}=\\dfrac{z-1}{-3}$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

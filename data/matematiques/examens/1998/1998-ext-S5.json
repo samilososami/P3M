@@ -1,0 +1,135 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "1998-ext-S5",
+  "assignatura": "matematiques",
+  "any": 1998,
+  "convocatoria": "extraordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu).",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/1998/pau_mate98sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "1998-ext-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu el valor de $k$ per tal que\n\n$$\\int_{k+1}^{2k} \\frac{dx}{x-k}=3$$",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1998-ext-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu els rectangles del pla, els vèrtexs $A$, $B$, $C$ i $D$ dels quals compleixen les condicions següents: a) $A$ és l'origen de coordenades; b) $B$ és a sobre del semieix de les $y>0$; c) $C$ és a sobre del semieix de les $x>0$; d) $D$ és a sobre de la recta d'equació $2x+y=1$, tal com es veu en la figura següent:\n\n\nD'entre tots aquests rectangles, trobeu l'àrea del que la té màxima.",
+      "apartats": [],
+      "figures": [
+        "rectangle amb vèrtexs $A$ (origen), $B$ sobre el semieix positiu de les $y$, $C$ sobre el semieix positiu de les $x$ i $D$ com a vèrtex oposat a $A$, situat sobre la recta $2x+y=1$. La recta talla l'eix $y$ en $(0,1)$ i l'eix $x$ en $\\left(\\tfrac12,0\\right)$."
+      ],
+      "solucio": null
+    },
+    {
+      "id": "1998-ext-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin $\\vec u$ i $\\vec v$ els dos vectors del pla:\n\n$$\\vec u=(1,1)\\qquad \\vec v=\\frac12\\left(1+\\sqrt3,\\ 1-\\sqrt3\\right)$$\n\nCalculeu l'angle que formen $\\vec u$ i $\\vec v$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1998-ext-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Discutiu el sistema d'equacions\n\n$$\\begin{cases} ax-y+2z=2-a \\\\ 2x+3y-z=-3a \\\\ x+2y-z=-2a \\end{cases}$$\n\nsegons els valors del paràmetre $a$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1998-ext-S5-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Des dels dos extrems de la badia d'Alcúdia (Mallorca), que són a 15,25 km l'un de l'altre, es pot veure el cim del Puig Major. Un equip de topògrafs ha pres les mides dels angles que es poden veure en el croquis següent:\n\n\non $A$ i $B$ són els dos extrems de la badia i $C$, el peu del cim. A més, l'angle d'elevació del cim vist des del punt $A$ és de $3^\\circ$.\n\nCalculeu:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "L'angle entre la línia $AC$ i la línia $BC$."
+        },
+        {
+          "lletra": "b",
+          "punts": 2.0,
+          "enunciat": "Les distàncies de $A$ a $C$ i de $B$ a $C$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "L'alçària del cim."
+        }
+      ],
+      "figures": [
+        "triangle $ABC$, on $A$ i $B$ són els dos extrems de la badia (amb $AB=15{,}25$ km) i $C$ és el peu del cim. L'angle en $A$ entre $AC$ i $AB$ és de $129^\\circ$, i l'angle en $B$ entre $BA$ i $BC$ és de $34^\\circ$."
+      ],
+      "solucio": null,
+      "punts_detall": "1 punt els apartats a) i c), 2 punts l'apartat b)."
+    },
+    {
+      "id": "1998-ext-S5-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donat el pla $\\pi$ d'equació $x+4y+z=8$ i sent $A$, $B$ i $C$ els punts d'intersecció d'aquest pla amb els eixos de coordenades $OX$, $OY$ i $OZ$, respectivament:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Determineu les coordenades dels punts $A$, $B$ i $C$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu les equacions de la recta perpendicular al pla $\\pi$ que passa per l'origen de coordenades."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Calculeu el volum del tetràedre determinat per $OABC$, on $O$ és l'origen de coordenades."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Calculeu la distància de l'origen de coordenades al pla $\\pi$. Determineu l'àrea del triangle $ABC$ (podeu utilitzar el volum calculat en l'apartat anterior)."
+        }
+      ],
+      "figures": [],
+      "solucio": null,
+      "punts_detall": "1 punt per apartat."
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; sense solució oficial",
+    "revisat_huma": false
+  }
+}

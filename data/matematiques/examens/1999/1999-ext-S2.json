@@ -1,0 +1,136 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "1999-ext-S2",
+  "assignatura": "matematiques",
+  "any": 1999,
+  "convocatoria": "extraordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu).",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/1999/pau_mate99sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "1999-ext-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La gràfica d'una funció és la que hi ha en el dibuix següent. Quina és la gràfica de la seva funció derivada? En quins punts és discontínua la derivada?",
+      "apartats": [],
+      "figures": [
+        "gràfica formada per un segment de $(-1,0)$ a $(0,3)$, un segment de $(0,3)$ a $(1,1)$ i un tram de la gràfica de $f(x)$ de $(1,1)$ a $(4,1)$, aproximadament horitzontal. Els punts assenyalats són $(-1,0)$, $(0,3)$, $(1,1)$ i $(4,1)$."
+      ],
+      "solucio": null
+    },
+    {
+      "id": "1999-ext-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la recta $r$ de l'espai d'equacions\n\n$$\\frac{x-3}{2}=y=\\frac{z+1}{2}$$\n\nTrobeu l'equació cartesiana del pla que conté $r$ i que passa pel punt $P=(1,1,1)$ (equació cartesiana vol dir la de la forma $ax+by+cz=d$).",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1999-ext-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Si el rang de la matriu d'un sistema de tres equacions amb tres incògnites és 2 i el de la matriu ampliada és 3, quines interpretacions geomètriques podeu donar a aquest sistema? Doneu un exemple de sistema amb aquestes característiques i la seva interpretació geomètrica.",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1999-ext-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "L'angle entre els dos costats iguals d'un triangle isòsceles és de $40^\\circ$ i el costat desigual té una longitud de 40 centímetres. Quina és la longitud de cada un dels costats iguals d'aquest triangle?",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1999-ext-S2-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu la funció\n\n$$f(x)=\\frac{1}{8x-x^2}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Trobeu el domini de $f(x)$ i les asímptotes."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Determineu el signe de la funció en el seu domini (determinar el signe de $f(x)$ vol dir establir per a quins valors de $x$ es compleix $f(x)\\geq0$ i per a quins $f(x)\\leq0$)."
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Trobeu-ne els intervals de creixement i decreixement i els extrems relatius."
+        },
+        {
+          "lletra": "d",
+          "punts": null,
+          "enunciat": "Feu un esquema de la gràfica de la funció."
+        }
+      ],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1999-ext-S2-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donats els punts de l'espai $A=(2,1,0)$, $B=(0,2,0)$, $C=(-3,0,0)$ i $D=(0,-1,0)$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Són coplanaris? Formen un paral·lelogram?"
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Calculeu l'àrea del polígon $ABCD$."
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Calculeu el punt simètric del punt $E=(1,2,2)$ respecte del pla que determinen $A$, $B$ i $C$."
+        },
+        {
+          "lletra": "d",
+          "punts": null,
+          "enunciat": "Calculeu la distància entre la recta que passa per $E$ i $A$ i la recta que passa per $B$ i $C$."
+        }
+      ],
+      "figures": [],
+      "solucio": null
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; sense solució oficial",
+    "revisat_huma": false
+  }
+}

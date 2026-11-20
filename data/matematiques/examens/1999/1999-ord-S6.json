@@ -1,0 +1,112 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "1999-ord-S6",
+  "assignatura": "matematiques",
+  "any": 1999,
+  "convocatoria": "ordinaria",
+  "serie": 6,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu).",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/1999/pau_mate99jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "1999-ord-S6-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu el radi i les coordenades del centre de la circumferència que té per equació $x^2+y^2+6x+10y=-30$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1999-ord-S6-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $f(x)=1-\\sqrt[3]{x^2}$. Calculeu l'àrea de la regió que limita la gràfica de $f(x)$ i l'eix d'abscisses i que està representada en el dibuix següent:",
+      "apartats": [],
+      "figures": [
+        "gràfica de $f(x)=1-\\sqrt[3]{x^2}$, amb un màxim en $(0,1)$ i que talla l'eix d'abscisses en $x=-1$ i $x=1$. La regió ombrejada és la que hi ha entre la gràfica i l'eix d'abscisses, entre $x=-1$ i $x=1$."
+      ],
+      "solucio": null
+    },
+    {
+      "id": "1999-ord-S6-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Des de terra veiem el terrat d'un gratacel sota un angle de $60^\\circ$. Amb quin angle el veuríem des d'una distància al peu del gratacel doble de l'anterior?",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1999-ord-S6-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu les rectes\n\n$$r:\\ \\frac{x-1}{2}=y=z-2 \\qquad\\text{i}\\qquad s:\\ \\begin{cases} x-2z=5 \\\\ x-2y=11 \\end{cases}$$\n\nComproveu que aquestes dues rectes són paral·leles i calculeu l'equació del pla que les conté.",
+      "apartats": [],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1999-ord-S6-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu la funció\n\n$$y=f(x)=\\frac{x^2-x}{x+1}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Feu un estudi de les seves asímptotes."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Calculeu els punts en què aquesta funció té extrem relatiu i digueu per a quins intervals del domini la funció és creixent."
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Feu un esbós de la gràfica de la funció a partir de les dades obtingudes en els apartats anteriors."
+        }
+      ],
+      "figures": [],
+      "solucio": null
+    },
+    {
+      "id": "1999-ord-S6-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Per mesurar l'altura d'un núvol s'han fet simultàniament dues observacions des dels punts $A$ i $B$ distants entre si 1 quilòmetre i situats tots dos al nivell del mar. La inclinació de la visual des de $A$ al núvol respecte a l'horitzontal és de $47^\\circ$. Els angles que formen les visuals des de $A$ i des de $B$ amb la recta $AB$ són, respectivament, de $38^\\circ$ i $53^\\circ$, tal com s'indica a la figura següent:\n\n\nCalculeu l'altura del núvol respecte al nivell del mar.\n\n**Nota:** el PDF de criteris (`pau_mate99jp.pdf`) només conté la solució de la sèrie 1; no hi ha solució oficial per a la sèrie 6 en aquest fitxer.",
+      "apartats": [],
+      "figures": [
+        "punts $A$ i $B$ al nivell del mar, separats 1 km (segment $AB$ horitzontal). Des de $A$ hi ha una visual cap al núvol que forma $47^\\circ$ amb l'horitzontal i un angle de $38^\\circ$ amb la recta $AB$. Des de $B$ hi ha una visual cap al núvol que forma un angle de $53^\\circ$ amb la recta $BA$."
+      ],
+      "solucio": null
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; sense solució oficial",
+    "revisat_huma": false
+  }
+}

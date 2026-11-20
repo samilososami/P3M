@@ -1,0 +1,171 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2000-ext-S6",
+  "assignatura": "matematiques",
+  "any": 2000,
+  "convocatoria": "extraordinaria",
+  "serie": 6,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu).",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2000/pau_mate00sl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2000/pau_mate00sp.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2000-ext-S6-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "D'una funció $y=f(x)$ sabem:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "El seu domini de definició és tot $\\mathbb{R}$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "La seva funció derivada és\n\n$$f'(x)=\\begin{cases} 2 & \\text{si } x<1 \\\\ -1 & \\text{si } x>1 \\end{cases}$$"
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "$f(x)$ és contínua en tot punt i $f(-1)=2$.\n\nDetermineu el valor de $f(1)$ i dibuixeu la gràfica de la funció $f(x)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Com que $f$ és contínua, en $x=1$ les dues expressions han de coincidir. Si $f(x)=2x+C$ per a $x<1$ i $f(x)=-x+K$ per a $x>1$, s'ha de complir $2+C=-1+K$. A més, $f(-1)=2$ dona $-2+C=2$, és a dir, $C=4$ i, per tant, $K=7$. Així, $f(x)=2x+4$ per a $x\\le1$ i $f(x)=-x+7$ per a $x\\ge1$.",
+        "resultat": "$f(1)=6$; la gràfica és la recta $y=2x+4$ per a $x\\le1$ i la recta $y=-x+7$ per a $x\\ge1$."
+      }
+    },
+    {
+      "id": "2000-ext-S6-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donada la funció $f(x)=\\dfrac{x+1}{e^x}$, determineu l'equació de la recta tangent a la seva gràfica en el punt on s'anul·la la segona derivada.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$f'(x)=-xe^{-x}$ i $f''(x)=(x-1)e^{-x}$. La segona derivada s'anul·la per a $x=1$. La recta tangent és $y-f(1)=f'(1)(x-1)$, és a dir, $y-\\dfrac2e=-\\dfrac1e(x-1)$. Això dona $y=\\dfrac{3-x}{e}$, que es pot escriure $ey+x=3$.",
+        "resultat": "$ey+x=3$ (és a dir, $y=\\dfrac{3-x}{e}$)."
+      }
+    },
+    {
+      "id": "2000-ext-S6-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu el peu de la recta perpendicular a la recta $(x,y,z)=(1,-1,1)+\\lambda(0,1,1)$ traçada des del punt $(1,0,-1)$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Un punt $P$ qualsevol de la recta és $(1,\\,-1+\\lambda,\\,1+\\lambda)$. El vector $\\overrightarrow{AP}=(0,\\,\\lambda-1,\\,\\lambda+2)$, amb $A=(1,0,-1)$, ha de ser perpendicular a $(0,1,1)$: $0=(0,1,1)\\cdot(0,\\lambda-1,\\lambda+2)=2\\lambda+1$, d'on $\\lambda=-\\tfrac12$. Per tant, $P=\\left(1,-\\tfrac32,\\tfrac12\\right)$.",
+        "resultat": "peu de la perpendicular $P=\\left(1,\\,-\\tfrac32,\\,\\tfrac12\\right)$."
+      }
+    },
+    {
+      "id": "2000-ext-S6-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la circumferència del pla d'equació $x^2+y^2-6x+4y+8=0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Calculeu-ne el centre i el radi."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Comproveu que el punt $(4,0)$ pertany a la circumferència i determineu l'equació de la seva tangent en aquest punt (la recta tangent en un punt d'una circumferència és la que és perpendicular al radi que passa per aquest punt)."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) L'equació d'una circumferència de centre $(a,b)$ i radi $R$ és $x^2+y^2-2ax-2by+a^2+b^2-R^2=0$. Comparant amb l'enunciat: $2a=6$, $2b=-4$ i $a^2+b^2-R^2=8$. Per tant, $a=3$, $b=-2$ i $R=\\sqrt5$.\n\nb) Substituint $x=4$ i $y=0$ a l'equació es comprova que $16-24+8=0$. La direcció del radi que uneix el centre amb el punt $(4,0)$ ve donada pel vector $(4,0)-(3,-2)=(1,2)$. Les rectes perpendiculars a aquesta direcció tenen equació $x+2y=C$. Imposant que passi pel punt $(4,0)$ s'obté $C=4$. La recta tangent és, doncs, $x+2y=4$.",
+        "resultat": "centre $(3,-2)$ i radi $\\sqrt5$; tangent en $(4,0)$: $x+2y=4$."
+      }
+    },
+    {
+      "id": "2000-ext-S6-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu la recta $r$ de l'espai que passa pel punt $P=(1,1,3)$ i té per vector director $\\vec v=(1-a,\\ a,\\ 1)$. Sigui $\\pi$ el pla que té per equació $2x+y-z=1$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Determineu per a cada valor del paràmetre $a$ la posició relativa de la recta $r$ respecte al pla $\\pi$ (paral·lela, continguda o amb un punt d'intersecció)."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Hi ha alguna de les rectes $r$ que sigui perpendicular al pla $\\pi$?"
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Calculeu la distància que hi ha entre el punt $P$ i el pla $\\pi$.\n\n**Nota:** els criteris oficials assignen 1,5 punts a l'apartat a), 1,5 punts a l'apartat b) i 1 punt a l'apartat c). L'enunciat no indica aquest repartiment."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector $\\vec v$ és perpendicular al vector normal $(2,1,-1)$ de $\\pi$ quan $(1-a,\\,a,\\,1)\\cdot(2,1,-1)=1-a=0$, és a dir, quan $a=1$. Per tant, si $a=1$ la recta és paral·lela al pla (el punt $P$ no hi és, perquè $2+1-3\\neq1$), i si $a\\neq1$ la recta talla el pla en un punt.\n\nb) La recta $r$ només pot ser perpendicular al pla $\\pi$ si $\\vec v$ és proporcional a $(2,1,-1)$. És a dir, $\\dfrac{1-a}{2}=\\dfrac a1=\\dfrac1{-1}$. De l'última equació s'obté $a=-1$, però per a aquest valor no es compleix la primera equació. Conclusió: no hi ha cap valor de $a$ per al qual la recta sigui perpendicular al pla.\n\nc) La distància de $P$ al pla és $d=\\dfrac{|2\\cdot1+1\\cdot1-1\\cdot3-1|}{\\sqrt{4+1+1}}=\\dfrac{1}{\\sqrt6}=\\dfrac{\\sqrt6}{6}$.",
+        "resultat": "a) $a=1$: paral·lela; $a\\neq1$: talla $\\pi$ en un punt; b) no n'hi ha cap; c) $d=\\dfrac{\\sqrt6}{6}$."
+      }
+    },
+    {
+      "id": "2000-ext-S6-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Dos amics, l'Àlex i la Berta, són cadascun al terrat de casa seva, veuen un vaixell i els interessa determinar la distància a què es troba.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Primer de tot volen calcular la distància que separa el teodolit de l'Àlex del de la Berta. Sigui $A$ el punt on l'Àlex té plantat el teodolit i $B$ el punt on la Berta té situat el seu. L'Àlex mesura exactament al seu terrat una distància $AC=10$ m, de manera que el triangle $ACB$ és rectangle a $A$. Llavors la Berta mesura l'angle a $B$ d'aquest triangle i resulta que és de $5{,}6^\\circ$. Calculeu la distància $AB$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Per determinar a quina distància és el vaixell, l'Àlex mesura l'angle que formen a $A$ les visuals $A$-vaixell i $A$-$B$, que resulta que és de $75{,}5^\\circ$, i la Berta l'angle que formen a $B$ les visuals $B$-$A$ i $B$-vaixell, que és de $81{,}6^\\circ$. A quina distància és el vaixell de la Berta? Es pot saber, sense fer més càlculs, qui és més a prop del vaixell? Per què?\n\n**Nota:** els criteris oficials assignen 1,5 punts a l'apartat a) i 2,5 punts a l'apartat b). L'enunciat no indica aquest repartiment."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Al triangle rectangle $ACB$, $\\tan5{,}6^\\circ=\\dfrac{10}{x}$ (amb $x=AB$). Per tant, $AB=\\dfrac{10}{\\tan5{,}6^\\circ}\\approx101{,}99$ m.\n\nb) Al triangle $BAV$ (amb $V$ el vaixell), l'angle en $V$ és $180^\\circ-81{,}6^\\circ-75{,}5^\\circ=22{,}9^\\circ$. Pel teorema del sinus, $\\dfrac{BV}{\\sin75{,}5^\\circ}=\\dfrac{AB}{\\sin22{,}9^\\circ}$, d'on $BV=\\dfrac{AB\\sin75{,}5^\\circ}{\\sin22{,}9^\\circ}\\approx253{,}75$ m. Com que l'angle en $B$ ($81{,}6^\\circ$) és més gran que l'angle en $A$ ($75{,}5^\\circ$), el costat oposat a $B$, $AV$, és més gran que $BV$. Per tant, la Berta és la més propera al vaixell.",
+        "resultat": "$AB\\approx101{,}99$ m; el vaixell de la Berta es troba a $BV\\approx253{,}75$ m; la Berta és la més propera, perquè l'angle en $B$ és més gran que en $A$ i, per tant, $AV>BV$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}
