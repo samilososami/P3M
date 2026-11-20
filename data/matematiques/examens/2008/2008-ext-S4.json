@@ -66,7 +66,8 @@
       "figures": [],
       "solucio": {
         "desenvolupament": "a) $A^2=A\\cdot A=\\begin{pmatrix} 0 & -1 & 0 \\\\ 0 & 0 & 1 \\\\ -1 & 0 & 0 \\end{pmatrix}$ i $A^3=A^2\\cdot A=\\begin{pmatrix} -1 & 0 & 0 \\\\ 0 & -1 & 0 \\\\ 0 & 0 & -1 \\end{pmatrix}=-I_3$.\n\nb) Com que $A^3=-I_3$, es té $A^6=(A^3)^2=I_3$. Com que $60124=6\\cdot10020+4$:\n\n$$A^{60124}=\\left(A^6\\right)^{10020}\\cdot A^4=I_3\\cdot A^4=A^4=A^3\\cdot A=-A$$",
-        "resultat": "a) $A^2=\\begin{pmatrix} 0 & -1 & 0 \\\\ 0 & 0 & 1 \\\\ -1 & 0 & 0 \\end{pmatrix}$, $A^3=-I_3$; b) $A^{60124}=-A=\\begin{pmatrix} 0 & 0 & -1 \\\\ -1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}$."
+        "resultat": "a) $A^2=\\begin{pmatrix} 0 & -1 & 0 \\\\ 0 & 0 & 1 \\\\ -1 & 0 & 0 \\end{pmatrix}$, $A^3=-I_3$; b) $A^{60124}=-A=\\begin{pmatrix} 0 & 0 & -1 \\\\ -1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}$.",
+        "nota": "els criteris oficials escriuen $A^{60124}=A^{1020\\cdot6+4}$, que és una errata (cal $10020\\cdot6+4$); el resultat $-A$ és correcte."
       }
     },
     {
