@@ -1,7 +1,7 @@
 """Valida registres de classificació. Ús: python3 -I classificacio_valida.py <lot_in.json> <lot_out.json>"""
 import json, sys
 BLOCS = {
- 'ANA': {'LIM','ASI','CONT','TEO','TAN','EXT','INF','REP','GRAF','OPT','PAR','INT'},
+ 'ANA': {'LIM','DER','ASI','CONT','TEO','TAN','EXT','INF','REP','GRAF','OPT','PAR','INT'},
  'ALG': {'MAT','DET','SIS','RES','MOD','VEC'},
  'GEO': {'EQG','RPL','DST','ANG','PRJ','VOL','LLG'},
  'PRO': {'PRC','DDI','DNO'},

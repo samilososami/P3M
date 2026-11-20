@@ -3,3 +3,8 @@ data/*/_descarregues/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Material privat (p. ex. exàmens del professor): mai al repositori
+privat/
+data/privat/
+*.privat.*

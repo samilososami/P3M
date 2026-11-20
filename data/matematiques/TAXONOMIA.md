@@ -1,6 +1,6 @@
-# Taxonomía v1.1 · PAU Matemáticas (Cataluña)
+# Taxonomía v1.2 · PAU Matemáticas (Cataluña)
 
-Aprobada en su estructura; la v1.1 añade las reglas de aplicación tras las primeras pruebas de clasificación. Define cómo se clasifica cada ítem (cuestión, problema o ejercicio) de las 91 series transcritas (540 ítems). La clasificación sirve para dos cosas: comparar ejercicios de otros exámenes con el corpus de la PAU, y estimar qué temas y tipos de ejercicio son probables.
+Aprobada en su estructura. La v1.1 añadió las reglas de aplicación tras las primeras pruebas de clasificación; la v1.2 recoge las dudas de los diez lotes clasificados. Define cómo se clasifica cada ítem (cuestión, problema o ejercicio) de las 91 series transcritas (540 ítems). La clasificación sirve para dos cosas: comparar ejercicios de otros exámenes con el corpus de la PAU, y estimar qué temas y tipos de ejercicio son probables.
 
 ## Principios
 
@@ -24,6 +24,7 @@ Aprobada en su estructura; la v1.1 añade las reglas de aplicación tras las pri
 | Tipo | Código | Qué pide | Origen del código |
 |---|---|---|---|
 | Límites | `LIM` | Calcular límites e indeterminaciones | nuevo |
+| Derivación | `DER` | Derivar con regla de la cadena o con datos tabulados, sin que el objetivo sea una tangente ni un extremo | nuevo (v1.2) |
 | Asíntotas | `ASI` | Asíntotas verticales, horizontales y oblicuas | manual |
 | Continuidad | `CONT` | Continuidad y derivabilidad, funciones a trozos | manual |
 | Teoremas | `TEO` | Bolzano (`BOL`), Rolle (`ROL`), valor medio (`TVM`), Weierstrass (`WEI`) | manual, con subtipo |
@@ -52,7 +53,7 @@ Aprobada en su estructura; la v1.1 añade las reglas de aplicación tras las pri
 | Tipo | Código | Qué pide |
 |---|---|---|
 | Ecuaciones | `EQG` | Ecuación de recta o plano a partir de datos |
-| Posiciones relativas | `RPL` | Entre rectas, planos o recta y plano |
+| Posiciones relativas | `RPL` | Entre rectas, planos o recta y plano, incluido el punto de corte; alineación y coplanaridad de puntos |
 | Distancias | `DST` | Entre elementos del espacio: punto–punto, punto–recta, punto–plano, recta–recta; longitudes de segmentos |
 | Ángulos | `ANG` | Entre rectas, planos o recta y plano del espacio; perpendicularidad comprobada con el producto escalar |
 | Proyecciones y simétricos | `PRJ` | Proyección ortogonal, punto simétrico |
@@ -77,15 +78,19 @@ Aprobada en su estructura; la v1.1 añade las reglas de aplicación tras las pri
 ## Reglas de aplicación (v1.1)
 
 **Tipo principal**
-- Es la tarea que más pesa en la solución, no la primera del enunciado. Si los apartados pesan igual, manda el reparto de puntos de los criterios oficiales; si no consta, el apartado con más pasos.
+- Es la tarea que más pesa en la solución, no la primera del enunciado. Si los apartados pesan igual, manda el reparto de puntos de los criterios oficiales; si no consta, el apartado con más pasos; si siguen empatados, el primero del enunciado.
 - Un paso trivial (resolver `sin x = cos x`) no es un tipo secundario. No se rellena.
-- `PAR` solo existe como tipo en `ANA`. Es principal cuando lo que se pide es el valor de los parámetros. Si lo pedido es otra cosa (un extremo, un límite, un área, una recta), `PAR` va como secundario y el atributo `parametro` es `true`. En `ALG` y `GEO` un parámetro solo se marca con el atributo.
+- `PAR` solo existe como tipo en `ANA` y se refiere a constantes de la función. Es principal solo si determinar los parámetros es el grueso del cálculo (condiciones sobre f, f′ o continuidad). Si hay una tarea larga en función del parámetro (un área, un límite), esa tarea manda y `PAR` va como secundario. Una abscisa variable o un límite de integración no cuentan ni como `PAR` ni como `parametro`. En `ALG` y `GEO` un parámetro solo se marca con el atributo.
 - `EQG` es principal solo si construir la ecuación es lo que más pesa. Si el trabajo real es imponer una distancia o una posición relativa, manda `DST` o `RPL`.
-- `REP` incluye `ASI`, `EXT`, `INF` y `TAN` dentro de un estudio completo. Solo se pone `REP` si se pide el dibujo; un estudio parcial (dominio, asíntotas, extremos) se clasifica por sus partes.
+- `REP` incluye `ASI`, `EXT`, `INF` y `TAN` dentro de un estudio completo. Solo se pone `REP` si se pide el esbozo de la gráfica y el estudio abarca al menos tres elementos (dominio, asíntotas, extremos, curvatura); si no, se clasifica por sus partes.
 - `OPT` exige modelizar la magnitud que se optimiza, con contexto real o geométrico. Minimizar una función ya dada (por ejemplo, definida por una integral) es `EXT`.
-- Alineación de puntos: `RPL`. Dependencia lineal de vectores, bases y coordenadas: `VEC`.
+- Alineación y coplanaridad de puntos: `RPL`. Dependencia lineal abstracta, bases y coordenadas de vectores: `VEC`.
+- Posición relativa de rectas o planos con parámetro: `RPL`, aunque se resuelva con rangos. `SIS` solo si se pide el tipo de sistema (SCD, SCI, SI) sin lectura geométrica.
+- Un plano mediador pedido como ecuación es `EQG`; `LLG` solo si hay que describir o justificar el lugar.
+- El área entre f′ y el eje, resuelta como diferencia de valores de f, es `INT` (subtipo `DEF`), no `GRAF`.
+- Ítems mixtos de varios bloques (en 2025+, probabilidad con un apartado de análisis): el principal es el del bloque con más apartados y el otro va como secundario.
 - Si el principal es de un bloque, los secundarios pueden ser de cualquiera.
-- Un ítem puramente teórico sin cálculo se clasifica por su tema y lo indica en `notas` con el prefijo `teòric:`.
+- Un ítem teórico, o con algún apartado teórico, se clasifica por su tema y lo indica en `notas` con el prefijo `teòric:`.
 - Las identidades o comprobaciones puras sin un tipo que encaje van a `ALTRES`, explicadas en `notas`.
 
 **Subtipos**
@@ -97,8 +102,8 @@ Aprobada en su estructura; la v1.1 añade las reglas de aplicación tras las pri
 |---|---|---|
 | `figura` | sí / no | El enunciado trae el dibujo dado. Si solo pide hacer uno, es `no` |
 | `parametro` | sí / no | Hay una constante literal que se discute o se determina, la llame o no «paràmetre» el enunciado |
-| `aplicado` | sí / no | Objeto o contexto no matemático en el enunciado (fábrica, río, bote, reloj). La geometría abstracta no cuenta |
-| `comprobar` | sí / no | Pide «comproveu que…» o «demostreu que…» y la respuesta viene dada |
+| `aplicado` | sí / no | Objeto o contexto no matemático en el enunciado (fábrica, río, bote, reloj). La geometría abstracta no cuenta. En probabilidad, un contexto real cuenta; las urnas, monedas y dados, no |
+| `comprobar` | sí / no | Pide «comproveu / demostreu / justifiqueu que…» y el enunciado da el resultado o la igualdad concreta. Si la respuesta no viene dada, es `no` |
 | `opcion` | `A`, `B`, ninguna | Solo 2025+ |
 
 ## Registro de clasificación
