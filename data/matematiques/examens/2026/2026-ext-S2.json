@@ -134,7 +134,7 @@
       "tipus": "exercici",
       "opcio": "A",
       "punts": 2.5,
-      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen. Indiqueu a la portada de l'examen l'opció escollida.\n\n**OPCIÓ A**\n\nL'Aina construirà la capsa a partir d'un cartró rectangular de 80 cm × 50 cm. A la figura següent es mostra el desplegament de la capsa; les zones ratllades són les parts que l'Aina retallarà i retirarà per tal de poder-la muntar:",
+      "enunciat": "L'Aina vol construir una capsa de cartró amb forma de prisma rectangular amb tapa, per guardar-hi la tauleta i el carregador.\n\nTrieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen. Indiqueu a la portada de l'examen l'opció escollida.\n\n**OPCIÓ A**\n\nL'Aina construirà la capsa a partir d'un cartró rectangular de 80 cm × 50 cm. A la figura següent es mostra el desplegament de la capsa; les zones ratllades són les parts que l'Aina retallarà i retirarà per tal de poder-la muntar:",
       "apartats": [
         {
           "lletra": "4.1",
@@ -148,7 +148,7 @@
         }
       ],
       "figures": [
-        "desplegament de la capsa sobre un cartró de 80 cm × 50 cm, amb la longitud de 80 cm horitzontal i l'altura de 50 cm vertical. Les zones ratllades són les parts que es retallen; l'esquema indica $x$ cm per al costat dels quadrats que cal retallar als cantons i per a l'alçada de la capsa."
+        "desplegament de la capsa sobre un cartró de 80 cm × 50 cm, amb la longitud de 80 cm horitzontal i l'altura de 50 cm vertical. Les zones ratllades són les parts que es retallen: dos quadrats $x\\times x$ als cantons de l'esquerra i, a la dreta, dos quadrats $x\\times x$ i dos rectangles de la mateixa alçada $x$ (a dalt i a baix); l'esquema indica $x$ cm per al costat dels quadrats que cal retallar als cantons i per a l'alçada de la capsa."
       ],
       "solucio": {
         "desenvolupament": "4.1) La base de la capsa és un rectangle de llargada $\\dfrac{80-2x}{2}=40-x$ i amplada $50-2x$, i l'alçada és $x$. Per tant $V(x)=(40-x)(50-2x)x=2x^3-130x^2+2000x$.\n\n4.2) $V'(x)=6x^2-260x+2000=0 \\iff 3x^2-130x+1000=0 \\iff x=10$ o $x=\\dfrac{100}{3}$. Com que $V''(x)=12x-260$, $V''(10)=-140<0$, i per tant $x=10$ és un màxim; l'altre punt crític, $x=\\tfrac{100}{3}$, queda fora del domini $0<x<25$ (l'amplada $50-2x$ ha de ser positiva). Les dimensions són: llargada $40-10=30$ cm, amplada $50-20=30$ cm i alçada $10$ cm. El volum màxim és $V(10)=30\\cdot30\\cdot10=9\\,000$ cm³.",
@@ -161,7 +161,7 @@
       "tipus": "exercici",
       "opcio": "B",
       "punts": 2.5,
-      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen. Indiqueu a la portada de l'examen l'opció escollida.\n\n**OPCIÓ B**\n\nL'Aina vol fer un croquis en 3D de la capsa utilitzant un programa informàtic. Per a començar, situa un costat de la tapa des del vèrtex $A(1,1,1)$ fins al vèrtex $B(4,1,5)$, i l'altre costat de la tapa des del vèrtex $A$ fins al vèrtex $C(1,10,1)$.",
+      "enunciat": "L'Aina vol construir una capsa de cartró amb forma de prisma rectangular amb tapa, per guardar-hi la tauleta i el carregador.\n\nTrieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen. Indiqueu a la portada de l'examen l'opció escollida.\n\n**OPCIÓ B**\n\nL'Aina vol fer un croquis en 3D de la capsa utilitzant un programa informàtic. Per a començar, situa un costat de la tapa des del vèrtex $A(1,1,1)$ fins al vèrtex $B(4,1,5)$, i l'altre costat de la tapa des del vèrtex $A$ fins al vèrtex $C(1,10,1)$.",
       "apartats": [
         {
           "lletra": "4.1",
