@@ -1,6 +1,6 @@
-# Taxonomía v1 · PAU Matemáticas (Cataluña)
+# Taxonomía v1.1 · PAU Matemáticas (Cataluña)
 
-Borrador pendiente de aprobación. Define cómo se clasifica cada ítem (cuestión, problema o ejercicio) de las 91 series transcritas (540 ítems). La clasificación sirve para dos cosas: comparar ejercicios de otros exámenes con el corpus de la PAU, y estimar qué temas y tipos de ejercicio son probables.
+Aprobada en su estructura; la v1.1 añade las reglas de aplicación tras las primeras pruebas de clasificación. Define cómo se clasifica cada ítem (cuestión, problema o ejercicio) de las 91 series transcritas (540 ítems). La clasificación sirve para dos cosas: comparar ejercicios de otros exámenes con el corpus de la PAU, y estimar qué temas y tipos de ejercicio son probables.
 
 ## Principios
 
@@ -42,9 +42,10 @@ Borrador pendiente de aprobación. Define cómo se clasifica cada ítem (cuesti�
 |---|---|---|
 | Operaciones y ecuaciones matriciales | `MAT` | Productos, potencias, inversa, ecuaciones con matrices |
 | Determinantes y rango | `DET` | Calcular determinantes, estudiar el rango |
-| Discusión de sistemas | `SIS` | Sistema con parámetro: SCD, SCI, SI |
-| Resolución de sistemas | `RES` | Resolver un sistema concreto, Gauss |
+| Discusión de sistemas | `SIS` | Determinar o discutir el tipo de sistema (SCD, SCI, SI), con o sin parámetro |
+| Resolución de sistemas | `RES` | Calcular la solución de un sistema concreto, Gauss |
 | Modelización | `MOD` | Plantear un enunciado como sistema de ecuaciones |
+| Vectores y espacios vectoriales | `VEC` | Bases, coordenadas, dependencia lineal, operaciones con vectores y puntos (punto medio, división de un segmento) |
 
 ### Geometría del espacio (`GEO`)
 
@@ -52,8 +53,8 @@ Borrador pendiente de aprobación. Define cómo se clasifica cada ítem (cuesti�
 |---|---|---|
 | Ecuaciones | `EQG` | Ecuación de recta o plano a partir de datos |
 | Posiciones relativas | `RPL` | Entre rectas, planos o recta y plano |
-| Distancias | `DST` | Punto–recta, punto–plano, recta–recta, etc. |
-| Ángulos | `ANG` | Entre rectas, planos o recta y plano |
+| Distancias | `DST` | Entre elementos del espacio: punto–punto, punto–recta, punto–plano, recta–recta; longitudes de segmentos |
+| Ángulos | `ANG` | Entre rectas, planos o recta y plano del espacio; perpendicularidad comprobada con el producto escalar |
 | Proyecciones y simétricos | `PRJ` | Proyección ortogonal, punto simétrico |
 | Áreas y volúmenes | `VOL` | Con producto vectorial o mixto, tetraedros, paralelepípedos |
 | Lugares geométricos | `LLG` | Puntos que cumplen una condición |
@@ -70,17 +71,34 @@ Borrador pendiente de aprobación. Define cómo se clasifica cada ítem (cuesti�
 
 | Tipo | Código | Qué pide |
 |---|---|---|
-| Trigonometría | `TRI` | Resolución de triángulos, razones trigonométricas |
-| Geometría plana | `GPL` | Circunferencias, polígonos, áreas planas |
+| Trigonometría | `TRI` | Todo lo que se resuelve con razones trigonométricas o teoremas del seno y del coseno, aunque la figura sea un polígono |
+| Geometría plana | `GPL` | Geometría analítica del plano: circunferencias, rectas y vectores en R², áreas planas, ángulos entre vectores del plano |
+
+## Reglas de aplicación (v1.1)
+
+**Tipo principal**
+- Es la tarea que más pesa en la solución, no la primera del enunciado. Si los apartados pesan igual, manda el reparto de puntos de los criterios oficiales; si no consta, el apartado con más pasos.
+- Un paso trivial (resolver `sin x = cos x`) no es un tipo secundario. No se rellena.
+- `PAR` solo existe como tipo en `ANA`. Es principal cuando lo que se pide es el valor de los parámetros. Si lo pedido es otra cosa (un extremo, un límite, un área, una recta), `PAR` va como secundario y el atributo `parametro` es `true`. En `ALG` y `GEO` un parámetro solo se marca con el atributo.
+- `EQG` es principal solo si construir la ecuación es lo que más pesa. Si el trabajo real es imponer una distancia o una posición relativa, manda `DST` o `RPL`.
+- `REP` incluye `ASI`, `EXT`, `INF` y `TAN` dentro de un estudio completo. Solo se pone `REP` si se pide el dibujo; un estudio parcial (dominio, asíntotas, extremos) se clasifica por sus partes.
+- `OPT` exige modelizar la magnitud que se optimiza, con contexto real o geométrico. Minimizar una función ya dada (por ejemplo, definida por una integral) es `EXT`.
+- Alineación de puntos: `RPL`. Dependencia lineal de vectores, bases y coordenadas: `VEC`.
+- Si el principal es de un bloque, los secundarios pueden ser de cualquiera.
+- Un ítem puramente teórico sin cálculo se clasifica por su tema y lo indica en `notas` con el prefijo `teòric:`.
+- Las identidades o comprobaciones puras sin un tipo que encaje van a `ALTRES`, explicadas en `notas`.
+
+**Subtipos**
+- Se admiten varios en un mismo ítem (`["PRI","ARE"]`).
 
 ## Atributos
 
 | Atributo | Valores | Para qué sirve |
 |---|---|---|
-| `figura` | sí / no | El enunciado incluye gráfica o dibujo |
-| `parametro` | sí / no | Aparece un parámetro que hay que discutir o determinar |
-| `aplicado` | sí / no | Contexto real (fábrica, río, bote…) que obliga a modelizar |
-| `comprobar` | sí / no | Pide «comproveu que…» y la respuesta viene dada |
+| `figura` | sí / no | El enunciado trae el dibujo dado. Si solo pide hacer uno, es `no` |
+| `parametro` | sí / no | Hay una constante literal que se discute o se determina, la llame o no «paràmetre» el enunciado |
+| `aplicado` | sí / no | Objeto o contexto no matemático en el enunciado (fábrica, río, bote, reloj). La geometría abstracta no cuenta |
+| `comprobar` | sí / no | Pide «comproveu que…» o «demostreu que…» y la respuesta viene dada |
 | `opcion` | `A`, `B`, ninguna | Solo 2025+ |
 
 ## Registro de clasificación
