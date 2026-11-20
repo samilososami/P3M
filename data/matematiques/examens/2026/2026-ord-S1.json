@@ -1,0 +1,181 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2026-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2026,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "4 exercicis; es responen tots (a l'exercici 4, opció A o B, indicada a la portada)",
+  "instruccions": "L'examen consta de QUATRE exercicis obligatoris. Cada exercici val 2,5 punts. Feu els exercicis 1, 2 i 3 responent a TOTES les qüestions que s'hi plantegen. A l'exercici 4, trieu UNA de les dues opcions (A o B) proposades i indiqueu-la a la portada.\n\nEn totes les respostes, expliqueu sempre què voleu fer i per què. Cal que la redacció de la resposta es faci de manera coherent, amb correcció i claredat, emprant la notació i el vocabulari matemàtic adequats i expressant la solució de manera clara.\n\nPodeu utilitzar les pàgines en blanc del final del quadern per a fer esquemes, esborranys, etc., o per a acabar de respondre a algun exercici si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de l'exercici corresponent.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2026/pau_mate26jl.pdf",
+      "pagines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2026/pau_mate26jt.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-ord-S1-E1",
+      "numero": 1,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la funció definida a trossos següent:\n\n$$f(x)=\\begin{cases} 5e^{2x} & x\\le0 \\\\ (x+m)^2+1 & 0<x<2 \\\\ 1 & 2\\le x \\end{cases}$$\n\non $m$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "1.1",
+          "punts": 1.0,
+          "enunciat": "Determineu els valors de $m$ que fan que la funció $f(x)$ sigui contínua en tot el seu domini. Justifiqueu la resposta."
+        },
+        {
+          "lletra": "1.2",
+          "punts": 1.0,
+          "enunciat": "Feu un esbós de la gràfica de $y=f(x)$ per al cas $m=-2$, i calculeu l'àrea delimitada per aquesta gràfica, l'eix $OX$ i les rectes $x=-1$ i $x=3$."
+        },
+        {
+          "lletra": "1.3",
+          "punts": 0.5,
+          "enunciat": "Per a $m=-2$, trobeu un punt on la recta tangent a $y=f(x)$ sigui paral·lela a $y=-2x$. Calculeu l'equació d'aquesta recta tangent."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "1.1) Les tres funcions són contínues als seus intervals; cal estudiar els punts de contacte.\n\nEn $x=0$: $\\lim_{x\\to0^-}f(x)=5=f(0)$ i $\\lim_{x\\to0^+}f(x)=m^2+1$. Cal $m^2+1=5$, és a dir, $m=\\pm2$.\n\nEn $x=2$: $\\lim_{x\\to2^-}f(x)=(2+m)^2+1$, $f(2)=1=\\lim_{x\\to2^+}f(x)$. Cal $(2+m)^2=0$, és a dir, $m=-2$.\n\nNomés $m=-2$ compleix les dues condicions.\n\n1.2) Per a $m=-2$: $f(x)=5e^{2x}$ si $x\\le0$; $f(x)=(x-2)^2+1$ si $0<x<2$; $f(x)=1$ si $x\\ge2$. L'esbós té un tram exponencial creixent, que tendeix a 0 quan $x\\to-\\infty$ i val 5 en $x=0$; un tram de paràbola de vèrtex $(2,1)$, amb $f(0)=5$ i $f(2)=1$; i una recta horitzontal $y=1$ per a $x\\ge2$. La funció és positiva en tot el seu domini, per tant\n$$A=\\int_{-1}^{0}5e^{2x}\\,dx+\\int_0^2\\big((x-2)^2+1\\big)\\,dx+\\int_2^3 1\\,dx=\\frac52\\left(1-e^{-2}\\right)+\\frac{14}{3}+1=\\frac{49}{6}-\\frac{5}{2e^2}\\approx7{,}83\\ \\text{u}^2.$$\n\n1.3) Al tram $x\\le0$ la derivada és $10e^{2x}>0$; al tram $x\\ge2$ és 0; per tant només pot haver-hi punts amb pendent $-2$ al tram $0<x<2$. Derivant $f(x)=(x-2)^2+1$: $f'(x)=2(x-2)=-2 \\iff x=1$. El punt és $(1,f(1))=(1,2)$ i la recta tangent és $y-2=-2(x-1)$, és a dir, $y=-2x+4$.",
+        "resultat": "1.1) $m=-2$; 1.2) $A=\\dfrac{49}{6}-\\dfrac{5}{2e^2}\\approx7{,}83$ u²; 1.3) punt $(1,2)$ i tangent $y=-2x+4$."
+      }
+    },
+    {
+      "id": "2026-ord-S1-E2",
+      "numero": 2,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que està format per tres plans a l'espai i depèn del paràmetre real $m$:\n\n$$\\begin{cases} x+my+z=4 \\\\ x+3y+z=5 \\\\ mx+y+z=4 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "2.1",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $m$."
+        },
+        {
+          "lletra": "2.2",
+          "punts": 1.0,
+          "enunciat": "Interpreteu geomètricament aquest sistema per a tots els valors del paràmetre $m$ i resoleu-lo, si és possible, per al cas $m=1$."
+        },
+        {
+          "lletra": "2.3",
+          "punts": 0.5,
+          "enunciat": "Per a $m=1$, és possible afegir una quarta equació de manera que el sistema resultant sigui compatible determinat i tingui com a solució $(x,y,z)=\\left(3,\\tfrac12,\\tfrac12\\right)$? Raoneu la resposta."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "2.1) La matriu de coeficients és $A=\\begin{pmatrix} 1 & m & 1 \\\\ 1 & 3 & 1 \\\\ m & 1 & 1 \\end{pmatrix}$, amb $|A|=m^2-4m+3=(m-1)(m-3)$.\n\n- Si $m\\neq1$ i $m\\neq3$: $\\operatorname{rang}A=\\operatorname{rang}A'=3$, sistema compatible determinat (SCD).\n- Si $m=3$: $\\operatorname{rang}A=2$ (les dues primeres files de $A$ coincideixen), però $\\begin{vmatrix} 1 & 3 & 4 \\\\ 1 & 3 & 5 \\\\ 3 & 1 & 4 \\end{vmatrix}=8\\neq0$, per tant $\\operatorname{rang}A'=3$. Sistema incompatible (SI).\n- Si $m=1$: $\\operatorname{rang}A=\\operatorname{rang}A'=2$ (la primera i la tercera equació són iguals), sistema compatible indeterminat (SCI) amb un grau de llibertat.\n\n2.2) Si $m\\neq1,3$, els tres plans es tallen en un únic punt. Si $m=3$, no tenen cap punt comú: els dos primers plans, $x+3y+z=4$ i $x+3y+z=5$, són paral·lels i no coincidents, i el tercer els talla. Si $m=1$, els plans primer i tercer coincideixen ($x+y+z=4$) i el segon els talla; la intersecció és una recta.\n\nPer a $m=1$: $x+y+z=4$ i $x+3y+z=5$. Restant: $2y=1$, és a dir, $y=\\tfrac12$. Fent $z=\\lambda$: $x=\\tfrac72-\\lambda$. Solució: $(x,y,z)=\\left(\\tfrac72-\\lambda,\\ \\tfrac12,\\ \\lambda\\right)$, $\\lambda\\in\\mathbb{R}$.\n\n2.3) Sí. Amb la quarta equació $x=3$, la matriu de coeficients $\\begin{pmatrix} 1 & 1 & 1 \\\\ 1 & 3 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix}$ té determinant $-2\\neq0$, per tant el sistema és compatible determinat. El punt $\\left(3,\\tfrac12,\\tfrac12\\right)$ compleix les quatre equacions (és el punt de la recta de l'apartat anterior amb $\\lambda=\\tfrac12$), i per tant és l'única solució.",
+        "resultat": "2.1) SCD si $m\\neq1,3$; SI si $m=3$; SCI si $m=1$. 2.2) Per a $m=1$: $\\left(\\tfrac72-\\lambda,\\tfrac12,\\lambda\\right)$, $\\lambda\\in\\mathbb{R}$, és a dir, una recta. 2.3) Sí, per exemple $x=3$."
+      }
+    },
+    {
+      "id": "2026-ord-S1-E3",
+      "numero": 3,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "L'Ajuntament de Canet de Mar ha aconseguit 24 entrades gratuïtes per a un concert d'un grup de rock català, i ha decidit sortejar-les entre els veïns interessats a assistir-hi. Tots els veïns del poble seguidors d'aquest grup s'apunten al sorteig, i només al 16 % els toca una entrada. De la resta de seguidors del grup, sis setenes parts intenten comprar una entrada per la web, on la probabilitat d'aconseguir-ne és del 25 %.",
+      "apartats": [
+        {
+          "lletra": "3.1",
+          "punts": 0.75,
+          "enunciat": "Quantes persones d'aquest municipi tenen entrada per al concert?"
+        },
+        {
+          "lletra": "3.2",
+          "punts": 0.75,
+          "enunciat": "Si escollim a l'atzar un veí de Canet seguidor d'aquest grup de rock i no té entrada per al concert, quina és la probabilitat que hagués intentat aconseguir-la via web?"
+        },
+        {
+          "lletra": "3.3",
+          "punts": 1.0,
+          "enunciat": "El dia del concert, l'equip de so mesura el nivell de decibels generat pels crits entusiastes del públic durant els 5 minuts de durada de la cançó més famosa del grup; es pot aproximar per la funció següent:\n\n$$S(t)=-t^3+12t^2-30t+90,\\qquad t\\in[0,5],$$\n\non $t$ és el temps en minuts i $S(t)$ els decibels. Quan se superen els 100 decibels es considera que el públic està molt entregat i s'activen automàticament uns efectes lumínics especials. S'activaran en algun moment durant aquests cinc minuts? Si la resposta és afirmativa, calculeu en quin minut s'activen, aproximat a les dècimes."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "3.1) Sigui $ES$ = \"obtenir entrada al sorteig\", $W$ = \"intentar comprar-la al web\" i $EW$ = \"aconseguir entrada al web\". $P(ES)=0{,}16$, $P(W)=0{,}84\\cdot\\tfrac67=0{,}72$ i $P(EW)=0{,}72\\cdot0{,}25=0{,}18$. Total amb entrada: $0{,}16+0{,}18=0{,}34$ dels seguidors. Com que el 16 % dels seguidors són 24 persones, els seguidors són $24/0{,}16=150$, i amb entrada: $0{,}34\\cdot150=51$ persones.\n\n3.2) Sigui $noE$ = \"no tenir entrada\". Per Bayes: $P(W|noE)=\\dfrac{P(noE|W)\\,P(W)}{P(noE)}=\\dfrac{0{,}75\\cdot0{,}72}{0{,}66}\\approx0{,}82$.\n\n3.3) $S$ és polinòmica, per tant contínua. Sigui $D(t)=S(t)-100=-t^3+12t^2-30t-10$. Com que $D(0)=-10<0$ i $D(5)=15>0$, pel teorema de Bolzano existeix $c\\in(0,5)$ amb $D(c)=0$. Com que $D(4)=-2<0$, $D(4{,}2)\\approx1{,}59>0$ i $D(4{,}1)\\approx-0{,}20<0$, el zero és a $(4{,}1;\\ 4{,}2)$. Per tant sí: els efectes s'activen aproximadament al minut **4,1**.",
+        "resultat": "3.1) 51 persones; 3.2) $\\approx0{,}82$; 3.3) sí, els efectes lumínics s'activen cap al minut $4{,}1$.",
+        "nota": "els criteris oficials escriuen $D(4{,}5)=6{,}85$; el valor exacte és $6{,}875$. No altera la conclusió."
+      }
+    },
+    {
+      "id": "2026-ord-S1-E4A",
+      "numero": 4,
+      "tipus": "exercici",
+      "opcio": "A",
+      "punts": 2.5,
+      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen. Indiqueu a la portada de l'examen l'opció escollida.\n\n**OPCIÓ A**\n\nL'alcalde d'un poble de Catalunya encarrega a l'arquitecte municipal el disseny d'un parc infantil que es construirà en un terreny públic. Per a complir la normativa vigent, en el parc hi ha d'haver dos espais ben delimitats: un per a una boca de reg —el qual, segons l'arquitecte, ha de tenir forma circular—, i un altre per a una caseta on es guardin les eines de manteniment —el qual ha de tenir forma quadrada. Per motius estètics, l'arquitecte vol delimitar cadascun d'aquests dos espais amb una barana de forja. Sabent que les dues baranes mesuren exactament 10 m de longitud en total, quina mida ha de tenir la barana de cada espai per tal que la suma de les superfícies dels dos espais sigui la més petita possible? Quina és aquesta superfície mínima?",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Sigui $x$ la longitud (en metres) de la barana del tancat circular; la del tancat quadrat és $10-x$. El radi és $r=\\dfrac{x}{2\\pi}$, per tant l'àrea circular és $\\pi r^2=\\dfrac{x^2}{4\\pi}$. El costat del quadrat és $\\dfrac{10-x}{4}$, i la seva àrea és $\\dfrac{(10-x)^2}{16}$. La funció a minimitzar és\n$$A(x)=\\frac{x^2}{4\\pi}+\\frac{(10-x)^2}{16}=\\frac{(4+\\pi)x^2-20\\pi x+100\\pi}{16\\pi}.$$\n$A'(x)=\\dfrac{(8+2\\pi)x-20\\pi}{16\\pi}=0 \\iff x=\\dfrac{10\\pi}{4+\\pi}\\approx4{,}4$ m. Com que $A''(x)=\\dfrac{8+2\\pi}{16\\pi}>0$, és un mínim. El tancat quadrat té $10-x\\approx5{,}6$ m. La superfície mínima és $A\\approx3{,}5$ m².",
+        "resultat": "barana circular de $\\approx4{,}4$ m i barana quadrada de $\\approx5{,}6$ m (és a dir, $x=\\tfrac{10\\pi}{4+\\pi}$); superfície mínima $\\approx3{,}5$ m²."
+      }
+    },
+    {
+      "id": "2026-ord-S1-E4B",
+      "numero": 4,
+      "tipus": "exercici",
+      "opcio": "B",
+      "punts": 2.5,
+      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen. Indiqueu a la portada de l'examen l'opció escollida.\n\n**OPCIÓ B**\n\nConsidereu els punts de l'espai $P=(1,0,-1)$, $Q=(3,-2,0)$ i $R=(1,1,1)$.",
+      "apartats": [
+        {
+          "lletra": "4.1",
+          "punts": 0.75,
+          "enunciat": "Calculeu l'equació del pla que conté els punts $P$, $Q$ i $R$."
+        },
+        {
+          "lletra": "4.2",
+          "punts": 0.75,
+          "enunciat": "Comproveu que l'àrea del triangle $\\Delta PQR$ és $\\dfrac{3\\sqrt5}{2}\\ \\text{u}^2$."
+        },
+        {
+          "lletra": "4.3",
+          "punts": 1.0,
+          "enunciat": "Determineu les condicions que han de complir les coordenades d'un quart punt $S=(x,y,z)$ per tal que $P$, $Q$, $R$ i $S$ formin un tetraedre de volum 1. (El volum del tetraedre format pels punts $P$, $Q$, $R$ i $S$ és: $\\operatorname{volum}(PQRS)=\\dfrac{\\text{àrea}(\\Delta PQR)\\cdot\\text{altura}}{3}$.)"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "4.1) $\\overrightarrow{PQ}=(2,-2,1)$ i $\\overrightarrow{PR}=(0,1,2)$. El vector normal és $\\overrightarrow{PQ}\\times\\overrightarrow{PR}=(-5,-4,2)$. Pla: $5x+4y-2z+D=0$; passant per $R$, $D=-7$. Així $\\pi$: $5x+4y-2z-7=0$. Comprovació: $P$ i $Q$ també hi pertanyen.\n\n4.2) $\\dfrac12\\left|\\overrightarrow{PQ}\\times\\overrightarrow{PR}\\right|=\\dfrac12\\sqrt{25+16+4}=\\dfrac{\\sqrt{45}}{2}=\\dfrac{3\\sqrt5}{2}$ u². (Alternativament, $|\\overrightarrow{PQ}|=3$ i $\\overrightarrow{PQ}\\cdot\\overrightarrow{PR}=0$, per tant l'altura és $|\\overrightarrow{PR}|=\\sqrt5$ i l'àrea és $\\tfrac12\\cdot3\\cdot\\sqrt5$.)\n\n4.3) Com que l'àrea de la base és $\\dfrac{3\\sqrt5}{2}$, el volum és $V=\\dfrac13\\cdot\\dfrac{3\\sqrt5}{2}\\cdot d(S,\\pi)$, amb $d(S,\\pi)=\\dfrac{|5x+4y-2z-7|}{\\sqrt{45}}$. Així $V=\\dfrac{|5x+4y-2z-7|}{6}$. Imposant $V=1$: $|5x+4y-2z-7|=6$, és a dir, els punts $S$ han de pertànyer als plans $5x+4y-2z-1=0$ o $5x+4y-2z-13=0$ (dos plans paral·lels a $\\pi$).",
+        "resultat": "4.1) $5x+4y-2z-7=0$; 4.2) àrea $\\dfrac{3\\sqrt5}{2}$ u², comprovada; 4.3) $5x+4y-2z=1$ o $5x+4y-2z=13$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastades amb el càlcul del transcriptor",
+    "revisat_huma": false
+  }
+}

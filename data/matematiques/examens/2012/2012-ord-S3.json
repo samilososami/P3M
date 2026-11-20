@@ -1,0 +1,182 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2012-ord-S3",
+  "assignatura": "matematiques",
+  "any": 2012,
+  "convocatoria": "ordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2012/pau_mate12jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2012/pau_mate12jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2012-ord-S3-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Digueu per a quin valor del paràmetre $m$ els plans\n$$\\pi_1: x-y+mz=1, \\qquad \\pi_2: x-y+z=m \\qquad \\text{i} \\qquad \\pi_3: my+2z=3$$\ntenen com a intersecció una recta.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Els tres plans es tallen en una recta si i només si el sistema format per les seves equacions és compatible indeterminat amb un grau de llibertat. El determinant de la matriu de coeficients és $\\begin{vmatrix} 1 & -1 & m \\\\ 1 & -1 & 1 \\\\ 0 & m & 2 \\end{vmatrix}=m^2-m$, que s'anul·la per a $m=0$ i $m=1$.\n\n- Per a $m=0$, el sistema és incompatible (la tercera fila de la matriu ampliada dóna $0=5$), per tant els tres plans no tenen cap punt en comú.\n- Per a $m=1$, el sistema és compatible indeterminat amb un grau de llibertat, i la intersecció és una recta.",
+        "resultat": "$m=1$."
+      }
+    },
+    {
+      "id": "2012-ord-S3-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donades la recta $y=3x+b$ i la paràbola $y=x^2$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'abscissa del punt on la recta tangent a la paràbola és paral·lela a la recta donada."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu el valor del paràmetre $b$ perquè la recta sigui tangent a la paràbola."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta donada té pendent $3$ i la derivada de la paràbola és $y'=2x$. Són paral·leles quan $2x=3$, és a dir, en $x=\\dfrac{3}{2}$.\n\nb) La tangent ha de tenir pendent 3, per tant ha de tocar la paràbola en $x=\\dfrac{3}{2}$. Cal que $y(3/2)=(3/2)^2$, és a dir $\\dfrac{9}{2}+b=\\dfrac{9}{4}$, d'on $b=-\\dfrac{9}{4}$.",
+        "resultat": "a) $x=\\dfrac{3}{2}$; b) $b=-\\dfrac{9}{4}$."
+      }
+    },
+    {
+      "id": "2012-ord-S3-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats el pla $\\pi: x-y+2z-5=0$ i la recta $r: \\begin{cases} x+y+z=0 \\\\ 2x-y+z=10 \\end{cases}$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu el punt d'intersecció entre el pla i la recta."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació contínua de la recta $s$ continguda en el pla $\\pi$, que és perpendicular a la recta $r$ i talla la recta $r$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Es resol el sistema de tres equacions amb tres incògnites format pel pla i les dues equacions de la recta: $x-y+2z-5=0$, $x+y+z=0$, $2x-y+z=10$. La solució és el punt $P=(4,-3,-1)$.\n\nb) El vector director de $r$ és $\\vec v_r=(1,1,1)\\times(2,-1,1)=(2,1,-3)$, i el vector normal de $\\pi$ és $\\vec v_\\pi=(1,-1,2)$. El vector director de $s$ és perpendicular als dos: $\\vec v_s=\\vec v_\\pi\\times\\vec v_r=(1,-1,2)\\times(2,1,-3)=(1,7,3)$. Com que $s$ ha de tallar $r$, passa pel punt de tall $P=(4,-3,-1)$ i, per tant:\n$$s:\\ \\dfrac{x-4}{1}=\\dfrac{y+3}{7}=\\dfrac{z+1}{3}$$",
+        "resultat": "a) $P=(4,-3,-1)$; b) $\\dfrac{x-4}{1}=\\dfrac{y+3}{7}=\\dfrac{z+1}{3}$."
+      }
+    },
+    {
+      "id": "2012-ord-S3-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donades les matrius $A=\\begin{pmatrix} 3 & 2 \\\\ -1 & 1 \\end{pmatrix}$ i $B=\\begin{pmatrix} 1 & -2 \\\\ 1 & 3 \\end{pmatrix}$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que es compleix la igualtat $(A+B)(A-B)=A^2-B^2$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "És certa aquesta igualtat per a qualsevol parell de matrius quadrades $A$ i $B$ del mateix ordre? Responeu raonadament utilitzant les propietats generals de les operacions entre matrius, sense utilitzar matrius $A$ i $B$ concretes."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $(A+B)(A-B)=\\begin{pmatrix} 4 & 0 \\\\ 0 & 4 \\end{pmatrix}\\begin{pmatrix} 2 & 4 \\\\ -2 & -2 \\end{pmatrix}=\\begin{pmatrix} 8 & 16 \\\\ -8 & -8 \\end{pmatrix}$ i $A^2-B^2=\\begin{pmatrix} 7 & 8 \\\\ -4 & -1 \\end{pmatrix}-\\begin{pmatrix} -1 & -8 \\\\ 4 & 7 \\end{pmatrix}=\\begin{pmatrix} 8 & 16 \\\\ -8 & -8 \\end{pmatrix}$. Són iguals.\n\nb) No és certa en general. Desenvolupant, $(A+B)(A-B)=A^2-AB+BA-B^2$, i $-AB+BA$ no és la matriu nul·la en general, perquè el producte de matrius no és commutatiu. La igualtat només es compleix si $A$ i $B$ commuten.",
+        "resultat": "a) es compleix per a les matrius donades; b) no és certa per a qualsevol parell de matrius, perquè el producte no és commutatiu."
+      }
+    },
+    {
+      "id": "2012-ord-S3-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Un triangle equilàter de vèrtexs $A$, $B$ i $C$ té els costats de $8$ cm. Situem un punt $P$ sobre una de les altures del triangle, a una distància $x$ de la base corresponent.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Calculeu l'altura del triangle de vèrtexs $A$, $B$ i $C$."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Indiqueu la distància del punt $P$ a cadascun dels vèrtexs (en funció de $x$)."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Determineu el valor de $x$ perquè la suma dels quadrats de les distàncies del punt $P$ a cadascun dels tres vèrtexs sigui mínima."
+        }
+      ],
+      "figures": [
+        "triangle equilàter $ABC$ amb costats de 8 cm, amb el vèrtex $B$ a dalt i la base $AC$ horitzontal. El punt $P$ és sobre l'altura que surt de $B$, a distància $x$ de la base $AC$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Pel teorema de Pitàgores, $h=\\sqrt{8^2-4^2}=4\\sqrt{3}$ cm.\n\nb) $d(P,A)=d(P,C)=\\sqrt{16+x^2}$ i $d(P,B)=4\\sqrt{3}-x$.\n\nc) $f(x)=2(16+x^2)+(4\\sqrt{3}-x)^2=3x^2-8\\sqrt{3}\\,x+80$. Com que $f'(x)=6x-8\\sqrt{3}=0$, s'obté $x=\\dfrac{4\\sqrt{3}}{3}$. Com que $f''(x)=6>0$, és un mínim.",
+        "resultat": "a) $h=4\\sqrt{3}$ cm; b) $d(P,A)=d(P,C)=\\sqrt{16+x^2}$, $d(P,B)=4\\sqrt{3}-x$; c) $x=\\dfrac{4\\sqrt{3}}{3}$."
+      }
+    },
+    {
+      "id": "2012-ord-S3-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats els punts $P=(1,0,0)$, $Q=(0,2,0)$, $R=(0,0,3)$ i $S=(1,2,3)$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació cartesiana (és a dir, de la forma $Ax+By+Cz+D=0$) del pla que conté els punts $P$, $Q$ i $R$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu si els quatre punts són coplanaris (és a dir, si els quatre estan continguts en un mateix pla)."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Amb $\\overrightarrow{PQ}=(-1,2,0)$ i $\\overrightarrow{PR}=(-1,0,3)$, el vector normal és $\\overrightarrow{PQ}\\times\\overrightarrow{PR}=(6,3,2)$. Imposant que el pla passi per $P$, s'obté $D=-6$. Per tant, $\\pi: 6x+3y+2z-6=0$.\n\nb) Els quatre punts són coplanaris si $S$ pertany al pla. Com que $6\\cdot1+3\\cdot2+2\\cdot3-6=12\\neq0$, no ho són. Equivalentment, el volum del tetraedre és $V=\\dfrac{1}{6}\\left|\\det(\\overrightarrow{PQ},\\overrightarrow{PR},\\overrightarrow{PS})\\right|=\\dfrac{12}{6}=2\\neq0$.",
+        "resultat": "a) $6x+3y+2z-6=0$; b) els quatre punts no són coplanaris."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

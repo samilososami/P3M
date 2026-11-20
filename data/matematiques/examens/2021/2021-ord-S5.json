@@ -1,0 +1,210 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2021-ord-S5",
+  "assignatura": "matematiques",
+  "any": 2021,
+  "convocatoria": "ordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 4",
+  "instruccions": "Responeu a QUATRE de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2,5 punts.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.\n\nPodeu utilitzar les pàgines en blanc (pàgines 14 i 15) per a fer esquemes, esborranys, etc., o per a acabar de respondre a alguna qüestió si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de la qüestió corresponent.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2021/pau_mate21jl.pdf",
+      "pagines": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2021/pau_mate21jp.pdf",
+      "pagines": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2021-ord-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu les matrius $A=\\begin{pmatrix} 2&1\\\\-3&4 \\end{pmatrix}$, $B=\\begin{pmatrix} 1&1\\\\1&0 \\end{pmatrix}$ i $C=\\begin{pmatrix} 5&1\\\\0&7 \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Raoneu que la matriu $B$ és invertible i després calculeu $B^{-1}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu la matriu $X$ que satisfà la igualtat $A+B\\cdot X=C\\cdot A$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $|B|=\\begin{vmatrix} 1&1\\\\1&0 \\end{vmatrix}=-1\\neq0$, per tant $B$ és invertible. $B^{-1}=\\dfrac{1}{-1}\\begin{pmatrix} 0&-1\\\\-1&1 \\end{pmatrix}=\\begin{pmatrix} 0&1\\\\1&-1 \\end{pmatrix}$.\n\nb) $X=B^{-1}(C\\cdot A-A)$. $C\\cdot A=\\begin{pmatrix} 7&9\\\\-21&28 \\end{pmatrix}$, i $C\\cdot A-A=\\begin{pmatrix} 5&8\\\\-18&24 \\end{pmatrix}$. Aleshores $X=\\begin{pmatrix} 0&1\\\\1&-1 \\end{pmatrix}\\begin{pmatrix} 5&8\\\\-18&24 \\end{pmatrix}=\\begin{pmatrix} -18&24\\\\23&-16 \\end{pmatrix}$.",
+        "resultat": "a) $B^{-1}=\\begin{pmatrix} 0&1\\\\1&-1 \\end{pmatrix}$. b) $X=\\begin{pmatrix} -18&24\\\\23&-16 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2021-ord-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Siguin les funcions $f(x)=x^3-9x$ i $g(x)=7x$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Estudieu els intervals de creixement i decreixement de $f(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'àrea de la regió del semiplà $x\\geq0$ compresa entre les gràfiques de $f(x)$ i $g(x)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=3x^2-9=3(x+\\sqrt3)(x-\\sqrt3)$, que s'anul·la per a $x=-\\sqrt3$ i $x=\\sqrt3$. La funció creix en $(-\\infty,-\\sqrt3)\\cup(\\sqrt3,+\\infty)$ i decreix en $(-\\sqrt3,\\sqrt3)$. Té un màxim en $x=-\\sqrt3$ i un mínim en $x=\\sqrt3$.\n\nb) Punts de tall per a $x\\geq0$: $x^3-9x=7x \\iff x^3-16x=x(x^2-16)=0$, d'on $x=0$ i $x=4$. En $[0,4]$, $g(x)\\geq f(x)$, i per tant\n$$A=\\int_0^4\\big(g(x)-f(x)\\big)\\,dx=\\int_0^4(16x-x^3)\\,dx=\\left[8x^2-\\frac{x^4}{4}\\right]_0^4=128-64=64\\ \\text{u}^2.$$",
+        "resultat": "a) creix en $(-\\infty,-\\sqrt3)\\cup(\\sqrt3,+\\infty)$ i decreix en $(-\\sqrt3,\\sqrt3)$. b) $A=64$ u$^2$.",
+        "nota": "als criteris oficials, el càlcul final apareix com «$64-128=64$». El resultat és correcte si es fa $-64+128=64$; la solució es dona amb aquest càlcul."
+      }
+    },
+    {
+      "id": "2021-ord-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu els punts de l'espai tridimensional $A=(1,a,1)$, $B=(a,1,2)$, $C=(1,1,1)$ i $D=(0,0,0)$, en què $a$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Determineu el valor del paràmetre $a$ per al qual els punts són diferents i coplanaris (és a dir, que hi ha un pla que els conté)."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Per al valor $a=2$, calculeu l'àrea del triangle de vèrtexs $A$, $B$ i $C$.\n\n*NOTA:* Per a calcular l'àrea del triangle definit pels vectors $\\vec v$ i $\\vec w$, podeu fer servir l'expressió $S=\\dfrac12\\|\\vec v\\times\\vec w\\|$, en què $\\vec v\\times\\vec w$ és el producte vectorial dels vectors $\\vec v$ i $\\vec w$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els quatre punts són coplanaris si el determinant dels vectors $\\overrightarrow{DA}$, $\\overrightarrow{DB}$, $\\overrightarrow{DC}$ és zero:\n$$\\begin{vmatrix} 1&a&1\\\\a&1&2\\\\1&1&1 \\end{vmatrix}=(1+2a+a)-(1+2+a^2)=-a^2+3a-2=0 \\iff a=1\\ \\text{o}\\ a=2.$$\nPer a $a=1$, els punts $A$ i $C$ coincideixen. Per a $a=2$, els quatre punts són diferents. Per tant, $a=2$.\n\nb) Per a $a=2$: $A=(1,2,1)$, $B=(2,1,2)$, $C=(1,1,1)$. $\\overrightarrow{AB}=(1,-1,1)$ i $\\overrightarrow{AC}=(0,-1,0)$. El producte vectorial és $\\overrightarrow{AB}\\times\\overrightarrow{AC}=(1,0,-1)$, de norma $\\sqrt2$. Per tant, $S=\\dfrac12\\sqrt2=\\dfrac{\\sqrt2}{2}$ u$^2$.",
+        "resultat": "a) $a=2$. b) $S=\\dfrac{\\sqrt2}{2}$ u$^2$."
+      }
+    },
+    {
+      "id": "2021-ord-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "La resistència al trencament $R$ d'una biga de secció rectangular de base $x$ i altura $y$ és directament proporcional al producte $xy^2$; per tant, $R=kxy^2$, en què $k$ és una constant positiva. Disposem d'un tronc de fusta en forma de cilindre de diàmetre $d$ com el de la figura.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Comproveu que la resistència $R$ de la biga rectangular de base $x$ que podem construir amb aquest tronc ve donada per l'expressió $R=kx(d^2-x^2)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu les dimensions de la biga rectangular de resistència màxima que podem construir a partir d'aquest tronc i calculeu aquesta resistència màxima."
+        }
+      ],
+      "figures": [
+        "secció circular de diàmetre $d$ amb un rectangle inscrit de base $x$ i altura $y$. Els quatre vèrtexs del rectangle són sobre la circumferència, i la diagonal del rectangle és el diàmetre $d$ (marcat a la figura)."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Pel teorema de Pitàgores, $x^2+y^2=d^2$, i per tant $y^2=d^2-x^2$. Substituint a $R=kxy^2$: $R=kx(d^2-x^2)$.\n\nb) $R'(x)=k(d^2-x^2-2x^2)=k(d^2-3x^2)=0 \\iff x=\\dfrac{d\\sqrt3}{3}$ (la solució negativa no té sentit). Aleshores $y^2=d^2-\\dfrac{d^2}{3}=\\dfrac{2d^2}{3}$, és a dir, $y=\\dfrac{d\\sqrt6}{3}$. Com que $R''(x)=-6kx$ i $R''\\!\\left(\\dfrac{d\\sqrt3}{3}\\right)<0$, és un màxim. La resistència màxima és $R_{\\max}=k\\cdot\\dfrac{d\\sqrt3}{3}\\cdot\\dfrac{2d^2}{3}=\\dfrac{2\\sqrt3}{9}kd^3$.",
+        "resultat": "a) $R=kx(d^2-x^2)$. b) Base $x=\\dfrac{d\\sqrt3}{3}$ i altura $y=\\dfrac{d\\sqrt6}{3}$; resistència màxima $R_{\\max}=\\dfrac{2\\sqrt3}{9}kd^3$.",
+        "nota": "als criteris oficials, les pautes de l'apartat b) sumen 1 punt (4 × 0,25), mentre que l'enunciat indica 1,25 punts. Es manté la puntuació de l'enunciat."
+      }
+    },
+    {
+      "id": "2021-ord-S5-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $a$:\n\n$$\\begin{cases} x+2y+az=8 \\\\ 2x+y-az=1 \\\\ 3x-3az=1 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Comproveu que, per a qualsevol valor del paràmetre $a$, el sistema d'equacions lineals no té solució."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Interpreteu geomètricament el sistema d'equacions lineals. Feu un dibuix esquemàtic que representi la posició relativa dels tres plans."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Matriu del sistema $M=\\begin{pmatrix} 1&2&a\\\\2&1&-a\\\\3&0&-3a \\end{pmatrix}$ i matriu ampliada $M^*=\\left(\\begin{array}{ccc|c} 1&2&a&8\\\\2&1&-a&1\\\\3&0&-3a&1 \\end{array}\\right)$. $\\det M=-3a-2(-6a+3a)-3a=0$ per a qualsevol $a$. Com que el menor $\\begin{vmatrix} 1&2\\\\2&1 \\end{vmatrix}=-3\\neq0$, $\\operatorname{rang}M=2$ per a qualsevol $a$. Orlant amb la columna dels termes independents: $\\begin{vmatrix} 1&2&8\\\\2&1&1\\\\3&0&1 \\end{vmatrix}=-21\\neq0$, de manera que $\\operatorname{rang}M^*=3$. Com que $\\operatorname{rang}M\\neq\\operatorname{rang}M^*$ per a qualsevol $a$, pel teorema de Rouché-Frobenius el sistema és incompatible.\n\nb) Cada equació és un pla. El sistema és incompatible, per tant els tres plans no tenen cap punt comú. No hi ha cap parell de plans paral·lels, perquè cap parell de vectors normals és proporcional. Els tres plans es tallen dos a dos en tres rectes paral·leles, és a dir, formen un prisma triangular il·limitat. El dibuix de referència dels criteris mostra tres plans en perspectiva que es tallen dos a dos en rectes paral·leles.",
+        "resultat": "a) El sistema és incompatible per a qualsevol $a$ (rang $M=2$, rang $M^*=3$). b) Tres plans que es tallen dos a dos en rectes paral·leles, sense cap punt comú."
+      }
+    },
+    {
+      "id": "2021-ord-S5-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Resoleu les dues qüestions següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Sigui $f(x)=2x^3+mx^2+nx+p$ una funció que té dos extrems relatius en $x=-3$ i en $x=1$ que passa pel punt $(3,4)$. Calculeu els valors de $m$, $n$ i $p$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'equació de la recta tangent a la funció $f(x)=\\dfrac{1-x}{1+x}$ en $x=-3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=6x^2+2mx+n$. Com que $f'(-3)=f'(1)=0$: $54-6m+n=0$ i $6+2m+n=0$. Restant, $48-8m=0$, d'on $m=6$ i $n=-18$. Aleshores $f(x)=2x^3+6x^2-18x+p$, i de $f(3)=4$: $54+54-54+p=4$, d'on $p=-50$.\n\nb) $f'(x)=\\dfrac{-2}{(1+x)^2}$, per tant $f'(-3)=-\\dfrac{1}{2}$. El punt de tangència és $(-3,f(-3))=(-3,-2)$. La recta és $y+2=-\\dfrac12(x+3)$, és a dir, $y=-\\dfrac{x}{2}-\\dfrac72$.",
+        "resultat": "a) $m=6$, $n=-18$, $p=-50$. b) $y=-\\dfrac{x}{2}-\\dfrac{7}{2}$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

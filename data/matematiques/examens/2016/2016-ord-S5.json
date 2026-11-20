@@ -1,0 +1,194 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2016-ord-S5",
+  "assignatura": "matematiques",
+  "any": 2016,
+  "convocatoria": "ordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2016/pau_mate16jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2016/pau_mate16jp.pdf",
+      "pagines": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2016-ord-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals\n$$\\begin{pmatrix} 1 & 1 & 2 \\\\ -4 & -1 & -5 \\\\ 3 & 1 & 4 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}=\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}.$$\nExpliqueu raonadament si les afirmacions següents són vertaderes o falses:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Si $\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}=\\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$, el sistema és compatible determinat i la solució és $\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}=\\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Si $\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}=\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}$, el sistema és compatible indeterminat."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) FALSA. La matriu de coeficients $A$ té $\\det A=0$ i $\\operatorname{rang}(A)=2$, perquè el menor $\\begin{vmatrix} 1 & 1 \\\\ -4 & -1 \\end{vmatrix}=3\\neq 0$. Com que el sistema és homogeni, $\\operatorname{rang}(A)=\\operatorname{rang}(A')=2<3$: el sistema és compatible indeterminat, amb infinites solucions. La solució $(0,0,0)$ existeix, però no és l'única.\n\nb) FALSA. Amb $\\operatorname{rang}(A)=2$, cal calcular $\\operatorname{rang}(A')$: $\\begin{vmatrix} 1 & 1 & 1 \\\\ -4 & -1 & 1 \\\\ 3 & 1 & 1 \\end{vmatrix}=-1+3-4+3-1+4=4\\neq 0$, per tant $\\operatorname{rang}(A')=3\\neq\\operatorname{rang}(A)$. El sistema és incompatible i no té cap solució.",
+        "resultat": "a) Falsa (el sistema és compatible indeterminat). b) Falsa (el sistema és incompatible)."
+      }
+    },
+    {
+      "id": "2016-ord-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin a $\\mathbb{R}^3$ el pla $\\pi$ d'equació $x-y+2z=2$ i els punts $A=(3,-1,2)$ i $B=(1,1,-2)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que els punts $A$ i $B$ són simètrics respecte del pla $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Si $r$ és la recta dels punts $P$ que té per equació $P=B+\\lambda v$, en què $\\lambda$ és un paràmetre real i $v=(1,1,0)$, verifiqueu que els punts mitjans dels segments $AP$ pertanyen al pla $\\pi$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector $\\overrightarrow{AB}=B-A=(-2,2,-4)$ és proporcional al vector normal del pla, $(1,-1,2)$. El punt mitjà del segment $AB$ és $M=\\left(\\dfrac{A+B}{2}\\right)=(2,0,0)$, que pertany al pla perquè $2-0+2\\cdot0=2$.\n\nb) El punt genèric de $r$ és $P=(1,1,-2)+\\lambda(1,1,0)=(1+\\lambda,1+\\lambda,-2)$. El punt mitjà del segment $AP$ és\n$$M=\\frac{A+P}{2}=\\frac{(4+\\lambda,\\,\\lambda,\\,0)}{2}=\\left(2+\\frac{\\lambda}{2},\\ \\frac{\\lambda}{2},\\ 0\\right).$$\nSubstituint a l'equació del pla: $\\left(2+\\dfrac{\\lambda}{2}\\right)-\\dfrac{\\lambda}{2}+2\\cdot0=2$, que es compleix per a qualsevol $\\lambda$. Per tant els punts mitjans pertanyen al pla.",
+        "resultat": "a) $M=(2,0,0)\\in\\pi$ i $\\overrightarrow{AB}$ és normal a $\\pi$, per tant $A$ i $B$ són simètrics respecte de $\\pi$. b) Comprovat: $\\left(2+\\dfrac{\\lambda}{2},\\dfrac{\\lambda}{2},0\\right)$ satisfà l'equació de $\\pi$ per a tot $\\lambda$."
+      }
+    },
+    {
+      "id": "2016-ord-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Responeu a les qüestions següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu els màxims relatius, els mínims relatius i els punts d'inflexió de la funció $f(x)=2x^3-9x^2+12x-4$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Expliqueu raonadament que si $f(x)$ és una funció amb derivada primera contínua en l'interval $[a,b]$ i satisfà que $f'(a)>0$ i $f'(b)<0$, aleshores hi ha, com a mínim, un punt de l'interval $(a,b)$ en què la recta tangent a la gràfica de $f(x)$ en aquest punt és horitzontal."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=6x^2-18x+12=6(x-1)(x-2)$, que s'anul·la per a $x=1$ i $x=2$. Com que $f''(x)=12x-18$: $f''(1)=-6<0$, màxim relatiu en $(1,f(1))=(1,1)$; $f''(2)=6>0$, mínim relatiu en $(2,f(2))=(2,0)$. Per a $f''(x)=0$: $x=\\dfrac32$, i $f''$ canvia de signe (còncava per a $x<\\frac32$, convexa per a $x>\\frac32$), per tant hi ha un punt d'inflexió en $\\left(\\dfrac32,\\dfrac12\\right)$.\n\nb) $f'$ és contínua en $[a,b]$ i té signes oposats als extrems, $f'(a)>0$ i $f'(b)<0$. Pel teorema de Bolzano aplicat a $f'$, existeix $c\\in(a,b)$ amb $f'(c)=0$. En aquest punt la recta tangent a la gràfica de $f$ té pendent zero, és a dir, és horitzontal.",
+        "resultat": "a) Màxim relatiu en $(1,1)$; mínim relatiu en $(2,0)$; punt d'inflexió en $\\left(\\dfrac32,\\dfrac12\\right)$. b) Queda justificat pel teorema de Bolzano aplicat a $f'$."
+      }
+    },
+    {
+      "id": "2016-ord-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $A$ una matriu quadrada d'ordre $n$ que satisfà la igualtat $A\\cdot(A-I)=I$, en què $I$ és la matriu identitat.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Justifiqueu que la matriu $A$ és invertible i que $A^{-1}=A-I$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu el valor de $a$ que fa que la matriu $A=\\begin{pmatrix} 1 & 1 \\\\ 1 & a \\end{pmatrix}$ compleixi la igualtat $A\\cdot(A-I)=I$. Calculeu $A^{-1}$ i comproveu que es correspon amb la matriu calculada a partir del resultat de l'apartat anterior."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Si $A\\cdot(A-I)=I$, aleshores $\\det(A)\\cdot\\det(A-I)=\\det(I)=1$, i per tant $\\det(A)\\neq 0$: $A$ és invertible. Com que $A\\cdot(A-I)=I$ i també $(A-I)\\cdot A=A\\cdot A-A=A\\cdot(A-I)=I$, la matriu inversa és $A^{-1}=A-I$.\n\nb) $A-I=\\begin{pmatrix} 0 & 1 \\\\ 1 & a-1 \\end{pmatrix}$ i $A\\cdot(A-I)=\\begin{pmatrix} 1 & a \\\\ a & a^2-a+1 \\end{pmatrix}$. Igualant a $I$: $a=0$ (i aleshores $a^2-a+1=1$, de manera que les quatre equacions es compleixen).\n\nPer a $a=0$, $A=\\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}$ i $A^{-1}=\\dfrac{1}{-1}\\begin{pmatrix} 0 & -1 \\\\ -1 & 1 \\end{pmatrix}=\\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$, que coincideix amb $A-I=\\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$.",
+        "resultat": "a) $A$ és invertible i $A^{-1}=A-I$. b) $a=0$; $A^{-1}=\\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}=A-I$."
+      }
+    },
+    {
+      "id": "2016-ord-S5-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin les rectes $r:(x,y,z)=(2,3,-3)+\\lambda(1,-1,0)$ i $s:\\dfrac{x-3}{2}=y-5=z+2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Estudieu si les rectes $r$ i $s$ són paral·leles o perpendiculars."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu la posició relativa de les rectes $r$ i $s$ i calculeu l'equació paramètrica de la recta $t$ que talla perpendicularment la recta $r$ i la recta $s$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els vectors directors són $\\vec v_r=(1,-1,0)$ i $\\vec v_s=(2,1,1)$. No són proporcionals, per tant les rectes no són paral·leles. Com que $\\vec v_r\\cdot\\vec v_s=2-1+0=1\\neq 0$, tampoc no són perpendiculars.\n\nb) Igualant les equacions paramètriques de les dues rectes, $(2+\\lambda,3-\\lambda,-3)=(3+2\\mu,5+\\mu,-2+\\mu)$. De la tercera equació, $\\mu=-1$, i substituint a la primera i a la segona, $\\lambda=-1$. Per tant les rectes es tallen en el punt $(1,4,-3)$.\n\nLa recta $t$ passa pel punt $(1,4,-3)$ i té per vector director $\\vec v_r\\times\\vec v_s=\\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 1 & -1 & 0 \\\\ 2 & 1 & 1 \\end{vmatrix}=(-1,-1,3)\\equiv(1,1,-3)$.",
+        "resultat": "a) Ni paral·leles ni perpendiculars. b) Les rectes $r$ i $s$ es tallen en $(1,4,-3)$; $t:\\ (x,y,z)=(1+\\alpha,\\ 4+\\alpha,\\ -3-3\\alpha)$, amb $\\alpha\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2016-ord-S5-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sabem que una funció $f(x)$ té per derivada $f'(x)=(x+1)e^x$ i que $f(0)=2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació de la recta tangent a $y=f(x)$ en el punt de la corba d'abscissa $x=0$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'expressió de $f(x)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) En el punt $a=0$: $f(0)=2$ i $f'(0)=(0+1)e^0=1$. Per tant $y-2=1\\cdot(x-0)$.\n\nb) Integrant per parts amb $u=x+1$, $dv=e^x\\,dx$ (d'on $du=dx$, $v=e^x$):\n$$f(x)=\\int(x+1)e^x\\,dx=(x+1)e^x-\\int e^x\\,dx=(x+1)e^x-e^x+k=xe^x+k.$$\nCom que $f(0)=2$: $2=0\\cdot e^0+k$, és a dir $k=2$.",
+        "resultat": "a) $y=x+2$. b) $f(x)=xe^x+2$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

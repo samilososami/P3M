@@ -1,0 +1,173 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2025-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2025,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "4 exercicis; es responen tots (a l'exercici 4, opció A o B)",
+  "instruccions": "L'examen consta de QUATRE exercicis obligatoris. Cada exercici val 2,5 punts. Feu els exercicis 1, 2 i 3 responent a TOTES les qüestions que s'hi plantegen. A l'exercici 4, trieu UNA de les dues opcions (A o B) proposades.\n\nEn totes les respostes, expliqueu sempre què voleu fer i per què. Cal que la redacció de la resposta es faci de manera coherent, amb correcció i claredat, emprant la notació i el vocabulari matemàtic adequats i expressant la solució de manera clara.\n\nPodeu utilitzar les pàgines en blanc del final del quadern per a fer esquemes, esborranys, etc., o per a acabar de respondre a algun exercici si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de l'exercici corresponent.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells capaços d'emmagatzemar dades o de transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2025/pau_mate25jl.pdf",
+      "pagines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2025/pau_mate25jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2025-ord-S1-E1",
+      "numero": 1,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la funció $f(x)=\\dfrac{x^2-2x}{x-1}$.",
+      "apartats": [
+        {
+          "lletra": "1.1",
+          "punts": 1.0,
+          "enunciat": "Determineu els talls de la corba $y=f(x)$ amb els eixos de coordenades, i les equacions de les seves possibles asímptotes verticals, horitzontals i obliqües."
+        },
+        {
+          "lletra": "1.2",
+          "punts": 1.0,
+          "enunciat": "Calculeu les equacions de les rectes tangents a la corba $y=f(x)$ en els punts $x=0$ i $x=2$. Aquestes dues rectes són paral·leles? Justifiqueu la resposta."
+        },
+        {
+          "lletra": "1.3",
+          "punts": 0.5,
+          "enunciat": "Hi ha algun punt on la recta tangent a $f(x)$ tingui pendent 1? En cas afirmatiu, trobeu-lo."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "1.1) Talls: $f(0)=0$ i $x^2-2x=0 \\iff x=0$ o $x=2$, per tant $(0,0)$ i $(2,0)$. Asímptota vertical: $x=1$, perquè el numerador val $-1$ en $x=1$, amb $\\lim_{x\\to1^+}f(x)=-\\infty$ i $\\lim_{x\\to1^-}f(x)=+\\infty$. No hi ha asímptotes horitzontals, perquè $\\lim_{x\\to\\pm\\infty}f(x)=\\pm\\infty$. Asímptota obliqua: $m=\\lim_{x\\to\\pm\\infty}\\dfrac{f(x)}{x}=1$ i $n=\\lim_{x\\to\\pm\\infty}\\big(f(x)-x\\big)=\\lim_{x\\to\\pm\\infty}\\dfrac{-x}{x-1}=-1$, per tant $y=x-1$.\n\n1.2) $f'(x)=\\dfrac{x^2-2x+2}{(x-1)^2}$. En $x=0$: $f(0)=0$ i $f'(0)=2$, recta $y=2x$. En $x=2$: $f(2)=0$ i $f'(2)=2$, recta $y=2x-4$. Les dues rectes tenen el mateix pendent ($2$) i són diferents, per tant són paral·leles.\n\n1.3) $f'(x)=1 \\iff x^2-2x+2=(x-1)^2 \\iff 2=1$, equació sense solució. No hi ha cap punt amb tangent de pendent 1.",
+        "resultat": "talls $(0,0)$ i $(2,0)$; asímptota vertical $x=1$; sense asímptotes horitzontals; asímptota obliqua $y=x-1$. Tangents $y=2x$ i $y=2x-4$, paral·leles. No hi ha cap punt amb pendent 1."
+      }
+    },
+    {
+      "id": "2025-ord-S1-E2",
+      "numero": 2,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\begin{cases} y-z=p+3 \\\\ p^2x-z=5 \\\\ x-y=3 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "2.1",
+          "punts": 1.25,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $p$."
+        },
+        {
+          "lletra": "2.2",
+          "punts": 0.5,
+          "enunciat": "Resoleu el sistema per al cas $p=-1$."
+        },
+        {
+          "lletra": "2.3",
+          "punts": 0.75,
+          "enunciat": "Per al cas $p=-1$, hi ha alguna solució que compleixi, a més, $xy=10$? En cas afirmatiu, indiqueu quantes n'hi ha i trobeu-les totes."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "2.1) La matriu de coeficients és $A=\\begin{pmatrix} 0 & 1 & -1 \\\\ p^2 & 0 & -1 \\\\ 1 & -1 & 0 \\end{pmatrix}$, amb $|A|=p^2-1$. Per tant, $|A|=0 \\iff p=\\pm1$.\n\n- Si $p\\neq\\pm1$: $\\operatorname{rang}A=\\operatorname{rang}A'=3$, sistema compatible determinat (SCD).\n- Si $p=1$: $\\operatorname{rang}A=2$ (el menor $\\begin{vmatrix} 0 & 1 \\\\ 1 & 0 \\end{vmatrix}=-1\\neq0$), i el menor $\\begin{vmatrix} 0 & 1 & 4 \\\\ 1 & 0 & 5 \\\\ 1 & -1 & 3 \\end{vmatrix}=-2\\neq0$ dona $\\operatorname{rang}A'=3$. Sistema incompatible (SI).\n- Si $p=-1$: $\\operatorname{rang}A=\\operatorname{rang}A'=2$, sistema compatible indeterminat (SCI) amb un grau de llibertat.\n\n2.2) Per a $p=-1$: $y-z=2$, $x-y=3$ (la tercera equació, $x-z=5$, és combinació de les altres dues). Fent $y=\\lambda$: $x=\\lambda+3$, $z=\\lambda-2$.\n\n2.3) $xy=10 \\iff (\\lambda+3)\\lambda=10 \\iff \\lambda^2+3\\lambda-10=0 \\iff \\lambda=2$ o $\\lambda=-5$. Les solucions són $(5,2,0)$ (per a $\\lambda=2$) i $(-2,-5,-7)$ (per a $\\lambda=-5$).",
+        "resultat": "SCD si $p\\neq\\pm1$; SI si $p=1$; SCI si $p=-1$. Per a $p=-1$: $(x,y,z)=(\\lambda+3,\\lambda,\\lambda-2)$, $\\lambda\\in\\mathbb{R}$. Hi ha exactament dues solucions amb $xy=10$: $(5,2,0)$ i $(-2,-5,-7)$."
+      }
+    },
+    {
+      "id": "2025-ord-S1-E3",
+      "numero": 3,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Una empresa produeix dos tipus de peces, de ferro i d'acer. El 60 % de la producció total correspon a peces de ferro i la resta són d'acer. Sabem que el 95 % de les peces de ferro produïdes no tenen cap defecte, mentre que el 3 % de les peces d'acer són defectuoses.",
+      "apartats": [
+        {
+          "lletra": "3.1",
+          "punts": 0.75,
+          "enunciat": "Si agafem una peça a l'atzar, quina és la probabilitat que sigui defectuosa?"
+        },
+        {
+          "lletra": "3.2",
+          "punts": 0.75,
+          "enunciat": "L'empresa aviat diversificarà la producció i començarà a produir també peces de titani, que es vendran en paquets de 5. Si la probabilitat que una peça de titani sigui defectuosa és un valor desconegut $p$, i cada peça és defectuosa independentment de les altres, comproveu que l'expressió que ens dona la probabilitat que en un paquet de 5 peces n'hi hagi exactament 4 de defectuoses (en funció de $p$) és $f(p)=5(p^4-p^5)$."
+        },
+        {
+          "lletra": "3.3",
+          "punts": 1.0,
+          "enunciat": "Considereu la funció $f(p)$ de l'apartat anterior. Determineu el valor màxim que pren $f(p)$ quan $p\\ge0$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "3.1) Sigui $F$ = \"la peça és de ferro\", $A$ = \"la peça és d'acer\" i $D$ = \"la peça és defectuosa\". Tenim $P(F)=0{,}6$, $P(A)=0{,}4$, $P(D|F)=0{,}05$ i $P(D|A)=0{,}03$. Per la llei de la probabilitat total: $P(D)=0{,}05\\cdot0{,}6+0{,}03\\cdot0{,}4=0{,}042$.\n\n3.2) Sigui $X$ = nombre de peces defectuoses en un paquet de 5, $X\\sim B(5,p)$. Aleshores $P(X=4)=\\binom{5}{4}p^4(1-p)=5(p^4-p^5)$.\n\n3.3) $f'(p)=5(4p^3-5p^4)=5p^3(4-5p)$, que s'anul·la per a $p=0$ i $p=\\dfrac45$. És positiva a $(0,\\tfrac45)$ i negativa a $(\\tfrac45,\\infty)$, per tant $p=\\dfrac45$ és un màxim absolut per a $p\\ge0$. Valor: $f\\!\\left(\\tfrac45\\right)=5\\left(\\left(\\tfrac45\\right)^4-\\left(\\tfrac45\\right)^5\\right)=\\dfrac{256}{625}\\approx0{,}41$.",
+        "resultat": "$P(D)=0{,}042$; $f(p)=5(p^4-p^5)$ (comprovat); màxim $f\\!\\left(\\tfrac45\\right)=\\dfrac{256}{625}\\approx0{,}41$, assolit per a $p=\\tfrac45$."
+      }
+    },
+    {
+      "id": "2025-ord-S1-E4A",
+      "numero": 4,
+      "tipus": "exercici",
+      "opcio": "A",
+      "punts": 2.5,
+      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen.\n\n**OPCIÓ A**\n\nLa vela major d'un veler té forma semiparabòlica i està delimitada per les gràfiques de $f(x)=-x^2+25$, $y=0$ i $x=0$, tal com s'indica a la figura següent:\n\n\nLa vela té dues parts separades per la recta $y=9$. Per a construir-la, s'empra un teixit de niló a la part superior, que costa 50 €/u², i un teixit de polièster a la part inferior, que costa 70 €/u². Calculeu el cost total del material que es necessita per a construir aquesta vela.",
+      "apartats": [],
+      "figures": [
+        "paràbola $f(x)=-x^2+25$, amb vèrtex a $(0,25)$ i talls amb l'eix d'abscisses a $x=-5$ i $x=5$; recta horitzontal $y=9$. La regió superior (ratllada) és la compresa entre la recta $y=9$, l'eix d'ordenades i la paràbola. La regió inferior (encreuada) és la compresa entre l'eix d'abscisses, l'eix d'ordenades, la recta $y=9$ i la paràbola, on la paràbola queda per sota de $y=9$ (per a $x\\in[4,5]$)."
+      ],
+      "solucio": {
+        "desenvolupament": "Talls: $-x^2+25=0 \\Rightarrow x=5$ (amb $x>0$); $-x^2+25=9 \\Rightarrow x=4$.\n\nÀrea total sota la paràbola entre $0$ i $5$: $\\displaystyle\\int_0^5(-x^2+25)\\,dx=\\left[-\\dfrac{x^3}{3}+25x\\right]_0^5=\\dfrac{250}{3}$ u².\n\nÀrea de la regió inferior: $\\displaystyle A_{\\text{inf}}=\\int_0^4 9\\,dx+\\int_4^5(-x^2+25)\\,dx=36+\\dfrac{14}{3}=\\dfrac{122}{3}$ u².\n\nÀrea de la regió superior: $A_{\\text{sup}}=\\dfrac{250}{3}-\\dfrac{122}{3}=\\dfrac{128}{3}$ u².\n\nCost: $\\dfrac{128}{3}\\cdot50+\\dfrac{122}{3}\\cdot70=\\dfrac{6400+8540}{3}=4980$ €.",
+        "resultat": "cost total del material $=4980$ €. (Àrea superior $\\tfrac{128}{3}$ u², amb teixit de niló; àrea inferior $\\tfrac{122}{3}$ u², amb teixit de polièster.)"
+      }
+    },
+    {
+      "id": "2025-ord-S1-E4B",
+      "numero": 4,
+      "tipus": "exercici",
+      "opcio": "B",
+      "punts": 2.5,
+      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen.\n\n**OPCIÓ B**\n\nConsidereu el pla $\\pi$ d'equació $x+y=0$.",
+      "apartats": [
+        {
+          "lletra": "4.1",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació del pla $\\pi'$ que és perpendicular a $\\pi$ i conté els punts $P=(1,-1,2)$ i $Q=(3,-3,6)$."
+        },
+        {
+          "lletra": "4.2",
+          "punts": 1.5,
+          "enunciat": "Calculeu l'equació paramètrica de la recta continguda en $\\pi'$ i que conté els punts de $\\pi'$ a la mateixa distància de $P$ que de $Q$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "4.1) El vector normal de $\\pi$ és $(1,1,0)$, que és un vector director de $\\pi'$. El vector $\\overrightarrow{PQ}=(2,-2,4)\\sim(1,-1,2)$ també ho és. El vector normal de $\\pi'$ és $(1,1,0)\\times(1,-1,2)=(2,-2,-2)\\sim(1,-1,-1)$. Passant per $P$: $(x-1)-(y+1)-(z-2)=0$, és a dir, $x-y-z=0$. Comprovació: $Q$ també hi pertany ($3+3-6=0$).\n\n4.2) Els punts de $\\pi'$ equidistants de $P$ i $Q$ són els de la intersecció de $\\pi'$ amb el pla mitjaner de $PQ$. El punt mig és $M=(2,-2,4)$ i el pla mitjaner, perpendicular a $\\overrightarrow{PQ}\\sim(1,-1,2)$, és $x-y+2z=12$. Restant-li l'equació de $\\pi'$: $3z=12$, és a dir, $z=4$, i aleshores $x-y=4$. La recta és $(x,y,z)=(4,0,4)+\\lambda(1,1,0)$.",
+        "resultat": "$\\pi'\\equiv x-y-z=0$; recta $(x,y,z)=(4+\\lambda,\\ \\lambda,\\ 4)$, $\\lambda\\in\\mathbb{R}$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, verificades pel transcriptor",
+    "revisat_huma": false
+  }
+}

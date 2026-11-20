@@ -1,0 +1,196 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2015-ord-S2",
+  "assignatura": "matematiques",
+  "any": 2015,
+  "convocatoria": "ordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2015/pau_mate15jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2015/pau_mate15jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2015-ord-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\begin{cases} -3x+2y+3z=0 \\\\ (a-2)y-3z=0 \\\\ -x-y+(-a-3)z=0 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu per a quins valors del paràmetre $a$ el sistema té més d'una solució."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per al cas $a=-3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El sistema és homogeni, i per tant sempre és compatible. Tindrà més d'una solució quan $\\operatorname{rang}(A)<3$, és a dir quan $\\det A=0$. La matriu de coeficients és $A=\\begin{pmatrix} -3 & 2 & 3 \\\\ 0 & a-2 & -3 \\\\ -1 & -1 & -a-3 \\end{pmatrix}$ i $\\det A=3(a-2)(a+3)+6+3(a-2)+9=3a^2+6a-9=3(a+3)(a-1)$. Igualant a zero, $a=1$ o $a=-3$.\n\nb) Per a $a=-3$ el sistema és $-3x+2y+3z=0$, $-5y-3z=0$, $-x-y=0$. Com que $\\operatorname{rang}(A)=2$, el sistema és compatible indeterminat amb un grau de llibertat. De la tercera equació $x=-y$, i de la segona $z=-\\dfrac{5y}{3}$.",
+        "resultat": "a) $a=1$ i $a=-3$. b) $(x,y,z)=\\left(-y,\\; y,\\; -\\dfrac{5y}{3}\\right)$, amb $y\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2015-ord-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $r$ la recta de l'espai que té per equació $r:\\dfrac{x-1}{2}=\\dfrac{y+3}{-1}=z$ i sigui $P$ el punt de coordenades $(6,0,-1)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació cartesiana (és a dir, que té la forma $Ax+By+Cz=D$) del pla que passa pel punt $P$ i talla perpendicularment la recta $r$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació paramètrica del pla que passa pel punt $P$ i conté la recta $r$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta $r$ passa pel punt $Q=(1,-3,0)$ i té vector director $\\vec v=(2,-1,1)$. Com que el pla ha de ser perpendicular a $r$, $\\vec v$ és el vector normal del pla: $2x-y+z=D$. Imposant que passi per $P$: $2\\cdot 6-0+(-1)=D$, és a dir $D=11$.\n\nb) El pla conté els vectors directors $\\vec v=(2,-1,1)$ i $\\overrightarrow{PQ}=Q-P=(-5,-3,1)$, i passa per $P$.",
+        "resultat": "a) $2x-y+z=11$. b) $\\begin{cases} x=6+2\\lambda-5\\mu \\\\ y=-\\lambda-3\\mu \\\\ z=-1+\\lambda+\\mu \\end{cases}$, amb $\\lambda,\\mu\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2015-ord-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Responeu a les qüestions següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Determineu l'equació de la recta tangent a la corba $y=x^3$ en el punt d'abscissa $x=2$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea de la regió plana finita limitada per la corba $y=x^3$ i la recta $y=3x-2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $y'=3x^2$; $y(2)=8$ i $y'(2)=12$. Tangent: $y=12(x-2)+8$.\n\nb) Punts de tall: $x^3=3x-2\\iff x^3-3x+2=(x-1)^2(x+2)=0$, és a dir $x=-2$ i $x=1$. A l'interval $(-2,1)$ la cúbica està per sobre de la recta (en $x=0$, $0>-2$), per tant\n$$A=\\int_{-2}^{1}\\big(x^3-(3x-2)\\big)\\,dx=\\left[\\frac{x^4}{4}-\\frac{3x^2}{2}+2x\\right]_{-2}^{1}=\\frac34-(-6)=\\frac{27}{4}.$$",
+        "resultat": "a) $y=12x-16$. b) $A=\\dfrac{27}{4}\\ \\text{u}^2$."
+      }
+    },
+    {
+      "id": "2015-ord-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu a $\\mathbb{R}^3$ la recta que té per equació $r:(x,y,z)=(-4+2\\lambda,\\,-2,\\,1-\\lambda)$ i els plans $\\pi_1$ i $\\pi_2$ d'equacions $\\pi_1: x+2y+2z=-1$ i $\\pi_2: x-2y+2z=-3$, respectivament.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Determineu la posició relativa de $\\pi_1$ i $\\pi_2$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu que tots els punts de la recta $r$ estan situats a la mateixa distància dels plans $\\pi_1$ i $\\pi_2$.\n\nNOTA: Podeu calcular la distància d'un punt de coordenades $(x_0,y_0,z_0)$ al pla d'equació $Ax+By+Cz+D=0$ amb l'expressió $\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els vectors normals són $\\vec n_1=(1,2,2)$ i $\\vec n_2=(1,-2,2)$, que no són proporcionals. Per tant els plans no són paral·lels i es tallen en una recta.\n\nb) Un punt genèric de $r$ és $R=(-4+2\\lambda,-2,1-\\lambda)$. Aplicant la fórmula de la distància:\n$$d(R,\\pi_1)=\\frac{|-4+2\\lambda+2(-2)+2(1-\\lambda)+1|}{\\sqrt{1^2+2^2+2^2}}=\\frac{|-5|}{3}=\\frac53,\\qquad d(R,\\pi_2)=\\frac{|-4+2\\lambda-2(-2)+2(1-\\lambda)+3|}{\\sqrt{1^2+2^2+2^2}}=\\frac{|5|}{3}=\\frac53.$$\nLes dues distàncies són iguals i valen $\\frac53$ per a qualsevol valor de $\\lambda$.",
+        "resultat": "a) $\\pi_1$ i $\\pi_2$ es tallen en una recta. b) Tots els punts de $r$ estan a distància $\\dfrac53$ de $\\pi_1$ i de $\\pi_2$."
+      }
+    },
+    {
+      "id": "2015-ord-S2-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Responeu a les qüestions següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu la matriu de la forma $A=\\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix}$ que satisfà $A^2-A=I$, en què $I$ és la matriu identitat, $I=\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu $A^{-1}$ i comproveu que el resultat es correspon amb el que obteniu de deduir la matriu $A^{-1}$ a partir de la igualtat $A^2-A=I$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2=\\begin{pmatrix} 1+a & a \\\\ 1 & a \\end{pmatrix}$, per tant $A^2-A=\\begin{pmatrix} a & 0 \\\\ 0 & a \\end{pmatrix}=I$, d'on $a=1$ i $A=\\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}$.\n\nb) Calculant la inversa directament: $A^{-1}=\\dfrac{1}{-1}\\begin{pmatrix} 0 & -1 \\\\ -1 & 1 \\end{pmatrix}=\\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$. Deduint-la de la igualtat: $A\\cdot(A-I)=I=(A-I)\\cdot A$, per tant $A^{-1}=A-I=\\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$, que coincideix amb el resultat anterior.",
+        "resultat": "a) $A=\\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}$. b) $A^{-1}=\\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2015-ord-S2-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La portalada d'una catedral està formada, en la part superior, per un arc de mitja circumferència que recolza sobre dues columnes, com il·lustra la figura adjunta, en què $x$ és el diàmetre de la circumferència, és a dir, la distància entre columnes, i $y$ és l'alçària de cada columna.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que la funció $f(x,y)=\\dfrac{\\pi x^2}{8}+xy$ determina l'àrea d'aquesta portalada."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Si el perímetre de la portalada fa 20 m, determineu les mides $x$ i $y$ de la portalada que en maximitzen l'àrea."
+        }
+      ],
+      "figures": [
+        "portalada formada per un rectangle de base $x$ i alçària $y$, coronat per un semicercle de diàmetre $x$ (radi $x/2$). Les mides indicades són $x$ (base, entre columnes), $x/2$ (radi) i $y$ (alçària de la columna)."
+      ],
+      "solucio": {
+        "desenvolupament": "a) L'àrea és la suma de l'àrea del semicercle de radi $x/2$ i de l'àrea del rectangle inferior: $\\dfrac{\\pi (x/2)^2}{2}+xy=\\dfrac{\\pi x^2}{8}+xy$.\n\nb) El perímetre és $x+2y+\\dfrac{\\pi x}{2}=20$, d'on $y=10-\\dfrac{\\pi+2}{4}x$. Substituint a l'àrea: $A(x)=\\dfrac{\\pi x^2}{8}+10x-\\dfrac{\\pi+2}{4}x^2=-\\dfrac{\\pi+4}{8}x^2+10x$. Derivant, $A'(x)=-\\dfrac{\\pi+4}{4}x+10=0$, és a dir $x=\\dfrac{40}{\\pi+4}$. Com que $A''(x)=-\\dfrac{\\pi+4}{4}<0$, és un màxim. Per a aquest valor, $y=10-\\dfrac{\\pi+2}{4}\\cdot\\dfrac{40}{\\pi+4}=\\dfrac{20}{\\pi+4}$.",
+        "resultat": "$x=\\dfrac{40}{\\pi+4}\\approx 5{,}60$ m i $y=\\dfrac{20}{\\pi+4}\\approx 2{,}80$ m."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

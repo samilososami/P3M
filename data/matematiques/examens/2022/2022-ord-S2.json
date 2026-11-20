@@ -1,0 +1,217 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2022-ord-S2",
+  "assignatura": "matematiques",
+  "any": 2022,
+  "convocatoria": "ordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 4",
+  "instruccions": "Responeu a QUATRE de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2,5 punts.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.\n\nPodeu utilitzar les pàgines en blanc (pàgines 14 i 15) per a fer esquemes, esborranys, etc., o per a acabar de respondre a alguna qüestió si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de la qüestió corresponent.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2022/pau_mate22jl.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2022/pau_mate22jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2022-ord-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui $f'(x)=3x^2-12x$ la derivada d'una funció $f(x)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.75,
+          "enunciat": "Si sabem que $f(x)$ talla l'eix de les abscisses en $x=1$, calculeu l'expressió de la funció $f(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.75,
+          "enunciat": "Calculeu l'abscissa del punt d'inflexió de $f(x)$ i estudieu la concavitat de la funció."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Sabem que l'àrea del recinte limitat per la corba $y=f''(x)$, l'eix de les abscisses i les rectes $x=0$ i $x=a$, amb $a>2$, és $15\\,u^2$. Calculeu el valor de $a$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Integrant, $f(x)=x^3-6x^2+C$. Com que $f(1)=0$: $1-6+C=0$, d'on $C=5$. Per tant, $f(x)=x^3-6x^2+5$.\n\nb) $f''(x)=6x-12=0 \\iff x=2$, i és on la segona derivada canvia de signe: $(2,f(2))$ és un punt d'inflexió. La funció és còncava cap avall (concavitat negativa) a $(-\\infty,2)$ i còncava cap amunt (concavitat positiva) a $(2,+\\infty)$.\n\nc) $f''(x)=6x-12$ talla l'eix d'abscisses en $x=2$, i $a>2$. Per tant\n$$15=\\int_0^2(12-6x)\\,dx+\\int_2^a(6x-12)\\,dx=\\big[12x-3x^2\\big]_0^2+\\big[3x^2-12x\\big]_2^a=12+(3a^2-12a+12).$$\nAleshores $3a^2-12a+9=0$, és a dir, $a^2-4a+3=0$, d'on $a=1$ o $a=3$. Com que $a>2$, $a=3$.",
+        "resultat": "a) $f(x)=x^3-6x^2+5$. b) Punt d'inflexió en $x=2$; còncava cap avall a $(-\\infty,2)$ i còncava cap amunt a $(2,+\\infty)$. c) $a=3$."
+      }
+    },
+    {
+      "id": "2022-ord-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $a$:\n\n$$\\begin{cases} ax+2y+3z=2 \\\\ 2x+ay+z=a \\\\ x+y+4z=1 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $a$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu, si és possible, el sistema per al cas $a=2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Matriu de coeficients $A=\\begin{pmatrix} a&2&3\\\\2&a&1\\\\1&1&4 \\end{pmatrix}$ i matriu ampliada $A^*=\\left(\\begin{array}{ccc|c} a&2&3&2\\\\2&a&1&a\\\\1&1&4&1 \\end{array}\\right)$. $\\det A=4a^2-4a-8=4(a-2)(a+1)$, que s'anul·la per a $a=-1$ i $a=2$.\n\n- Si $a\\neq-1$ i $a\\neq2$: $\\operatorname{rang}A=\\operatorname{rang}A^*=3$, sistema compatible determinat.\n- Si $a=-1$: el sistema és $-x+2y+3z=2$, $2x-y+z=-1$, $x+y+4z=1$. La suma de la primera i la segona equació dóna la tercera, per tant $\\operatorname{rang}A=\\operatorname{rang}A^*=2<3$ incògnites, sistema compatible indeterminat amb un grau de llibertat.\n- Si $a=2$: el sistema és $2x+2y+3z=2$, $2x+2y+z=2$, $x+y+4z=1$. Com que $\\begin{vmatrix}2&3\\\\2&1\\end{vmatrix}\\neq0$ i $\\det A=0$, $\\operatorname{rang}A=2$. Les columnes de $x$ i de $y$ i el vector de termes independents són iguals a $(2,2,1)$, de manera que $\\operatorname{rang}A^*=2<3$: sistema compatible indeterminat amb un grau de llibertat.\n\nb) Per a $a=2$, restant la segona equació a la primera: $2z=0$, és a dir $z=0$. Substituint: $2x+2y=2$ i $x+y=1$, que són la mateixa equació. Prenent $y=\\lambda$, les solucions són $(x,y,z)=(1-\\lambda,\\lambda,0)$, amb $\\lambda\\in\\mathbb{R}$.",
+        "resultat": "a) SCD si $a\\neq-1,2$; SCI (un grau de llibertat) si $a=-1$ o $a=2$. b) Per a $a=2$: $(x,y,z)=(1-\\lambda,\\lambda,0)$, $\\lambda\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2022-ord-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui la recta $r$ definida per l'expressió següent:\n\n$$r:\\begin{cases} x=2+\\lambda \\\\ y=-1+3\\lambda \\\\ z=3+\\lambda \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Determineu la posició relativa de la recta $r$ respecte al pla $\\pi: x-2y+4z-4=0$. Si és paral·lela, calculeu la distància de $r$ a $\\pi$, i si és secant, calculeu el punt de tall."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'equació de la recta $s$ perpendicular al pla $\\pi$ i que talla la recta $r$ en un punt $P$, la primera coordenada del qual és 5 vegades més gran que la segona."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El punt $P_0=(2,-1,3)\\in r$ (per $\\lambda=0$) no és al pla, perquè $2-2(-1)+4\\cdot3-4=12\\neq0$. El vector director de $r$ és $(1,3,1)$ i la normal del pla és $(1,-2,4)$; el seu producte escalar és $1-6+4=-1\\neq0$, per tant $r$ no és paral·lela a $\\pi$. La recta és secant. Substituint les equacions de $r$ al pla: $(2+\\lambda)-2(-1+3\\lambda)+4(3+\\lambda)-4=0 \\iff 12-\\lambda=0 \\iff \\lambda=12$. El punt de tall és $(14,35,15)$.\n\nb) La recta $s$ té com a vector director la normal del pla, $\\vec v=(1,-2,4)$. El punt $P$ de $r$ ha de complir $2+\\lambda=5(-1+3\\lambda)$, d'on $7=14\\lambda$ i $\\lambda=\\dfrac12$. Així $P=\\left(\\dfrac52,\\dfrac12,\\dfrac72\\right)$ i la recta és $(x,y,z)=\\left(\\dfrac52,\\dfrac12,\\dfrac72\\right)+\\mu(1,-2,4)$, $\\mu\\in\\mathbb{R}$.",
+        "resultat": "a) $r$ és secant a $\\pi$; punt de tall $(14,35,15)$. b) $s:\\ (x,y,z)=\\left(\\dfrac52,\\dfrac12,\\dfrac72\\right)+\\mu(1,-2,4)$."
+      }
+    },
+    {
+      "id": "2022-ord-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu una funció polinòmica $y=g(x)$ de grau 3 tal que talli l'eix de les ordenades en el punt $(0,5)$, que la recta tangent a $y=g(x)$ en el punt d'abscissa $x=1$ sigui horitzontal i que $g''(x)=2x+1$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Comproveu que la funció $f(x)=-x^3+6x^2-16$ té una arrel a $x=2$ i que és estrictament creixent a l'interval $(0,4)$. Utilitzeu aquesta informació per a calcular l'àrea determinada per la funció $f(x)$, l'eix de les abscisses i les rectes $x=0$ i $x=4$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $g'(x)=x^2+x+m$, perquè $g''(x)=2x+1$. Com que $g'(1)=0$, $m=-2$. Aleshores $g(x)=\\dfrac{x^3}{3}+\\dfrac{x^2}{2}-2x+n$, i com que $g(0)=5$, $n=5$. Per tant, $g(x)=\\dfrac{x^3}{3}+\\dfrac{x^2}{2}-2x+5$.\n\nb) $f(2)=-8+24-16=0$. La derivada és $f'(x)=-3x^2+12x=3x(4-x)$, que és positiva a $(0,4)$; per tant $f$ és estrictament creixent en aquest interval, i $x=2$ és l'única arrel en $[0,4]$. Com que $f<0$ a $(0,2)$ i $f>0$ a $(2,4)$:\n$$A=\\left|\\int_0^2 f(x)\\,dx\\right|+\\left|\\int_2^4 f(x)\\,dx\\right|=\\left|\\left[-\\frac{x^4}{4}+2x^3-16x\\right]_0^2\\right|+\\left|\\left[-\\frac{x^4}{4}+2x^3-16x\\right]_2^4\\right|=20+20=40\\ \\text{u}^2.$$",
+        "resultat": "a) $g(x)=\\dfrac{x^3}{3}+\\dfrac{x^2}{2}-2x+5$. b) $A=40$ u$^2$."
+      }
+    },
+    {
+      "id": "2022-ord-S2-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui la matriu $X=\\begin{pmatrix} a&1&0\\\\0&b&1\\\\0&0&c \\end{pmatrix}$, que depèn dels paràmetres $a$, $b$ i $c$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Calculeu les matrius $X$ tals que $X^2=\\begin{pmatrix} 1&0&1\\\\0&1&0\\\\0&0&1 \\end{pmatrix}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu els valors de $a$, $b$ i $c$ perquè la matriu inversa de $X$ sigui $X^{-1}=\\begin{pmatrix} \\dfrac12&-\\dfrac12&-\\dfrac12\\\\0&1&1\\\\0&0&-1 \\end{pmatrix}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $X^2=\\begin{pmatrix} a^2&a+b&1\\\\0&b^2&b+c\\\\0&0&c^2 \\end{pmatrix}$. Igualant: $a^2=b^2=c^2=1$, $a+b=0$ i $b+c=0$. Les solucions són $(a,b,c)=(1,-1,1)$ i $(a,b,c)=(-1,1,-1)$. Hi ha, per tant, dues matrius: $X=\\begin{pmatrix} 1&1&0\\\\0&-1&1\\\\0&0&1 \\end{pmatrix}$ i $X=\\begin{pmatrix} -1&1&0\\\\0&1&1\\\\0&0&-1 \\end{pmatrix}$.\n\nb) La inversa d'una matriu triangular superior té a la diagonal els inversos de la diagonal de $X$. Per tant, $\\dfrac1a=\\dfrac12$, $\\dfrac1b=1$ i $\\dfrac1c=-1$, d'on $a=2$, $b=1$ i $c=-1$. Comprovació dels altres elements: $-\\dfrac{1}{ab}=-\\dfrac12$, $-\\dfrac{1}{bc}=1$ i $\\dfrac{1}{abc}=-\\dfrac12$, coherents amb la matriu donada.",
+        "resultat": "a) $X=\\begin{pmatrix} 1&1&0\\\\0&-1&1\\\\0&0&1 \\end{pmatrix}$ o $X=\\begin{pmatrix} -1&1&0\\\\0&1&1\\\\0&0&-1 \\end{pmatrix}$. b) $a=2$, $b=1$, $c=-1$."
+      }
+    },
+    {
+      "id": "2022-ord-S2-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Al pati d'una escola es vol crear una àrea de joc de $30\\ \\text{m}^2$ per als més petits en forma de trapezi rectangular, de manera que la base més gran mesuri el doble que la base més petita, tal com mostra la figura, i que el costat oblic respecte a les bases ($D$) sigui tan curt com sigui possible.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Justifiqueu que se satisfan les relacions següents: $h=\\dfrac{20}{x}$ i $D(x)=\\sqrt{\\dfrac{400}{x^2}+x^2}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Trobeu les dimensions del trapezi per a les quals la longitud del costat $D$ és mínima."
+        }
+      ],
+      "figures": [
+        "trapezi rectangular amb la base superior de longitud $x$ i la base inferior de longitud $2x$; el costat vertical, perpendicular a les bases, té altura $h$, i el costat oblic és $D$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) L'àrea és $\\dfrac{x+2x}{2}\\cdot h=\\dfrac{3xh}{2}=30$, d'on $h=\\dfrac{20}{x}$. El trapezi es pot descompondre en un rectangle de base $x$ i altura $h$, i un triangle rectangle d'hipotenusa $D$ i catets $x$ i $h$. Pel teorema de Pitàgores, $D^2=x^2+h^2=x^2+\\dfrac{400}{x^2}$, és a dir, $D(x)=\\sqrt{\\dfrac{400}{x^2}+x^2}$.\n\nb) Derivant, $D'(x)=\\dfrac{x-\\dfrac{400}{x^3}}{\\sqrt{\\dfrac{400}{x^2}+x^2}}=\\dfrac{x^4-400}{x^3\\sqrt{\\dfrac{400}{x^2}+x^2}}$, i el signe de $D'$ és el de $x^4-400$. $D'(x)=0 \\iff x^4=400 \\iff x=\\sqrt{20}=2\\sqrt5$ (només es pren la solució positiva). En $(0,2\\sqrt5)$, $D'(x)<0$ i $D$ decreix; en $(2\\sqrt5,+\\infty)$, $D'(x)>0$ i $D$ creix. Per tant, en $x=2\\sqrt5$ hi ha un mínim.\n\nLes dimensions són $x=h=2\\sqrt5$ m i $D=\\sqrt{40}=2\\sqrt{10}$ m.",
+        "resultat": "a) $h=\\dfrac{20}{x}$ i $D(x)=\\sqrt{\\dfrac{400}{x^2}+x^2}$. b) Base superior $x=2\\sqrt5$ m, base inferior $4\\sqrt5$ m, altura $h=2\\sqrt5$ m; $D=2\\sqrt{10}$ m (mínim)."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

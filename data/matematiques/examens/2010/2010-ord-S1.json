@@ -1,0 +1,157 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2010-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2010,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts. Podeu utilitzar calculadora, però no es poden fer servir calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2010/pau_mate10jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2010/pau_mate10jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2010-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu l'equació general (és a dir, de la forma $Ax+By+Cz+D=0$) del pla que conté la recta $r_1:\\ \\dfrac{x-1}{2}=y=2-z$ i és paral·lel a la recta $r_2:\\ \\begin{cases} x-y-z=0 \\\\ x-2y+z=0 \\end{cases}$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Un vector director de $r_1$ és $\\vec v_1=(2,1,-1)$ (a partir de la forma contínua $\\dfrac{x-1}{2}=\\dfrac{y}{1}=\\dfrac{z-2}{-1}$), i el punt $P=(1,0,2)\\in r_1$ també pertany al pla. Un vector director de $r_2$ és el producte vectorial dels vectors normals de les seves equacions: $\\vec v_2=(1,-1,-1)\\times(1,-2,1)=(-3,-2,-1)$.\n\nEl vector normal del pla és $\\vec v_1\\times\\vec v_2=(-3,5,-1)$, i per tant el pla és $-3(x-1)+5y-(z-2)=0$, és a dir:",
+        "resultat": "$\\pi:\\ 3x-5y+z-5=0$"
+      }
+    },
+    {
+      "id": "2010-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donat el sistema d'equacions lineals\n$$\\begin{cases} x+2y-z=-1 \\\\ 2x+y+z=4 \\\\ x-y+(p-3)z=5 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Estudieu-ne el caràcter (és a dir, si és compatible o no i si és determinat o no) en funció del paràmetre $p$."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Comproveu que si $p\\neq5$ la solució del sistema no depèn del valor d'aquest paràmetre."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Escalonant la matriu ampliada:\n$$\\left(\\begin{array}{ccc|c} 1 & 2 & -1 & -1 \\\\ 2 & 1 & 1 & 4 \\\\ 1 & -1 & p-3 & 5 \\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c} 1 & 2 & -1 & -1 \\\\ 0 & -3 & 3 & 6 \\\\ 0 & -3 & p-2 & 6 \\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c} 1 & 2 & -1 & -1 \\\\ 0 & -1 & 1 & 2 \\\\ 0 & 0 & p-5 & 0 \\end{array}\\right)$$\n\n- Si $p\\neq5$: $\\operatorname{rang}A=\\operatorname{rang}(A|b)=3$, igual al nombre d'incògnites. El sistema és compatible determinat (SCD).\n- Si $p=5$: $\\operatorname{rang}A=\\operatorname{rang}(A|b)=2$, menor que el nombre d'incògnites. El sistema és compatible indeterminat (SCI).\n\nb) Si $p\\neq5$, el sistema escalonat és $x+2y-z=-1$, $-y+z=2$, $(p-5)z=0$, que té per solució $z=0$, $y=-2$, $x=3$, independentment del valor de $p$.",
+        "resultat": "SCD si $p\\neq5$, amb solució $(x,y,z)=(3,-2,0)$; SCI si $p=5$. Per a $p\\neq5$ la solució no depèn de $p$."
+      }
+    },
+    {
+      "id": "2010-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Un segment de longitud fixada $m$ recolza sobre els eixos de coordenades. Calculeu el valor de l'angle $\\alpha$ que forma el segment amb l'eix $OX$ perquè el triangle rectangle determinat pel segment amb els eixos i del qual $m$ és la hipotenusa tingui àrea màxima. Comproveu que es tracta realment d'un màxim.",
+      "apartats": [],
+      "figures": [
+        "segment de longitud $m$ amb un extrem $Q$ sobre l'eix $OY$ i l'altre $P$ sobre l'eix $OX$; l'angle $\\alpha$ es mesura al punt $P$ entre el segment i l'eix $OX$."
+      ],
+      "solucio": {
+        "desenvolupament": "Com que $P=(m\\cos\\alpha,0)$ i $Q=(0,m\\sin\\alpha)$, l'àrea del triangle és\n$$A(\\alpha)=\\frac{(m\\cos\\alpha)(m\\sin\\alpha)}{2}=\\frac{m^2}{2}\\sin\\alpha\\cos\\alpha=\\frac{m^2}{4}\\sin2\\alpha.$$\nDerivant: $A'(\\alpha)=\\dfrac{m^2}{2}\\cos2\\alpha=0 \\iff 2\\alpha=\\dfrac{\\pi}{2}+k\\pi$. Com que $\\alpha$ ha de ser un angle del primer quadrant, $\\alpha=\\dfrac{\\pi}{4}$ ($45^\\circ$). Això correspon a un triangle isòsceles.\n\nComprovació: $A''(\\alpha)=-m^2\\sin2\\alpha$, i $A''\\!\\left(\\dfrac{\\pi}{4}\\right)=-m^2<0$, per tant es tracta d'un màxim.",
+        "resultat": "$\\alpha=\\dfrac{\\pi}{4}$ ($45^\\circ$); és un màxim perquè $A''\\!\\left(\\dfrac{\\pi}{4}\\right)=-m^2<0$."
+      }
+    },
+    {
+      "id": "2010-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donades les rectes $r_1:\\ \\dfrac{x+5}{3}=\\dfrac{y-1}{2}=\\dfrac{z-2}{-4}$ i $r_2:\\ \\begin{cases} 2x+y+2z+5=0 \\\\ 2x-y+z+11=0 \\end{cases}$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que són paral·leles."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació general (és a dir, de la forma $Ax+By+Cz+D=0$) del pla que les conté."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector director de $r_1$ és $\\vec v_1=(3,2,-4)$. El de $r_2$ és $\\vec v_2=(2,1,2)\\times(2,-1,1)=(3,2,-4)$. Els vectors són proporcionals, així que les rectes són paral·leles o coincidents. El punt $(-5,1,2)\\in r_1$ no pertany a $r_2$, perquè no compleix la segona equació: $2(-5)-1+2+11=2\\neq0$. Per tant les rectes són paral·leles no coincidents.\n\nb) Agafem $P=(-5,1,2)\\in r_1$ i $Q=(-4,3,0)\\in r_2$. El pla té per vectors generadors $\\vec v_1$ i $\\overrightarrow{PQ}$, i la seva equació és\n$$\\begin{vmatrix} x+5 & y-1 & z-2 \\\\ 3 & 2 & -4 \\\\ 1 & 2 & -2 \\end{vmatrix}=0\\ \\Longrightarrow\\ 2x+y+2z+5=0.$$",
+        "resultat": "a) paral·leles no coincidents; b) $2x+y+2z+5=0$"
+      }
+    },
+    {
+      "id": "2010-ord-S1-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La gràfica de la funció $f(x)=x\\cdot\\sin(x)$ és la següent:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Trobeu-ne una primitiva."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Aplicant el resultat de l'apartat anterior, calculeu l'àrea del recinte limitat per la gràfica de la funció $f(x)$ i l'eix d'abscisses des de $x=0$ fins a $x=\\pi$."
+        }
+      ],
+      "figures": [
+        "gràfica de $f(x)=x\\cdot\\sin x$. Per a $x<0$ la corba és per damunt de l'eix d'abscisses. Entre $x=0$ i $x=\\pi$ és per damunt de l'eix, amb un màxim cap a $x\\approx2$, i talla l'eix en $x=\\pi$. Per a $x>\\pi$ és per davall de l'eix."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Per parts, amb $u=x$ i $dv=\\sin x\\,dx$ (així $du=dx$, $v=-\\cos x$):\n$$\\int x\\sin x\\,dx=-x\\cos x+\\int\\cos x\\,dx=-x\\cos x+\\sin x.$$\n\nb) Per la regla de Barrow:\n$$\\int_0^\\pi x\\sin x\\,dx=\\big[-x\\cos x+\\sin x\\big]_0^\\pi=\\big(\\pi+0\\big)-\\big(0+0\\big)=\\pi.$$\nCom que $f\\ge0$ a $[0,\\pi]$, l'àrea és $\\pi$.",
+        "resultat": "a) $F(x)=-x\\cos x+\\sin x$; b) àrea $=\\pi$ u²."
+      }
+    },
+    {
+      "id": "2010-ord-S1-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $A=\\begin{pmatrix} x & 3 \\\\ -2 & y \\end{pmatrix}$. Trobeu els valors de les variables $x$ i $y$ perquè es compleixi que $A^2=A$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$A^2=A\\cdot A=\\begin{pmatrix} x^2-6 & 3x+3y \\\\ -2x-2y & y^2-6 \\end{pmatrix}$. La igualtat $A^2=A$ dóna el sistema\n$$x^2-6=x,\\qquad 3x+3y=3,\\qquad -2x-2y=-2,\\qquad y^2-6=y.$$\nLa segona i la tercera equació són la mateixa: $x+y=1$. De la primera, $x^2-x-6=0$, és a dir $x=3$ o $x=-2$. De la quarta, $y^2-y-6=0$, és a dir $y=3$ o $y=-2$. D'aquestes quatre combinacions, només compleixen $x+y=1$ les dues següents: $x=3$, $y=-2$, i $x=-2$, $y=3$.",
+        "resultat": "$(x,y)=(3,-2)$ o $(x,y)=(-2,3)$"
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

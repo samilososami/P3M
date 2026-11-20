@@ -1,0 +1,184 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2001-ext-S4",
+  "assignatura": "matematiques",
+  "any": 2001,
+  "convocatoria": "extraordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu). En les respostes que doneu heu d'explicar sempre què és el que voleu fer i per què.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2001/pau_mate01sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2001/pau_mate01sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2001-ext-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Determineu per a quins valors del paràmetre $a$ el pla $\\pi:\\ ax+2y+z=a$ és paral·lel a la recta\n$$r:\\ \\begin{cases} x-ay+z=1 \\\\ ax+z=a+1 \\end{cases}$$",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "La recta és paral·lela al pla quan el sistema format per les equacions del pla i de la recta és incompatible. La matriu de coeficients és\n$$\\begin{pmatrix} a & 2 & 1 \\\\ 1 & -a & 1 \\\\ a & 0 & 1 \\end{pmatrix},\\qquad \\det = 2a-2.$$\nPer a $a\\neq1$ el sistema és compatible determinat (la recta talla el pla). Per a $a=1$ el sistema és incompatible: restant la segona equació a la primera s'obté $y=0$, i aleshores $x+z=1$ i $x+z=2$, contradicció. Per tant, $a=1$ és l'únic valor.",
+        "resultat": "$a=1$."
+      }
+    },
+    {
+      "id": "2001-ext-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin $A$, $B$ i $C$ els tres vèrtexs d'un triangle equilàter de costat 3 cm i $P$ el punt del costat $AB$ que és a 1 cm del vèrtex $A$. Quina és la longitud del segment $CP$?",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Els angles d'un triangle equilàter són de $60^\\circ$. Aplicant el teorema del cosinus al triangle $APC$:\n$$(PC)^2=1^2+3^2-2\\cdot3\\cdot\\cos60^\\circ=7.$$",
+        "resultat": "$CP=\\sqrt7\\approx2{,}646$ cm."
+      }
+    },
+    {
+      "id": "2001-ext-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la funció definida per\n$$f(x)=\\begin{cases} e^{ax}, & \\text{si } x\\le0 \\\\ 2x+1, & \\text{si } x>0 \\end{cases}$$\non $a$ és un nombre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Calculeu $\\lim_{x\\to0}f(x)$ i comproveu que $f(x)$ és contínua en $x=0$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Per a quin valor del paràmetre $a$ la funció $f(x)$ és derivable en $x=0$?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f(0)=e^0=1$, $\\lim_{x\\to0^-}e^{ax}=1$ i $\\lim_{x\\to0^+}(2x+1)=1$. Els tres valors coincideixen, per tant $\\lim_{x\\to0}f(x)=1=f(0)$ i $f$ és contínua en $x=0$ (per a qualsevol $a$).\n\nb) La derivada de $e^{ax}$ és $ae^{ax}$, que en $x=0$ val $a$, i la derivada de $2x+1$ és $2$. Perquè $f$ sigui derivable cal que les derivades laterals coincideixin: $a=2$.",
+        "resultat": "a) $\\lim_{x\\to0}f(x)=1=f(0)$, contínua; b) $a=2$."
+      },
+      "punts_detall": "1 punt per cada apartat."
+    },
+    {
+      "id": "2001-ext-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sabeu que la gràfica de la funció $f(x)$ passa pel punt $(1,-4)$ i que la seva funció derivada és $f'(x)=2x-2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Determineu l'expressió de $f(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Calculeu l'àrea de la regió limitada per la gràfica de $f(x)$ i l'eix d'abscisses $OX$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Les primitives de $2x-2$ són $x^2-2x+k$. Com que $f(1)=-4$, $1-2+k=-4$, és a dir, $k=-3$. Per tant $f(x)=x^2-2x-3$.\n\nb) Els talls amb l'eix $OX$ són $x=-1$ i $x=3$, i a l'interval $(-1,3)$ la funció és negativa. L'àrea és\n$$A=\\left|\\int_{-1}^{3}(x^2-2x-3)\\,dx\\right|=\\left|\\left[\\tfrac{x^3}{3}-x^2-3x\\right]_{-1}^{3}\\right|=\\left|-9-\\tfrac53\\right|=\\frac{32}{3}.$$",
+        "resultat": "a) $f(x)=x^2-2x-3$; b) $A=\\dfrac{32}{3}$ u² $\\approx10{,}67$ u²."
+      },
+      "punts_detall": "1 punt per cada apartat."
+    },
+    {
+      "id": "2001-ext-S4-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "La riba d'un tram de riu descriu la corba $y=\\dfrac14x^2$, per a $x$ entre $-3$ i $3$, i en el punt $A=(0,4)$ hi ha un poble, tal com es pot veure en l'esquema següent.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Expresseu la distància des d'un punt qualsevol d'aquesta vora del riu fins al poble, en funció de l'abscissa $x$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Quin és el punt de la vora d'aquest tram de riu que és més lluny del poble?"
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Hi ha algun punt de la vora del riu a una distància del poble inferior a 2?"
+        }
+      ],
+      "figures": [
+        "corba $y=\\frac14x^2$ per a $x\\in[-3,3]$, simètrica respecte de l'eix d'ordenades i amb el vèrtex a l'origen. Els extrems són a $(-3,\\frac94)$ i $(3,\\frac94)$. El poble és el punt $A=(0,4)$ marcat sobre l'eix d'ordenades."
+      ],
+      "solucio": {
+        "desenvolupament": "a) La distància d'un punt $\\left(x,\\tfrac{x^2}{4}\\right)$ de la vora a $A$ és\n$$f(x)=\\sqrt{x^2+\\left(4-\\tfrac{x^2}{4}\\right)^2}=\\sqrt{\\tfrac{1}{16}x^4-x^2+16}.$$\n\nb) $f'(x)=\\dfrac{\\tfrac{x^3}{4}-2x}{2f(x)}$, que s'anul·la en $x=0$ i $x=\\pm2\\sqrt2$ (tots dins de $[-3,3]$). En $x=0$ hi ha un màxim local i en $x=\\pm2\\sqrt2$ hi ha mínims locals. Els valors són $f(0)=4$, $f(\\pm2\\sqrt2)=2\\sqrt3\\approx3{,}464$, i als extrems $f(\\pm3)=\\sqrt{81/16-9+16}\\approx3{,}473$. El punt més llunyà és $(0,0)$, a distància $4$.\n\nc) La distància mínima és $2\\sqrt3\\approx3{,}46$, que és més gran que 2. Per tant, no hi ha cap punt de la vora a distància inferior a 2 del poble.",
+        "resultat": "a) $f(x)=\\sqrt{\\tfrac{1}{16}x^4-x^2+16}$; b) el punt $(0,0)$, a distància $4$; c) no, la distància mínima és $2\\sqrt3\\approx3{,}46$."
+      },
+      "punts_detall": "1 punt per a); 2 punts per b); 1 punt per c)."
+    },
+    {
+      "id": "2001-ext-S4-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Sigui $\\pi$ el pla d'equació $x-y+2z=3$ i $P$ el punt $(1,1,0)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Calculeu la distància $d$ de $P$ a $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Determineu l'equació de l'altre pla $\\pi'$ paral·lel a $\\pi$ que també dista $d$ del punt $P$."
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Determineu l'equació de la recta $r$ perpendicular a $\\pi$ que passa per $P$."
+        },
+        {
+          "lletra": "d",
+          "punts": null,
+          "enunciat": "Calculeu la intersecció de la recta $r$ amb el pla $\\pi$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $d=\\dfrac{|1-1+0-3|}{\\sqrt{1^2+(-1)^2+2^2}}=\\dfrac{3}{\\sqrt6}=\\dfrac{\\sqrt6}{2}$.\n\nb) Els plans paral·lels a $\\pi$ són de la forma $x-y+2z+k=0$. La distància de $P$ és $\\dfrac{|k|}{\\sqrt6}=\\dfrac{\\sqrt6}{2}$, d'on $|k|=3$. Com que $k=-3$ correspon a $\\pi$, l'altre pla és $\\pi':\\ x-y+2z+3=0$.\n\nc) El vector normal de $\\pi$ és $(1,-1,2)$, que serveix de director de $r$. Equacions: $\\dfrac{x-1}{1}=\\dfrac{y-1}{-1}=\\dfrac{z}{2}$.\n\nd) Paramètriques de $r$: $x=1+\\lambda$, $y=1-\\lambda$, $z=2\\lambda$. Substituint a $\\pi$: $(1+\\lambda)-(1-\\lambda)+4\\lambda=3$, és a dir, $\\lambda=\\tfrac12$. El punt és $\\left(\\tfrac32,\\tfrac12,1\\right)$.",
+        "resultat": "a) $d=\\dfrac{\\sqrt6}{2}$; b) $\\pi':\\ x-y+2z+3=0$; c) $\\dfrac{x-1}{1}=\\dfrac{y-1}{-1}=\\dfrac{z}{2}$; d) $\\left(\\tfrac32,\\tfrac12,1\\right)$."
+      },
+      "punts_detall": "1 punt per cada apartat."
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge i amb càlcul",
+    "revisat_huma": false
+  }
+}

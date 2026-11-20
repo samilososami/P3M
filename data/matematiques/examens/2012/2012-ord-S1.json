@@ -1,0 +1,170 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2012-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2012,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2012/pau_mate12jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2012/pau_mate12jp.pdf",
+      "pagines": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2012-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats els plans $\\pi_1: 3x+y-2z+15=0$ i $\\pi_2: x+y+2z-103=0$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que són perpendiculars."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació cartesiana (és a dir, de la forma $Ax+By+Cz+D=0$) del pla perpendicular a $\\pi_1$ i $\\pi_2$, que passa pel punt $P=(1,3,2)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els vectors normals són $\\vec v_1=(3,1,-2)$ i $\\vec v_2=(1,1,2)$, i $\\vec v_1\\cdot\\vec v_2=3+1-4=0$, per tant els plans són perpendiculars.\n\nb) El vector normal del pla buscat és el producte vectorial $\\vec v_1\\times\\vec v_2=(4,-8,2)$, que simplificat és $(2,-4,1)$. Amb el punt $P=(1,3,2)$: $2(x-1)-4(y-3)+(z-2)=0$.",
+        "resultat": "$2x-4y+z+8=0$"
+      }
+    },
+    {
+      "id": "2012-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La gràfica de la funció $f(x)=x\\sqrt{9-x^2}$ és la següent:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Trobeu el punt de tall, $(a,0)$, de la funció amb la part positiva de l'eix $OX$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Calculeu l'àrea del recinte limitat per la gràfica de $f(x)$ i l'eix $OX$ en el primer quadrant."
+        }
+      ],
+      "figures": [
+        "gràfica de $f(x)=x\\sqrt{9-x^2}$ en el primer quadrant. La corba passa per l'origen, té un màxim relatiu i torna a tallar l'eix $OX$ en el punt $(a,0)$, marcat a la figura."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Cal resoldre $x\\sqrt{9-x^2}=0$, que té solucions $x=0$ i $x=\\pm3$. Com que $a>0$, $a=3$.\n\nb) La funció és positiva a $[0,3]$, per tant $A=\\displaystyle\\int_0^3 x\\sqrt{9-x^2}\\,dx$. Amb el canvi $t=9-x^2$ (o directament per integració immediata):\n$$A=\\left[-\\dfrac{(9-x^2)^{3/2}}{3}\\right]_0^3=-0+\\dfrac{27}{3}=9.$$",
+        "resultat": "$a=3$; $\\text{àrea}=9$ u²."
+      }
+    },
+    {
+      "id": "2012-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $A$ una matriu quadrada d'ordre $n$ de manera que $A^2=O$, en què $O$ és la matriu nul·la (la formada completament per zeros).",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que $(A+I_n)^2=2A+I_n$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu que les matrius $B=I_n-A$ i $C=A+I_n$ són l'una inversa de l'altra."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $(A+I_n)^2=A^2+A+A+I_n=O+2A+I_n=2A+I_n$, per la propietat distributiva del producte de matrius.\n\nb) $BC=(I_n-A)(A+I_n)=A+I_n-A^2-A=I_n-O=I_n$ i $CB=(A+I_n)(I_n-A)=A-A^2+I_n-A=I_n$. Per tant $B$ i $C$ són inverses una de l'altra.",
+        "resultat": "les dues igualtats es comproven; $B\\cdot C=C\\cdot B=I_n$.",
+        "nota": "de $A^2=O$ no es dedueix que $A=O$."
+      }
+    },
+    {
+      "id": "2012-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Un rectangle és inscrit en el triangle que té els costats en les rectes d'equacions $y=x$, $x+y=8$, $y=0$, i té un costat sobre la recta $y=0$. Trobeu-ne els vèrtexs perquè la superfície sigui màxima.",
+      "apartats": [],
+      "figures": [
+        "triangle format per les rectes $y=x$, $x+y=8$ i $y=0$, amb un rectangle inscrit que té un costat sobre l'eix $OX$ i els dos vèrtexs superiors sobre les rectes $y=x$ i $x+y=8$."
+      ],
+      "solucio": {
+        "desenvolupament": "Siguin $V_1=(a,0)$ i $V_2=(b,0)$ els vèrtexs sobre l'eix $OX$, amb $a<b$. El vèrtex sobre $y=x$ és $V_4=(a,a)$ i el vèrtex sobre $x+y=8$ és $V_3=(b,8-b)$. Com que $V_3$ i $V_4$ estan a la mateixa altura, $a=8-b$.\n\nLa superfície és $S(b)=(b-a)\\cdot a=(2b-8)(8-b)=-2b^2+24b-64$. Amb $S'(b)=24-4b=0$ s'obté $b=6$, i per tant $a=2$. Com que $S''(b)=-24<0$, és un màxim.",
+        "resultat": "$V_1=(2,0)$, $V_2=(6,0)$, $V_3=(6,2)$, $V_4=(2,2)$.",
+        "nota": "el PDF de criteris reprodueix l'enunciat amb les rectes $y=3x$ i $x+y=6$, però la figura i la solució corresponen a $y=x$ i $x+y=8$. S'ha transcrit l'enunciat de l'examen."
+      }
+    },
+    {
+      "id": "2012-ord-S1-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Contesteu les preguntes següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Expliqueu raonadament si una matriu d'ordre 3 i una matriu d'ordre 2 poden tenir el mateix determinant."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Considereu les matrius següents:\n$$A=\\begin{pmatrix} 1 & 1 & p \\\\ 1 & 1-p & 2 \\\\ 1 & 2 & p \\end{pmatrix} \\quad \\text{i} \\quad B=\\begin{pmatrix} 1 & -1 & 4 \\\\ 0 & 1 & p \\\\ 0 & p & 4 \\end{pmatrix}$$\nCalculeu, si és possible, el valor del paràmetre $p$ perquè $\\det A=\\det B$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Sí. El determinant és un escalar i no depèn de l'ordre de la matriu. Per exemple, $\\det(I_3)=1=\\det(I_2)$.\n\nb) $\\det A=p-2$ i $\\det B=4-p^2$. La igualtat $p-2=4-p^2$ equival a $p^2+p-6=0$, amb solucions $p=2$ i $p=-3$.",
+        "resultat": "sí, poden tenir el mateix determinant; $p=-3$ o $p=2$."
+      }
+    },
+    {
+      "id": "2012-ord-S1-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin $\\pi: x-3y+2z=1$ i $r:\\begin{cases} 3x+y=1 \\\\ 2x-y+mz=1 \\end{cases}$. Estudieu-ne la posició relativa segons el valor del paràmetre $m$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "El vector normal del pla és $\\vec v_\\pi=(1,-3,2)$ i el vector director de la recta és $\\vec v_r=(m,-3m,-5)$. El seu producte escalar és $(1,-3,2)\\cdot(m,-3m,-5)=10m-10$, i és zero si $m=1$.\n\nEquivalentment, el determinant de la matriu del sistema és $\\begin{vmatrix} 1 & -3 & 2 \\\\ 3 & 1 & 0 \\\\ 2 & -1 & m \\end{vmatrix}=10m-10$.\n\n- Si $m\\neq1$: el sistema és SCD, el pla i la recta es tallen en un punt.\n- Si $m=1$: la matriu ampliada s'esglaonada fins a $\\begin{pmatrix} 1 & -3 & 2 & | & 1 \\\\ 0 & 5 & -3 & | & -1 \\\\ 0 & 0 & 0 & | & 0 \\end{pmatrix}$, que és SCI. La recta està continguda al pla.",
+        "resultat": "per a $m\\neq1$, la recta i el pla es tallen en un punt; per a $m=1$, la recta està continguda en el pla."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

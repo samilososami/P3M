@@ -1,0 +1,177 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2013-ord-S4",
+  "assignatura": "matematiques",
+  "any": 2013,
+  "convocatoria": "ordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2013/pau_mate13jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2013/pau_mate13jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2013-ord-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sabem que el vector $(2,1,-1)$ és una solució del sistema\n$$\\begin{cases} ax+by+cz=a+c \\\\ bx-y+bz=a-b-c \\\\ cx-by+2z=b \\end{cases}$$\nCalculeu el valor dels paràmetres $a$, $b$ i $c$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Si $(2,1,-1)$ és solució, cal que es compleixi\n$$\\begin{cases} 2a+b-c=a+c \\\\ 2b-1-b=a-b-c \\\\ 2c-b-2=b \\end{cases}$$\nque és un sistema on $a$, $b$ i $c$ són les incògnites. La seva solució és $a=3$, $b=1$, $c=2$.",
+        "resultat": "$a=3$, $b=1$, $c=2$."
+      }
+    },
+    {
+      "id": "2013-ord-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La corba $y=x^2$ i la recta $y=k$, amb $k>0$, determinen una regió plana.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Calculeu l'àrea d'aquesta regió en funció del paràmetre $k$."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Trobeu el valor de $k$ perquè l'àrea limitada sigui $\\sqrt6\\ \\text{u}^2$."
+        }
+      ],
+      "figures": [
+        "la paràbola $y=x^2$ i la recta horitzontal $y=k$, amb $k>0$. La recta talla la corba en $x=-\\sqrt k$ i $x=\\sqrt k$, i la regió és la que queda entre les dues."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Els punts d'intersecció són $x=\\pm\\sqrt k$. Per tant\n$$A=\\int_{-\\sqrt k}^{\\sqrt k}\\left(k-x^2\\right)dx=\\left[kx-\\dfrac{x^3}{3}\\right]_{-\\sqrt k}^{\\sqrt k}=\\dfrac{4k\\sqrt k}{3}.$$\n\nb) Cal $\\dfrac{4k\\sqrt k}{3}=\\sqrt6$. Elevant al quadrat, $\\dfrac{16k^3}{9}=6$, d'on $k^3=\\dfrac{27}{8}$ i $k=\\dfrac32$.",
+        "resultat": "a) $A(k)=\\dfrac{4k\\sqrt k}{3}$; b) $k=\\dfrac32$.",
+        "nota": "al PDF de criteris, l'apartat a val 1 punt i el b, 1 punt. A l'enunciat, les puntuacions són 1,5 i 0,5. Es mantenen les de l'enunciat."
+      }
+    },
+    {
+      "id": "2013-ord-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui\n$$A=\\begin{pmatrix} \\dfrac{1}{\\sqrt2} & \\dfrac{1}{\\sqrt3} & \\dfrac{1}{\\sqrt6} \\\\[2mm] 0 & \\dfrac{1}{\\sqrt3} & -\\dfrac{2}{\\sqrt6} \\\\[2mm] p & -\\dfrac{1}{\\sqrt3} & -\\dfrac{1}{\\sqrt6} \\end{pmatrix}.$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Què significa que la matriu $B$ sigui la matriu inversa de $A$?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Trobeu el valor del paràmetre $p$ perquè la matriu inversa de $A$ i la matriu transposada de $A$ coincideixin.\n\n*Nota de l'enunciat: no aproximeu les arrels mitjançant valors amb decimals; treballeu amb els radicals.*"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $B$ és la inversa de $A$ si i només si $A\\cdot B=I$ i $B\\cdot A=I$, on $I$ és la matriu identitat del mateix ordre que $A$.\n\nb) Si $A^{-1}=A^T$, aleshores $A\\cdot A^T=I$. Fent el producte $A\\cdot A^T$:\n$$A\\cdot A^T=\\begin{pmatrix} 1 & 0 & \\dfrac{p}{\\sqrt2}-\\dfrac12 \\\\ 0 & 1 & 0 \\\\ \\dfrac{p}{\\sqrt2}-\\dfrac12 & 0 & p^2+\\dfrac12 \\end{pmatrix}.$$\nPer tant cal que $\\dfrac{p}{\\sqrt2}-\\dfrac12=0$ i que $p^2+\\dfrac12=1$. La solució comuna és $p=\\dfrac{1}{\\sqrt2}$.",
+        "resultat": "a) $A\\cdot B=B\\cdot A=I$; b) $p=\\dfrac{1}{\\sqrt2}$."
+      }
+    },
+    {
+      "id": "2013-ord-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Es vol construir un canal que tingui com a secció un trapezi isòsceles de manera que l'amplària superior del canal sigui el doble de l'amplària inferior i que els costats no paral·lels siguin de 8 metres.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Trobeu el valor del segment $L$ de la gràfica en funció de la variable $x$ (amplària inferior del canal)."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Sabem que l'àrea d'un trapezi és igual a la seva altura multiplicada per la semisuma de les seves bases. Comproveu que, en aquest cas, l'àrea de la secció és donada per\n$$A(x)=\\dfrac{3x\\sqrt{256-x^2}}{4}.$$"
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Calculeu el valor de $x$ perquè l'àrea de la secció del canal sigui màxima (no cal que comproveu que és realment un màxim)."
+        }
+      ],
+      "figures": [
+        "secció del canal, trapezi isòsceles. La base inferior mesura $x$ i la superior $2x$. Els costats no paral·lels mesuren 8 m. El segment $L$ és la projecció horitzontal d'un dels costats no paral·lels, i $h$ és l'altura del trapezi."
+      ],
+      "solucio": {
+        "desenvolupament": "a) $2x=x+2L$, per tant $L=\\dfrac{x}{2}$.\n\nb) Pel teorema de Pitàgores, $h^2+L^2=8^2$, és a dir $h=\\dfrac{\\sqrt{256-x^2}}{2}$. Llavors\n$$A(x)=\\dfrac{x+2x}{2}\\cdot h=\\dfrac{3x}{2}\\cdot\\dfrac{\\sqrt{256-x^2}}{2}=\\dfrac{3x\\sqrt{256-x^2}}{4}.$$\n\nc) $A'(x)=\\dfrac{3}{4}\\cdot\\dfrac{256-2x^2}{\\sqrt{256-x^2}}$. Igualant a zero, $x^2=128$, i per tant $x=\\sqrt{128}=8\\sqrt2$ m.",
+        "resultat": "a) $L=\\dfrac{x}{2}$; b) $A(x)=\\dfrac{3x\\sqrt{256-x^2}}{4}$; c) $x=8\\sqrt2$ m."
+      }
+    },
+    {
+      "id": "2013-ord-S4-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats els punts $P=(1,0,-1)$ i $Q=(-1,2,3)$, trobeu un punt $R$ de la recta\n$$r:\\ \\dfrac{x+3}{2}=\\dfrac{y+4}{3}=\\dfrac{z-3}{-1}$$\nque faci que el triangle de vèrtexs $P$, $Q$ i $R$ sigui isòsceles, essent $\\overline{PR}$ i $\\overline{QR}$ els costats iguals del triangle.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "El punt $R$ de la recta és de la forma $R=(-3+2\\lambda,\\,-4+3\\lambda,\\,3-\\lambda)$. Cal que $d(P,R)=d(Q,R)$:\n$$d(P,R)^2=14\\lambda^2-48\\lambda+48, \\qquad d(Q,R)^2=14\\lambda^2-44\\lambda+40.$$\nIgualant: $-48\\lambda+48=-44\\lambda+40$, d'on $\\lambda=2$. Per tant $R=(1,2,1)$.\n\nComprovació: $d(P,R)^2=8=d(Q,R)^2$.",
+        "resultat": "$R=(1,2,1)$.",
+        "nota": "a la solució 2 del PDF de criteris, el pla que passa pel punt mig de $PQ$ i té vector normal $\\overrightarrow{PQ}=(-2,2,4)$ s'escriu $x+y+2z+3=0$. El pla correcte és $-2x+2y+4z-6=0$, és a dir, $x-y-2z+3=0$. Amb aquest pla, $\\lambda=2$ també surt, com diu el criteri."
+      }
+    },
+    {
+      "id": "2013-ord-S4-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La funció $f(x)$ és derivable i passa per l'origen de coordenades. La gràfica de la seva funció derivada és la que veieu aquí dibuixada, sent $f'(x)$ creixent als intervals $(-\\infty,-3]$ i $[2,+\\infty)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació de la recta tangent a la gràfica de la funció $f(x)$ en el punt d'abscissa $x=0$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Indiqueu les abscisses dels extrems relatius de la funció $f(x)$ i classifiqueu aquests extrems."
+        }
+      ],
+      "figures": [
+        "gràfica de $y=f'(x)$. Talla l'eix $OX$ en $x=-3$, $x=1$ i $x=2$, i l'eix $OY$ en $y=1$. És negativa per a $x<-3$, positiva en $(-3,1)$, negativa en $(1,2)$ i positiva per a $x>2$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) La tangent en $a$ és $y=f(a)+f'(a)(x-a)$. Sabem que $f(0)=0$ i, de la gràfica, $f'(0)=1$. Per tant $y=x$.\n\nb) Els candidats són els punts on $f'(x)=0$: $x_1=-3$, $x_2=1$ i $x_3=2$.\n- En $x_1=-3$ hi ha un mínim: $f'$ passa de negativa a positiva.\n- En $x_2=1$ hi ha un màxim: $f'$ passa de positiva a negativa.\n- En $x_3=2$ hi ha un mínim: $f'$ passa de negativa a positiva.",
+        "resultat": "a) $y=x$; b) mínim en $x=-3$, màxim en $x=1$, mínim en $x=2$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

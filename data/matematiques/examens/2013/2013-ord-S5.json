@@ -1,0 +1,191 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2013-ord-S5",
+  "assignatura": "matematiques",
+  "any": 2013,
+  "convocatoria": "ordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2013/pau_mate13jl.pdf",
+      "pagines": [
+        5,
+        6
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2013/pau_mate13jp.pdf",
+      "pagines": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2013-ord-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin $\\pi_1$ el pla $2x+3y-z=4$ i $\\pi_2$ el pla $x-2y-4z=10$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que els plans $\\pi_1$ i $\\pi_2$ són perpendiculars."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació contínua de la recta paral·lela als plans $\\pi_1$ i $\\pi_2$ i que passa pel punt $P=(-1,3,2)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els vectors característics són $\\vec v_1=(2,3,-1)$ i $\\vec v_2=(1,-2,-4)$, i $\\vec v_1\\cdot\\vec v_2=2-6+4=0$. Per tant els plans són perpendiculars.\n\nb) El vector director de la recta ha de ser perpendicular a $\\vec v_1$ i $\\vec v_2$: $\\vec v_1\\times\\vec v_2=(-14,7,-7)$, proporcional a $(2,-1,1)$. Per tant\n$$r:\\ \\dfrac{x+1}{2}=\\dfrac{y-3}{-1}=\\dfrac{z-2}{1}.$$",
+        "resultat": "a) $\\vec v_1\\cdot\\vec v_2=0$; b) $\\dfrac{x+1}{2}=\\dfrac{y-3}{-1}=\\dfrac{z-2}{1}$."
+      }
+    },
+    {
+      "id": "2013-ord-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La matriu de coeficients d'un sistema d'equacions lineals homogeni és\n$$A=\\begin{pmatrix} -1 & 2 & 3 \\\\ 2 & 1-a & 0 \\\\ 4 & 1 & 2a+2 \\end{pmatrix}.$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Per a quins valors del paràmetre $a$ el sistema té una sola solució? Quina és aquesta solució única?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema si $a=2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Un sistema homogeni és sempre compatible. Cal que sigui determinat, és a dir, $\\operatorname{rang}A=3$. Com que $\\det A=2a^2+4a-16$, que s'anul·la per a $a=2$ i $a=-4$, si $a\\neq2$ i $a\\neq-4$ el sistema és compatible determinat, i la solució única és la trivial: $x=0$, $y=0$, $z=0$.\n\nb) Per a $a=2$, la matriu és $\\begin{pmatrix} -1 & 2 & 3 \\\\ 2 & -1 & 0 \\\\ 4 & 1 & 6 \\end{pmatrix}$, que s'escalona fins a $\\begin{pmatrix} -1 & 2 & 3 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 0 \\end{pmatrix}$. El sistema equivalent és $-x+2y+3z=0$, $y+2z=0$. Prenent $z$ com a paràmetre, $y=-2z$ i $x=-z$.",
+        "resultat": "a) $a\\neq2$ i $a\\neq-4$, i la solució única és $(0,0,0)$; b) $x=-z$, $y=-2z$, $z\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2013-ord-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats els punts $P=(1,-1,2)$, $Q=(2,0,1)$ i $R=(3,2,-1)$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació cartesiana (és a dir, de la forma $Ax+By+Cz+D=0$) del pla que determinen."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu un punt $S$ pertanyent a la recta $r:\\ \\dfrac{x-5}{2}=\\dfrac{y-1}{-1}=\\dfrac{z-5}{-3}$, de manera que el tetraedre de vèrtexs $P$, $Q$, $R$ i $S$ tingui un volum igual a $\\dfrac12$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Imposant que el pla passi pels tres punts s'obté $A=0$, $B=-D$, $C=-D$. Amb $D=1$, el pla és $y+z-1=0$.\n\nb) El punt $S$ de la recta és de la forma $S=(5+2\\lambda,\\,1-\\lambda,\\,5-3\\lambda)$. Amb $\\overrightarrow{PQ}=(1,1,-1)$, $\\overrightarrow{PR}=(2,3,-3)$ i $\\overrightarrow{PS}=(4+2\\lambda,\\,2-\\lambda,\\,3-3\\lambda)$:\n$$V=\\dfrac16\\left|\\det\\left(\\overrightarrow{PQ},\\overrightarrow{PR},\\overrightarrow{PS}\\right)\\right|=\\dfrac16|5-4\\lambda|.$$\nCom que $V=\\dfrac12$, cal $|5-4\\lambda|=3$. Això dona $\\lambda=\\dfrac12$ o $\\lambda=2$.\n- Per a $\\lambda=\\dfrac12$: $S_1=\\left(6,\\dfrac12,\\dfrac72\\right)$.\n- Per a $\\lambda=2$: $S_2=(9,-1,-1)$.\n\nCom que només es demana un punt, qualsevol dels dos és vàlid.",
+        "resultat": "a) $y+z-1=0$; b) $S_1=\\left(6,\\tfrac12,\\tfrac72\\right)$ o $S_2=(9,-1,-1)$."
+      }
+    },
+    {
+      "id": "2013-ord-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Per a $x\\geq1$, considereu la funció $f(x)=+\\sqrt{x-1}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació de la recta tangent a la gràfica de $f(x)$ en el punt d'abscissa igual a $10$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea del recinte limitat per la gràfica de $f(x)$, la recta d'equació $x=5$ i l'eix $OX$."
+        }
+      ],
+      "figures": [
+        "gràfica de $f(x)=\\sqrt{x-1}$ a partir del punt $(1,0)$, la recta vertical $x=5$ i l'eix $OX$. El recinte és el que queda entre la gràfica, la recta $x=5$ i l'eix $OX$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) L'equació de la tangent en $a$ és $y=f(a)+f'(a)(x-a)$. Amb $a=10$: $f(10)=3$ i $f'(x)=\\dfrac{1}{2\\sqrt{x-1}}$, de manera que $f'(10)=\\dfrac16$. Per tant $y=3+\\dfrac16(x-10)$, és a dir, $x-6y+8=0$.\n\nb) El punt de tall amb $OX$ és $x=1$. Llavors\n$$A=\\int_1^5\\sqrt{x-1}\\,dx=\\left[\\dfrac{2(x-1)^{3/2}}{3}\\right]_1^5=\\dfrac{2}{3}\\cdot 8=\\dfrac{16}{3}.$$",
+        "resultat": "a) $x-6y+8=0$; b) $A=\\dfrac{16}{3}$ u²."
+      }
+    },
+    {
+      "id": "2013-ord-S5-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu els punts $A=(-1,2,4)$ i $B=(3,0,-2)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació del pla format per tots els punts que equidisten de $A$ i $B$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Donat un punt $C=(x,y,z)$, dividim el segment $\\overline{AC}$ en tres parts iguals, obtenint els punts $A$, $A_1$, $B$ i $C$. Trobeu el punt $C$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Un punt $X$ equidista de $A$ i $B$ si $d(A,X)=d(B,X)$. Elevant al quadrat i simplificant s'arriba a $2x-y-3z+2=0$. Es comprova que el punt mig $(1,1,1)$ del segment $AB$ hi pertany.\n\nb) Com que $B$ és el segon punt de divisió, $\\overrightarrow{AB}=\\tfrac23\\overrightarrow{AC}$, és a dir, $\\overrightarrow{AC}=\\tfrac32\\overrightarrow{AB}=\\tfrac32(4,-2,-6)=(6,-3,-9)$. Per tant\n$$C=A+(6,-3,-9)=(5,-1,-5).$$",
+        "resultat": "a) $2x-y-3z+2=0$; b) $C=(5,-1,-5)$."
+      }
+    },
+    {
+      "id": "2013-ord-S5-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Un triangle rectangle situat en el primer quadrant té el vèrtex $A$ en l'origen de coordenades, el vèrtex $B=(x,0)$ en el semieix positiu d'abscisses i el vèrtex $C$ pertany a la recta $x+2y=8$. L'angle recte és el que correspon al vèrtex $B$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que l'àrea del triangle es pot expressar de la manera següent: $A(x)=2x-\\dfrac{x^2}{4}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu els vèrtexs $B$ i $C$ perquè l'àrea del triangle sigui màxima i comproveu que es tracta realment d'un màxim."
+        }
+      ],
+      "figures": [
+        "triangle rectangle amb vèrtex $A$ a l'origen, $B$ sobre l'eix $OX$ i $C$ sobre la recta $x+2y=8$, amb el vèrtex $B$ com a angle recte. El segment $\\overline{BC}$ és vertical."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Amb $B=(x,0)$, el punt $C$ és $C=\\left(x,\\dfrac{8-x}{2}\\right)$. Com que l'angle recte és a $B$, els catets són $\\overline{AB}$ (de longitud $x$) i $\\overline{BC}$ (de longitud $\\dfrac{8-x}{2}$). Per tant\n$$A(x)=\\dfrac{x\\cdot\\frac{8-x}{2}}{2}=\\dfrac{8x-x^2}{4}=2x-\\dfrac{x^2}{4}.$$\n\nb) $A'(x)=2-\\dfrac{x}{2}=0$ dóna $x=4$. Per tant $B=(4,0)$ i $C=(4,2)$. Com que $A''(x)=-\\dfrac12<0$, és un màxim.",
+        "resultat": "a) $A(x)=2x-\\dfrac{x^2}{4}$; b) $B=(4,0)$ i $C=(4,2)$; és un màxim."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

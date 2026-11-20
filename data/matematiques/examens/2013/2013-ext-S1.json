@@ -1,0 +1,167 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2013-ext-S1",
+  "assignatura": "matematiques",
+  "any": 2013,
+  "convocatoria": "extraordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2013/pau_mate13sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2013/pau_mate13sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2013-ext-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $V=\\{(-1,1,1),\\,(-2,-1,0),\\,(1,2,a)\\}$ un conjunt de vectors de $\\mathbb{R}^3$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu el valor o valors de $a$ perquè $V$ sigui linealment dependent."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Quan $a=4$, expresseu el vector $\\vec v=(3,9,14)$ com a combinació lineal dels vectors de $V$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El determinant de la matriu formada pels tres vectors és $\\begin{vmatrix} -1 & -2 & 1 \\\\ 1 & -1 & 2 \\\\ 1 & 0 & a \\end{vmatrix}=3a-3$, que s'anul·la per a $a=1$. Per tant, $V$ és linealment dependent si i només si $a=1$.\n\nb) Cal resoldre $\\alpha(-1,1,1)+\\beta(-2,-1,0)+\\gamma(1,2,4)=(3,9,14)$, és a dir, el sistema $-\\alpha-2\\beta+\\gamma=3$, $\\alpha-\\beta+2\\gamma=9$, $\\alpha+4\\gamma=14$. La seva solució és $\\alpha=2$, $\\beta=-1$, $\\gamma=3$.",
+        "resultat": "a) $a=1$; b) $\\vec v=2(-1,1,1)-(-2,-1,0)+3(1,2,4)$."
+      }
+    },
+    {
+      "id": "2013-ext-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "De la funció polinòmica $P(x)=x^3+ax^2+bx+2$ sabem que\n\n- té un extrem relatiu en el punt d'abscissa $x=-3$;\n- la integral definida en l'interval $[0,1]$ val $-\\dfrac54$.\n\nCalculeu el valor dels paràmetres $a$ i $b$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Com que hi ha un extrem en $x=-3$, $P'(-3)=0$. Amb $P'(x)=3x^2+2ax+b$: $27-6a+b=0$, és a dir, $-6a+b=-27$.\n\nPer la integral: $\\displaystyle\\int_0^1\\left(x^3+ax^2+bx+2\\right)dx=\\dfrac14+\\dfrac a3+\\dfrac b2+2=-\\dfrac54$, d'on $\\dfrac a3+\\dfrac b2=-\\dfrac72$.\n\nEl sistema $-6a+b=-27$, $\\dfrac a3+\\dfrac b2=-\\dfrac72$ té per solució $a=3$ i $b=-9$.",
+        "resultat": "$a=3$, $b=-9$."
+      }
+    },
+    {
+      "id": "2013-ext-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats el pla $\\pi: x+2y-z=3$ i la recta $r:\\ \\dfrac{x-1}{2}=y=\\dfrac{z+m}{4}$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que el vector característic (o normal) de $\\pi$ i el vector director de $r$ són perpendiculars."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Estudieu la posició relativa de $\\pi$ i $r$ en funció del paràmetre $m$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector característic de $\\pi$ és $\\vec v_\\pi=(1,2,-1)$ i el vector director de $r$ és $\\vec v_r=(2,1,4)$. Com que $(1,2,-1)\\cdot(2,1,4)=2+2-4=0$, són perpendiculars.\n\nb) Com que els vectors són perpendiculars, la recta és paral·lela al pla o està continguda en ell. El punt $P=(1,0,-m)$ de $r$ pertany al pla si $1+0+m=3$, és a dir, si $m=2$.",
+        "resultat": "si $m=2$, la recta està continguda en el pla; si $m\\neq2$, la recta i el pla són paral·lels."
+      }
+    },
+    {
+      "id": "2013-ext-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin les matrius\n$$A=\\begin{pmatrix} 2 & a & 1 \\\\ 1 & b & 4 \\\\ 3 & c & 5 \\end{pmatrix},\\quad B=\\begin{pmatrix} 5 & b & 8 \\\\ 1 & c & 3 \\\\ 4 & a & 3 \\end{pmatrix},\\quad C=\\begin{pmatrix} 2 & 4 & 7 \\\\ -1 & 5 & 5 \\\\ -b & -a & -2 \\end{pmatrix},$$\non $a$, $b$ i $c$ són paràmetres reals. Calculeu el valor d'aquests paràmetres perquè cap de les tres matrius tingui inversa.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Una matriu quadrada no té inversa si i només si el seu determinant és zero. Es té\n$$\\det A=7a+7b-7c,\\qquad \\det B=-7a+9b-17c,\\qquad \\det C=17a+15b-28.$$\nCal resoldre el sistema $7a+7b-7c=0$, $-7a+9b-17c=0$, $17a+15b=28$, la solució del qual és $a=-1$, $b=3$, $c=2$.",
+        "resultat": "$a=-1$, $b=3$, $c=2$."
+      }
+    },
+    {
+      "id": "2013-ext-S1-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats el pla $\\pi: 2x-y+3z-8=0$ i el punt $P=(6,-3,7)$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació contínua de la recta que passa per $P$ i és perpendicular a $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu el punt del pla $\\pi$ que està més proper al punt $P$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector característic de $\\pi$ és un vector director de la recta:\n$$\\dfrac{x-6}{2}=\\dfrac{y+3}{-1}=\\dfrac{z-7}{3}.$$\n\nb) El punt buscat és la intersecció de $\\pi$ amb la recta de l'apartat anterior. Amb la forma paramètrica $x=6+2\\lambda$, $y=-3-\\lambda$, $z=7+3\\lambda$, substituint a $\\pi$: $14\\lambda+28=0$, és a dir, $\\lambda=-2$. Per tant el punt és $Q=(2,-1,1)$.",
+        "resultat": "a) $\\dfrac{x-6}{2}=\\dfrac{y+3}{-1}=\\dfrac{z-7}{3}$; b) $Q=(2,-1,1)$."
+      }
+    },
+    {
+      "id": "2013-ext-S1-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Volem construir una tenda en forma de piràmide regular de base quadrada. Disposem de $300\\ \\text{m}^2$ de tela per a la fabricació de les quatre cares de la tenda (se suposa que en l'elaboració de les cares no es perd gens de tela). Designem $x$ la longitud d'un costat de la base de la tenda.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Sabent que el volum d'una piràmide és igual a un terç del producte de l'àrea de la base per l'altura, comproveu que, en aquest cas,\n$$V(x)=\\dfrac{x\\sqrt{(9\\times10^4)-x^4}}{6}.$$"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu el valor de $x$ perquè el volum sigui el més gran possible (no cal que comproveu que el valor obtingut correspon realment a un màxim)."
+        }
+      ],
+      "figures": [
+        "piràmide regular de base quadrada de costat $x$. Hi ha l'altura $h$ de la piràmide, des de l'àpex fins al centre de la base, i l'altura $a$ d'una de les cares triangulars, des de l'àpex fins al punt mig d'una aresta de la base."
+      ],
+      "solucio": {
+        "desenvolupament": "a) L'àrea de les quatre cares és $4\\cdot\\dfrac{x\\,a}{2}=2ax=300$, d'on $a=\\dfrac{150}{x}$. Pel teorema de Pitàgores, $a^2=h^2+\\left(\\dfrac x2\\right)^2$, per tant\n$$h=\\sqrt{\\dfrac{22500}{x^2}-\\dfrac{x^2}{4}}=\\dfrac{\\sqrt{9\\cdot10^4-x^4}}{2x}.$$\nEl volum és $V(x)=\\dfrac13x^2h=\\dfrac{x\\sqrt{9\\cdot10^4-x^4}}{6}$.\n\nb) $V'(x)=\\dfrac{3\\cdot10^4-x^4}{2\\sqrt{9\\cdot10^4-x^4}}$. Aquesta derivada s'anul·la quan $x^4=3\\cdot10^4$, és a dir, $x=\\sqrt[4]{3\\cdot10^4}=10\\sqrt[4]{3}\\approx13{,}16$ m. (Equivalentment, treballant amb $f(x)=x^2(9\\cdot10^4-x^4)$, $f'(x)=6x(3\\cdot10^4-x^4)$; $x=0$ no té sentit.)",
+        "resultat": "a) $V(x)=\\dfrac{x\\sqrt{9\\times10^4-x^4}}{6}$; b) $x=10\\sqrt[4]{3}\\approx13{,}16$ m."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

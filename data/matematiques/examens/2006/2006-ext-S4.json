@@ -1,0 +1,181 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2006-ext-S4",
+  "assignatura": "matematiques",
+  "any": 2006,
+  "convocatoria": "extraordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i de dos problemes. Trieu només tres de les quatre qüestions per respondre i un dels dos problemes per resoldre. En les respostes que doneu heu d'explicar sempre què us proposeu de fer i per què. Podeu fer servir qualsevol mena de calculadora, llevat de les que treballin amb un sistema operatiu d'ordinador tipus WINDOWS/LINUX.\n\nPuntuació de cada qüestió: 2 punts.\nTotal de qüestions i puntuació: 3 x 2 = 6 punts.\nPuntuació del problema: 4 punts.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2006/pau_mate06sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2006/pau_mate06sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2006-ext-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $f:\\mathbb{R}\\to\\mathbb{R}$ la funció definida per $f(x)=e^x(ax+b)$, on $a$ i $b$ són nombres reals.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu els valors de $a$ i $b$ per tal que la funció tingui un extrem relatiu en el punt $(3,e^3)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Per als valors de $a$ i $b$ obtinguts, digueu quin tipus d'extrem té la funció en el punt esmentat."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Si en el punt $(3,e^3)$ hi ha un extrem relatiu, es compleix $f(3)=e^3$ i $f'(3)=0$. La derivada és $f'(x)=e^x(ax+b+a)$, i per tant:\n\n$$\\begin{cases} f(3)=e^3 \\iff e^3(3a+b)=e^3 \\\\ f'(3)=0 \\iff e^3(4a+b)=0 \\end{cases}$$\n\nCom que $e^3\\neq0$, el sistema a resoldre és $\\begin{cases} 3a+b=1 \\\\ 4a+b=0 \\end{cases}$, que té per solució $a=-1$ i $b=4$.\n\nb) La derivada segona és $f''(x)=e^x(2-x)$ (amb $a=-1$ i $b=4$). Avaluada en $x=3$: $f''(3)=-e^3<0$. Per tant, en $x=3$ hi ha un **màxim relatiu**.",
+        "resultat": "a) $a=-1$, $b=4$; b) màxim relatiu en $(3,e^3)$."
+      }
+    },
+    {
+      "id": "2006-ext-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "El gràfic de la funció $f(x)=\\dfrac{1}{2x+1}$, quan $x>0$, és com segueix:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu una primitiva de la funció $f$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea de la regió ombrejada."
+        }
+      ],
+      "figures": [
+        "gràfica de $f(x)=\\dfrac{1}{2x+1}$ per a $x>0$: corba decreixent que comença a $f(0)=1$ i s'acosta a l'eix $OX$ quan $x$ creix. La regió ombrejada és la compresa entre la corba, l'eix $OX$ i les rectes $x=2$ i $x=4$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Una primitiva és $F(x)=\\dfrac12\\ln(2x+1)$.\n\nb) L'àrea és:\n\n$$\\int_2^4\\dfrac{1}{2x+1}\\,dx=\\left[\\dfrac12\\ln(2x+1)\\right]_2^4=\\dfrac12\\left(\\ln9-\\ln5\\right)=\\dfrac12\\ln\\dfrac95\\approx0{,}294$$",
+        "resultat": "a) $F(x)=\\dfrac12\\ln(2x+1)$; b) àrea $=\\dfrac12\\ln\\dfrac95$ unitats d'àrea."
+      }
+    },
+    {
+      "id": "2006-ext-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'equació de la recta paral·lela a la recta $r:\\begin{cases} x+y-z=0 \\\\ 2x-y+z=1 \\end{cases}$ que passa pel punt $(0,1,0)$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "La recta buscada té el mateix vector director que $r$. Per trobar-lo, es poden buscar les equacions paramètriques de $r$: $x=\\dfrac13$, $y=-\\dfrac13+\\lambda$, $z=\\lambda$, d'on $\\vec v_r=(0,1,1)$. Amb el producte vectorial dels vectors normals, $(1,1,-1)\\wedge(2,-1,1)=(0,-3,-3)$, s'obté el mateix vector, $\\vec v_r=(0,1,1)$.\n\nAixí, l'equació vectorial de la recta buscada és $(x,y,z)=(0,1,0)+t\\,(0,1,1)$.\n\nTambé es pot escriure en forma implícita: $\\begin{cases} x+y-z=1 \\\\ 2x-y+z=-1 \\end{cases}$, que és la que resulta d'imposar que passi per $(0,1,0)$.",
+        "resultat": "$(x,y,z)=(0,1,0)+t\\,(0,1,1)$; en forma implícita, $\\begin{cases} x+y-z=1 \\\\ 2x-y+z=-1 \\end{cases}$."
+      }
+    },
+    {
+      "id": "2006-ext-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Determineu els extrems d'un segment $AB$ sabent que el punt $A$ pertany al pla $2x+y+z=0$, el punt $B$ pertany a la recta $\\dfrac{x-1}{2}=\\dfrac{y-2}{-1}=\\dfrac{z}{3}$ i el punt mitjà del segment és $(0,0,0)$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Com que el punt mitjà és l'origen, $A=-B$. Sigui $B$ un punt de la recta, $B=(2t+1,\\,-t+2,\\,3t)$. Llavors $A=(-2t-1,\\,t-2,\\,-3t)$. Imposant que $A$ pertanyi al pla:\n\n$$2(-2t-1)+(t-2)+(-3t)=0\\iff -6t-4=0\\iff t=-\\dfrac23$$\n\nPer tant, $B=\\left(-\\dfrac13,\\dfrac83,-2\\right)$ i $A=\\left(\\dfrac13,-\\dfrac83,2\\right)$.",
+        "resultat": "$A=\\left(\\dfrac13,\\,-\\dfrac83,\\,2\\right)$ i $B=\\left(-\\dfrac13,\\,\\dfrac83,\\,-2\\right)$."
+      }
+    },
+    {
+      "id": "2006-ext-S4-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu la paràbola d'equació $y=x^2+2x-3$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu les equacions de les rectes tangents a la paràbola en els punts d'abscissa $x=-1$ i $x=1$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculant el mínim de la funció $y=x^2+2x-3$, trobeu el vèrtex de la paràbola."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Trobeu les interseccions de la paràbola amb els eixos i feu una representació gràfica de la paràbola i de les tangents obtingudes al primer apartat."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea compresa entre la paràbola i les rectes tangents."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Com que $f'(x)=2x+2$: en $x=-1$, $f(-1)=-4$ i $f'(-1)=0$, la tangent és $y=-4$. En $x=1$, $f(1)=0$ i $f'(1)=4$, la tangent és $y=4x-4$.\n\nb) El mínim compleix $f'(x)=0$, és a dir, $x=-1$. El vèrtex és $V=(-1,-4)$.\n\nc) Les solucions de $x^2+2x-3=0$ són $x=1$ i $x=-3$, per tant la paràbola talla l'eix $OX$ en $(1,0)$ i $(-3,0)$. Quan $x=0$, $y=-3$, per tant talla l'eix $OY$ en $(0,-3)$. La gràfica és una paràbola amb vèrtex $(-1,-4)$, que passa pels punts anteriors, amb la tangent horitzontal $y=-4$ en el vèrtex i la tangent $y=4x-4$ en el punt $(1,0)$.\n\nd) Els punts de tall entre les corbes que limiten el recinte són $P=(0,-4)$ (tangents entre si), $Q=(-1,-4)$ (vèrtex) i $R=(1,0)$. L'àrea és:\n\n$$A=\\int_{-1}^{0}\\bigl[(x^2+2x-3)-(-4)\\bigr]\\,dx+\\int_0^1\\bigl[(x^2+2x-3)-(4x-4)\\bigr]\\,dx=\\dfrac13+\\dfrac13=\\dfrac23$$",
+        "resultat": "a) $y=-4$ (en $x=-1$) i $y=4x-4$ (en $x=1$); b) $V=(-1,-4)$; c) talls $(1,0)$, $(-3,0)$ i $(0,-3)$; d) àrea $=\\dfrac23$ unitats d'àrea."
+      }
+    },
+    {
+      "id": "2006-ext-S4-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu el sistema d'equacions\n\n$$\\begin{cases} px+7y+8z=1370 \\\\ x+y+z=200 \\\\ 7x+py+8z=1395 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Discutiu-lo en funció del paràmetre $p$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Doneu la interpretació geomètrica en els casos en què el sistema és incompatible."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per a $p=6$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El determinant de la matriu del sistema és $\\begin{vmatrix} p & 7 & 8 \\\\ 1 & 1 & 1 \\\\ 7 & p & 8 \\end{vmatrix}=-p^2+16p-63=-(p-7)(p-9)$, que s'anul·la per a $p=7$ i $p=9$.\n\nPer a $p=7$, les equacions primera i tercera tenen els mateixos coeficients de les incògnites, $(7,7,8)$, però terme independent diferent (1370 i 1395): el sistema és incompatible.\n\nPer a $p=9$, en esglaonar la matriu ampliada es té rang de la matriu del sistema igual a 2 i rang de la matriu ampliada igual a 3: el sistema és incompatible.\n\nPer a qualsevol altre valor de $p$, el sistema és compatible determinat.\n\nb) Per a $p=7$, les equacions primera i tercera corresponen a dos plans paral·lels, i un tercer pla (el de la segona equació) els talla. Per a $p=9$, no hi ha cap parell de plans paral·lels; els tres plans es tallen dos a dos en rectes que són paral·leles entre si.\n\nc) Per a $p=6$, la solució és $x=85$, $y=60$, $z=55$.\n\nComprovació: $6\\cdot85+7\\cdot60+8\\cdot55=1370$; $85+60+55=200$; $7\\cdot85+6\\cdot60+8\\cdot55=1395$.",
+        "resultat": "SCD per a $p\\neq7$ i $p\\neq9$; incompatible per a $p=7$ i $p=9$ (per a $p=7$, dos plans paral·lels tallats per un tercer; per a $p=9$, tres plans que es tallen dos a dos en rectes paral·leles); per a $p=6$, $(x,y,z)=(85,60,55)$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

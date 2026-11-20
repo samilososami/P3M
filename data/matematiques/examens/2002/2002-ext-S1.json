@@ -1,0 +1,172 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2002-ext-S1",
+  "assignatura": "matematiques",
+  "any": 2002,
+  "convocatoria": "extraordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu). En les respostes que doneu heu d'explicar sempre què és el que voleu fer i per què.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2002/pau_mate02sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2002/pau_mate02sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2002-ext-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu el valor positiu de $a$ que fa que l'àrea compresa entre la recta d'equació $y=ax+2a$ i la paràbola $y=ax^2$ valgui 18.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Els punts de tall compleixen $ax^2=ax+2a$, és a dir, $x^2-x-2=0$, amb solucions $x=2$ i $x=-1$. Com que $a>0$, la recta està per sobre de la paràbola en $[-1,2]$, i l'àrea és\n$$A=\\int_{-1}^{2}\\left(ax+2a-ax^2\\right)dx=a\\left[\\frac{x^2}{2}+2x-\\frac{x^3}{3}\\right]_{-1}^{2}=a\\cdot\\frac92.$$\nIgualant a 18: $\\dfrac{9a}{2}=18$, d'on $a=4$.",
+        "resultat": "$a=4$."
+      },
+      "punts_detall": "1,5 punts pel plantejament correcte (inclosos els punts de tall i la primitiva); 0,5 punts pels càlculs."
+    },
+    {
+      "id": "2002-ext-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Se sap que la derivada d'una funció $f(x)$ és\n$$f'(x)=\\frac{x^2+x-6}{x+1}.$$\nCalculeu les abscisses dels punts on la funció $f(x)$ té els seus extrems relatius, especificant per a cada un dels valors que obtingueu si es tracta d'un màxim o d'un mínim relatiu.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$f'(x)=0$ quan $x^2+x-6=0$, és a dir, $x=2$ i $x=-3$. El punt $x=-1$ no pertany al domini de $f'$. Els signes de $f'$ en $(-\\infty,-3)$, $(-3,-1)$, $(-1,2)$ i $(2,+\\infty)$ són $-$, $+$, $-$ i $+$. Per tant, $f$ té mínims relatius en $x=-3$ i $x=2$, i no té màxims relatius.",
+        "resultat": "mínim relatiu en $x=-3$ i mínim relatiu en $x=2$; cap màxim relatiu."
+      }
+    },
+    {
+      "id": "2002-ext-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Comproveu que la recta que passa pels punts $A=(4,0,0)$ i $B=(0,2,2)$ és paral·lela al pla d'equació $x-3y+5z=2$, i calculeu la distància entre la recta i el pla.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "El vector director de la recta és $\\overrightarrow{AB}=(-4,2,2)$, i el vector normal del pla és $(1,-3,5)$. El producte escalar és $-4-6+10=0$, per tant la recta és paral·lela al pla (i com que $A$ no pertany al pla, no hi està inclosa).\n\nLa distància entre la recta i el pla és la distància de $A$ al pla:\n$$d=\\frac{|4-3\\cdot0+5\\cdot0-2|}{\\sqrt{1+9+25}}=\\frac{2}{\\sqrt{35}}=\\frac{2\\sqrt{35}}{35}\\approx0{,}338.$$",
+        "resultat": "la recta és paral·lela al pla i la distància és $d=\\dfrac{2}{\\sqrt{35}}\\approx0{,}338$."
+      },
+      "punts_detall": "1 punt per la comprovació del paral·lelisme; 1 punt pel càlcul de la distància."
+    },
+    {
+      "id": "2002-ext-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Les agulles d'un rellotge de paret fan 10 i 12 centímetres, respectivament.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Quina és la distància entre els seus extrems quan el rellotge assenyala les quatre?"
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Quina és la superfície del triangle que determinen a aquesta hora?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) A les quatre, l'angle entre les agulles és de $120^\\circ$. Pel teorema del cosinus:\n$$d^2=10^2+12^2-2\\cdot10\\cdot12\\cos120^\\circ=364,\\qquad d=\\sqrt{364}\\approx19{,}08\\text{ cm}.$$\n\nb) El triangle té dos costats de 10 i 12 cm que formen un angle de $120^\\circ$. Per tant la seva àrea és\n$$S=\\frac12\\cdot10\\cdot12\\cdot\\sin120^\\circ=30\\sqrt3\\approx51{,}96\\text{ cm}^2.$$",
+        "resultat": "a) $d=\\sqrt{364}\\approx19{,}08$ cm; b) $S=30\\sqrt3\\approx51{,}96$ cm²."
+      },
+      "punts_detall": "1 punt per cada apartat."
+    },
+    {
+      "id": "2002-ext-S1-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Suposem que el Sol es troba a l'origen d'un sistema de coordenades i que un cometa segueix una trajectòria donada per la paràbola $y=1-x^2$, tal com es veu a la figura següent.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Quin és el punt en què el cometa es troba més proper al Sol?"
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Quant val en aquest cas la distància del Sol al cometa?"
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "Hi ha algun punt en què el cometa es trobi a la màxima distància del Sol?"
+        },
+        {
+          "lletra": "d",
+          "punts": null,
+          "enunciat": "Hi ha algun punt en què la distància entre el Sol i el cometa sigui un màxim local o relatiu?\n\nNota: Teniu present que la distància entre dos punts és màxima o mínima quan el quadrat de la distància és màxim o mínim."
+        }
+      ],
+      "figures": [
+        "paràbola $y=1-x^2$ amb el vèrtex a $(0,1)$ i talls amb l'eix d'abscisses en $x=\\pm1$; les dues branques baixen i surten del dibuix per sota de $y=-6$. El Sol és a l'origen, marcat amb un cercle, i el cometa és sobre la corba."
+      ],
+      "solucio": {
+        "desenvolupament": "La distància al quadrat d'un punt $(x,1-x^2)$ de la paràbola fins a l'origen és $d^2(x)=x^2+(1-x^2)^2=x^4-x^2+1$. La seva derivada és $4x^3-2x=2x(2x^2-1)$, que s'anul·la en $x=0$ i $x=\\pm\\dfrac{\\sqrt2}{2}$. En $x=0$ hi ha un màxim local, i en $x=\\pm\\dfrac{\\sqrt2}{2}$ hi ha mínims locals.\n\na) El cometa és més a prop del Sol als punts $\\left(\\pm\\dfrac{\\sqrt2}{2},\\dfrac12\\right)$.\n\nb) En aquests punts $d^2=\\dfrac34$, per tant la distància és $d=\\dfrac{\\sqrt3}{2}$.\n\nc) No hi ha cap punt de màxima distància, perquè $d^2(x)\\to+\\infty$ quan $x\\to\\pm\\infty$.\n\nd) Sí: en $x=0$, el punt $(0,1)$, la distància té un màxim local (igual a 1).",
+        "resultat": "a) $\\left(\\pm\\dfrac{\\sqrt2}{2},\\dfrac12\\right)$; b) $\\dfrac{\\sqrt3}{2}$; c) no; d) sí, en $(0,1)$ (màxim local de distància)."
+      },
+      "punts_detall": "1 punt per cada apartat."
+    },
+    {
+      "id": "2002-ext-S1-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considerem el cub de vèrtexs $A$, $B$, $C$, $D$, $E$, $F$, $G$, $H$ que té l'aresta de longitud 4 dm.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Determineu l'equació del pla inclinat $EHBC$ si prenem com a origen de coordenades el vèrtex $D$ i com a eixos de coordenades $DA$, $DC$ i $DH$ en aquest ordre, tenint en compte que el sentit positiu de cada un d'ells és el que sortint de l'origen $D$ va cap a $A$, $C$ i $H$, respectivament."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Calculeu les equacions de les diagonals $CE$ i $AG$ i utilitzeu-les per calcular les coordenades del seu punt d'intersecció."
+        }
+      ],
+      "figures": [
+        "cub de costat 4 dm amb la base inferior $ABCD$ (A davant a l'esquerra, B davant a la dreta, C darrere a la dreta, D darrere a l'esquerra) i els vèrtexs superiors $E$, $F$, $G$, $H$ situats just a sobre de $A$, $B$, $C$, $D$ respectivament."
+      ],
+      "solucio": {
+        "desenvolupament": "Amb aquest sistema de coordenades, $A=(4,0,0)$, $C=(0,4,0)$, $H=(0,0,4)$, $B=(4,4,0)$, $E=(4,0,4)$, $G=(0,4,4)$.\n\na) $\\overrightarrow{EH}=(-4,0,0)$ i $\\overrightarrow{EB}=(0,4,-4)$, i el pla és $(x,y,z)=(4,0,4)+\\lambda(-4,0,0)+\\mu(0,4,-4)$, que equival a $y+z=4$. Comprovació: $C=(0,4,0)$ també hi pertany.\n\nb) $C=(0,4,0)$ i $E=(4,0,4)$ donen la diagonal $CE$, amb vector director $(4,-4,4)$: $\\dfrac{x}{4}=\\dfrac{y-4}{-4}=\\dfrac{z}{4}$. $A=(4,0,0)$ i $G=(0,4,4)$ donen la diagonal $AG$, amb vector director $(-4,4,4)$: $\\dfrac{x-4}{-4}=\\dfrac{y}{4}=\\dfrac{z}{4}$. Resolent el sistema que formen, el punt d'intersecció és $(2,2,2)$, que és el centre del cub.",
+        "resultat": "a) $y+z=4$; b) $CE:\\ \\dfrac{x}{4}=\\dfrac{y-4}{-4}=\\dfrac{z}{4}$, $AG:\\ \\dfrac{x-4}{-4}=\\dfrac{y}{4}=\\dfrac{z}{4}$, punt d'intersecció $(2,2,2)$."
+      },
+      "punts_detall": "2 punts per cada apartat."
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge i amb càlcul",
+    "revisat_huma": false
+  }
+}

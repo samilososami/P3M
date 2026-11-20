@@ -1,0 +1,180 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2014-ord-S3",
+  "assignatura": "matematiques",
+  "any": 2014,
+  "convocatoria": "ordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2014/pau_mate14jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2014/pau_mate14jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2014-ord-S3-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la matriu\n$$M=\\begin{pmatrix} 1 & a & a^2 \\\\ 1 & a+1 & (a+1)^2 \\\\ 1 & a-1 & (a-1)^2 \\end{pmatrix},\\qquad \\text{per a } a\\in\\mathbb{R}.$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu el rang de la matriu $M$ en funció dels valors del paràmetre $a$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Discutiu i resoleu el sistema d'equacions lineals $M\\cdot\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}=\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}$ segons els valors del paràmetre $a$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Restant la primera fila a la segona i a la tercera s'obté $\\begin{pmatrix} 1 & a & a^2 \\\\ 0 & 1 & 2a+1 \\\\ 0 & -1 & 1-2a \\end{pmatrix}$. Sumant la segona fila a la tercera, la tercera passa a ser $(0,0,2)$. La matriu és equivalent a una de triangular amb tres files no nul·les, per tant $\\operatorname{rang}M=3$ per a qualsevol $a\\in\\mathbb{R}$.\n\nb) El determinant de $M$ és $2$ per a tot $a$, per tant el sistema és compatible determinat per a qualsevol valor de $a$, amb solució única. Per Cramer, o perquè la primera columna de $M$ és $(1,1,1)^T$, la solució és $x=1$, $y=0$, $z=0$.",
+        "resultat": "a) $\\operatorname{rang}M=3$ per a tot $a\\in\\mathbb{R}$; b) per a tot $a$, sistema compatible determinat, solució $(x,y,z)=(1,0,0)$."
+      }
+    },
+    {
+      "id": "2014-ord-S3-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el punt $A=(1,2,3)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu el punt simètric del punt $A$ respecte de la recta d'equació $r:\\ (x,y,z)=(3+\\lambda,\\,1,\\,3-\\lambda)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu el punt simètric del punt $A$ respecte del pla que té per equació $\\pi: x+y+z=3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El pla perpendicular a $r$ que passa per $A$ té vector normal $(1,0,-1)$ i és $x-z+2=0$. Intersecant amb $r$: $(3+\\lambda)-(3-\\lambda)+2=0$, d'on $\\lambda=-1$. El punt de tall (projecció de $A$ sobre $r$) és $B=(2,1,4)$. El simètric és $A'=2B-A=(3,0,5)$.\n\nb) La recta perpendicular a $\\pi$ per $A$ és $(1+t,\\,2+t,\\,3+t)$. Imposant $\\pi$: $6+3t=3$, d'on $t=-1$ i el punt de tall és $B=(0,1,2)$. El simètric és $A'=2B-A=(-1,0,1)$.",
+        "resultat": "a) $A'=(3,0,5)$; b) $A'=(-1,0,1)$."
+      }
+    },
+    {
+      "id": "2014-ord-S3-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Un nedador és al mar en un punt $N$, situat a $3$ km d'una platja recta, i just davant d'un punt $S$, situat a la platja arran de l'aigua; i vol anar a un punt $A$ situat també arran de l'aigua i a $6$ km del punt $S$, de manera que el triangle $NSA$ és rectangle en el vèrtex $S$. El nedador neda a una velocitat constant de $3$ km/h i camina a una velocitat constant de $5$ km/h.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Si $P$ és un punt entre el punt $S$ i el punt $A$ que està a distància $x$ de $S$, demostreu que el temps, en hores, que necessita el nedador per a nedar del punt $N$ al punt $P$ i caminar des del punt $P$ fins al punt $A$ és determinat per l'expressió\n$$t(x)=\\dfrac{\\sqrt{x^2+9}}{3}+\\dfrac{6-x}{5}.$$"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu el valor de $x$ que determina el temps mínim que cal per a anar del punt $N$ al punt $A$, passant per $P$. Quin és el valor d'aquest temps mínim?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Es té $\\overline{NS}=3$ km i $\\overline{SA}=6$ km. Sigui $y=\\overline{NP}$. La funció que calcula el temps és $t(x)=\\dfrac{y}{3}+\\dfrac{6-x}{5}$. Pel teorema de Pitàgores al triangle $NSP$ (rectangle en $S$), $y=\\sqrt{x^2+9}$, i per tant $t(x)=\\dfrac{\\sqrt{x^2+9}}{3}+\\dfrac{6-x}{5}$.\n\nb) $t'(x)=\\dfrac{x}{3\\sqrt{x^2+9}}-\\dfrac15$. Igualant a zero, $5x=3\\sqrt{x^2+9}$, d'on $25x^2=9x^2+81$, és a dir $x^2=\\dfrac{81}{16}$. La solució negativa no té sentit en el context, per tant $x=\\dfrac94=2{,}25$ km. Com que $t''(x)=\\dfrac{3}{(x^2+9)\\sqrt{x^2+9}}>0$, és un mínim.\n\nEl temps mínim és $t\\!\\left(\\dfrac94\\right)=\\dfrac{15/4}{3}+\\dfrac{15/4}{5}=\\dfrac54+\\dfrac34=2$ hores.",
+        "resultat": "a) $t(x)=\\dfrac{\\sqrt{x^2+9}}{3}+\\dfrac{6-x}{5}$; b) $x=2{,}25$ km i el temps mínim és $2$ hores."
+      }
+    },
+    {
+      "id": "2014-ord-S3-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'àrea de la regió del pla limitada en el primer quadrant per les gràfiques de les funcions $y=x^2$, $y=4x^2$ i $y=9$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "La recta $y=9$ talla $y=x^2$ en $x=3$ i $y=4x^2$ en $x=\\dfrac32$, en el primer quadrant. Per tant\n$$A=\\int_0^{3/2}\\left(4x^2-x^2\\right)dx+\\int_{3/2}^{3}\\left(9-x^2\\right)dx=\\int_0^{3/2}3x^2\\,dx+\\int_{3/2}^{3}\\left(9-x^2\\right)dx=\\dfrac{27}{8}+\\dfrac{45}{8}=9.$$",
+        "resultat": "l'àrea és $9$ u²."
+      }
+    },
+    {
+      "id": "2014-ord-S3-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin $r$ i $s$ les rectes de $\\mathbb{R}^3$ d'equacions\n$$r:\\ \\dfrac{x-2}{3}=y=\\dfrac{z+1}{4}\\qquad \\text{i}\\qquad s:\\ (x,y,z)=(1+2\\alpha,\\,3-\\alpha,\\,4+3\\alpha),\\quad \\text{amb } \\alpha\\in\\mathbb{R}.$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que els punts mitjans dels segments que tenen un extrem situat sobre la recta $r$ i l'altre extrem situat sobre la recta $s$ formen un pla."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació general (és a dir, que té la forma $Ax+By+Cz=D$) del pla de l'apartat anterior."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els punts genèrics de les rectes són $R=(2+3\\lambda,\\,\\lambda,\\,-1+4\\lambda)$ i $S=(1+2\\alpha,\\,3-\\alpha,\\,4+3\\alpha)$. El punt mitjà és\n$$M=\\dfrac{R+S}{2}=\\left(\\dfrac32,\\dfrac32,\\dfrac32\\right)+\\lambda\\left(\\dfrac32,\\dfrac12,2\\right)+\\alpha\\left(1,-\\dfrac12,\\dfrac32\\right),$$\nque és l'expressió vectorial d'un pla que passa pel punt $\\left(\\tfrac32,\\tfrac32,\\tfrac32\\right)$ i té per vectors directors $(3,1,4)$ i $(2,-1,3)$. Per tant, els punts mitjans formen un pla.\n\nb) El vector normal és $(3,1,4)\\times(2,-1,3)=(7,-1,-5)$. El pla és\n$$\\begin{vmatrix} x-\\tfrac32 & 3 & 2 \\\\ y-\\tfrac32 & 1 & -1 \\\\ z-\\tfrac32 & 4 & 3 \\end{vmatrix}=0 \\iff 7\\left(x-\\tfrac32\\right)-\\left(y-\\tfrac32\\right)-5\\left(z-\\tfrac32\\right)=0,$$\nés a dir, $7x-y-5z=\\dfrac32$.",
+        "resultat": "a) els punts mitjans formen el pla que passa per $\\left(\\tfrac32,\\tfrac32,\\tfrac32\\right)$ amb directors $(3,1,4)$ i $(2,-1,3)$; b) $7x-y-5z=\\dfrac32$."
+      }
+    },
+    {
+      "id": "2014-ord-S3-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Responeu a les qüestions següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Demostreu que si $A$ és una matriu quadrada que satisfà la igualtat $A^2=I$, on $I$ és la matriu identitat, aleshores $A$ és invertible i $A^{-1}$ satisfà $(A^{-1})^2=I$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'expressió general de les matrius de la forma $A=\\begin{pmatrix} a & b \\\\ c & 2 \\end{pmatrix}$ amb $b\\neq0$ que satisfan la igualtat $A^2=I$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2=I$ es pot reescriure com $A\\cdot A=I$. Això vol dir que $A$ és invertible, amb inversa $A^{-1}=A$. Per tant $(A^{-1})^2=A^2=I$.\n\nObservació: la invertibilitat també es pot veure amb determinants, ja que $\\det(A)^2=1$ implica $\\det A\\neq0$.\n\nb) $A^2=\\begin{pmatrix} a^2+bc & b(a+2) \\\\ c(a+2) & bc+4 \\end{pmatrix}$. Igualant a $I$:\n$$a^2+bc=1,\\qquad b(a+2)=0,\\qquad c(a+2)=0,\\qquad bc+4=1.$$\nCom que $b\\neq0$, de la segona equació s'obté $a=-2$. Aleshores $bc=-3$, i la condició $a^2+bc=1$ es compleix ($4-3=1$). Per tant $c=-\\dfrac{3}{b}$.",
+        "resultat": "a) $A$ és invertible amb $A^{-1}=A$, i per tant $(A^{-1})^2=I$; b) $A=\\begin{pmatrix} -2 & b \\\\ -\\dfrac{3}{b} & 2 \\end{pmatrix}$, amb $b\\neq0$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

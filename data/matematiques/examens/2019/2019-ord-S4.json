@@ -1,0 +1,186 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2019-ord-S4",
+  "assignatura": "matematiques",
+  "any": 2019,
+  "convocatoria": "ordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts. Podeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2019/pau_mate19jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2019/pau_mate19jp.pdf",
+      "pagines": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2019-ord-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Volem construir un marc rectangular de fusta que delimiti una àrea de $2\\ \\text{m}^2$. Sabem que el preu de la fusta és de 7,5 €/m per als costats horitzontals i de 12,5 €/m per als costats verticals. Determineu les dimensions que ha de tenir el rectangle perquè el cost total del marc sigui el mínim possible. Quin és aquest cost mínim?",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Sigui $x$ la mesura del costat horitzontal i $y$ la del costat vertical, amb $xy=2$. El cost és $C(x,y)=7{,}5\\cdot2x+12{,}5\\cdot2y=15x+25y$. Amb $y=\\dfrac2x$, $C(x)=15x+\\dfrac{50}{x}$.\n\n$C'(x)=15-\\dfrac{50}{x^2}=0 \\Rightarrow x=\\sqrt{\\dfrac{10}{3}}=\\dfrac{\\sqrt{30}}{3}$ (només la solució positiva té sentit). Com que $C''(x)=\\dfrac{100}{x^3}>0$ per a $x>0$, és un mínim relatiu. Llavors $y=\\dfrac2x=\\dfrac{\\sqrt{30}}{5}$, i el cost mínim és $C=15\\cdot\\dfrac{\\sqrt{30}}{3}+25\\cdot\\dfrac{\\sqrt{30}}{5}=10\\sqrt{30}\\approx54{,}77$ €.",
+        "resultat": "costat horitzontal $x=\\dfrac{\\sqrt{30}}{3}\\approx1{,}83$ m i costat vertical $y=\\dfrac{\\sqrt{30}}{5}\\approx1{,}10$ m; cost mínim $10\\sqrt{30}\\approx54{,}77$ €"
+      }
+    },
+    {
+      "id": "2019-ord-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin la recta $r:\\begin{cases} x=2 \\\\ y-z=1 \\end{cases}$ i el pla $\\pi: x-z=3$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació paramètrica de la recta que és perpendicular al pla $\\pi$ i que el talla en el mateix punt en què el talla la recta $r$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu els punts de $r$ que estan a una distància de $\\sqrt8$ unitats del pla $\\pi$.\n\n*Nota:* Podeu calcular la distància que hi ha d'un punt de coordenades $(x_0,y_0,z_0)$ al pla d'equació $Ax+By+Cz+D=0$ amb l'expressió $\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Unes paramètriques de $r$ són $(2,\\,1+\\lambda,\\,\\lambda)$. Substituint a $\\pi$: $2-\\lambda-3=0 \\Rightarrow \\lambda=-1$, és a dir, el punt de tall és $(2,0,-1)$. El vector normal de $\\pi$, $(1,0,-1)$, és el vector director de la recta buscada: $(x,y,z)=(2+\\mu,\\,0,\\,-1-\\mu)$.\n\nb) Un punt genèric de $r$ és $P_r=(2,1+\\lambda,\\lambda)$, amb $d(P_r,\\pi)=\\dfrac{|2-\\lambda-3|}{\\sqrt2}=\\dfrac{|-1-\\lambda|}{\\sqrt2}=\\sqrt8$. Això dona $|1+\\lambda|=4$, és a dir, $\\lambda=3$ o $\\lambda=-5$. Els punts són $(2,4,3)$ i $(2,-4,-5)$.",
+        "resultat": "a) $(x,y,z)=(2+\\mu,\\,0,\\,-1-\\mu)$, $\\mu\\in\\mathbb{R}$ (el punt de tall és $(2,0,-1)$); b) $(2,4,3)$ i $(2,-4,-5)$"
+      }
+    },
+    {
+      "id": "2019-ord-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $a$:\n\n$$\\begin{cases} ax+7y+5z=0 \\\\ x+ay+z=3 \\\\ y+z=-2 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $a$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per al cas $a=2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Sigui $A=\\begin{pmatrix} a & 7 & 5 \\\\ 1 & a & 1 \\\\ 0 & 1 & 1 \\end{pmatrix}$, amb $|A|=a^2-a-2=(a-2)(a+1)$.\n\n- Si $a\\neq-1$ i $a\\neq2$: $\\operatorname{rang}A=\\operatorname{rang}A'=3=$ nombre d'incògnites, i el sistema és compatible determinat (SCD).\n- Si $a=-1$: $\\operatorname{rang}A=2$ (el menor $\\begin{vmatrix}1&-1\\\\0&1\\end{vmatrix}=1\\neq0$), però $\\begin{vmatrix}-1&7&0\\\\1&-1&3\\\\0&1&-2\\end{vmatrix}=15\\neq0$, per tant $\\operatorname{rang}A'=3$. El sistema és incompatible (SI).\n- Si $a=2$: $\\operatorname{rang}A=\\operatorname{rang}A'=2<3$, i el sistema és compatible indeterminat (SCI) amb un grau de llibertat.\n\nb) Per a $a=2$ el sistema equivalent és $\\begin{cases} x+2y+z=3 \\\\ y+z=-2 \\end{cases}$. D'aquí $y=-2-z$ i $x=3-z-2y=7+z$. Solució: $(x,y,z)=(7+t,\\,-2-t,\\,t)$, $t\\in\\mathbb{R}$.",
+        "resultat": "a) SCD si $a\\neq-1$ i $a\\neq2$; SI si $a=-1$; SCI (un grau de llibertat) si $a=2$; b) $(x,y,z)=(7+t,\\,-2-t,\\,t)$, $t\\in\\mathbb{R}$"
+      }
+    },
+    {
+      "id": "2019-ord-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la funció $f(x)$, que depèn dels paràmetres reals $n$ i $m$ i és definida per\n\n$$f(x)=\\begin{cases} e^x & \\text{si } x\\leq0 \\\\[2pt] \\dfrac{x^2}{4}+n & \\text{si } 0<x\\leq2 \\\\[2pt] \\dfrac{3x}{2}+m & \\text{si } x>2 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu els valors de $n$ i $m$ perquè la funció sigui contínua a tot el conjunt dels nombres reals."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Per al cas $n=-4$ i $m=-6$, calculeu l'àrea de la regió limitada per la gràfica de $f(x)$, l'eix de les abscisses i les rectes $x=0$ i $x=4$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Les tres branques són contínues, per tant només cal estudiar $x=0$ i $x=2$. En $x=0$: $\\lim_{x\\to0^-}e^x=1=f(0)$ i $\\lim_{x\\to0^+}\\left(\\dfrac{x^2}{4}+n\\right)=n$, per tant $n=1$. En $x=2$: $\\lim_{x\\to2^-}=1+n$ i $\\lim_{x\\to2^+}=3+m$, per tant $1+n=3+m$, d'on $m=-1$.\n\nb) Amb $n=-4$ i $m=-6$: $f(x)=\\dfrac{x^2}{4}-4$ a $(0,2]$ i $f(x)=\\dfrac{3x}{2}-6$ a $(2,4]$, que són negatives en tot l'interval $(0,4)$. Llavors\n$$A=\\int_0^2\\left(4-\\frac{x^2}{4}\\right)dx+\\int_2^4\\left(6-\\frac{3x}{2}\\right)dx=\\frac{22}{3}+3=\\frac{31}{3}\\ \\text{u}^2.$$",
+        "resultat": "a) $n=1$ i $m=-1$; b) $A=\\dfrac{31}{3}$ u²"
+      }
+    },
+    {
+      "id": "2019-ord-S4-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu els plans $\\pi_1: 2x+ay+z=5$, $\\pi_2: x+ay+z=1$ i $\\pi_3: 2x+(a+1)y+(a+1)z=0$, en què $a$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Estudieu per a quins valors del paràmetre $a$ els tres plans es tallen en un punt."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu que per al cas $a=1$ la interpretació geomètrica del sistema format per les equacions dels tres plans és la que es mostra en la imatge següent:"
+        }
+      ],
+      "figures": [
+        "tres plans. Dos d'ells, $\\pi_2$ i $\\pi_3$, són paral·lels (horitzontals a la imatge), i el tercer, $\\pi_1$, és un pla inclinat que els talla segons dues rectes $r$ i $s$ paral·leles entre si."
+      ],
+      "solucio": {
+        "desenvolupament": "a) La matriu del sistema és $M=\\begin{pmatrix} 2 & a & 1 \\\\ 1 & a & 1 \\\\ 2 & a+1 & a+1 \\end{pmatrix}$, amb $|M|=a^2-1$. Si $a\\neq\\pm1$, $\\operatorname{rang}M=\\operatorname{rang}M'=3$, el sistema és compatible determinat i els tres plans es tallen en un punt. Per tant, els plans es tallen en un punt per a $a\\neq1$ i $a\\neq-1$.\n\nb) Per a $a=1$, $\\pi_2: x+y+z=1$ i $\\pi_3: x+y+z=0$ són paral·lels i diferents (els coeficients són proporcionals, però els termes independents no ho són). El pla $\\pi_1$ no és paral·lel a cap dels altres dos, i per tant els talla segons dues rectes paral·leles, tal com mostra la figura.",
+        "resultat": "a) Els tres plans es tallen en un punt si $a\\neq1$ i $a\\neq-1$; b) per a $a=1$, $\\pi_2$ i $\\pi_3$ són paral·lels i diferents, i $\\pi_1$ els talla segons dues rectes paral·leles"
+      }
+    },
+    {
+      "id": "2019-ord-S4-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sabem que una funció $f(x)$ és contínua i derivable a tots els nombres reals, que té com a segona derivada $f''(x)=6x$ i que la recta tangent en el punt d'abscissa $x=1$ és horitzontal.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Determineu l'abscissa dels punts d'inflexió de la funció $f$ i els intervals de concavitat i convexitat. Justifiqueu que la funció $f$ té un mínim relatiu en $x=1$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Sabent, a més, que la recta tangent en el punt d'abscissa $x=1$ és $y=5$, calculeu l'expressió de la funció $f$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) L'únic candidat a punt d'inflexió és $x=0$, on s'anul·la $f''$. Com que $f''(x)<0$ per a $x<0$ i $f''(x)>0$ per a $x>0$, $f''$ canvia de signe en $x=0$ i hi ha un punt d'inflexió en $x=0$. La concavitat és cap avall (∩) a $(-\\infty,0)$ i cap amunt (∪) a $(0,+\\infty)$. Com que la tangent en $x=1$ és horitzontal, $f'(1)=0$, i $f''(1)=6>0$, es tracta d'un mínim relatiu en $x=1$.\n\nb) Integrant, $f'(x)=3x^2+c$. Com que $f'(1)=0$, $c=-3$, i per tant $f'(x)=3x^2-3$. Integrant de nou, $f(x)=x^3-3x+k$. Com que la tangent en $x=1$ és $y=5$, $f(1)=1-3+k=5$, d'on $k=7$.",
+        "resultat": "a) Inflexió en $x=0$; concavitat cap avall (∩) a $(-\\infty,0)$ i cap amunt (∪) a $(0,+\\infty)$; $x=1$ és un mínim relatiu; b) $f(x)=x^3-3x+7$",
+        "nota": "els criteris oficials anomenen «convexa (∩)» la concavitat cap avall de $(-\\infty,0)$ i «còncava (∪)» la de $(0,+\\infty)$, al revés de la terminologia habitual. Aquí es manté el signe de $f''$ i s'indica la concavitat en lloc del nom."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

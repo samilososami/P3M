@@ -1,0 +1,195 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2023-ord-S5",
+  "assignatura": "matematiques",
+  "any": 2023,
+  "convocatoria": "ordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 4",
+  "instruccions": "Responeu a QUATRE de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2,5 punts.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.\n\nPodeu utilitzar les pàgines en blanc (pàgines 14 i 15) per a fer esquemes, esborranys, etc., o per a acabar de respondre a alguna qüestió si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de la qüestió corresponent.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2023/pau_mate23jl.pdf",
+      "pagines": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2023/pau_mate23jp.pdf",
+      "pagines": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2023-ord-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu les funcions $f(x)=-x^2+x+6$ i $g(x)=-9x+3x^2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'àrea de la regió delimitada per les dues funcions."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Trobeu l'equació de la recta tangent a la funció $f(x)$ en el punt $(-2,0)$. Representeu aquesta recta tangent i les funcions $f(x)$ i $g(x)$ en uns mateixos eixos de coordenades."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Punts de tall: $-x^2+x+6=-9x+3x^2 \\iff 4x^2-10x-6=0 \\iff x=3$ o $x=-\\tfrac12$. En aquest interval $f(x)\\ge g(x)$, i per tant\n$$A=\\int_{-1/2}^{3}\\left(-4x^2+10x+6\\right)dx=\\left[-\\tfrac{4}{3}x^3+5x^2+6x\\right]_{-1/2}^{3}=27-\\left(-\\tfrac{19}{12}\\right)=\\tfrac{343}{12}\\ \\text{u}^2.$$\n\nb) $f'(x)=-2x+1$, i $f'(-2)=5$. Com que $f(-2)=0$, la recta és $y=5x+n$ amb $0=5(-2)+n$, és a dir $y=5x+10$.\n\nRepresentació: $f$ és una paràbola amb branques cap avall, vèrtex $\\left(\\tfrac12,\\tfrac{27}{4}\\right)$ i talls amb l'eix $OX$ en $(-2,0)$ i $(3,0)$. $g$ és una paràbola amb branques cap amunt, vèrtex $\\left(\\tfrac32,-\\tfrac{27}{4}\\right)$ i talls amb l'eix $OX$ en $(0,0)$ i $(3,0)$. La recta $y=5x+10$ passa per $(0,10)$ i $(-2,0)$.",
+        "resultat": "(a) $A=\\dfrac{343}{12}$ u$^2$; (b) $y=5x+10$."
+      }
+    },
+    {
+      "id": "2023-ord-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals\n\n$$\\begin{cases} x-y+kz=-1 \\\\ x+ky+z=3 \\\\ 2x+(k-1)y+2z=2 \\end{cases}$$\n\nen què $k$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Discutiu el sistema en funció del valor de $k$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per a $k=0$ i per a $k=1$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Matriu ampliada i eliminació de Gauss: $F_2\\to F_2-F_1$, $F_3\\to F_3-2F_1$ i després $F_3\\to F_3-F_2$, que dona\n$$\\left(\\begin{array}{ccc|c} 1 & -1 & k & -1 \\\\ 0 & k+1 & 1-k & 4 \\\\ 0 & 0 & 1-k & 0 \\end{array}\\right)$$\n\n- Si $k\\neq\\pm1$: $\\operatorname{rang}M=\\operatorname{rang}(M|b)=3$, SCD (solució única).\n- Si $k=1$: la matriu és $\\left(\\begin{array}{ccc|c} 1 & -1 & 1 & -1 \\\\ 0 & 2 & 0 & 4 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right)$, amb $\\operatorname{rang}M=\\operatorname{rang}(M|b)=2<3$: SCI amb un grau de llibertat.\n- Si $k=-1$: la tercera fila queda $(0\\ 0\\ 0\\mid -4)$, per tant $\\operatorname{rang}M=2\\neq\\operatorname{rang}(M|b)=3$: SI.\n\nb) Per a $k=1$: $y=2$ i $x=1-z$. Les solucions són $(x,y,z)=(1-z,\\,2,\\,z)$, amb $z\\in\\mathbb{R}$.\n\nPer a $k=0$: la matriu és $\\left(\\begin{array}{ccc|c} 1 & -1 & 0 & -1 \\\\ 1 & 0 & 1 & 3 \\\\ 2 & -1 & 2 & 2 \\end{array}\\right)$, que després de Gauss queda en forma triangular amb $z=0$, $y=4$ i $x=3$. Solució única: $(3,4,0)$.",
+        "resultat": "SCD si $k\\neq\\pm1$; SCI si $k=1$; SI si $k=-1$. Per a $k=1$: $(x,y,z)=(1-z,2,z)$, $z\\in\\mathbb{R}$. Per a $k=0$: $(x,y,z)=(3,4,0)$."
+      }
+    },
+    {
+      "id": "2023-ord-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu les rectes a l'espai $r:\\ x=-y=z+m$ i $s:\\ \\begin{cases} x+y=1 \\\\ x-z=0 \\end{cases}$, en què $m$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Estudieu la posició relativa per als diferents valors del paràmetre $m$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu $m$ perquè la distància entre les rectes $r$ i $s$ sigui de $\\sqrt{2}$ unitats."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta $r$ té vector director $\\vec v_r=(1,-1,1)$ i passa per $P=(0,0,-m)$. La recta $s$ és la intersecció dels plans amb vectors normals $(1,1,0)$ i $(1,0,-1)$; el seu vector director és $\\vec v_s=(1,1,0)\\times(1,0,-1)=(-1,1,-1)$, proporcional a $(1,-1,1)$, i passa per $Q=(1,0,1)$. Els vectors directors són proporcionals, així que les rectes són paral·leles o coincidents.\n\nComprovem si $Q\\in r$: $1=-0=1+m$ no es compleix per a cap valor de $m$. Per tant, $r$ i $s$ són paral·leles i diferents per a tot $m\\in\\mathbb{R}$.\n\nb) $\\overrightarrow{PQ}=(1,0,1+m)$ i\n$$\\overrightarrow{PQ}\\times\\vec v_r=(1+m,\\ m,\\ -1)$$\n$$d(r,s)=\\frac{\\left|\\overrightarrow{PQ}\\times\\vec v_r\\right|}{\\left|\\vec v_r\\right|}=\\frac{\\sqrt{(1+m)^2+m^2+1}}{\\sqrt3}$$\n\nImposem $d=\\sqrt2$: $(1+m)^2+m^2+1=6 \\iff 2m^2+2m-4=0 \\iff m^2+m-2=0$, d'on $m=1$ i $m=-2$.",
+        "resultat": "(a) $r$ i $s$ són sempre paral·leles i diferents, per a tot $m$; (b) $m=1$ o $m=-2$."
+      }
+    },
+    {
+      "id": "2023-ord-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "En una carretera principal hi trobem el poble $A$. A 12 km del poble $A$, hi ha un encreuament $O$ amb una carretera secundària que talla perpendicularment la carretera principal. A 9 km de l'encreuament, a la carretera secundària, hi trobem el poble $B$. Es vol construir una torre de comunicacions $T$ en un punt de la carretera principal situat entre el poble $A$ i l'encreuament $O$. Aquesta torre ha d'estar connectada amb cadascun dels dos pobles en línia recta per cable. Sabem que instaŀlar el cable entre la torre $T$ i el poble $B$ té un preu de 250 €/km i, en canvi, instaŀlar el cable entre la torre $T$ i el poble $A$ té un preu de 125 €/km. Determineu a quina distància de l'encreuament $O$ a la carretera principal cal situar la torre $T$ perquè el preu del cablejat sigui mínim i quin serà el valor d'aquest preu mínim.",
+      "apartats": [],
+      "figures": [
+        "esquema amb tres punts. $O$ (encreuament) és a l'origen; la carretera secundària és vertical i porta a $B$ (poble B), a 9 km de $O$ per sobre. La carretera principal és horitzontal; $A$ (poble A) és a 12 km de $O$ a la dreta. La torre $T$ és un punt de la carretera principal entre $O$ i $A$, i hi ha un segment discontinu de $B$ fins a $T$."
+      ],
+      "solucio": {
+        "desenvolupament": "Sigui $x=d(O,T)$, amb $0\\le x\\le 12$. Aleshores $d(T,A)=12-x$ i, pel teorema de Pitàgores, $d(T,B)=\\sqrt{81+x^2}$. El preu del cablejat és\n$$P(x)=125(12-x)+250\\sqrt{81+x^2}$$\n\n$$P'(x)=-125+250\\cdot\\frac{2x}{2\\sqrt{81+x^2}}=-125+\\frac{250x}{\\sqrt{81+x^2}}$$\n\n$P'(x)=0 \\iff \\sqrt{81+x^2}=2x \\iff 81+x^2=4x^2 \\iff x^2=27 \\iff x=3\\sqrt3\\approx5,2$ km (només la solució positiva).\n\nCom que $P'(x)<0$ per a $x<3\\sqrt3$ i $P'(x)>0$ per a $x>3\\sqrt3$, en $x=3\\sqrt3$ hi ha un mínim.\n\nEl preu mínim és $P(3\\sqrt3)=125(12-3\\sqrt3)+250\\cdot6\\sqrt3=1500+1125\\sqrt3\\approx3448,56\\ €$.",
+        "resultat": "la torre s'ha de situar a $3\\sqrt3\\approx5,2$ km de l'encreuament $O$; el preu mínim del cablejat és $1500+1125\\sqrt3\\approx3448,56\\ €$."
+      }
+    },
+    {
+      "id": "2023-ord-S5-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la família $\\mathcal{S}$ de matrius de la forma $\\begin{pmatrix} a & b \\\\ b & a \\end{pmatrix}$, en què $a,b\\in\\mathbb{R}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Calculeu $\\begin{pmatrix} 2 & 3 \\\\ 3 & 2 \\end{pmatrix}\\cdot\\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}^{-1}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Trobeu totes les matrius de la família $\\mathcal{S}$, és a dir, de la forma $A=\\begin{pmatrix} a & b \\\\ b & a \\end{pmatrix}$, que verifiquin la igualtat $A^2=I$, en què $I$ és la matriu identitat d'ordre 2."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La inversa és $\\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}^{-1}=\\dfrac13\\begin{pmatrix} 2 & -1 \\\\ -1 & 2 \\end{pmatrix}$. Després, $\\begin{pmatrix} 2 & 3 \\\\ 3 & 2 \\end{pmatrix}\\cdot\\begin{pmatrix} 2 & -1 \\\\ -1 & 2 \\end{pmatrix}=\\begin{pmatrix} 1 & 4 \\\\ 4 & 1 \\end{pmatrix}$, per tant el resultat és $\\dfrac13\\begin{pmatrix} 1 & 4 \\\\ 4 & 1 \\end{pmatrix}$.\n\nb) $A^2=\\begin{pmatrix} a^2+b^2 & 2ab \\\\ 2ab & a^2+b^2 \\end{pmatrix}=\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$, d'on $2ab=0$ i $a^2+b^2=1$. Les solucions són $(a,b)=(1,0)$, $(-1,0)$, $(0,1)$ i $(0,-1)$, és a dir, les quatre matrius\n$$\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix},\\quad \\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix},\\quad \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix},\\quad \\begin{pmatrix} 0 & -1 \\\\ -1 & 0 \\end{pmatrix}$$",
+        "resultat": "(a) $\\dfrac13\\begin{pmatrix} 1 & 4 \\\\ 4 & 1 \\end{pmatrix}$; (b) $\\pm I$, $\\pm\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$ (quatre matrius: $(a,b)\\in\\{(1,0),(-1,0),(0,1),(0,-1)\\}$)."
+      }
+    },
+    {
+      "id": "2023-ord-S5-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui la funció $f(x)=\\dfrac{ax^2+x+b}{x^2+1}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Calculeu els valors dels paràmetres $a$ i $b$ si sabem que la gràfica de la funció $f$ té un extrem relatiu en $x=-1$ i passa pel punt $P=\\left(-2,\\dfrac{13}{5}\\right)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Per al cas $a=b$, calculeu i classifiqueu els extrems relatius de la funció."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=\\dfrac{-x^2+(2a-2b)x+1}{(x^2+1)^2}$.\n\nExtrem en $x=-1$: $f'(-1)=0 \\iff -(2a-2b)=0 \\iff a=b$.\n\nPas per $P$: $f(-2)=\\dfrac{4a-2+b}{5}=\\dfrac{13}{5} \\iff 4a+b=15$.\n\nAmb $a=b$: $5a=15$, d'on $a=b=3$.\n\nb) Per a $a=b$, $f'(x)=\\dfrac{1-x^2}{(x^2+1)^2}$. Els punts singulars són $x=1$ i $x=-1$. Com que $f'(-2)<0$, $f'(0)>0$ i $f'(2)<0$, la funció té un mínim relatiu en $x=-1$, amb $f(-1)=\\dfrac{2a-1}{2}$, i un màxim relatiu en $x=1$, amb $f(1)=\\dfrac{2a+1}{2}$.",
+        "resultat": "(a) $a=b=3$; (b) mínim relatiu en $x=-1$ i màxim relatiu en $x=1$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

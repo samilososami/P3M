@@ -1,0 +1,227 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2024-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2024,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 4",
+  "instruccions": "Responeu a QUATRE de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2,5 punts.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.\n\nPodeu utilitzar les pàgines en blanc (pàgines 14 i 15) per a fer esquemes, esborranys, etc., o per a acabar de respondre a alguna qüestió si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de la qüestió corresponent.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2024/pau_mate24jl.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2024/pau_mate24jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2024-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la funció $f(x)=2\\,\\dfrac{\\ln x}{x}$, definida per a $x>0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Estudieu-ne els màxims i els mínims, i les zones de creixement i de decreixement."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Aquesta funció té asímptotes? Feu un esbós de la seva gràfica."
+        },
+        {
+          "lletra": "c",
+          "punts": 0.5,
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de $y=f(x)$ en el punt d'abscissa $x=1$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=2\\,\\dfrac{1-\\ln x}{x^2}$. $f'(x)=0 \\iff \\ln x=1 \\iff x=e$. Com que $f''(e)=-2e^{-3}<0$, en $x=e$ hi ha un màxim, amb $f(e)=\\dfrac2e$. La funció és creixent a $(0,e)$ i decreixent a $(e,+\\infty)$. No té mínims.\n\nb) Asímptota vertical: $x=0$, perquè $\\lim_{x\\to0^+}f(x)=-\\infty$. Asímptota horitzontal: $y=0$, perquè $\\lim_{x\\to+\\infty}f(x)=0$ (es comprova amb l'Hôpital). La gràfica talla l'eix d'abscisses només en $x=1$, és a dir, en el punt $(1,0)$. L'esbós: des de $-\\infty$ prop de $x=0^+$, creix fins al màxim $\\left(e,\\tfrac2e\\right)$ i després decreix cap a $0$ per a $x\\to+\\infty$, passant per $(1,0)$.\n\nc) $f(1)=0$ i $f'(1)=2$. La recta és $y-0=2(x-1)$, és a dir $y=2x-2$.",
+        "resultat": "(a) màxim en $x=e$, amb $f(e)=\\dfrac2e$; creixent a $(0,e)$, decreixent a $(e,+\\infty)$; (b) asímptota vertical $x=0$ i horitzontal $y=0$; (c) $y=2x-2$."
+      }
+    },
+    {
+      "id": "2024-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions següent:\n\n$$\\begin{cases} 4x+2y-z=4 \\\\ x-y+kz=3 \\\\ 3x+3y=1 \\end{cases}$$\n\non $k$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$, i resoleu-lo per a $k=0$."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.75,
+          "enunciat": "Resoleu el sistema per a $k=-1$."
+        },
+        {
+          "lletra": "c",
+          "punts": 0.75,
+          "enunciat": "Per a $k=-1$, modifiqueu la tercera equació de manera que el sistema esdevingui incompatible. Justifiqueu la resposta."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La matriu de coeficients és $M=\\begin{pmatrix} 4 & 2 & -1 \\\\ 1 & -1 & k \\\\ 3 & 3 & 0 \\end{pmatrix}$, amb $\\begin{vmatrix} 4 & 2 & -1 \\\\ 1 & -1 & k \\\\ 3 & 3 & 0 \\end{vmatrix}=-6k-6=-6(k+1)$.\n\n- Si $k\\neq-1$: $\\operatorname{rang}M=\\operatorname{rang}(M|b)=3$, SCD (solució única).\n- Si $k=-1$: el menor $\\begin{vmatrix} 4 & 2 \\\\ 1 & -1 \\end{vmatrix}=-6\\neq0$, així que $\\operatorname{rang}M=2$. La tercera equació és la primera menys la segona ($3x+3y=4-3=1$), per tant $\\operatorname{rang}(M|b)=2$: SCI amb un grau de llibertat.\n\nPer a $k=0$: de $x-y=3$ i $3x+3y=1$ s'obté $y=-\\dfrac43$ i $x=\\dfrac53$. Substituint a la primera equació, $\\dfrac{20}{3}-\\dfrac{8}{3}-z=4$, d'on $z=0$. Solució: $\\left(\\dfrac53,-\\dfrac43,0\\right)$.\n\nb) Per a $k=-1$ la tercera equació és redundant. Amb $x=\\lambda$: $y=\\dfrac13-\\lambda$ i $z=x-y-3=2\\lambda-\\dfrac{10}{3}$. Totes les solucions són\n$$(x,y,z)=\\left(\\lambda,\\ \\tfrac13-\\lambda,\\ 2\\lambda-\\tfrac{10}{3}\\right),\\qquad \\lambda\\in\\mathbb{R}.$$\n\nc) Cal canviar el terme independent de la tercera equació, per exemple $3x+3y=2$. Com que la primera menys la segona dona $3x+3y=1$, les dues equacions es contradiuen i el sistema és incompatible. Des del punt de vista de rangs, la matriu de coeficients continua tenint rang 2, mentre que la ampliada té rang 3, perquè $\\begin{vmatrix} 4 & 2 & 4 \\\\ 1 & -1 & 3 \\\\ 3 & 3 & 2 \\end{vmatrix}=-6\\neq0$.",
+        "resultat": "SCD si $k\\neq-1$, amb solució $\\left(\\tfrac53,-\\tfrac43,0\\right)$ per a $k=0$; per a $k=-1$, SCI: $\\left(\\lambda,\\tfrac13-\\lambda,2\\lambda-\\tfrac{10}{3}\\right)$, $\\lambda\\in\\mathbb{R}$; en canviar la tercera equació per $3x+3y=2$ (per exemple) el sistema és incompatible."
+      }
+    },
+    {
+      "id": "2024-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "En Joan troba entre els papers del seu avi un esbós com el de la figura adjunta, on es descriu un terreny de regadiu que ha deixat en herència al seu pare.\n\nLa corba de la gràfica és $y=f(x)$, amb $f(x)=-x^3+7x^2-6x+5$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "A partir de l'expressió de $f(x)$, calculeu les coordenades dels punts $P$, $Q$ i $R$ indicats a la figura. Calculeu també l'equació de la recta $PR$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu la superfície del terreny."
+        }
+      ],
+      "figures": [
+        "gràfica de $y=f(x)$, una cúbica que baixa des de l'eix d'ordenades i després té un mínim relatiu i un màxim relatiu. Sobre l'eix d'ordenades hi ha el punt $(0,5)$. Una recta horitzontal $y=5$ talla la corba en $P$ i en $Q$, i $R$ és el punt de l'eix d'abscisses situat just sota $Q$. El terreny és la regió ombrejada, limitada per la corba entre $P$ i $Q$, pel segment $PR$ i pel segment vertical $QR$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Els punts $(0,5)$, $P$ i $Q$ tenen la mateixa ordenada 5, així que les seves abscisses són solucions de $f(x)=5$: $-x^3+7x^2-6x=0 \\iff x(-x^2+7x-6)=0 \\iff x=0,\\ x=1,\\ x=6$. Per tant $P=(1,5)$ i $Q=(6,5)$, i $R=(6,0)$.\n\nLa recta $PR$ té pendent $m=\\dfrac{0-5}{6-1}=-1$ i passa per $R$: $y=-x+6$.\n\nb) La superfície és la integral entre $x=1$ i $x=6$ de la corba menys la recta $PR$:\n$$A=\\int_1^6\\left[(-x^3+7x^2-6x+5)-(-x+6)\\right]dx=\\int_1^6\\left(-x^3+7x^2-5x-1\\right)dx$$\n$$A=\\left[-\\tfrac{x^4}{4}+\\tfrac{7x^3}{3}-\\tfrac{5x^2}{2}-x\\right]_1^6=84-\\left(-\\tfrac{17}{12}\\right)=\\tfrac{1025}{12}\\approx85,42\\ \\text{u}^2.$$\n\n(Comprovació: $\\int_1^6 f(x)\\,dx=\\dfrac{1175}{12}$ i el triangle $PQR$ té àrea $\\dfrac{25}{2}=\\dfrac{150}{12}$; la diferència és $\\dfrac{1025}{12}$.)",
+        "resultat": "(a) $P=(1,5)$, $Q=(6,5)$, $R=(6,0)$; $PR:\\ y=-x+6$; (b) $A=\\dfrac{1025}{12}\\approx85,42$ u$^2$."
+      }
+    },
+    {
+      "id": "2024-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "L'Andreu posa les nou boles que es mostren a continuació dins d'una bossa.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "A continuació, treu de la bossa dues boles a l'atzar, una darrere l'altra i sense reemplaçament (és a dir, no retorna a la bossa la primera bola abans de treure la segona).\n\n- Calculeu la probabilitat que la primera bola sigui una A o una E. [0,5 punts]\n- Calculeu la probabilitat que les dues boles siguin diferents. [0,75 punts]"
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "L'Andreu torna a posar totes les boles a la bossa i en treu cinc a l'atzar, una darrere l'altra, però ara amb reemplaçament (és a dir, ara sí que retorna a la bossa cada bola extreta abans d'agafar la següent).\n\n- Calculeu la probabilitat que no hagi tret cap A. [0,5 punts]\n- Calculeu la probabilitat que hagi tret almenys dues A. [0,75 punts]"
+        }
+      ],
+      "figures": [
+        "nou boles amb les lletres B, A, Y, E, S, F, A, N, S, en aquest ordre."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Hi ha dues A i una E entre les nou boles: la probabilitat que la primera bola sigui una A o una E és $\\dfrac{3}{9}=\\dfrac13$.\n\nLes dues boles són iguals només si són dues A o dues S (hi ha dues boles de cada lletra). Així, $P(\\text{dues A})=\\dfrac29\\cdot\\dfrac18=\\dfrac1{36}$ i $P(\\text{dues S})=\\dfrac1{36}$. Per tant, $P(\\text{diferents})=1-\\dfrac{2}{36}=\\dfrac{17}{18}$.\n\nb) El nombre de boles A extretes segueix una binomial amb $n=5$ i $p=\\dfrac29$.\n\n- $P(\\text{cap A})=\\left(\\dfrac79\\right)^5\\approx0,2846$.\n- $P(\\text{almenys dues A})=1-P(\\text{cap A})-P(\\text{una A})=1-\\left(\\dfrac79\\right)^5-5\\cdot\\dfrac29\\left(\\dfrac79\\right)^4\\approx0,3088$.",
+        "resultat": "(a) $\\dfrac13$; $\\dfrac{17}{18}$. (b) $\\left(\\dfrac79\\right)^5\\approx0,2846$; $\\approx0,3088$."
+      }
+    },
+    {
+      "id": "2024-ord-S1-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Volem construir un petit cobert de fusta de $6\\ \\text{m}^3$ de volum, en forma de prisma rectangular, adossat a la paret lateral d'una casa, per a guardar-hi llenya. Només cal construir, per tant, el sostre i tres parets (la paret del fons del cobert és la de la casa a la qual està adossat). A més, volem que el cobert mesuri el triple d'amplària que de fondària. Cada metre quadrat de paret té un cost de construcció de $30\\ €$ i el sostre costa $50\\ €$ per metre quadrat. Un cop construït el cobert, afegir-hi una porta té un cost fix de $35\\ €$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Comproveu que el cost de construcció del cobert ve donat per la funció\n$$C(x)=\\frac{300}{x}+150x^2+35,$$\non $x$ és la fondària del cobert en metres."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu quines han de ser les dimensions del cobert per tal que el cost de construcció sigui mínim i justifiqueu la resposta. Quin és aquest cost?"
+        }
+      ],
+      "figures": [
+        "cobert de forma prismàtica adossat a la paret d'una casa, amb una porta arquejada a la cara frontal."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Sigui $x$ la fondària, $3x$ l'amplària i $h$ l'alçada. El volum és $3x\\cdot x\\cdot h=6$, d'on $h=\\dfrac{2}{x^2}$.\n\nParets: la de davant, $3x\\cdot h$, i les dues laterals, $x\\cdot h$ cadascuna; en total $5xh$ m$^2$, a $30\\ €$/m$^2$: $150xh$. Sostre: $3x^2$ m$^2$, a $50\\ €$/m$^2$: $150x^2$. Porta: $35\\ €$.\n\n$$C(x)=150xh+150x^2+35=150x\\cdot\\frac{2}{x^2}+150x^2+35=\\frac{300}{x}+150x^2+35.$$\n\nb) $C'(x)=-\\dfrac{300}{x^2}+300x=0 \\iff x^3=1 \\iff x=1$ (única solució real positiva). Com que $C''(x)=\\dfrac{600}{x^3}+300>0$ per a $x>0$, en $x=1$ hi ha un mínim.\n\nDimensions: fondària $x=1$ m, amplària $3$ m i alçada $h=2$ m. Cost mínim: $C(1)=300+150+35=485\\ €$.",
+        "resultat": "(a) $C(x)=\\dfrac{300}{x}+150x^2+35$; (b) fondària 1 m, amplària 3 m i alçada 2 m; cost mínim $485\\ €$."
+      }
+    },
+    {
+      "id": "2024-ord-S1-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu els punts $A=(1,2,3)$ i $B=(-3,-2,3)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació del pla $\\pi$ que és perpendicular a la recta $AB$ i que passa pel punt mitjà entre $A$ i $B$. Justifiqueu que aquest pla està format, precisament, pels punts $P=(x,y,z)$ que estan a igual distància de $A$ que de $B$, és a dir, $d(P,A)=d(P,B)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.75,
+          "enunciat": "Calculeu les distàncies de $A$ i de $B$ al pla $\\pi$ i comproveu que són iguals. És casualitat? Raoneu la resposta."
+        },
+        {
+          "lletra": "c",
+          "punts": 0.75,
+          "enunciat": "Sigui $C=(-7,6,3)$. El triangle $ABC$ és isòsceles? Calculeu la seva àrea."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector $\\overrightarrow{AB}=(-4,-4,0)$ és proporcional a $(1,1,0)$, que és el vector normal de $\\pi$. El punt mitjà és $M=\\left(-1,0,3\\right)$. Així, $\\pi:\\ x+y+D=0$ amb $-1+D=0$, és a dir, $\\pi:\\ x+y+1=0$.\n\nPer a un punt genèric $P=(x,y,z)$: $d(P,A)=d(P,B)$ equival a\n$$(x-1)^2+(y-2)^2+(z-3)^2=(x+3)^2+(y+2)^2+(z-3)^2,$$\nque es redueix a $-8x-8y-8=0$, és a dir, $x+y+1=0$. Per tant, el lloc geomètric dels punts equidistants de $A$ i $B$ és exactament el pla $\\pi$.\n\nb) $d(A,\\pi)=\\dfrac{|1+2+1|}{\\sqrt2}=\\dfrac{4}{\\sqrt2}=2\\sqrt2$ i $d(B,\\pi)=\\dfrac{|-3-2+1|}{\\sqrt2}=\\dfrac{4}{\\sqrt2}=2\\sqrt2$.\n\nNo és casualitat: $\\pi$ és el pla mediador de $AB$, perpendicular a $AB$ i que passa pel seu punt mitjà $M$. Per tant, $A$ i $B$ són simètrics respecte de $\\pi$ i les seves distàncies a $\\pi$ són iguals.\n\nc) $C=(-7,6,3)$ compleix $-7+6+1=0$, així que $C\\in\\pi$, i per tant $d(C,A)=d(C,B)$. Càlcul directe: $d(C,A)=|(-8,4,0)|=4\\sqrt5$ i $d(C,B)=|(-4,8,0)|=4\\sqrt5$. El triangle és isòsceles amb $CA=CB=4\\sqrt5$ i base $AB=4\\sqrt2$.\n\nL'alçada des de $C$ és la distància de $C$ al punt mitjà $M=(-1,0,3)$: $|\\overrightarrow{MC}|=|(-6,6,0)|=6\\sqrt2$. Àrea:\n$$\\text{Àrea}=\\frac{4\\sqrt2\\cdot6\\sqrt2}{2}=24\\ \\text{u}^2.$$",
+        "resultat": "(a) $\\pi:\\ x+y+1=0$; (b) $d(A,\\pi)=d(B,\\pi)=2\\sqrt2$, perquè $\\pi$ és el pla mediador de $AB$; (c) sí, és isòsceles ($CA=CB=4\\sqrt5$); àrea $24$ u$^2$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

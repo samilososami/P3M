@@ -1,0 +1,180 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2009-ext-S1",
+  "assignatura": "matematiques",
+  "any": 2009,
+  "convocatoria": "extraordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "Responeu a TRES de les quatre qüestions i resoleu UN dels dos problemes següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts, i el problema, 4 punts. Podeu utilitzar calculadora, però no es poden fer servir calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2009/pau_mate09sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2009/pau_mate09sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2009-ext-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la matriu $A=\\begin{pmatrix} a & 0 \\\\ 1 & -b \\end{pmatrix}$. Calculeu el valor dels paràmetres $a$ i $b$ perquè $A^2=\\begin{pmatrix} 1 & 0 \\\\ -2 & 1 \\end{pmatrix}$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$A^2=\\begin{pmatrix} a & 0 \\\\ 1 & -b \\end{pmatrix}\\begin{pmatrix} a & 0 \\\\ 1 & -b \\end{pmatrix}=\\begin{pmatrix} a^2 & 0 \\\\ a-b & b^2 \\end{pmatrix}$. Igualant a la matriu donada: $a^2=1$, $a-b=-2$ i $b^2=1$. De la primera i la tercera, $a=\\pm1$ i $b=\\pm1$. Comprovant a la segona equació, només $a=-1$, $b=1$ la compleix ($a-b=-2$).",
+        "resultat": "$a=-1$, $b=1$"
+      }
+    },
+    {
+      "id": "2009-ext-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu en l'espai $\\mathbb{R}^3$ les rectes $r$ i $s$, les equacions respectives de les quals són:\n$$r:\\ (x,y,z)=(4,1,0)+\\lambda(m,1,1),\\qquad s:\\ \\begin{cases} x+2y+mz=0 \\\\ x+y+z=1 \\end{cases}$$\nen què $m$ és un paràmetre real. Estudieu si hi ha cap valor d'aquest paràmetre per al qual les rectes siguin perpendiculars i es tallin.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Un vector director de $r$ és $\\vec v_r=(m,1,1)$. Un vector director de $s$ és el producte vectorial dels vectors normals $(1,2,m)$ i $(1,1,1)$: $\\vec v_s=(2-m,\\ m-1,\\ -1)$.\n\nPerpendicularitat: $\\vec v_r\\cdot\\vec v_s=m(2-m)+(m-1)-1=-m^2+3m-2=0 \\iff m=1$ o $m=2$.\n\nIntersecció: substituint un punt genèric de $r$, $(4+\\lambda m,\\,1+\\lambda,\\,\\lambda)$, a les equacions de $s$:\n- Per a $m=1$: $6+4\\lambda=0$ i $5+3\\lambda=1$, és a dir $\\lambda=-\\frac{3}{2}$ i $\\lambda=-\\frac{4}{3}$. No hi ha cap $\\lambda$ comú, i per tant les rectes no es tallen.\n- Per a $m=2$: $6+6\\lambda=0$ i $5+4\\lambda=1$, que tenen $\\lambda=-1$ com a solució comuna. Les rectes es tallen en $(2,0,-1)$.\n\nAixí, l'únic valor de $m$ per al qual les rectes són perpendiculars i es tallen és $m=2$.",
+        "resultat": "sí, $m=2$; les rectes es tallen en el punt $(2,0,-1)$."
+      }
+    },
+    {
+      "id": "2009-ext-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $f(x)=2x^3-x^2+3x+1$. Donades les rectes $r_1:\\ y=x+2$ i $r_2:\\ y=7x-2$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Expliqueu, raonadament, si alguna de les dues rectes pot ser tangent a la corba $y=f(x)$ en algun punt."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "En cas que alguna d'elles ho sigui, trobeu el punt de tangència."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=6x^2-2x+3$. Perquè $r_1$ (pendent 1) sigui tangent cal $6x^2-2x+3=1$, és a dir $6x^2-2x+2=0$, equació sense solucions reals (discriminant $-44<0$). Per tant $r_1$ no pot ser tangent a la corba. Per a $r_2$ (pendent 7), cal $6x^2-2x+3=7 \\iff 3x^2-x-2=0$, amb solucions $x=1$ i $x=-\\frac{2}{3}$. Per tant $r_2$ pot ser tangent.\n\nb) Per a $x=1$: $f(1)=5$ i $r_2(1)=5$, de manera que la recta i la corba passen pel punt $(1,5)$, que és el punt de tangència. Per a $x=-\\frac{2}{3}$: $f\\left(-\\frac{2}{3}\\right)=-\\frac{55}{27}$ i $r_2\\left(-\\frac{2}{3}\\right)=-\\frac{20}{3}$, que no coincideixen; en aquest punt no hi ha tangència.",
+        "resultat": "només $r_2$ és tangent a la corba, en el punt $(1,5)$."
+      }
+    },
+    {
+      "id": "2009-ext-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donats els vectors $\\vec v_1=(a+1,\\,2a,\\,1)$, $\\vec v_2=(-2,\\,a,\\,2a)$ i $\\vec v_3=(a,\\,-2,\\,4a-2)$ de $\\mathbb{R}^3$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'angle que formen $\\vec v_1$ i $\\vec v_2$ quan $a=0$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu el valor del paràmetre $a$ perquè els vectors $\\vec v_1$, $\\vec v_2$ i $\\vec v_3$ siguin perpendiculars dos a dos."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Per a $a=0$: $\\vec v_1=(1,0,1)$ i $\\vec v_2=(-2,0,0)$. Aleshores $\\cos\\alpha=\\dfrac{\\vec v_1\\cdot\\vec v_2}{\\|\\vec v_1\\|\\,\\|\\vec v_2\\|}=\\dfrac{-2}{\\sqrt2\\cdot 2}=-\\dfrac{\\sqrt2}{2}$, d'on $\\alpha=135^\\circ=\\dfrac{3\\pi}{4}$ rad.\n\nb) Cal que $\\vec v_1\\cdot\\vec v_2=\\vec v_1\\cdot\\vec v_3=\\vec v_2\\cdot\\vec v_3=0$:\n- $\\vec v_1\\cdot\\vec v_2=2a^2-2=0 \\iff a=\\pm1$.\n- $\\vec v_1\\cdot\\vec v_3=a^2+a-2=0 \\iff a=1$ o $a=-2$.\n- $\\vec v_2\\cdot\\vec v_3=8a^2-8a=0 \\iff a=0$ o $a=1$.\n\nNomés $a=1$ compleix les tres condicions alhora.",
+        "resultat": "a) $\\alpha=\\dfrac{3\\pi}{4}$ rad ($135^\\circ$); b) $a=1$"
+      }
+    },
+    {
+      "id": "2009-ext-S1-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu la funció real de variable real $f(x)=\\dfrac{2x^3}{x^2-1}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Trobeu-ne el domini."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Calculeu l'equació de les seves asímptotes, si en té."
+        },
+        {
+          "lletra": "c",
+          "punts": 2.0,
+          "enunciat": "Estudieu-ne els intervals de creixement i de decreixement, així com les abscisses dels seus extrems relatius, si en té, i classifiqueu-los."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $\\operatorname{Dom}f=\\mathbb{R}\\setminus\\{-1,1\\}=(-\\infty,-1)\\cup(-1,1)\\cup(1,+\\infty)$.\n\nb) Asímptotes verticals: $x=-1$ i $x=1$, perquè el denominador s'anul·la i els límits laterals són infinits (per exemple, $\\lim_{x\\to-1^-}f(x)=-\\infty$ i $\\lim_{x\\to-1^+}f(x)=+\\infty$). No hi ha asímptota horitzontal, perquè $\\lim_{x\\to\\infty}f(x)=\\infty$. Asímptota obliqua $y=mx+n$: $m=\\lim_{x\\to\\infty}\\dfrac{f(x)}{x}=2$ i $n=\\lim_{x\\to\\infty}\\left(f(x)-2x\\right)=\\lim_{x\\to\\infty}\\dfrac{2x}{x^2-1}=0$. Així, l'asímptota obliqua és $y=2x$.\n\nc) $f'(x)=\\dfrac{6x^2(x^2-1)-4x^4}{(x^2-1)^2}=\\dfrac{2x^4-6x^2}{(x^2-1)^2}=\\dfrac{2x^2(x^2-3)}{(x^2-1)^2}$. La derivada s'anul·la en $x=0$ i en $x=\\pm\\sqrt3$. Estudiant el signe en els intervals determinats també pels punts $x=\\pm1$ (fora del domini):\n- $f'<0$ a $(-\\sqrt3,-1)$, $(-1,1)$ i $(1,\\sqrt3)$, i $f'>0$ a $(-\\infty,-\\sqrt3)$ i $(\\sqrt3,+\\infty)$.\n\nPer tant, $f$ és creixent a $(-\\infty,-\\sqrt3)\\cup(\\sqrt3,+\\infty)$ i decreixent a $(-\\sqrt3,-1)\\cup(-1,1)\\cup(1,\\sqrt3)$. Té un màxim relatiu en $x=-\\sqrt3$, amb $f(-\\sqrt3)=-3\\sqrt3$, i un mínim relatiu en $x=\\sqrt3$, amb $f(\\sqrt3)=3\\sqrt3$. En $x=0$ no hi ha extrem, perquè la derivada no canvia de signe.",
+        "resultat": "domini $\\mathbb{R}\\setminus\\{-1,1\\}$; asímptotes $x=-1$, $x=1$ i $y=2x$; creixent a $(-\\infty,-\\sqrt3)\\cup(\\sqrt3,+\\infty)$, decreixent a $(-\\sqrt3,-1)\\cup(-1,1)\\cup(1,\\sqrt3)$; màxim relatiu en $x=-\\sqrt3$ i mínim relatiu en $x=\\sqrt3$."
+      }
+    },
+    {
+      "id": "2009-ext-S1-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu el sistema d'equacions següent:\n$$\\begin{cases} x+5y+z+a=0 \\\\ (a-2)z+x+2y-1=0 \\\\ (a-1)y+(1-a)x+z+a+2=0 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Expliqueu, raonadament, si es tracta d'un sistema lineal homogeni."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Construïu-ne la matriu de coeficients i la matriu ampliada."
+        },
+        {
+          "lletra": "c",
+          "punts": 2.0,
+          "enunciat": "Trobeu els valors del paràmetre $a$ per als quals el sistema no és compatible determinat, i estudieu el caràcter del sistema en cada un d'aquests casos."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Resoleu-lo solament quan el conjunt de les seves solucions és una recta de $\\mathbb{R}^3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) No és homogeni: un sistema lineal és homogeni quan tots els termes independents són nuls, i aquí no ho són (per exemple, el terme independent de la segona equació és $-1$).\n\nb) Matriu de coeficients i matriu ampliada:\n$$A=\\begin{pmatrix} 1 & 5 & 1 \\\\ 1 & 2 & a-2 \\\\ 1-a & a-1 & 1 \\end{pmatrix},\\qquad (A|b)=\\left(\\begin{array}{ccc|c} 1 & 5 & 1 & -a \\\\ 1 & 2 & a-2 & 1 \\\\ 1-a & a-1 & 1 & -a-2 \\end{array}\\right)$$\n\nc) $\\det A=-3(2a^2-7a+6)=-3(2a-3)(a-2)$, que s'anul·la per a $a=2$ i $a=\\dfrac{3}{2}$. Són els únics casos en què el sistema no és compatible determinat.\n\n- Si $a=2$: $\\operatorname{rang}A=2$ i $\\operatorname{rang}(A|b)=2$ (la tercera fila de l'escalonada és igual a $-2$ vegades la segona). El sistema és compatible indeterminat, amb un grau de llibertat.\n- Si $a=\\dfrac{3}{2}$: $\\operatorname{rang}A=2$ i $\\operatorname{rang}(A|b)=3$. Escalonant s'obté la fila $\\left(0\\;0\\;0\\,\\big|\\,-\\dfrac{7}{4}\\right)$, que és impossible. El sistema és incompatible.\n\nd) El conjunt de solucions és una recta només per a $a=2$. Aleshores el sistema es redueix a $x+5y+z=-2$, $x+2y=1$ i $-x+y+z=-4$, amb solucions $x=1-2y$, $z=-3-3y$, $y\\in\\mathbb{R}$. És a dir, $(x,y,z)=(1-2\\lambda,\\ \\lambda,\\ -3-3\\lambda)$ amb $\\lambda\\in\\mathbb{R}$.",
+        "resultat": "a) no és homogeni; b) $A$ i $(A|b)$ com s'indica; c) $a=2$: SCI (un grau de llibertat); $a=\\dfrac{3}{2}$: SI; d) per a $a=2$, $(x,y,z)=(1-2\\lambda,\\ \\lambda,\\ -3-3\\lambda)$, $\\lambda\\in\\mathbb{R}$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2025-ord-S4",
+  "assignatura": "matematiques",
+  "any": 2025,
+  "convocatoria": "ordinaria",
+  "serie": 4,
+  "tribunal": "TEI",
+  "estructura": "4 exercicis; es responen tots (a l'exercici 4, opció A o B)",
+  "instruccions": "L'examen consta de QUATRE exercicis obligatoris. Cada exercici val 2,5 punts. Feu els exercicis 1, 2 i 3 responent a TOTES les qüestions que s'hi plantegen. A l'exercici 4, trieu UNA de les dues opcions (A o B) proposades.\n\nEn totes les respostes, expliqueu sempre què voleu fer i per què. Cal que la redacció de la resposta es faci de manera coherent, amb correcció i claredat, emprant la notació i el vocabulari matemàtic adequats i expressant la solució de manera clara.\n\nPodeu utilitzar les pàgines en blanc del final del quadern per a fer esquemes, esborranys, etc., o per a acabar de respondre a algun exercici si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de l'exercici corresponent.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells capaços d'emmagatzemar dades o de transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2025/pau_mate25jl_tei.pdf",
+      "pagines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2025/pau_mate25jp_tei.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2025-ord-S4-E1",
+      "numero": 1,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la funció $f(x)=+\\sqrt{1+x^3}$.",
+      "apartats": [
+        {
+          "lletra": "1.1",
+          "punts": 0.5,
+          "enunciat": "Indiqueu el domini d'aquesta funció i els talls de la corba $y=f(x)$ amb els eixos de coordenades."
+        },
+        {
+          "lletra": "1.2",
+          "punts": 1.0,
+          "enunciat": "Resoleu l'equació $f'(x)=0$ i estudieu les zones de creixement i decreixement de la funció $f(x)$, així com els seus màxims i mínims locals."
+        },
+        {
+          "lletra": "1.3",
+          "punts": 1.0,
+          "enunciat": "Trobeu quin ha de ser el valor de $a$ per tal que el punt $(a,3)$ pertanyi a la gràfica de la funció i calculeu l'equació de la recta tangent a la corba $y=f(x)$ en aquest punt."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "1.1) Domini: $1+x^3\\ge0 \\iff x\\ge-1$, és a dir, $\\mathrm{Dom}(f)=[-1,+\\infty)$. Tall amb l'eix d'ordenades: $f(0)=1$, punt $(0,1)$. Talls amb l'eix d'abscisses: $f(x)=0 \\iff 1+x^3=0 \\iff x=-1$, punt $(-1,0)$.\n\n1.2) $f'(x)=\\dfrac{3x^2}{2\\sqrt{1+x^3}}$. $f'(x)=0 \\iff x=0$, que és l'únic candidat dins l'interior del domini. Com que $f'(x)\\ge0$ en tot el domini, $f$ és creixent en $[-1,+\\infty)$ i no té zones de decreixement. El punt $x=0$ és un punt estacionari sense canvi de monotonia, i per tant no hi ha màxims ni mínims locals.\n\n1.3) $f(a)=3 \\iff 1+a^3=9 \\iff a^3=8 \\iff a=2$. Pendent: $f'(2)=\\dfrac{12}{6}=2$. Recta tangent: $y-3=2(x-2)$, és a dir, $y=2x-1$.",
+        "resultat": "$\\mathrm{Dom}(f)=[-1,+\\infty)$; talls $(0,1)$ i $(-1,0)$; $f'(x)=0 \\iff x=0$; $f$ és creixent en tot el domini i no té màxims ni mínims locals; $a=2$ i tangent $y=2x-1$."
+      }
+    },
+    {
+      "id": "2025-ord-S4-E2",
+      "numero": 2,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions següent:\n\n$$\\begin{cases} x+3y+az=1 \\\\ -2x-6y+2z=2a \\\\ ax+3y+z=3 \\end{cases}$$\n\non $a$ és un paràmetre real, i siguin $\\pi_1$ el pla determinat per la primera equació, $\\pi_2$ el determinat per la segona, i $\\pi_3$ el determinat per la tercera.",
+      "apartats": [
+        {
+          "lletra": "2.1",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema en funció del valor de $a$."
+        },
+        {
+          "lletra": "2.2",
+          "punts": 0.75,
+          "enunciat": "Descriviu la posició relativa dels tres plans $\\pi_1$, $\\pi_2$ i $\\pi_3$ en funció del valor de $a$."
+        },
+        {
+          "lletra": "2.3",
+          "punts": 0.75,
+          "enunciat": "En algun cas la intersecció dels tres plans és una recta? En cas afirmatiu, digueu per a quin valor del paràmetre, i doneu un vector director i un punt d'aquesta recta."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "2.1) La matriu de coeficients té determinant $\\begin{vmatrix} 1 & 3 & a \\\\ -2 & -6 & 2 \\\\ a & 3 & 1 \\end{vmatrix}=6(a^2-1)$, que s'anul·la només per a $a=\\pm1$.\n\n- Si $a\\neq\\pm1$: $\\operatorname{rang}A=\\operatorname{rang}A'=3$, sistema compatible determinat (SCD).\n- Si $a=1$: les equacions primera i tercera tenen el mateix primer membre ($x+3y+z$) i termes independents diferents (1 i 3), per tant el sistema és incompatible (SI).\n- Si $a=-1$: $\\operatorname{rang}A=\\operatorname{rang}A'=2$, sistema compatible indeterminat (SCI) amb un grau de llibertat. La segona equació és $-2$ vegades la primera ($x+3y-z=1$).\n\n2.2) Per a $a\\neq\\pm1$: els tres plans es tallen en un únic punt. Per a $a=1$: $\\pi_1$ i $\\pi_3$ són paral·lels (vectors normals $(1,3,1)$ proporcionals, termes independents diferents), i $\\pi_2$ és secant als dos. Per a $a=-1$: $\\pi_1=\\pi_2$ (equacions proporcionals) i $\\pi_3$ és secant a aquest pla.\n\n2.3) Només per a $a=-1$ la intersecció és una recta. Sumant les dues equacions del sistema ($x+3y-z=1$ i $-x+3y+z=3$) s'obté $6y=4$, és a dir, $y=\\dfrac23$; i aleshores $x=z-1$. Els punts de la recta són $(x,y,z)=\\left(z-1,\\ \\dfrac23,\\ z\\right)$, amb vector director $(1,0,1)$ i punt $\\left(-1,\\dfrac23,0\\right)$.",
+        "resultat": "SCD si $a\\neq\\pm1$; SI si $a=1$; SCI si $a=-1$. Posició relativa: punt comú únic si $a\\neq\\pm1$; per a $a=1$, $\\pi_1\\parallel\\pi_3$ i $\\pi_2$ secant; per a $a=-1$, $\\pi_1=\\pi_2$ i $\\pi_3$ secant. Recta per a $a=-1$: $(x,y,z)=\\left(-1,\\tfrac23,0\\right)+\\lambda(1,0,1)$, $\\lambda\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2025-ord-S4-E3",
+      "numero": 3,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Un usuari d'Internet ha estimat que el 25 % dels correus electrònics que rep són correu brossa, mentre que la resta no ho són. Per a facilitar la classificació del correu, s'ha instal·lat un filtre que envia a la carpeta de correu brossa el 95 % dels missatges que efectivament ho són. Malauradament, aquest filtre deixa a la safata d'entrada només el 90 % dels missatges bons (i la resta els envia a la carpeta de correu brossa).",
+      "apartats": [
+        {
+          "lletra": "3.1",
+          "punts": 0.75,
+          "enunciat": "Quina és la probabilitat que un missatge sigui enviat pel filtre a la carpeta de correu brossa?"
+        },
+        {
+          "lletra": "3.2",
+          "punts": 0.75,
+          "enunciat": "Un dia, aquest usuari obre la carpeta de correu brossa. Quin percentatge de missatges que no són correu brossa hi trobarà?"
+        },
+        {
+          "lletra": "3.3",
+          "punts": 1.0,
+          "enunciat": "En un servidor de correu electrònic determinat, la probabilitat de rebre com a mínim dos correus en menys de $t$ minuts ve donada per la funció $F(t)=\\displaystyle\\int_0^t Ae^{-0{,}5x}\\,dx$, on $A$ és una constant real. Sabent que la probabilitat de rebre com a mínim dos correus en menys de dos minuts és $1-e^{-1}$, trobeu el valor de $A$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "3.1) Sigui $B$ = \"el missatge és correu brossa\" i $CB$ = \"el filtre l'envia a la carpeta de correu brossa\". Tenim $P(B)=0{,}25$, $P(\\overline{B})=0{,}75$, $P(CB|B)=0{,}95$ i $P(CB|\\overline{B})=1-0{,}9=0{,}1$. Per la llei de la probabilitat total: $P(CB)=0{,}95\\cdot0{,}25+0{,}1\\cdot0{,}75=0{,}3125$.\n\n3.2) Per la fórmula de Bayes: $P(\\overline{B}|CB)=\\dfrac{P(CB|\\overline{B})\\,P(\\overline{B})}{P(CB)}=\\dfrac{0{,}1\\cdot0{,}75}{0{,}3125}=0{,}24$.\n\n3.3) $F(t)=\\left[\\dfrac{A}{-0{,}5}e^{-0{,}5x}\\right]_0^t=-2A\\left(e^{-0{,}5t}-1\\right)=2A\\left(1-e^{-0{,}5t}\\right)$. Imposant $F(2)=1-e^{-1}$: $2A(1-e^{-1})=1-e^{-1}$, d'on $A=0{,}5$.",
+        "resultat": "$P(CB)=0{,}3125$; un $24\\,\\%$ dels correus que no són brossa; $A=0{,}5$ (i $F(t)=1-e^{-0{,}5t}$)."
+      }
+    },
+    {
+      "id": "2025-ord-S4-E4A",
+      "numero": 4,
+      "tipus": "exercici",
+      "opcio": "A",
+      "punts": 2.5,
+      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen.\n\n**OPCIÓ A**\n\nEl dissenyador d'una casa de perfums ha decidit que l'ampolla del proper perfum que l'empresa traurà al mercat serà de vidre i tindrà la forma d'un cilindre amb una mitja esfera a la part superior, tal com es pot veure a la figura següent:\n\n\nEl perfum estarà contingut a la part cilíndrica, la qual té una capacitat de 100 cm³. L'enginyer a càrrec del procés de producció es proposa minimitzar el cost total del vidre usat i, per tant, vol que la superfície total de l'ampolla sigui mínima.",
+      "apartats": [
+        {
+          "lletra": "4.1",
+          "punts": 1.0,
+          "enunciat": "Comproveu que la superfície total de l'ampolla de perfum ve donada per la fórmula $S(r)=3\\pi r^2+\\dfrac{200}{r}$."
+        },
+        {
+          "lletra": "4.2",
+          "punts": 1.5,
+          "enunciat": "Quines dimensions ha de tenir l'ampolla de perfum perquè la superfície total sigui mínima? Quina és la superfície total de l'ampolla en aquest cas?\n\nNota: recordeu que la superfície d'una esfera ve donada per la fórmula $4\\pi r^2$, on $r$ és el seu radi."
+        }
+      ],
+      "figures": [
+        "cilindre amb una mitja esfera a la part superior. El radi de la base del cilindre i de la mitja esfera és $r$ (indicat sobre la línia que uneix el centre amb el contorn de la boca del cilindre), i l'altura del cilindre és $h$ (indicada al costat de la paret lateral)."
+      ],
+      "solucio": {
+        "desenvolupament": "4.1) Volum del cilindre: $\\pi r^2h=100$, i per tant $h=\\dfrac{100}{\\pi r^2}$. Superfície total = base ($\\pi r^2$) + lateral del cilindre ($2\\pi rh$) + mitja esfera superior ($\\tfrac12\\cdot4\\pi r^2=2\\pi r^2$) $=3\\pi r^2+2\\pi rh$. Substituint $h$: $S(r)=3\\pi r^2+2\\pi r\\cdot\\dfrac{100}{\\pi r^2}=3\\pi r^2+\\dfrac{200}{r}$.\n\n4.2) $S'(r)=6\\pi r-\\dfrac{200}{r^2}=0 \\iff r^3=\\dfrac{100}{3\\pi} \\iff r=\\sqrt[3]{\\dfrac{100}{3\\pi}}\\approx2{,}2$ cm. Com que $S''(r)=6\\pi+\\dfrac{400}{r^3}>0$ per a tot $r>0$, és un mínim. Amb $r\\approx2{,}2$ cm, $h=\\dfrac{100}{\\pi r^2}\\approx6{,}6$ cm. Superfície mínima: $S\\approx136{,}5$ cm².",
+        "resultat": "$r=\\sqrt[3]{\\dfrac{100}{3\\pi}}\\approx2{,}2$ cm i $h=\\dfrac{100}{\\pi r^2}\\approx6{,}6$ cm (radi i altura de la part cilíndrica); superfície total mínima $S\\approx136{,}5$ cm².",
+        "nota": "els criteris oficials donen $S\\simeq136{,}8$ cm², calculat amb els valors arrodonits $r=2{,}2$ i $h=6{,}6$. Amb els valors exactes de $r$ i $h$ s'obté $S\\approx136{,}5$ cm²."
+      }
+    },
+    {
+      "id": "2025-ord-S4-E4B",
+      "numero": 4,
+      "tipus": "exercici",
+      "opcio": "B",
+      "punts": 2.5,
+      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen.\n\n**OPCIÓ B**\n\nConsidereu les matrius $A=\\begin{pmatrix} a & 0 \\\\ 1 & a^2 \\end{pmatrix}$, on $a$ és un paràmetre real, i $B=\\begin{pmatrix} 2 & 0 \\\\ 1 & 4 \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "4.1",
+          "punts": 0.75,
+          "enunciat": "Trobeu els valors de $a$ que fan que les matrius $A$ i $B$ commutin. (Dues matrius $A$ i $B$ commuten si $AB=BA$.)"
+        },
+        {
+          "lletra": "4.2",
+          "punts": 0.75,
+          "enunciat": "Trobeu els valors de $a$ per als quals la matriu $A$ és invertible."
+        },
+        {
+          "lletra": "4.3",
+          "punts": 1.0,
+          "enunciat": "Trobeu els valors de $a$ per als quals $A^{-1}=A$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "4.1) $AB=\\begin{pmatrix} 2a & 0 \\\\ 2+a^2 & 4a^2 \\end{pmatrix}$ i $BA=\\begin{pmatrix} 2a & 0 \\\\ a+4 & 4a^2 \\end{pmatrix}$. Per tant commuten si i només si $2+a^2=a+4$, és a dir, $a^2-a-2=0$, amb solucions $a=2$ i $a=-1$. Per a $a=2$ tenim $A=B$.\n\n4.2) $\\det A=a\\cdot a^2=a^3$. $A$ és invertible si i només si $a\\neq0$.\n\n4.3) $A^{-1}=A \\iff A^2=I$. Com que $A^2=\\begin{pmatrix} a^2 & 0 \\\\ a+a^2 & a^4 \\end{pmatrix}$, cal $a^2=1$, $a^4=1$ i $a+a^2=0$. La primera i la segona es compleixen per a $a=\\pm1$, i la tercera per a $a=0$ o $a=-1$. L'única solució comuna és $a=-1$. Comprovació: per a $a=-1$, $A=\\begin{pmatrix} -1 & 0 \\\\ 1 & 1 \\end{pmatrix}$ i $A^2=I$.",
+        "resultat": "4.1) $a=2$ o $a=-1$; 4.2) $a\\neq0$; 4.3) $a=-1$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastades amb la imatge en les fórmules dubtoses",
+    "revisat_huma": false
+  }
+}

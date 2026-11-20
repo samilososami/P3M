@@ -1,0 +1,184 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2015-ext-S5",
+  "assignatura": "matematiques",
+  "any": 2015,
+  "convocatoria": "extraordinaria",
+  "serie": 5,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2015/pau_mate15sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2015/pau_mate15sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2015-ext-S5-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la matriu $A=\\begin{pmatrix} 0 & a & 1 \\\\ 1 & 0 & -2 \\\\ 1 & 1 & -a \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Determineu per a quins valors de $a$ existeix $A^{-1}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu $A^{-1}$ per a $a=0$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Cal que el determinant sigui diferent de zero. $\\det A=1-2a+a^2=(a-1)^2$, que s'anul·la només per a $a=1$. Per tant $A$ és invertible per a $a\\neq 1$.\n\nb) Per a $a=0$, $A=\\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & -2 \\\\ 1 & 1 & 0 \\end{pmatrix}$ i $\\det A=1$. Calculant els adjunts (la matriu trasposta de la matriu de cofactors, dividida per $\\det A=1$):\n$$A^{-1}=\\begin{pmatrix} 2 & 1 & 0 \\\\ -2 & -1 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix}.$$",
+        "resultat": "a) Existeix $A^{-1}$ per a $a\\neq 1$. b) $A^{-1}=\\begin{pmatrix} 2 & 1 & 0 \\\\ -2 & -1 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2015-ext-S5-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "A l'espai tridimensional considereu la recta $r:(x,y,z)=(3+2\\alpha,\\,-\\alpha,\\,3-\\alpha)$ i els plans $\\pi_1: x+y+z=-1$ i $\\pi_2:(x,y,z)=(2+\\lambda,\\,1-\\lambda+\\mu,\\,\\mu)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació cartesiana (és a dir, que té la forma $Ax+By+Cz=D$) del pla $\\pi_2$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu els dos punts de la recta $r$ que equidisten dels plans $\\pi_1$ i $\\pi_2$.\n\nNOTA: Podeu calcular la distància d'un punt de coordenades $(x_0,y_0,z_0)$ al pla d'equació $Ax+By+Cz+D=0$ amb l'expressió $\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Equació del pla a partir d'un punt $(2,1,0)$ i els vectors directors $(1,-1,0)$ i $(1,0,1)$:\n$$\\begin{vmatrix} x-2 & 1 & 0 \\\\ y-1 & -1 & 1 \\\\ z & 0 & 1 \\end{vmatrix}=0\\iff -x+2-y+1+z=0\\iff x+y-z=3.$$\n\nb) Un punt genèric de $r$ és $P=(3+2\\alpha,-\\alpha,3-\\alpha)$. Cal que $d(P,\\pi_1)=d(P,\\pi_2)$:\n$$\\frac{|3+2\\alpha-\\alpha+3-\\alpha+1|}{\\sqrt3}=\\frac{|3+2\\alpha-\\alpha-(3-\\alpha)-3|}{\\sqrt3}\\iff |7|=|2\\alpha-3|.$$\nPer tant $2\\alpha-3=7$ (és a dir $\\alpha=5$) o $2\\alpha-3=-7$ (és a dir $\\alpha=-2$).",
+        "resultat": "a) $x+y-z=3$. b) $P_1=(13,-5,-2)$ (per a $\\alpha=5$) i $P_2=(-1,2,5)$ (per a $\\alpha=-2$)."
+      }
+    },
+    {
+      "id": "2015-ext-S5-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la funció $f(x)=e^x-x-2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Demostreu que la funció $f$ té una arrel (un zero) en l'interval $[0,2]$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu que la funció és monòtona en l'interval $[0,2]$, i calculeu les coordenades dels punts mínim absolut i màxim absolut de la funció en aquest interval."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f$ és contínua en tot el seu domini, per ser combinació lineal de funcions contínues. $f(0)=e^0-0-2=-1<0$ i $f(2)=e^2-2-2=e^2-4>0$. Pel teorema de Bolzano, existeix un punt de $(0,2)$ on $f$ s'anul·la.\n\nb) $f'(x)=e^x-1$. Com que $e^x>1$ per a $x>0$, $f'(x)>0$ a $(0,2]$, i per tant $f$ és creixent a $[0,2]$. El mínim absolut és a l'extrem inferior $x=0$ i el màxim absolut a l'extrem superior $x=2$.",
+        "resultat": "a) Bolzano, $f(0)<0<f(2)$. b) Mínim absolut $m=(0,-1)$; màxim absolut $M=(2,e^2-4)$.",
+        "nota": "a la resolució de criteris, el càlcul de $f(0)$ apareix escrit com $e^0-0+2=1-2=-1$. És una errada tipogràfica del signe: el càlcul correcte és $e^0-0-2=-1$, que és el resultat indicat."
+      }
+    },
+    {
+      "id": "2015-ext-S5-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin els plans de $\\mathbb{R}^3$ $\\pi_1: -y+z=2$, $\\pi_2: -2x+y+z=1$ i $\\pi_3: 2x-2z=-1$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu la posició relativa dels tres plans."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Comproveu que el pla $\\pi_3$ és paral·lel a la recta definida per la intersecció dels plans $\\pi_1$ i $\\pi_2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Es planteja el sistema format pels tres plans. La matriu de coeficients és $A=\\begin{pmatrix} 0 & -1 & 1 \\\\ -2 & 1 & 1 \\\\ 2 & 0 & -2 \\end{pmatrix}$, amb $\\det A=0$, i com que el menor $\\begin{vmatrix} 0 & -1 \\\\ -2 & 1 \\end{vmatrix}=-2\\neq 0$, $\\operatorname{rang}(A)=2$. Per a la matriu ampliada, el menor $\\begin{vmatrix} 0 & -1 & 2 \\\\ -2 & 1 & 1 \\\\ 2 & 0 & -1 \\end{vmatrix}=-4\\neq 0$, per tant $\\operatorname{rang}(A')=3\\neq\\operatorname{rang}(A)$ i el sistema és incompatible: els tres plans no tenen cap punt en comú. Els vectors normals no són proporcionals dos a dos, de manera que els plans es tallen dos a dos.\n\nb) La recta $r$ té vector director $\\vec v_r=\\vec n_1\\times\\vec n_2=(0,-1,1)\\times(-2,1,1)=(-2,-2,-2)\\equiv(1,1,1)$. El vector normal de $\\pi_3$ és $\\vec n_3=(2,0,-2)$, i $\\vec n_3\\cdot\\vec v_r=2+0-2=0$, és a dir, són perpendiculars. Per tant $r$ és paral·lela a $\\pi_3$.",
+        "resultat": "a) Els tres plans es tallen dos a dos però no tenen cap punt en comú. b) La recta $r$ és paral·lela a $\\pi_3$.",
+        "nota": "a la resolució de criteris, la comprovació de l'apartat b) s'escriu $\\vec n_3\\times\\vec v_r=2+0-2=0$. El càlcul és el producte escalar (no el vectorial), i així ho fem aquí."
+      }
+    },
+    {
+      "id": "2015-ext-S5-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin $x$ i $y$ les mesures dels costats d'un rectangle inscrit en una circumferència de diàmetre 2.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que la superfície del rectangle, en funció de $x$, és donada per l'expressió $S(x)=\\sqrt{4x^2-x^4}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu els valors de les mesures $x$ i $y$ per als quals la superfície del rectangle és màxima i calculeu el valor d'aquesta superfície màxima."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La diagonal del rectangle és el diàmetre de la circumferència. Pel teorema de Pitàgores, $x^2+y^2=2^2$, i per tant $y=\\sqrt{4-x^2}$. La superfície és $S=x\\cdot y=x\\sqrt{4-x^2}=\\sqrt{4x^2-x^4}$.\n\nb) Com que la funció arrel quadrada és creixent, maximitzar $S$ equival a maximitzar $r(x)=4x^2-x^4$. Es té $r'(x)=8x-4x^3=4x(2-x^2)$, que s'anul·la per a $x=0$, $x=\\sqrt2$ i $x=-\\sqrt2$. Descartem $x=-\\sqrt2$ (no té sentit pel context) i $x=0$ (dona $S=0$, que tampoc és màxim). Com que $r''(x)=8-12x^2$ i $r''(\\sqrt2)=8-24<0$, $x=\\sqrt2$ és un màxim. Aleshores $y=\\sqrt{4-2}=\\sqrt2$, és a dir, el rectangle és un quadrat.",
+        "resultat": "a) Queda comprovat que $S(x)=\\sqrt{4x^2-x^4}$. b) $x=y=\\sqrt2$ i la superfície màxima és $S=2$ unitats quadrades."
+      }
+    },
+    {
+      "id": "2015-ext-S5-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu totes les matrius de la forma $A=\\begin{pmatrix} a & 0 \\\\ b & 1 \\end{pmatrix}$ que siguin inverses d'elles mateixes, és a dir, que $A^2=\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$A^2=A\\cdot A=\\begin{pmatrix} a^2 & 0 \\\\ ab+b & 1 \\end{pmatrix}$. Igualant a la identitat: $a^2=1$ i $ab+b=0$.\n\nSi $a=1$, la segona equació és $2b=0$, per tant $b=0$ i la matriu és la identitat.\n\nSi $a=-1$, la segona equació és $-b+b=0$, que es compleix per a qualsevol valor de $b$.",
+        "resultat": "$\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$ i $\\begin{pmatrix} -1 & 0 \\\\ b & 1 \\end{pmatrix}$ per a qualsevol valor del paràmetre $b\\in\\mathbb{R}$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

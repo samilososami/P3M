@@ -1,0 +1,176 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2006-ord-S3",
+  "assignatura": "matematiques",
+  "any": 2006,
+  "convocatoria": "ordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i de dos problemes. Trieu només tres de les quatre qüestions per respondre i un dels dos problemes per resoldre. En les respostes que doneu heu d'explicar sempre què us proposeu de fer i per què. Podeu fer servir qualsevol mena de calculadora, llevat de les que treballin amb un sistema operatiu d'ordinador tipus WINDOWS/LINUX.\n\nPuntuació de cada qüestió: 2 punts.\nTotal de qüestions i puntuació: 3 x 2 = 6 punts.\nPuntuació del problema: 4 punts.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2006/pau_mate06jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2006/pau_mate06jp.pdf",
+      "pagines": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2006-ord-S3-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la funció definida per $f(x)=\\dfrac{x^2+1}{x+1}$. Calculeu quant val el pendent de la recta tangent a la seva gràfica pel punt d'abscissa $x=0$. Trobeu si hi ha altres punts en els quals el pendent de la tangent sigui igual al que s'ha obtingut.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$f'(x)=\\dfrac{x^2+2x-1}{(x+1)^2}$. Per a $x=0$: $f'(0)=-1$.\n\nPer veure si hi ha altres punts, cal resoldre $\\dfrac{x^2+2x-1}{(x+1)^2}=-1$. Operant, s'obté $2x^2+4x=0$, amb solucions $x=-2$ i $x=0$. Aquesta darrera és el punt ja estudiat. L'altre punt és $x=-2$, amb $f(-2)=-5$, és a dir, $(-2,-5)$.",
+        "resultat": "el pendent en $x=0$ és $-1$; també és $-1$ en el punt $(-2,-5)$."
+      }
+    },
+    {
+      "id": "2006-ord-S3-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la funció $y=f(x)$ definida per a $x\\in[0,5]$ que apareix dibuixada a la figura adjunta.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Quina és l'expressió de la seva funció derivada quan existeix?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu $\\displaystyle\\int_0^3 f(x)\\,dx$."
+        }
+      ],
+      "figures": [
+        "gràfica de $y=f(x)$ per a $x\\in[0,5]$, formada per tres segments: des de $(0,0)$ fins a $(2,2)$ (pendent 1); horitzontal de $(2,2)$ fins a $(4,2)$ (pendent 0); i des de $(4,2)$ fins a $(5,0)$ (pendent $-2$). Les línies discontínues marquen els punts $(1,1)$, $(2,2)$, $(4,2)$ i $(5,0)$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) La funció està formada per segments de pendents 1, 0 i $-2$, d'esquerra a dreta. Per tant:\n\n$$f'(x)=\\begin{cases} 1 & \\text{si } x\\in(0,2) \\\\ 0 & \\text{si } x\\in(2,4) \\\\ -2 & \\text{si } x\\in(4,5) \\end{cases}$$\n\nb) La integral és l'àrea que limita la gràfica entre $x=0$ i $x=3$: un triangle de $x=0$ a $x=2$ (àrea $2$) més un rectangle de $x=2$ a $x=3$ amb alçada 2 (àrea $2$).\n\n$$\\int_0^3 f(x)\\,dx=2+2=4$$",
+        "resultat": "a) $f'(x)=1$ a $(0,2)$, $0$ a $(2,4)$ i $-2$ a $(4,5)$; b) $\\displaystyle\\int_0^3 f(x)\\,dx=4$."
+      }
+    },
+    {
+      "id": "2006-ord-S3-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Determineu l'equació del pla perpendicular a la recta $r:\\begin{cases} x-y-1=0 \\\\ x+z+2=0 \\end{cases}$ que passa pel punt $(1,1,2)$. Quina distància hi ha d'aquest pla a l'origen de coordenades?",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Un vector director de $r$ és el producte vectorial dels vectors normals $(1,-1,0)$ i $(1,0,1)$: $\\vec d=(1,1,-1)$. Per tant, $r:(x,y,z)=(0,-1,-2)+t\\,(1,1,-1)$.\n\nEl pla perpendicular a $r$ que passa per $(1,1,2)$ té vector normal $(1,1,-1)$:\n\n$$\\pi:\\ (x-1)+(y-1)-(z-2)=0\\iff x+y-z=0$$\n\nCom que l'origen $(0,0,0)$ compleix l'equació del pla, la distància de l'origen al pla és zero.",
+        "resultat": "$\\pi:\\ x+y-z=0$; la distància a l'origen és $0$ (el pla passa per l'origen)."
+      }
+    },
+    {
+      "id": "2006-ord-S3-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la matriu $A=\\begin{pmatrix} 1 & 0 & -1 \\\\ 4 & 1 & -m \\\\ 0 & m & 3 \\end{pmatrix}$. Determineu els valors de $m$ per als quals $\\operatorname{rang}(A)<3$. Pot ser $\\operatorname{rang}(A)=1$ per a algun valor de $m$?",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Per Gauss, restant a la segona fila quatre vegades la primera, i a la tercera $m$ vegades la segona transformada:\n\n$$A\\sim\\begin{pmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 4-m \\\\ 0 & m & 3 \\end{pmatrix}\\sim\\begin{pmatrix} 1 & 0 & -1 \\\\ 0 & 1 & 4-m \\\\ 0 & 0 & 3-4m+m^2 \\end{pmatrix}$$\n\nPer tant, $\\operatorname{rang}(A)<3$ quan $m^2-4m+3=0$, és a dir, per a $m=1$ o $m=3$. En aquests casos el rang és 2.\n\nEl rang no pot ser 1: les dues primeres files, $(1,0,-1)$ i $(4,1,-m)$, no són proporcionals (la segona component és 0 en una i 1 en l'altra), i per tant el rang és com a mínim 2.",
+        "resultat": "$\\operatorname{rang}(A)<3$ per a $m=1$ i $m=3$ (rang 2); no és possible que el rang valgui 1."
+      }
+    },
+    {
+      "id": "2006-ord-S3-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Donada la funció $f(x)=e^{-x^2+2x}$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu el seu domini i les possibles interseccions amb els eixos."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu els intervals on creix i decreix i els extrems relatius."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Trobeu les possibles asímptotes."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Feu la representació gràfica aproximada de la funció."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El domini és tot $\\mathbb{R}$. Com que $e^{-x^2+2x}>0$ per a tot $x$, la funció no talla l'eix $OX$. Com que $f(0)=1$, talla l'eix $OY$ en el punt $(0,1)$.\n\nb) $f'(x)=e^{-x^2+2x}(-2x+2)=2e^{-x^2+2x}(1-x)$. La derivada només s'anul·la en $x=1$. És positiva per a $x<1$ i negativa per a $x>1$. Per tant, la funció creix a $(-\\infty,1)$ i decreix a $(1,+\\infty)$, i el punt $(1,e)$ és un màxim relatiu.\n\nc) $\\displaystyle\\lim_{x\\to\\pm\\infty}e^{-x^2+2x}=0$. Per tant, $y=0$ és asímptota horitzontal a dreta i a esquerra. La funció no té cap altra asímptota.\n\nd) Gràfica: corba en forma de campana, amb màxim a $(1,e)$, que talla l'eix $OY$ a $(0,1)$ i s'acosta a $y=0$ quan $x\\to\\pm\\infty$. És simètrica respecte de la recta $x=1$.",
+        "resultat": "domini $\\mathbb{R}$; talla $OY$ a $(0,1)$ i no talla $OX$; creix a $(-\\infty,1)$, decreix a $(1,+\\infty)$; màxim relatiu $(1,e)$; asímptota horitzontal $y=0$.",
+        "nota": "als criteris, la justificació que la funció no talla l'eix horitzontal escriu l'exponent com a $-x^2-2x$ (en lloc de $-x^2+2x$). És una errata de la justificació; la conclusió no canvia, perquè una exponencial no s'anul·la mai."
+      }
+    },
+    {
+      "id": "2006-ord-S3-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu la recta $r:\\begin{cases} 2x-5y-z-3=0 \\\\ x-3y-z-2=0 \\end{cases}$ i el pla $p:\\ 2x-y+az+2=0$, on $a$ és un paràmetre.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu un vector director de la recta i un vector perpendicular al pla."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Quin ha de ser el valor de $a$ perquè la recta i el pla siguin paral·lels?"
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Esbrineu si existeixen valors de $a$ pels quals la recta i el pla siguin perpendiculars. En cas afirmatiu, calculeu-los."
+        },
+        {
+          "lletra": "d",
+          "punts": 1.0,
+          "enunciat": "Esbrineu si existeixen valors de $a$ pels quals la recta i el pla formin un angle de $30^\\circ$. En cas afirmatiu, calculeu-los."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El producte vectorial dels vectors normals $(2,-5,-1)$ i $(1,-3,-1)$ dona el vector director $\\vec v=(2,1,-1)$. Un punt de la recta és $(-1,-1,0)$, i la recta es pot escriure com $r:(x,y,z)=(-1,-1,0)+t\\,(2,1,-1)$. El vector perpendicular al pla és $\\vec w=(2,-1,a)$.\n\nb) La recta és paral·lela al pla quan $\\vec v\\perp\\vec w$, és a dir, $\\vec v\\cdot\\vec w=(2,1,-1)\\cdot(2,-1,a)=3-a=0$. Per tant, $a=3$.\n\nc) La recta és perpendicular al pla quan $\\vec v$ i $\\vec w$ són paral·lels. Cal que $\\dfrac{2}{2}=\\dfrac{-1}{1}=\\dfrac{a}{-1}$, però $\\dfrac{2}{2}=1\\neq-1=\\dfrac{-1}{1}$. No hi ha cap valor de $a$ que ho compleixi.\n\nd) L'angle entre la recta i el pla és de $30^\\circ$ quan $\\sin30^\\circ=\\dfrac{|\\vec v\\cdot\\vec w|}{|\\vec v|\\,|\\vec w|}=\\dfrac12$, amb $|\\vec v|=\\sqrt6$ i $|\\vec w|=\\sqrt{5+a^2}$:\n\n$$\\dfrac{|3-a|}{\\sqrt6\\,\\sqrt{5+a^2}}=\\dfrac12\\iff 4(3-a)^2=6(5+a^2)\\iff a^2+12a-3=0\\iff a=-6\\pm\\sqrt{39}$$",
+        "resultat": "a) $\\vec v=(2,1,-1)$ i $\\vec w=(2,-1,a)$; b) $a=3$; c) no existeix cap valor de $a$; d) $a=-6+\\sqrt{39}$ o $a=-6-\\sqrt{39}$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

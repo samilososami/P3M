@@ -1,0 +1,180 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2019-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2019,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts. Podeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2019/pau_mate19jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2019/pau_mate19jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2019-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Les pàgines d'un llibre han de tenir cada una $600\\ \\text{cm}^2$ de superfície, amb uns marges al voltant del text de 2 cm a la part inferior, 3 cm a la part superior i 2 cm a cada costat. Calculeu les dimensions de la pàgina que permeten la superfície impresa més gran possible.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Sigui $x$ l'amplada i $y$ l'alçada de la pàgina, amb $xy=600$. La superfície impresa és $S(x,y)=(x-4)(y-5)$. Substituint $y=\\dfrac{600}{x}$: $S(x)=(x-4)\\left(\\dfrac{600}{x}-5\\right)=620-5x-\\dfrac{2400}{x}$.\n\n$S'(x)=-5+\\dfrac{2400}{x^2}=0 \\Rightarrow x^2=480 \\Rightarrow x=4\\sqrt{30}$ (la solució negativa no té sentit). Com que $S''(x)=-\\dfrac{4800}{x^3}<0$ per a $x>0$, es tracta d'un màxim. L'alçada és $y=\\dfrac{600}{4\\sqrt{30}}=5\\sqrt{30}$.",
+        "resultat": "amplada $x=4\\sqrt{30}\\approx21{,}91$ cm i alçada $y=5\\sqrt{30}\\approx27{,}39$ cm"
+      }
+    },
+    {
+      "id": "2019-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $k$:\n\n$$\\begin{cases} x+3y+2z=-1 \\\\ x+k^2y+3z=2k \\\\ 3x+7y+7z=k-3 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per al cas $k=-1$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Sigui $A=\\begin{pmatrix} 1 & 3 & 2 \\\\ 1 & k^2 & 3 \\\\ 3 & 7 & 7 \\end{pmatrix}$ i $A'$ la matriu ampliada. Amb $|A|=k^2-1$, que s'anul·la per a $k=\\pm1$:\n\n- Si $k\\neq\\pm1$: $\\operatorname{rang}A=\\operatorname{rang}A'=3=$ nombre d'incògnites, i el sistema és compatible determinat (SCD).\n- Si $k=1$: $\\operatorname{rang}A=2$ (el menor $\\begin{vmatrix}1&3\\\\1&1\\end{vmatrix}=-2\\neq0$), però la matriu ampliada redueix a $\\begin{pmatrix} 1 & 3 & 2 & -1 \\\\ 0 & -2 & 1 & 3 \\\\ 0 & 0 & 0 & -2 \\end{pmatrix}$, amb $\\operatorname{rang}A'=3$. El sistema és incompatible (SI).\n- Si $k=-1$: $\\operatorname{rang}A=\\operatorname{rang}A'=2<3$, i el sistema és compatible indeterminat (SCI) amb un grau de llibertat.\n\nb) Per a $k=-1$ el sistema és $\\begin{cases} x+3y+2z=-1 \\\\ x+y+3z=-2 \\\\ 3x+7y+7z=-4 \\end{cases}$. Restant la primera equació a la segona s'obté $2y-z=1$ (la tercera equació, menys tres vegades la primera, dona la mateixa equació, per això el sistema és indeterminat). Llavors $y=t$, $z=2t-1$ i $x=1-7t$, amb $t\\in\\mathbb{R}$.",
+        "resultat": "a) SCD si $k\\neq\\pm1$; SI si $k=1$; SCI (un grau de llibertat) si $k=-1$; b) $(x,y,z)=(1-7t,\\ t,\\ 2t-1)$, $t\\in\\mathbb{R}$"
+      }
+    },
+    {
+      "id": "2019-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Un dron es troba en el punt $P=(2,-3,1)$ i volem dirigir-lo en línia recta fins al punt més proper del pla d'equació $\\pi:3x+4z+15=0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació de la recta, en forma paramètrica, que ha de seguir el dron. Quina distància ha de recórrer fins a arribar al pla?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu les coordenades del punt del pla on arribarà el dron.\n\n*Nota:* Podeu calcular la distància que hi ha d'un punt de coordenades $(x_0,y_0,z_0)$ al pla d'equació $Ax+By+Cz+D=0$ amb l'expressió $\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector normal del pla, $(3,0,4)$, és el vector director de la recta que passa per $P$: $\\begin{cases} x=2+3t \\\\ y=-3 \\\\ z=1+4t \\end{cases}$, $t\\in\\mathbb{R}$. La distància és $d(P,\\pi)=\\dfrac{|3\\cdot2+4\\cdot1+15|}{\\sqrt{3^2+4^2}}=\\dfrac{25}{5}=5$ u.\n\nb) Substituint la recta al pla: $3(2+3t)+4(1+4t)+15=0 \\Rightarrow 25t=-25 \\Rightarrow t=-1$. El punt és $(-1,-3,-3)$.",
+        "resultat": "a) $\\begin{cases} x=2+3t \\\\ y=-3 \\\\ z=1+4t \\end{cases}$, $t\\in\\mathbb{R}$, i la distància és de $5$ u; b) $(-1,-3,-3)$"
+      }
+    },
+    {
+      "id": "2019-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la funció $f(x)=\\dfrac{2x^3-5x+4}{1-x}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu-ne el domini i estudieu-ne la continuïtat. Té cap asímptota vertical?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Observeu que $f(-2)=-\\dfrac23$, $f(0)=4$ i $f(2)=-10$. Raoneu si, a partir d'aquesta informació, podem deduir que l'interval $(-2,0)$ conté un zero de la funció. Podem deduir-ho per a l'interval $(0,2)$? Trobeu un interval determinat per dos enters consecutius que contingui, com a mínim, un zero d'aquesta funció."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El domini és $\\mathbb{R}\\setminus\\{1\\}=(-\\infty,1)\\cup(1,+\\infty)$. La funció és contínua en tot el seu domini, perquè és un quocient de polinomis. Té una asímptota vertical en $x=1$, ja que el numerador val $1$ en aquest punt i $\\lim_{x\\to1^-}f(x)=+\\infty$, $\\lim_{x\\to1^+}f(x)=-\\infty$.\n\nb) Com que $f$ és contínua a $[-2,0]$ i $f(-2)<0<f(0)$, pel teorema de Bolzano hi ha un zero a $(-2,0)$. En canvi, a $(0,2)$ no es pot deduir res, perquè l'interval conté la discontinuïtat $x=1$ (on $f$ no és contínua i no es pot aplicar Bolzano). Avaluant en $x=-1$: $f(-1)=\\dfrac72>0$, i per tant $f(-2)\\cdot f(-1)<0$. Pel teorema de Bolzano, l'interval $(-2,-1)$ conté un zero de $f$.",
+        "resultat": "a) Domini $\\mathbb{R}\\setminus\\{1\\}$; contínua en el seu domini; asímptota vertical $x=1$; b) No es pot deduir per a $(0,2)$, perquè conté $x=1$; l'interval entre dos enters consecutius és $(-2,-1)$"
+      }
+    },
+    {
+      "id": "2019-ord-S1-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la matriu $M=\\begin{pmatrix} 1 & a \\\\ a & 0 \\end{pmatrix}$, en què $a$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu per a quins valors del paràmetre $a$ se satisfà la igualtat $M^2-M-2I=0$, en què $I$ és la matriu identitat i $0$ és la matriu nul·la, totes dues d'ordre 2."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Fent servir la igualtat de l'apartat anterior, trobeu una expressió general per a calcular la matriu inversa de la matriu $M$ i, a continuació, calculeu la inversa de $M$ per al cas $a=\\sqrt2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $M^2=\\begin{pmatrix} 1+a^2 & a \\\\ a & a^2 \\end{pmatrix}$, i per tant $M^2-M-2I=\\begin{pmatrix} a^2-2 & 0 \\\\ 0 & a^2-2 \\end{pmatrix}=0 \\Rightarrow a^2=2$, és a dir, $a=\\pm\\sqrt2$.\n\nb) Des de $M^2-M-2I=0$ es té $M(M-I)=2I$, és a dir, $M\\cdot\\tfrac12(M-I)=I$. Per tant $M^{-1}=\\tfrac12(M-I)$. Per a $a=\\sqrt2$: $M^{-1}=\\tfrac12\\left(\\begin{pmatrix} 1 & \\sqrt2 \\\\ \\sqrt2 & 0 \\end{pmatrix}-\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}\\right)=\\tfrac12\\begin{pmatrix} 0 & \\sqrt2 \\\\ \\sqrt2 & -1 \\end{pmatrix}$.",
+        "resultat": "a) $a=\\pm\\sqrt2$; b) $M^{-1}=\\tfrac12(M-I)$; per a $a=\\sqrt2$, $M^{-1}=\\tfrac12\\begin{pmatrix} 0 & \\sqrt2 \\\\ \\sqrt2 & -1 \\end{pmatrix}$"
+      }
+    },
+    {
+      "id": "2019-ord-S1-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu les funcions $f(x)=x^2$ i $g(x)=\\dfrac{1}{x}$, i la recta $x=e$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Feu un esbós de la regió delimitada per les seves gràfiques i l'eix de les abscisses. Calculeu les coordenades del punt de tall de $y=f(x)$ amb $y=g(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea de la regió descrita en l'apartat anterior."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Igualant $x^2=\\dfrac1x$ s'obté $x^3=1$, és a dir, $x=1$ i el punt de tall és $(1,1)$. L'esbós és la regió limitada per $y=x^2$ (de $x=0$ a $x=1$), per $y=\\dfrac1x$ (de $x=1$ a $x=e$), per l'eix d'abscisses i per la recta $x=e$.\n\nb) L'àrea és la suma de dues integrals definides: $A=\\displaystyle\\int_0^1x^2\\,dx+\\int_1^e\\frac{1}{x}\\,dx=\\left[\\frac{x^3}{3}\\right]_0^1+\\left[\\ln x\\right]_1^e=\\frac13+1=\\frac43$ u².",
+        "resultat": "a) Punt de tall $(1,1)$; b) $A=\\dfrac43$ u²"
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

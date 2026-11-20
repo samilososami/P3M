@@ -1,0 +1,193 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2016-ext-S1",
+  "assignatura": "matematiques",
+  "any": 2016,
+  "convocatoria": "extraordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2016/pau_mate16sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2016/pau_mate16sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2016-ext-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin la recta $r:(x,y,z)=(5+k,\\,k,\\,-2-2k)$ i els punts $P=(1,0,-1)$ i $Q=(2,1,1)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació paramètrica de la recta que passa pel punt $Q$ i és perpendicular al pla determinat per la recta $r$ i el punt $P$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu el punt de la recta $r$ que equidista dels punts $P$ i $Q$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta $r$ té vector director $\\vec v_r=(1,1,-2)$ i passa pel punt $R=(5,0,-2)$ (per a $k=0$). El vector $\\overrightarrow{PR}=R-P=(4,0,-1)$ és un vector del pla determinat per $r$ i $P$. El vector normal del pla, i per tant vector director de la recta buscada, és\n$$\\vec v=\\vec v_r\\times\\overrightarrow{PR}=(1,1,-2)\\times(4,0,-1)=(-1,-7,-4)\\equiv(1,7,4).$$\nLa recta demanada és $(x,y,z)=Q+\\lambda\\vec v=(2+\\lambda,\\,1+7\\lambda,\\,1+4\\lambda)$.\n\nb) Un punt genèric de $r$ és $R=(5+k,\\,k,\\,-2-2k)$. Cal que $d(P,R)=d(Q,R)$, és a dir, $\\|(4+k,\\,k,\\,-1-2k)\\|=\\|(3+k,\\,k-1,\\,-3-2k)\\|$. Elevant al quadrat: $6k^2+12k+17=6k^2+16k+19$, d'on $k=-\\dfrac12$ i $R=\\left(\\dfrac92,-\\dfrac12,-1\\right)$.",
+        "resultat": "a) $(x,y,z)=(2+\\lambda,\\ 1+7\\lambda,\\ 1+4\\lambda)$, amb $\\lambda\\in\\mathbb{R}$. b) $R=\\left(\\dfrac92,-\\dfrac12,-1\\right)$."
+      }
+    },
+    {
+      "id": "2016-ext-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Tres nombres, $x$, $y$ i $z$, compleixen dues condicions: que el primer és la suma dels altres dos, i que el segon és la suma de la meitat del primer i el doble del tercer.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que el càlcul dels tres nombres, $x$, $y$ i $z$, té una infinitat de solucions."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu una expressió general de les solucions."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Les condicions donen el sistema $x=y+z$ i $y=\\dfrac12x+2z$, és a dir $x-y-z=0$ i $x-2y+4z=0$. Es tracta d'un sistema homogeni amb matriu de coeficients $A=\\begin{pmatrix} 1 & -1 & -1 \\\\ 1 & -2 & 4 \\end{pmatrix}$. Com que $\\begin{vmatrix} 1 & -1 \\\\ 1 & -2 \\end{vmatrix}=-1\\neq 0$, $\\operatorname{rang}(A)=2<3$ (nombre d'incògnites). Per tant el sistema és compatible indeterminat, amb una infinitat de solucions.\n\nb) Resolent el sistema per Gauss: $x-y-z=0$ i $y-5z=0$. Per tant $y=5z$ i $x=6z$, amb $z$ com a paràmetre.",
+        "resultat": "a) Sistema compatible indeterminat (rang 2 amb 3 incògnites). b) $(x,y,z)=(6p,\\,5p,\\,p)$, amb $p\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2016-ext-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Volem fer un envàs de gelat amb forma de prisma regular de base quadrada i amb una capacitat de 80 cm³. Per a elaborar-ne la tapa i la superfície lateral, farem servir un material determinat que costa 1 €/cm², però per a la base haurem d'utilitzar un material que és un 50 % més car.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Si $x$ és la mesura, en cm, del costat de la base, comproveu que la funció que determina el preu de l'envàs és $P(x)=2{,}5x^2+\\dfrac{320}{x}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu les mides que ha de tenir l'envàs perquè el preu sigui el mínim possible."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Sigui $y$ l'altura de l'envàs. El preu és $P(x,y)=1\\cdot\\left[x^2+4xy\\right]+1{,}5\\,x^2$ (tapa i lateral a 1 €/cm², base a 1,5 €/cm²). La condició de volum és $x^2y=80$, d'on $y=\\dfrac{80}{x^2}$. Substituint: $P(x)=x^2+4x\\cdot\\dfrac{80}{x^2}+1{,}5x^2=2{,}5x^2+\\dfrac{320}{x}$.\n\nb) $P'(x)=5x-\\dfrac{320}{x^2}=0\\iff x^3=64\\iff x=4$. Com que $P''(x)=5+\\dfrac{640}{x^3}>0$, és un mínim. L'altura és $y=\\dfrac{80}{4^2}=5$.",
+        "resultat": "a) Queda comprovat que $P(x)=2{,}5x^2+\\dfrac{320}{x}$. b) Base de $4$ cm de costat i altura de $5$ cm."
+      }
+    },
+    {
+      "id": "2016-ext-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la funció $f(x)=\\sin(x)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació de les rectes tangents a la funció $f$ en els punts d'abscissa $x=0$ i $x=\\pi$, respectivament. Trobeu les coordenades del punt en què es tallen les dues rectes."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea de la regió limitada per la gràfica de la funció $f$ i les rectes tangents de l'apartat anterior (en cas de no haver resolt l'apartat anterior, suposeu que les rectes són $y=x$ i $y=-x+\\pi$, respectivament)."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $y=\\sin(x)$, $y'=\\cos(x)$. En $x=0$: $y=\\cos(0)(x-0)+\\sin(0)$, és a dir $y=x$. En $x=\\pi$: $y=\\cos(\\pi)(x-\\pi)+\\sin(\\pi)$, és a dir $y=-x+\\pi$. Igualant $x=-x+\\pi$ s'obté $x=\\dfrac{\\pi}{2}$ i $y=\\dfrac{\\pi}{2}$.\n\nb) Les rectes es tallen en $x=\\dfrac{\\pi}{2}$, i com que $\\sin$ és còncava a $[0,\\pi]$, les rectes tangents estan per sobre de la gràfica. Per simetria:\n$$A=\\int_0^{\\pi/2}(x-\\sin x)\\,dx+\\int_{\\pi/2}^{\\pi}(-x+\\pi-\\sin x)\\,dx=2\\int_0^{\\pi/2}(x-\\sin x)\\,dx=2\\left[\\frac{x^2}{2}+\\cos x\\right]_0^{\\pi/2}=2\\left(\\frac{\\pi^2}{8}-1\\right)=\\frac{\\pi^2}{4}-2.$$",
+        "resultat": "a) Tangents $y=x$ i $y=-x+\\pi$; es tallen en $\\left(\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right)$. b) $A=\\dfrac{\\pi^2}{4}-2$ unitats quadrades."
+      }
+    },
+    {
+      "id": "2016-ext-S1-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Responeu a les qüestions següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'única matriu de la forma $A=\\begin{pmatrix} \\frac12 & \\frac14 \\\\ a & \\frac12 \\end{pmatrix}$ que satisfà que $A^2=A$, i comproveu que $A$ i $A-I$ no són invertibles."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Justifiqueu raonadament que si $A$ és una matriu quadrada d'ordre $n$ diferent de la matriu nul·la, $0$, i de la matriu identitat, $I$, i que satisfà la propietat $A^2=A$, aleshores les matrius $A$ i $A-I$ no són invertibles."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2=\\begin{pmatrix} \\frac{a+1}{4} & \\frac14 \\\\ a & \\frac{a+1}{4} \\end{pmatrix}$. Igualant a $A$: $\\dfrac{a+1}{4}=\\dfrac12$, d'on $a=1$ (les altres equacions es compleixen). Així $A=\\begin{pmatrix} \\frac12 & \\frac14 \\\\ 1 & \\frac12 \\end{pmatrix}$ i $A-I=\\begin{pmatrix} -\\frac12 & \\frac14 \\\\ 1 & -\\frac12 \\end{pmatrix}$. Tots dos determinants són $\\frac14-\\frac14=0$, per tant cap de les dues matrius és invertible.\n\nb) Si $A^2=A$, aleshores $A^2-A=0$, és a dir $A\\cdot(A-I)=0$. Si $A$ fos invertible, multiplicant per $A^{-1}$ obtindríem $A-I=0$, és a dir $A=I$, cosa que és falsa. Si $A-I$ fos invertible, multiplicant per $(A-I)^{-1}$ obtindríem $A=0$, cosa que també és falsa. Per tant ni $A$ ni $A-I$ no són invertibles.",
+        "resultat": "a) $A=\\begin{pmatrix} \\frac12 & \\frac14 \\\\ 1 & \\frac12 \\end{pmatrix}$; $\\det A=0$ i $\\det(A-I)=0$. b) Queda justificat per reducció a l'absurd."
+      }
+    },
+    {
+      "id": "2016-ext-S1-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Responeu a les qüestions següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació cartesiana (és a dir, que té la forma $Ax+By+Cz=D$) del pla que passa pel punt de coordenades $(0,0,1)$ i és perpendicular als plans $3x+y-z=1$ i $x+y+2z=5$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Suposeu que un pla $\\pi_1$ és perpendicular a un segon pla $\\pi_2$ i que el pla $\\pi_2$ és a la vegada perpendicular a un tercer pla $\\pi_3$. Expliqueu raonadament si necessàriament els plans $\\pi_1$ i $\\pi_3$ han de ser perpendiculars entre ells."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El pla buscat té per vectors directors els vectors normals dels dos plans, $\\vec n_1=(3,1,-1)$ i $\\vec n_2=(1,1,2)$, i passa pel punt $(0,0,1)$:\n$$\\begin{vmatrix} x & 3 & 1 \\\\ y & 1 & 1 \\\\ z-1 & -1 & 2 \\end{vmatrix}=0\\iff 3x-7y+2z=2.$$\n\nb) No necessàriament. Que $\\pi_1\\perp\\pi_2$ i $\\pi_2\\perp\\pi_3$ implica $\\vec n_1\\cdot\\vec n_2=0$ i $\\vec n_2\\cdot\\vec n_3=0$, però no implica $\\vec n_1\\cdot\\vec n_3=0$. Per exemple, $\\pi_1:3x+y-z=1$, $\\pi_2:3x-7y+2z=2$ i $\\pi_3:x+y+2z=5$ compleixen $\\pi_1\\perp\\pi_2$ i $\\pi_2\\perp\\pi_3$, però $\\vec n_1\\cdot\\vec n_3=3+1-2=2\\neq0$, de manera que $\\pi_1$ i $\\pi_3$ no són perpendiculars.",
+        "resultat": "a) $3x-7y+2z=2$. b) No necessàriament; contraexemple: $\\pi_1:3x+y-z=1$, $\\pi_2:3x-7y+2z=2$, $\\pi_3:x+y+2z=5$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

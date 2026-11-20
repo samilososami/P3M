@@ -1,0 +1,214 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2021-ord-S2",
+  "assignatura": "matematiques",
+  "any": 2021,
+  "convocatoria": "ordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 4",
+  "instruccions": "Responeu a QUATRE de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2,5 punts.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.\n\nPodeu utilitzar les pàgines en blanc (pàgines 14 i 15) per a fer esquemes, esborranys, etc., o per a acabar de respondre a alguna qüestió si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de la qüestió corresponent.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2021/pau_mate21jl.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2021/pau_mate21jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2021-ord-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la paràbola $y=4-x^2$ i un valor $a>0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Comproveu que l'equació de la recta tangent a la gràfica de la paràbola en el punt d'abscissa $x=a$ és $y=-2ax+a^2+4$ i calculeu els punts de tall d'aquesta recta tangent amb els eixos de coordenades."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Calculeu el valor de $a>0$ perquè l'àrea del triangle determinat per aquesta recta tangent i els eixos de coordenades sigui mínima."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=-2x$, per tant $f'(a)=-2a$ i la tangent en el punt $(a,4-a^2)$ és $y-(4-a^2)=-2a(x-a)$, és a dir, $y=-2ax+a^2+4$. Talls amb els eixos: amb $OX$ ($y=0$), $x=\\dfrac{a^2+4}{2a}$, punt $\\left(\\dfrac{a^2+4}{2a},0\\right)$; amb $OY$ ($x=0$), $y=a^2+4$, punt $(0,a^2+4)$.\n\nb) El triangle és rectangle, amb base $\\dfrac{a^2+4}{2a}$ i altura $a^2+4$. Àrea: $S(a)=\\dfrac12\\cdot\\dfrac{a^2+4}{2a}\\cdot(a^2+4)=\\dfrac{(a^2+4)^2}{4a}$. Derivada: $S'(a)=\\dfrac{(a^2+4)(3a^2-4)}{4a^2}$, que s'anul·la per a $a=\\dfrac{2\\sqrt3}{3}$ (la solució negativa es descarta perquè $a>0$). Com que $S'(a)<0$ si $0<a<\\dfrac{2\\sqrt3}{3}$ i $S'(a)>0$ si $a>\\dfrac{2\\sqrt3}{3}$, és un mínim.",
+        "resultat": "a) recta tangent $y=-2ax+a^2+4$; punts de tall $\\left(\\dfrac{a^2+4}{2a},0\\right)$ i $(0,a^2+4)$. b) $a=\\dfrac{2\\sqrt3}{3}$."
+      }
+    },
+    {
+      "id": "2021-ord-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $p$:\n\n$$\\begin{cases} px+y+z=2 \\\\ 2x+py+p^2z=1 \\\\ 2x+y+z=2 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $p$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu, si és possible, el sistema per al cas $p=2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Matriu de coeficients $A$ i matriu ampliada $A^*=\\left(\\begin{array}{ccc|c} p&1&1&2\\\\2&p&p^2&1\\\\2&1&1&2\\end{array}\\right)$. $\\det A=-p^3+3p^2-2p=-p(p-1)(p-2)$, que s'anul·la per a $p=0$, $p=1$ i $p=2$.\n\n- Si $p\\neq0,1,2$: $\\operatorname{rang}A=\\operatorname{rang}A^*=3$, sistema compatible determinat.\n- Si $p=0$: $\\operatorname{rang}A=2$ i $\\operatorname{rang}A^*=3$, sistema incompatible.\n- Si $p=1$: $\\operatorname{rang}A=2$ i $\\operatorname{rang}A^*=3$, sistema incompatible.\n- Si $p=2$: $\\operatorname{rang}A=\\operatorname{rang}A^*=2<3$ incògnites, sistema compatible indeterminat.\n\nb) Per a $p=2$ la tercera equació coincideix amb la primera, i el sistema és $2x+y+z=2$, $2x+2y+4z=1$. Prenent $z=t$: $2x+y=2-t$ i $2x+2y=1-4t$, d'on $y=-3t-1$ i $x=\\dfrac32+t$.",
+        "resultat": "a) SCD si $p\\neq0,1,2$; SI si $p=0$ o $p=1$; SCI si $p=2$. b) Per a $p=2$: $x=\\dfrac32+t$, $y=-3t-1$, $z=t$, amb $t\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2021-ord-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el punt $P=(-1,3,1)$, el pla $\\pi: x=y$ i la recta $r: \\dfrac{x-1}{2}=\\dfrac{y}{3}=z-2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Trobeu les coordenades del punt $P'$ simètric a $P$ respecte al pla $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "De tots els plans que contenen la recta $r$, trobeu l'equació cartesiana del que és perpendicular al pla $\\pi$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta perpendicular a $\\pi$ per $P$ té vector director $(1,-1,0)$: $(x,y,z)=(-1+t,\\,3-t,\\,1)$. Intersecció amb $\\pi$: $-1+t=3-t$, d'on $t=2$ i el punt mig és $M=(1,1,1)$. Per tant $P'=2M-P=(3,-1,1)$.\n\nb) La recta $r$ té vector director $(2,3,1)$ i passa pel punt $(1,0,2)$. El vector normal del pla buscat és perpendicular a $(2,3,1)$ i a la normal de $\\pi$, $(1,-1,0)$: $(2,3,1)\\times(1,-1,0)=(1,1,-5)$. El pla és $x+y-5z+D=0$; com que ha de passar per $(1,0,2)$, $1-10+D=0$, d'on $D=9$.",
+        "resultat": "a) $P'=(3,-1,1)$. b) $x+y-5z+9=0$."
+      }
+    },
+    {
+      "id": "2021-ord-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui la funció $f(x)=\\dfrac{\\ln(x)}{x}$ definida en el domini $x>0$, en què $\\ln$ és el logaritme neperià.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu les coordenades d'un punt de la corba $y=f(x)$ en el qual la recta tangent a la corba sigui horitzontal i analitzeu si la funció té un extrem relatiu en aquest punt."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Determineu si la funció $f(x)$ té alguna asímptota horitzontal."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea de la regió delimitada per la corba $y=f(x)$ i les rectes $x=1$ i $x=e$. Feu un dibuix aproximat de la gràfica de la funció en el domini $0<x<5$, en què quedi representada l'àrea que heu calculat."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=\\dfrac{1-\\ln x}{x^2}$, que s'anul·la quan $\\ln x=1$, és a dir $x=e$. El punt és $\\left(e,\\dfrac1e\\right)$. Com que $f''(x)=\\dfrac{2\\ln x-3}{x^3}$, $f''(e)=-\\dfrac{1}{e^3}<0$, i per tant és un màxim relatiu.\n\nb) Només cal estudiar $x\\to+\\infty$: $\\lim_{x\\to+\\infty}\\dfrac{\\ln x}{x}=\\dfrac{\\infty}{\\infty}$, i per L'Hôpital $\\lim_{x\\to+\\infty}\\dfrac{1/x}{1}=0$. Per tant, $y=0$ és una asímptota horitzontal.\n\nc) $A=\\displaystyle\\int_1^e\\frac{\\ln x}{x}\\,dx=\\left[\\frac{(\\ln x)^2}{2}\\right]_1^e=\\frac{1}{2}-0=\\frac12$ u$^2$. La gràfica és positiva en $(1,e)$, de manera que l'àrea és la integral.",
+        "resultat": "a) punt $\\left(e,\\dfrac1e\\right)$, màxim relatiu. b) Asímptota horitzontal $y=0$. c) $A=\\dfrac12$ u$^2$."
+      }
+    },
+    {
+      "id": "2021-ord-S2-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Donada la matriu $A=\\begin{pmatrix} 0&0&1\\\\1&0&0\\\\0&1&0 \\end{pmatrix}$, resoleu l'equació matricial $A^2X=A-3I$, en què $I$ és la matriu identitat."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Una matriu quadrada $M$ satisfà que $M^3-3M^2+3M-I=0$, en què $I$ és la matriu identitat. Justifiqueu que $M$ és invertible i expresseu la inversa de $M$ en funció de les matrius $M$ i $I$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2=\\begin{pmatrix} 0&1&0\\\\0&0&1\\\\1&0&0 \\end{pmatrix}$, amb $\\det(A^2)=1\\neq0$. Per tant $X=(A^2)^{-1}(A-3I)$, i $(A^2)^{-1}=A$. Aleshores $X=A(A-3I)=A^2-3A=\\begin{pmatrix} 0&1&-3\\\\-3&0&1\\\\1&-3&0 \\end{pmatrix}$.\n\nb) Sumant $I$ als dos costats: $M^3-3M^2+3M=I$, és a dir, $M\\,(M^2-3M+3I)=I$. Prenent determinants, $\\det M\\cdot\\det(M^2-3M+3I)=1$, de manera que $\\det M\\neq0$ i $M$ és invertible. La inversa és $M^{-1}=M^2-3M+3I$.",
+        "resultat": "a) $X=\\begin{pmatrix} 0&1&-3\\\\-3&0&1\\\\1&-3&0 \\end{pmatrix}$. b) $M^{-1}=M^2-3M+3I$."
+      }
+    },
+    {
+      "id": "2021-ord-S2-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu la funció $f(x)=e^{x-1}-x-1$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Estudieu-ne la continuïtat, els extrems relatius i els intervals de creixement i decreixement."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Demostreu que l'equació $f(x)=0$ té exactament dues solucions entre $x=-1$ i $x=3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f$ és contínua en $\\mathbb{R}$, perquè és suma d'una exponencial i d'un polinomi. $f'(x)=e^{x-1}-1=0 \\iff x=1$. Si $x<1$, $f'(x)<0$ (decreix); si $x>1$, $f'(x)>0$ (creix). Per tant, $x=1$ és un mínim relatiu (i absolut), amb $f(1)=-1$.\n\nb) $f(-1)=e^{-2}>0$, $f(1)=-1<0$ i $f(3)=e^2-4>0$. Pel teorema de Bolzano hi ha una arrel en $(-1,1)$ i una altra en $(1,3)$. Cada arrel és única perquè $f$ és monòtona en cada interval (decreixent en $(-1,1)$ i creixent en $(1,3)$).",
+        "resultat": "a) contínua en $\\mathbb{R}$; mínim relatiu en $(1,-1)$; decreixent en $(-\\infty,1)$ i creixent en $(1,+\\infty)$. b) Dues solucions, una en $(-1,1)$ i una altra en $(1,3)$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

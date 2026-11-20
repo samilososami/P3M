@@ -1,0 +1,160 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2007-ord-S2",
+  "assignatura": "matematiques",
+  "any": 2007,
+  "convocatoria": "ordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "Responeu a TRES de les quatre qüestions i resoleu UN dels dos problemes següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts i el problema 4 punts.\n\nPodeu utilitzar la calculadora científica per al càlcul de funcions exponencials, logarítmiques, trigonomètriques i especials, així com per a realitzar càlculs estadístics. No es poden fer servir, però, calculadores o altres aparells que permetin fer més operacions que les esmentades.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2007/pau_mate07jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2007/pau_mate07jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2007-ord-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu l'equació del pla perpendicular a la recta $r:\\begin{cases} x+y+z=1 \\\\ 2x+y=3 \\end{cases}$ que passa per l'origen de coordenades.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Un vector director de $r$ és el producte vectorial dels vectors de coeficients dels dos plans:\n\n$$(1,1,1)\\wedge(2,1,0)=(-1,\\,2,\\,-1)$$\n\nAquest vector fa de vector normal del pla buscat, que ha de passar per l'origen. Per tant, $\\pi:\\ -x+2y-z=0$, equivalentment $x-2y+z=0$.\n\n(Un altre camí és escriure $r$ en forma paramètrica: de la segona equació, $y=3-2x$; substituint a la primera, $z=x-2$. Així, $(x,y,z)=(0,3,-2)+x\\,(1,-2,1)$, i el vector director és $(1,-2,1)$.)",
+        "resultat": "$x-2y+z=0$."
+      }
+    },
+    {
+      "id": "2007-ord-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "La funció derivada $f'(x)$ de certa funció contínua $f:\\mathbb{R}\\to\\mathbb{R}$ és una funció a trossos formada per les semirectes del dibuix.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Digueu si $f(x)$ és derivable en tots els punts de $\\mathbb{R}$ i per què."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Estudieu el creixement i el decreixement de $f(x)$."
+        },
+        {
+          "lletra": "c",
+          "punts": 0.5,
+          "enunciat": "Trobeu si $f(x)$ té algun extrem relatiu i, si és així, per a quin valor de $x$ i de quin tipus."
+        },
+        {
+          "lletra": "d",
+          "punts": 0.5,
+          "enunciat": "Sabent que $f(0)=1$, calculeu el valor de $f(1)$.\n\nJustifiqueu totes les respostes."
+        }
+      ],
+      "figures": [
+        "gràfica de $f'(x)$. Per a $x<1$ és la recta horitzontal $y=1$. A partir de $x=1$ hi ha una semirecta decreixent, amb el punt inicial per sota de $y=1$ i que talla l'eix $OX$ en $x=2$. Hi ha, doncs, un salt de la derivada en $x=1$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) No és derivable a $x=1$, perquè la derivada $f'$ no està definida en aquest punt (hi ha un salt entre el valor $1$ per a $x<1$ i el valor de la semirecta per a $x>1$). És derivable en la resta de punts de $\\mathbb{R}$.\n\nb) La funció creix on $f'>0$, és a dir, per a $x\\in(-\\infty,2)$, i decreix on $f'<0$, és a dir, per a $x\\in(2,+\\infty)$.\n\nc) En $x=2$ la derivada s'anul·la i la funció passa de créixer a decréixer. Per tant, $f$ té un **màxim relatiu** en $x=2$.\n\nd) L'àrea sota la derivada entre $x=0$ i $x=1$ val 1, és a dir, $\\displaystyle\\int_0^1 f'(x)\\,dx=f(1)-f(0)=1$. Per tant, $f(1)=1+f(0)=2$.\n\nAlternativament, per a $x<2$ és $f'(x)=1$, de manera que $f(x)=x+C$; com que $f(0)=1$, $C=1$ i $f(1)=2$.",
+        "resultat": "a) no és derivable en $x=1$ (salt de la derivada); b) creix a $(-\\infty,2)$ i decreix a $(2,+\\infty)$; c) màxim relatiu en $x=2$; d) $f(1)=2$."
+      }
+    },
+    {
+      "id": "2007-ord-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu els valors del paràmetre $a$, $a\\neq0$, que fan que les tangents a la corba d'equació $y=ax^4+2ax^3-ax+1512$ en els punts d'inflexió siguin perpendiculars.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$f'(x)=4ax^3+6ax^2-a$ i $f''(x)=12ax^2+12ax=12ax(x+1)$.\n\nEls punts d'inflexió són les abscisses on $f''$ s'anul·la, és a dir, $x=0$ i $x=-1$. La derivada tercera, $f'''(x)=24ax+12a$, no s'anul·la en aquests punts ($f'''(0)=12a\\neq0$ i $f'''(-1)=-12a\\neq0$), per tant sí que són punts d'inflexió.\n\nEls pendents de les tangents són $f'(0)=-a$ i $f'(-1)=a$. Perquè siguin perpendiculars, el seu producte ha de valer $-1$:\n\n$$(-a)\\cdot a=-1\\iff a^2=1\\iff a=\\pm1$$",
+        "resultat": "$a=1$ o $a=-1$."
+      }
+    },
+    {
+      "id": "2007-ord-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu els punts de la recta $r:\\ x-1=y+2=z$ que equidisten dels plans $\\pi_1:\\ 4x-3z-1=0$ i $\\pi_2:\\ 3x+4y-1=0$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Un punt qualsevol de la recta és $(z+1,\\;z-2,\\;z)$. Igualant les distàncies als dos plans:\n\n$$\\dfrac{|4(z+1)-3z-1|}{\\sqrt{4^2+3^2}}=\\dfrac{|3(z+1)+4(z-2)-1|}{\\sqrt{3^2+4^2}}\\iff |z+3|=|7z-6|$$\n\n- Amb el signe positiu: $z+3=7z-6\\iff z=\\dfrac32$, i el punt és $\\left(\\dfrac52,\\,-\\dfrac12,\\,\\dfrac32\\right)$.\n- Amb el signe negatiu: $z+3=-7z+6\\iff z=\\dfrac38$, i el punt és $\\left(\\dfrac{11}{8},\\,-\\dfrac{13}{8},\\,\\dfrac38\\right)$.",
+        "resultat": "$\\left(\\dfrac52,-\\dfrac12,\\dfrac32\\right)$ i $\\left(\\dfrac{11}{8},-\\dfrac{13}{8},\\dfrac38\\right)$."
+      }
+    },
+    {
+      "id": "2007-ord-S2-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Un magatzem té forma de prisma recte de base quadrada i un volum de $768\\ \\text{m}^3$. Se sap que la pèrdua de calor a través de les parets laterals val 100 unitats per $\\text{m}^2$, mentre que a través del sostre és de 300 unitats per $\\text{m}^2$. La pèrdua pel sòl és molt petita i es pot considerar nul·la. Calculeu les dimensions del magatzem perquè la pèrdua de calor total sigui mínima.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Sigui $x$ el costat de la base i $y$ l'altura. Les pèrdues són:\n\n- Pels laterals: $100\\cdot4xy=400xy$.\n- Pel sostre: $300x^2$.\n\nTotal: $P=400xy+300x^2$. Com que el volum és $x^2y=768$, resulta $y=\\dfrac{768}{x^2}$, i:\n\n$$P(x)=\\dfrac{307200}{x}+300x^2$$\n\n$$P'(x)=-\\dfrac{307200}{x^2}+600x=0\\iff x^3=512\\iff x=8$$\n\nCom que $P''(x)=\\dfrac{614400}{x^3}+600>0$ per a $x>0$, es tracta d'un mínim. Llavors $y=\\dfrac{768}{64}=12$.",
+        "resultat": "base quadrada de costat $x=8$ m i altura $y=12$ m."
+      }
+    },
+    {
+      "id": "2007-ord-S2-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "A l'espai es consideren els tres plans d'equacions respectives:\n\n$$\\pi_1:\\ x+2y+z=1,\\qquad \\pi_2:\\ px+y+pz=1,\\qquad \\pi_3:\\ px+y+2z=1$$\n\non $p$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 2.0,
+          "enunciat": "Esbrineu per a quins valors de $p$ els tres plans es tallen en un únic punt. Trobeu aquest punt quan $p=1$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Hi ha algun valor de $p$ que faci que la intersecció comuna sigui una recta? Si és així, escriviu l'equació vectorial d'aquesta recta."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Trobeu quina és la posició relativa dels tres plans quan $p=\\dfrac12$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Estudiem el sistema format per les tres equacions. El determinant de la matriu de coeficients és:\n\n$$\\begin{vmatrix} 1 & 2 & 1 \\\\ p & 1 & p \\\\ p & 1 & 2 \\end{vmatrix}=2p^2-5p+2=(2p-1)(p-2)$$\n\nque s'anul·la per a $p=\\dfrac12$ i $p=2$. Per Gauss, la matriu ampliada es redueix a:\n\n$$\\left(\\begin{array}{ccc|c} 1 & 2 & 1 & 1 \\\\ p & 1 & p & 1 \\\\ p & 1 & 2 & 1 \\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c} 1 & 2 & 1 & 1 \\\\ 0 & 1-2p & 0 & 1-p \\\\ 0 & 0 & 2-p & 0 \\end{array}\\right)$$\n\na) Per a $p\\neq\\dfrac12$ i $p\\neq2$ el sistema és compatible determinat, és a dir, els tres plans es tallen en un únic punt. Per a $p=1$, el sistema és $\\begin{cases} x+2y+z=1 \\\\ -y=0 \\\\ z=0 \\end{cases}$, amb solució $(1,0,0)$. Aquest és el punt d'intersecció.\n\nb) Perquè la intersecció sigui una recta cal que el sistema sigui compatible indeterminat, cosa que només passa per a $p=2$. En aquest cas, els plans són $\\pi_1:\\ x+2y+z=1$ i $\\pi_2\\equiv\\pi_3:\\ 2x+y+2z=1$. Aïllant $y$ i $z$ de les dues equacions s'obté $y=\\dfrac13$ i $z=\\dfrac13-x$. Així, la recta és:\n\n$$(x,y,z)=\\left(0,\\dfrac13,\\dfrac13\\right)+x\\,(1,0,-1)$$\n\nc) Per a $p=\\dfrac12$ el sistema és incompatible. Els plans són $\\pi_1:\\ x+2y+z=1$, $\\pi_2:\\ \\dfrac x2+y+\\dfrac z2=1$ (és a dir, $x+2y+z=2$) i $\\pi_3:\\ \\dfrac x2+y+2z=1$. Els dos primers són paral·lels (i diferents), mentre que el tercer els talla. No hi ha cap punt comú als tres plans.",
+        "resultat": "a) compatible determinat (un únic punt) per a $p\\neq\\dfrac12$ i $p\\neq2$; per a $p=1$, el punt és $(1,0,0)$; b) sí, per a $p=2$, la recta $(x,y,z)=\\left(0,\\dfrac13,\\dfrac13\\right)+x\\,(1,0,-1)$; c) $\\pi_1\\parallel\\pi_2$ (distints) i $\\pi_3$ els talla; no hi ha intersecció comuna."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

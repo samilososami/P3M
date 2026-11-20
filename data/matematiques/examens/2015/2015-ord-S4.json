@@ -1,0 +1,179 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2015-ord-S4",
+  "assignatura": "matematiques",
+  "any": 2015,
+  "convocatoria": "ordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2015/pau_mate15jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2015/pau_mate15jp.pdf",
+      "pagines": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2015-ord-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions següent, en què $m$ és un paràmetre real:\n\n$$\\begin{cases} x-2y-z=0 \\\\ -mx+3y+z=0 \\\\ x+y=4 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $m$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per a $m=1$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El determinant de la matriu de coeficients és $\\begin{vmatrix} 1 & -2 & -1 \\\\ -m & 3 & 1 \\\\ 1 & 1 & 0 \\end{vmatrix}=m$.\n\nSi $m\\neq 0$, $\\operatorname{rang}(A)=3=\\operatorname{rang}(A|b)$ i el sistema és compatible determinat.\n\nSi $m=0$, $\\operatorname{rang}(A)=2$ (perquè $\\begin{vmatrix} 1 & -2 \\\\ 0 & 3 \\end{vmatrix}=3\\neq 0$), però $\\operatorname{rang}(A|b)=3$ (perquè $\\begin{vmatrix} 1 & -1 & 0 \\\\ 0 & 1 & 0 \\\\ 1 & 0 & 4 \\end{vmatrix}=4\\neq 0$). El sistema és incompatible.\n\nb) Per a $m=1$ el sistema és compatible determinat. Per Cramer: $x=\\dfrac{4}{1}=4$, $y=\\dfrac{0}{1}=0$, $z=\\dfrac{4}{1}=4$. (El sistema també es pot resoldre pel mètode de Gauss.)",
+        "resultat": "a) Si $m\\neq 0$, sistema compatible determinat; si $m=0$, sistema incompatible. b) $x=4$, $y=0$, $z=4$."
+      }
+    },
+    {
+      "id": "2015-ord-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la funció $f(x)=x^3-4x^2+4x$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'abscissa $x=1$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu les abscisses dels punts de la gràfica en què hi ha un mínim relatiu, un màxim relatiu o una inflexió."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f(1)=1$ i $f'(x)=3x^2-8x+4$, de manera que $f'(1)=-1$. La recta tangent és $y=-(x-1)+1=-x+2$.\n\nb) Els punts candidats a extrem són els zeros de $f'$: $3x^2-8x+4=0\\iff x=\\dfrac{8\\pm\\sqrt{16}}{6}$, és a dir $x=2$ i $x=\\dfrac23$. Com que $f''(x)=6x-8$: $f''(2)=4>0$ (mínim relatiu) i $f''\\!\\left(\\tfrac23\\right)=-4<0$ (màxim relatiu). Els punts candidats a inflexió són els zeros de $f''$: $x=\\dfrac43$, i com que $f'''(x)=6\\neq 0$, hi ha una inflexió.",
+        "resultat": "a) $y=-x+2$. b) Mínim relatiu en $x=2$; màxim relatiu en $x=\\dfrac23$; inflexió en $x=\\dfrac43$."
+      }
+    },
+    {
+      "id": "2015-ord-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin el punt $P=(2,0,2)$ i el pla $\\pi$ d'equació $x-y+z=1$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació paramètrica de la recta que passa pel punt $P$ i és perpendicular al pla $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu la distància del punt $P$ al pla $\\pi$.\n\nNOTA: Podeu calcular la distància d'un punt de coordenades $(x_0,y_0,z_0)$ al pla d'equació $Ax+By+Cz+D=0$ amb l'expressió $\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector normal del pla, $(1,-1,1)$, és vector director de la recta: $(x,y,z)=(2,0,2)+\\lambda(1,-1,1)$.\n\nb) $d(P,\\pi)=\\dfrac{|2-0+2-1|}{\\sqrt{1^2+(-1)^2+1^2}}=\\dfrac{3}{\\sqrt3}=\\sqrt3$.",
+        "resultat": "a) $\\begin{cases} x=2+\\lambda \\\\ y=-\\lambda \\\\ z=2+\\lambda \\end{cases}$, amb $\\lambda\\in\\mathbb{R}$. b) $d(P,\\pi)=\\sqrt3$ unitats."
+      }
+    },
+    {
+      "id": "2015-ord-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $f$ la funció $f(x)=x\\cdot\\sin(x)$. Calculeu la primitiva de la funció $f$ que passa pel punt $\\left(\\dfrac{\\pi}{2},0\\right)$ (unitats en radians).",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Integrant per parts amb $u=x$, $dv=\\sin(x)\\,dx$ (d'on $du=dx$, $v=-\\cos(x)$):\n$$F(x)=\\int x\\sin(x)\\,dx=-x\\cos(x)+\\int\\cos(x)\\,dx=-x\\cos(x)+\\sin(x)+C.$$\nCom que $F\\!\\left(\\tfrac{\\pi}{2}\\right)=0$: $-\\tfrac{\\pi}{2}\\cos\\tfrac{\\pi}{2}+\\sin\\tfrac{\\pi}{2}+C=1+C=0$, és a dir $C=-1$.",
+        "resultat": "$F(x)=-x\\cos(x)+\\sin(x)-1$."
+      }
+    },
+    {
+      "id": "2015-ord-S4-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $A$ una matriu quadrada que compleix que $A^3=I$, en què $I$ és la matriu identitat, $I=\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Demostreu que la matriu $A$ té inversa i que $A^{-1}=A^2$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "En el cas de $A=\\begin{pmatrix} 1 & a \\\\ -1 & -2 \\end{pmatrix}$, calculeu si hi ha cap valor del paràmetre $a$ per al qual $A^3=I$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Si $A^3=I$, aleshores $A\\cdot A^2=A^2\\cdot A=I$. Per tant $A$ és invertible i $A^{-1}=A^2$.\n\nb) $A^2=\\begin{pmatrix} 1-a & -a \\\\ 1 & 4-a \\end{pmatrix}$ i $A^3=A^2\\cdot A=\\begin{pmatrix} 1 & 3a-a^2 \\\\ a-3 & 3a-8 \\end{pmatrix}$. Igualant a $I$ s'obté el sistema $1=1$, $3a-a^2=0$, $a-3=0$, $3a-8=1$. De la tercera equació, $a=3$, que satisfà les quatre equacions.",
+        "resultat": "a) Queda demostrat que $A^{-1}=A^2$. b) Sí, per a $a=3$ es compleix $A^3=I$."
+      }
+    },
+    {
+      "id": "2015-ord-S4-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin a $\\mathbb{R}^3$ el punt $P=(2,3,3)$ i la recta $r:(x,y,z)=(1,2,3)+t(1,1,1)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació paramètrica del pla que passa pel punt $P$ i conté la recta $r$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació cartesiana (és a dir, de la forma $Ax+By+Cz=D$) del pla que passa pel punt $P$ i és perpendicular a la recta $r$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta $r$ passa pel punt $R=(1,2,3)$ i té vector director $\\vec v_r=(1,1,1)$. El pla conté els vectors $\\vec v_r=(1,1,1)$ i $\\overrightarrow{PR}=R-P=(-1,-1,0)$, i passa per $P$.\n\nb) El vector director de $r$, $(1,1,1)$, és el vector normal del pla: $x+y+z=D$. Imposant que passi per $P=(2,3,3)$: $D=8$.",
+        "resultat": "a) $\\begin{cases} x=2+\\lambda-\\mu \\\\ y=3+\\lambda-\\mu \\\\ z=3+\\lambda \\end{cases}$, amb $\\lambda,\\mu\\in\\mathbb{R}$. b) $x+y+z=8$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

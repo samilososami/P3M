@@ -1,0 +1,191 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2018-ext-S3",
+  "assignatura": "matematiques",
+  "any": 2018,
+  "convocatoria": "extraordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts. Podeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que permetin emmagatzemar dades o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2018/pau_mate18sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2018/pau_mate18sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2018-ext-S3-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la funció polinòmica $f(x)=x^3-ax^2+bx+c$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu els valors dels paràmetres $a$, $b$ i $c$, sabent que la funció té un extrem relatiu en el punt d'abscissa $x=1$ i que la recta tangent a la gràfica de la funció en el punt d'abscissa $x=0$ és la recta $y=x+3$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Per als valors $a=2$, $b=1$ i $c=3$, calculeu les abscisses dels extrems relatius de la funció i classifiqueu-los."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f'(x)=3x^2-2ax+b$. Les condicions són $f'(1)=3-2a+b=0$ (extrem en $x=1$), $f'(0)=b=1$ (pendent de la tangent en $x=0$) i $f(0)=c=3$ (la tangent $y=x+3$ passa per $(0,3)$). Així, $b=1$, $a=2$ i $c=3$.\n\nb) $f(x)=x^3-2x^2+x+3$, $f'(x)=3x^2-4x+1=0 \\Rightarrow x=1$ o $x=\\tfrac13$. Com que $f''(x)=6x-4$: $f''(1)=2>0$, per tant hi ha un mínim relatiu en $x=1$; $f''\\left(\\tfrac13\\right)=-2<0$, per tant hi ha un màxim relatiu en $x=\\tfrac13$.",
+        "resultat": "a) $a=2$, $b=1$, $c=3$; b) mínim relatiu en $x=1$ i màxim relatiu en $x=\\tfrac13$"
+      }
+    },
+    {
+      "id": "2018-ext-S3-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $a$:\n\n$$\\begin{cases} x+y+z=3 \\\\ x+y-z=1 \\\\ 2x+ay=2a \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $a$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per al cas $a=1$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Sigui $A=\\begin{pmatrix} 1 & 1 & 1 \\\\ 1 & 1 & -1 \\\\ 2 & a & 0 \\end{pmatrix}$ i $A'$ la matriu ampliada amb la columna $(3,1,2a)^{\\mathsf T}$. Com que $|A|=2a-4$, que s'anul·la només per a $a=2$:\n\n- Si $a\\neq2$: $\\operatorname{rang}A=\\operatorname{rang}A'=3=$ nombre d'incògnites, i el sistema és compatible determinat (SCD).\n- Si $a=2$: les dues primeres columnes de $A$ són iguals, i el menor $\\begin{vmatrix} 1 & 1 & 3 \\\\ 1 & -1 & 1 \\\\ 2 & 0 & 4 \\end{vmatrix}=0$, per tant $\\operatorname{rang}A=\\operatorname{rang}A'=2<3$. És un sistema compatible indeterminat (SCI) amb $3-2=1$ grau de llibertat.\n\nb) Per a $a=1$, $|A|=-2\\neq0$ i el sistema és compatible determinat. Restant les dues primeres equacions, $2z=2$, és a dir $z=1$; després $x+y=2$ i $2x+y=2$, d'on $x=0$ i $y=2$. Solució: $(0,2,1)$.",
+        "resultat": "a) SCD si $a\\neq2$; SCI (un grau de llibertat) si $a=2$; b) $x=0$, $y=2$, $z=1$"
+      }
+    },
+    {
+      "id": "2018-ext-S3-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el pla que té com a vectors directors $u=(-1,3,2)$ i $v=(2,1,0)$ i que passa pel punt $A=(1,0,3)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació de la recta que és perpendicular al pla i passa pel punt $A$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu la distància del punt $P=(1,5,0)$ al pla.\n\n*Nota:* Podeu calcular la distància d'un punt de coordenades $(x_0,y_0,z_0)$ al pla d'equació $Ax+By+Cz+D=0$ amb l'expressió $\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector normal és $\\vec n=u\\times v=(-2,4,-7)$. La recta perpendicular al pla per $A$ és $(x,y,z)=(1,0,3)+k\\,(-2,4,-7)$.\n\nb) L'equació general del pla és $-2(x-1)+4y-7(z-3)=0$, és a dir, $-2x+4y-7z+23=0$. Llavors $d(P,\\pi)=\\dfrac{|-2\\cdot1+4\\cdot5-7\\cdot0+23|}{\\sqrt{(-2)^2+4^2+(-7)^2}}=\\dfrac{41}{\\sqrt{69}}=\\dfrac{41\\sqrt{69}}{69}\\approx4{,}94$ u.",
+        "resultat": "a) $(x,y,z)=(1,0,3)+k\\,(-2,4,-7)$; b) $d=\\dfrac{41}{\\sqrt{69}}\\approx4{,}94$ u"
+      }
+    },
+    {
+      "id": "2018-ext-S3-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la matriu $A=\\begin{pmatrix} 1 & 0 & \\alpha \\\\ \\alpha & 0 & -1 \\\\ 2 & -1 & 1 \\end{pmatrix}$, en què $\\alpha$ és un paràmetre real.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Hi ha algun valor de $\\alpha\\in\\mathbb{R}$ tal que $A$ no tingui inversa per a aquest valor?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu la matriu inversa de $A^2$ per a $\\alpha=0$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Desenvolupant per la segona columna, $|A|=-\\alpha^2-1$, que és sempre negatiu i mai no s'anul·la. Per tant, $A$ té inversa per a qualsevol $\\alpha\\in\\mathbb{R}$, i no hi ha cap valor que la faci no invertible.\n\nb) Per a $\\alpha=0$, $A=\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 0 & -1 \\\\ 2 & -1 & 1 \\end{pmatrix}$ i $A^2=\\begin{pmatrix} 1 & 0 & 0 \\\\ -2 & 1 & -1 \\\\ 4 & -1 & 2 \\end{pmatrix}$, amb $|A^2|=1\\neq0$. La inversa és $(A^2)^{-1}=\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 1 \\\\ -2 & 1 & 1 \\end{pmatrix}$.",
+        "resultat": "a) No; $|A|=-\\alpha^2-1\\neq0$ per a tot $\\alpha$; b) $(A^2)^{-1}=\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 1 \\\\ -2 & 1 & 1 \\end{pmatrix}$"
+      }
+    },
+    {
+      "id": "2018-ext-S3-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu els punts de l'espai tridimensional $A=(1,1,0)$, $B=(3,5,0)$ i $C=(1,0,0)$ i la recta $r: x=y-1=\\dfrac{z}{2}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu el punt d'intersecció de la recta $r$ amb el pla que passa pels punts $A$, $B$ i $C$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu els punts $P$ de la recta $r$ per als quals el tetraedre de vèrtexs $P$, $A$, $B$ i $C$ té un volum de $2\\,u^3$.\n\n*Nota:* El volum d'un tetraedre de vèrtexs $P$, $Q$, $R$ i $S$ es pot calcular amb l'expressió $\\dfrac16\\left|\\det(\\overrightarrow{PQ},\\overrightarrow{PR},\\overrightarrow{PS})\\right|$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El pla per $A$, $B$ i $C$ és $z=0$ (tots tres tenen $z=0$). Les paramètriques de $r$ són $(\\lambda,\\,1+\\lambda,\\,2\\lambda)$; amb $z=0$ resulta $\\lambda=0$, i el punt és $(0,1,0)$.\n\nb) Els punts de $r$ són $P=(\\lambda,1+\\lambda,2\\lambda)$. Amb $\\overrightarrow{CP}=(\\lambda-1,\\,1+\\lambda,\\,2\\lambda)$, $\\overrightarrow{CA}=(0,1,0)$ i $\\overrightarrow{CB}=(2,5,0)$: $\\det(\\overrightarrow{CP},\\overrightarrow{CA},\\overrightarrow{CB})=-4\\lambda$. Llavors $V=\\dfrac16|-4\\lambda|=\\dfrac23|\\lambda|=2$, d'on $|\\lambda|=3$, és a dir, $\\lambda=3$ o $\\lambda=-3$.",
+        "resultat": "a) $(0,1,0)$; b) $P_1=(3,4,6)$ i $P_2=(-3,-2,-6)$"
+      }
+    },
+    {
+      "id": "2018-ext-S3-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin les funcions $f(x)=x^2-1$ i $g(x)=3-x^2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Feu un esbós de les gràfiques de les paràboles $y=f(x)$ i $y=g(x)$ en un mateix sistema d'eixos cartesians i trobeu els punts de tall amb l'eix de les abscisses, els vèrtexs i els punts de tall entre les dues gràfiques."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'àrea de la regió del semiplà $y\\geq0$ compresa entre les gràfiques de $f(x)$ i $g(x)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f$ talla l'eix $OX$ en $x=\\pm1$ i té vèrtex en $(0,-1)$. $g$ talla l'eix $OX$ en $x=\\pm\\sqrt3$ i té vèrtex en $(0,3)$. Igualant $x^2-1=3-x^2$ s'obté $x^2=2$, és a dir, els punts de tall entre les gràfiques són $(\\sqrt2,1)$ i $(-\\sqrt2,1)$.\n\nb) Per simetria respecte de l'eix $OY$, i tenint en compte que $f\\leq0$ per a $|x|\\leq1$ (on el límit inferior és $y=0$):\n$$A=2\\int_0^1(3-x^2)\\,dx+2\\int_1^{\\sqrt2}\\big((3-x^2)-(x^2-1)\\big)\\,dx=\\frac{16\\sqrt2-4}{3}\\approx6{,}21\\ u^2.$$",
+        "resultat": "a) Talls amb l'eix $OX$: $(\\pm1,0)$ i $(\\pm\\sqrt3,0)$; vèrtexs $(0,-1)$ i $(0,3)$; talls entre les gràfiques $(\\pm\\sqrt2,1)$; b) $A=\\dfrac{16\\sqrt2-4}{3}\\approx6{,}21\\ u^2$"
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

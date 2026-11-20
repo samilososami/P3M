@@ -1,0 +1,179 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2012-ext-S4",
+  "assignatura": "matematiques",
+  "any": 2012,
+  "convocatoria": "extraordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2012/pau_mate12sl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2012/pau_mate12sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2012-ext-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Determineu el rang de la matriu $A=\\begin{pmatrix} 1 & 1 & k \\\\ 1 & k & 1 \\\\ k & 1 & 1 \\end{pmatrix}$ en funció del paràmetre $k$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "El determinant és $\\det A=-(k+2)(k-1)^2$, que s'anul·la per a $k=-2$ i $k=1$.\n\n- Si $k\\neq-2$ i $k\\neq1$: $\\operatorname{rang}A=3$.\n- Si $k=-2$: $A=\\begin{pmatrix} 1 & 1 & -2 \\\\ 1 & -2 & 1 \\\\ -2 & 1 & 1 \\end{pmatrix}$, que escalonada queda amb dues files no nul·les: $\\operatorname{rang}A=2$.\n- Si $k=1$: $A$ té totes les files iguals a $(1,1,1)$, per tant $\\operatorname{rang}A=1$.",
+        "resultat": "$\\operatorname{rang}A=3$ si $k\\neq-2$ i $k\\neq1$; $\\operatorname{rang}A=2$ si $k=-2$; $\\operatorname{rang}A=1$ si $k=1$."
+      }
+    },
+    {
+      "id": "2012-ext-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $f(x)=\\dfrac{ax^2}{x+b}$, en què $a\\neq0$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Determineu si té alguna asímptota vertical, en funció del paràmetre $b$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Indiqueu el valor dels paràmetres $a$ i $b$ perquè la funció $f(x)$ tingui la recta $y=2x-4$ com a asímptota obliqua a $+\\infty$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El denominador s'anul·la en $x=-b$.\n- Si $b\\neq0$: $\\displaystyle\\lim_{x\\to-b}\\dfrac{ax^2}{x+b}=\\dfrac{ab^2}{0}=\\infty$, per tant $x=-b$ és una asímptota vertical.\n- Si $b=0$: $\\dfrac{ax^2}{x}=ax$ per a $x\\neq0$, i no hi ha cap asímptota vertical.\n\nb) Una asímptota obliqua $y=mx+n$ a $+\\infty$ té $m=\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{f(x)}{x}$ i $n=\\displaystyle\\lim_{x\\to+\\infty}\\big(f(x)-mx\\big)$. Aquí $m=a$ i $n=\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{-abx}{x+b}=-ab$. Equivalentment, $f(x)=ax-ab+\\dfrac{ab^2}{x+b}$.\n\nPer tant $a=2$ i $-ab=-4$, d'on $b=2$.",
+        "resultat": "a) si $b\\neq0$ hi ha asímptota vertical $x=-b$; si $b=0$ no n'hi ha; b) $a=2$ i $b=2$.",
+        "nota": "al PDF de criteris, la solució 1 de l'apartat b escriu \"$y=2x-3$\" però després utilitza $-ab=-4$, que és el que correspon a $y=2x-4$ de l'enunciat. S'ha transcrit l'enunciat i el resultat correspon a $y=2x-4$."
+      }
+    },
+    {
+      "id": "2012-ext-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n$$\\begin{cases} x+y-3z=2 \\\\ 2x+ay-5z=2a+3 \\\\ 2x-3y+(a-2)z=9 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Calculeu el valor o els valors del paràmetre $a$ per al qual o per als quals el sistema és compatible indeterminat."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Quantes solucions té aquest sistema quan $a=-3$?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El determinant de la matriu del sistema és $\\begin{vmatrix} 1 & 1 & -3 \\\\ 2 & a & -5 \\\\ 2 & -3 & a-2 \\end{vmatrix}=a^2+2a-3$, que s'anul·la per a $a=1$ i $a=-3$.\n\n- Per a $a=1$, el sistema és compatible indeterminat: les dues últimes equacions del sistema, després d'eliminar $x$, són la mateixa ($-y+z=1$).\n- Per a $a=-3$, la matriu ampliada és $\\begin{pmatrix} 1 & 1 & -3 & | & 2 \\\\ 2 & -3 & -5 & | & -3 \\\\ 2 & -3 & -5 & | & 9 \\end{pmatrix}$, que és incompatible.\n\nPer tant, el sistema és compatible indeterminat si i només si $a=1$.\n\nb) Per a $a=-3$ el sistema és incompatible, per tant no té cap solució.",
+        "resultat": "a) $a=1$; b) cap solució (sistema incompatible)."
+      }
+    },
+    {
+      "id": "2012-ext-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Una fàbrica produeix diàriament $x$ tones d'un producte $A$ i $\\dfrac{40-5x}{10-x}$ tones d'un producte $B$. La quantitat màxima de producte $A$ que es pot produir és 8 tones. El preu de venda del producte $A$ és 100€ per tona i el del producte $B$ és 250€ per tona.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Construïu la funció de la variable $x$ que ens proporciona els ingressos diaris, suposant que es ven tota la producció."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Calculeu quantes tones de cada producte s'han de produir diàriament per a obtenir el màxim d'ingressos, i comproveu que és realment un màxim relatiu."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $f(x)=100x+250\\,\\dfrac{40-5x}{10-x}$.\n\nb) $f'(x)=\\dfrac{100x^2-2000x+7500}{(10-x)^2}$. Igualant a zero, $x^2-20x+75=0$, d'on $x=5$ o $x=15$.\n\nCom que $0\\le x\\le 8$, només és vàlid $x=5$. Llavors el producte $B$ és $\\dfrac{40-25}{10-5}=3$ tones.\n\nComprovació del màxim: $f'(4)>0$ i $f'(6)<0$, per tant $f$ creix abans de $x=5$ i decreix després, i $x=5$ és un màxim relatiu.",
+        "resultat": "s'han de produir 5 tones de $A$ i 3 tones de $B$.",
+        "nota": "al PDF de criteris, la pàgina 4 repeteix el contingut dels apartats 2 i 3 i no es troba la continuació de l'apartat 4. La restricció $0\\le x\\le8$ i la comprovació del signe de $f'$ s'han fet a partir de l'enunciat i no provenen del PDF de criteris."
+      }
+    },
+    {
+      "id": "2012-ext-S4-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu les rectes de l'espai següents:\n$$r:\\ \\dfrac{x+1}{2}=y-1=\\dfrac{z-1}{-1}, \\qquad s:\\ \\dfrac{x-4}{3}=\\dfrac{y-1}{-1}=\\dfrac{z-2}{2}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que són secants."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació contínua de la recta que les talla i que és perpendicular a totes dues."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El punt $P=(-1,1,1)$ pertany a $r$, i $Q=(4,1,2)$ pertany a $s$. Els vectors directors són $\\vec v_r=(2,1,-1)$ i $\\vec v_s=(3,-1,2)$, que no són proporcionals, així que les rectes no són paral·leles ni coincidents. Amb la matriu $\\begin{pmatrix} 2 & 1 & -1 \\\\ 3 & -1 & 2 \\\\ 5 & 0 & 1 \\end{pmatrix}$ (files $\\vec v_r$, $\\vec v_s$ i $\\overrightarrow{PQ}=(5,0,1)$):\n$$\\det=2(-1)-(3-10)+(-1)(5)=0,$$\nper tant les rectes es tallen.\n\nb) El punt de tall és $P_1=(-1+2\\lambda,\\,1+\\lambda,\\,1-\\lambda)$ amb $\\lambda=1$, és a dir $P_1=(1,2,0)$. El vector director de la recta buscada és\n$$\\vec v=\\vec v_r\\times\\vec v_s=(2,1,-1)\\times(3,-1,2)=(1,-7,-5).$$\nPer tant:\n$$\\dfrac{x-1}{1}=\\dfrac{y-2}{-7}=\\dfrac{z}{-5}$$",
+        "resultat": "a) les rectes es tallen (determinant nul); b) $\\dfrac{x-1}{1}=\\dfrac{y-2}{-7}=\\dfrac{z}{-5}$.",
+        "nota": "al PDF de criteris, falta l'inici de la solució de l'apartat a (solucions 1 i 2) per la mateixa incidència de la pàgina 4. S'ha transcrit la solució 3, que és completa."
+      }
+    },
+    {
+      "id": "2012-ext-S4-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donades la recta $y=ax+1$ i la paràbola $y=3x-x^2$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Calculeu els valors del paràmetre $a$ perquè siguin tangents."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.5,
+          "enunciat": "Calculeu els punts de tangència."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Perquè siguin tangents en un punt d'abscissa $x$, cal que $ax+1=3x-x^2$ i que les derivades siguin iguals, $a=3-2x$. Substituint: $(3-2x)x+1=3x-x^2$, és a dir $x^2=1$, d'on $x=\\pm1$. Per a $x=1$, $a=1$; per a $x=-1$, $a=5$.\n\nTambé es pot imposar que l'equació $x^2+(a-3)x+1=0$ tingui discriminant nul: $(a-3)^2-4=0$, és a dir $a^2-6a+5=0$, d'on $a=1$ o $a=5$.\n\nb) Per a $a=1$, el punt de tangència és $P_1=(1,2)$. Per a $a=5$, el punt de tangència és $P_2=(-1,-4)$.",
+        "resultat": "a) $a=1$ o $a=5$; b) $(1,2)$ (per a $a=1$) i $(-1,-4)$ (per a $a=5$)."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

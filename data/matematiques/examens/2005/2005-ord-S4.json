@@ -1,0 +1,169 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2005-ord-S4",
+  "assignatura": "matematiques",
+  "any": 2005,
+  "convocatoria": "ordinaria",
+  "serie": 4,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu). En les respostes que doneu heu d'explicar sempre què és el que voleu fer i per què. Puntuació de cada qüestió: 2 punts. Total qüestions: 3 x 2 = 6 punts. Problema: 4 punts. Podeu fer servir qualsevol mena de calculadora llevat de les que treballin amb un sistema operatiu d'ordinador tipus WINDOWS/LINUX.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2005/pau_mate05jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2005/pau_mate05jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2005-ord-S4-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donades les matrius $A=\\begin{pmatrix} 1 & a \\\\ 0 & 1 \\end{pmatrix}$ i $B=\\begin{pmatrix} 1 & b \\\\ 0 & 1 \\end{pmatrix}$, on $a$ i $b$ són nombres reals, trobeu els valors de $a$ i $b$ que fan que les dues matrius commutin, és a dir, que fan que es compleixi $A\\cdot B=B\\cdot A$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$A\\cdot B=\\begin{pmatrix} 1 & a+b \\\\ 0 & 1 \\end{pmatrix}$ i $B\\cdot A=\\begin{pmatrix} 1 & a+b \\\\ 0 & 1 \\end{pmatrix}$.",
+        "resultat": "$A$ i $B$ commuten per a tot $a$ i $b$ reals."
+      }
+    },
+    {
+      "id": "2005-ord-S4-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donada la funció $f(x)=\\dfrac{x}{\\sqrt{5x^2-4}}$:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu la integral $\\displaystyle\\int f(x)\\,dx$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu la primitiva $F$ de $f$ que compleixi $F(1)=1$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Com que $\\dfrac{d}{dx}\\sqrt{5x^2-4}=\\dfrac{5x}{\\sqrt{5x^2-4}}$, es té $\\displaystyle\\int\\dfrac{x}{\\sqrt{5x^2-4}}\\,dx=\\dfrac{1}{5}\\sqrt{5x^2-4}+C$.\n\nb) $F(x)=\\dfrac15\\sqrt{5x^2-4}+C$. Imposant $1=F(1)=\\dfrac15+C$, resulta $C=\\dfrac45$.",
+        "resultat": "a) $\\displaystyle\\int f(x)\\,dx=\\dfrac15\\sqrt{5x^2-4}+C$; b) $F(x)=\\dfrac15\\sqrt{5x^2-4}+\\dfrac45$"
+      }
+    },
+    {
+      "id": "2005-ord-S4-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu els màxims i mínims relatius de la funció $f(x)=6x^5-15x^4+10x^3$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$f'(x)=30x^4-60x^3+30x^2=30x^2(x-1)^2$, amb arrels $x=0$ i $x=1$, totes dues dobles. Com que $f'(x)\\geq0$ per a tot $x$, la funció és sempre creixent i no té màxims ni mínims relatius.\n\nAmb el criteri de la derivada segona: $f''(x)=60x(2x-1)(x-1)$, i $f''(0)=f''(1)=0$. Calculant la derivada tercera, $f'''(x)=60(6x^2-6x+1)$, es té $f'''(0)=60\\neq0$ i $f'''(1)=60\\neq0$. Per tant, a $x=0$ i a $x=1$ hi ha punts d'inflexió, no extrems.",
+        "resultat": "no hi ha màxims ni mínims relatius; punts d'inflexió a $(0,0)$ i $(1,1)$."
+      }
+    },
+    {
+      "id": "2005-ord-S4-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la paràbola $y=2x^2+x+1$ i sigui $A$ el punt de la paràbola d'abscissa 0.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació de la recta tangent a la paràbola en el punt $A$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "En quin punt de la paràbola la recta tangent és perpendicular a la recta que heu trobat a l'apartat anterior?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A=(0,1)$. El pendent de la tangent és $y'(0)=1$, i la recta tangent és $y-1=x$.\n\nb) La tangent en un punt $(a,\\,2a^2+a+1)$ té pendent $y'(a)=4a+1$. Per ser perpendicular a la recta de l'apartat a) (pendent 1) cal que $1\\cdot(4a+1)=-1$, és a dir, $a=-\\dfrac12$. El punt és $P=\\left(-\\dfrac12,\\,1\\right)$.",
+        "resultat": "a) $y=x+1$; b) $P=\\left(-\\dfrac12,\\,1\\right)$"
+      }
+    },
+    {
+      "id": "2005-ord-S4-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "De tres nombres, $x$, $y$ i $z$, sabem el següent: que el primer més el segon sumen 0; que el primer més el tercer sumen 1; que la suma de tots tres és 0 i, per acabar, que el primer multiplicat per un nombre $k$ més el doble de la suma del segon i del tercer dóna 1.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 2.0,
+          "enunciat": "Què podeu dir del valor de $k$?"
+        },
+        {
+          "lletra": "b",
+          "punts": 2.0,
+          "enunciat": "Quan valen els tres nombres?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els nombres han de ser solució del sistema:\n\n$$\\begin{cases} x+y=0 \\\\ x+z=1 \\\\ x+y+z=0 \\\\ kx+2(y+z)=1 \\end{cases}$$\n\nLes tres primeres equacions tenen determinant $\\begin{vmatrix} 1 & 1 & 0 \\\\ 1 & 0 & 1 \\\\ 1 & 1 & 1 \\end{vmatrix}=-1\\neq0$, i per tant determinen una única solució: $x=1$, $y=-1$, $z=0$. Substituint a la quarta equació: $k\\cdot1+2(-1+0)=1$, d'on $k=3$. Per tant, el sistema només és compatible si $k=3$: per a qualsevol altre valor de $k$ la solució única de les tres primeres equacions no compleix la quarta, i el sistema és incompatible.\n\nb) Per a $k=3$, el sistema triangulat per Gauss és:\n\n$$\\begin{cases} x+y=0 \\\\ -y+z=1 \\\\ z=0 \\end{cases}\\quad\\Rightarrow\\quad x=1,\\; y=-1,\\; z=0$$",
+        "resultat": "$k=3$ (per a qualsevol altre valor de $k$ el sistema és incompatible); els nombres són $x=1$, $y=-1$, $z=0$."
+      }
+    },
+    {
+      "id": "2005-ord-S4-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Una piràmide de base quadrada té el vèrtex en el pla d'equació $z=3$. Tres dels vèrtexs de la base són els punts del pla $OXY$: $A=(1,0,0)$, $B=(1,1,0)$ i $C=(0,1,0)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Feu un gràfic dels elements del problema. Quines són les coordenades del quart vèrtex de la base, $D$?"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Quin és el volum de la piràmide? $\\left[\\text{Volum}=\\dfrac{\\text{àrea base}\\times\\text{altura}}{3}\\right]$"
+        },
+        {
+          "lletra": "c",
+          "punts": 2.0,
+          "enunciat": "Si el vèrtex de la piràmide és el punt $V=(a,b,3)$, quina és l'equació de la recta que conté l'altura sobre la base?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Gràfic: la base quadrada $ABCD$ sobre el pla $z=0$ i el vèrtex $V$ sobre el pla $z=3$, amb l'altura $h$ entre tots dos plans. El quart vèrtex és $D=(0,0,0)$.\n\nb) La base és un quadrat de costat 1, per tant $S=1$. El vèrtex està sobre el pla $z=3$, paral·lel al de la base, i la seva distància a la base és $h=3$ (independentment de la posició de $V$ sobre el pla). Per tant, $\\text{Vol}=\\dfrac13\\cdot1\\cdot3=1$ unitat de volum.\n\nc) L'altura és la recta que passa per $V=(a,b,3)$ i és perpendicular al pla $z=0$, és a dir, amb vector director $(0,0,1)$. La seva equació contínua és $\\dfrac{x-a}{0}=\\dfrac{y-b}{0}=\\dfrac{z-3}{1}$, que equival a $x=a$, $y=b$.",
+        "resultat": "$D=(0,0,0)$; $\\text{Vol}=1$ unitat de volum; altura: $x=a,\\ y=b$ (recta vertical per $V$)."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

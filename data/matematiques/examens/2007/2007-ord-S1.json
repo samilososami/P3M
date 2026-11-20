@@ -1,0 +1,149 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2007-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2007,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "Responeu a TRES de les quatre qüestions i resoleu UN dels dos problemes següents. En les respostes, expliqueu sempre què és el que voleu fer i per què. Cada qüestió val 2 punts i el problema 4 punts.\n\nPodeu utilitzar la calculadora científica per al càlcul de funcions exponencials, logarítmiques, trigonomètriques i especials, així com per a realitzar càlculs estadístics. No es poden fer servir, però, calculadores o altres aparells que permetin fer més operacions que les esmentades.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2007/pau_mate07jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2007/pau_mate07jp.pdf",
+      "pagines": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2007-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "En quin punt la recta tangent a la funció $f(x)=x\\cdot e^x$ és paral·lela a l'eix d'abscisses? Escriviu l'equació de la recta tangent en aquest punt.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "La tangent és horitzontal quan la derivada val zero: $f'(x)=e^x+xe^x=e^x(x+1)=0$, d'on $x=-1$. Com que $f(-1)=-e^{-1}$, el punt de tangència és $\\left(-1,-e^{-1}\\right)$ i la recta tangent és $y=-\\dfrac1e$.",
+        "resultat": "punt $\\left(-1,-\\dfrac1e\\right)$; tangent $y=-\\dfrac1e$."
+      }
+    },
+    {
+      "id": "2007-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu els punts de l'espai $P=(-1,\\,a-1,\\,3)$, $Q=(0,\\,a-2,\\,1-a)$ i $R=(2,\\,-1,\\,6-6a)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu el valor de $a$ per al qual els tres punts estan alineats."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Quan els tres punts estan alineats, quina és l'equació de la recta que els conté?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els tres punts estan alineats si els vectors $\\overrightarrow{PQ}$ i $\\overrightarrow{QR}$ són proporcionals:\n\n$$\\overrightarrow{PQ}=(1,\\,-1,\\,-a-2),\\qquad \\overrightarrow{QR}=(2,\\,1-a,\\,5-5a)$$\n\n$$\\dfrac{2}{1}=\\dfrac{1-a}{-1}=\\dfrac{5-5a}{-a-2}$$\n\nLes dues igualtats es compleixen per a $a=3$.\n\nb) Per a $a=3$: $P=(-1,2,3)$, $Q=(0,1,-2)$ i $\\overrightarrow{PQ}=(1,-1,-5)$. La recta és $(x,y,z)=(0,1,-2)+t\\,(1,-1,-5)$, o bé $x=\\dfrac{y-1}{-1}=\\dfrac{z+2}{-5}$.",
+        "resultat": "a) $a=3$; b) $(x,y,z)=(0,1,-2)+t\\,(1,-1,-5)$, és a dir, $x=\\dfrac{y-1}{-1}=\\dfrac{z+2}{-5}$."
+      }
+    },
+    {
+      "id": "2007-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Busqueu els extrems relatius i els punts de tall amb els eixos, i feu una representació aproximada de la corba d'equació $y=x^4-x^2$. A continuació, calculeu l'àrea del recinte tancat per aquesta corba i l'eix d'abscisses.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Amb $f(x)=x^4-x^2$, $f'(x)=4x^3-2x=2x\\left(2x^2-1\\right)$. Els punts crítics són $x=0$ i $x=\\pm\\dfrac{1}{\\sqrt2}$.\n\nCom que $f''(x)=12x^2-2$: $f''(0)=-2<0$, per tant $(0,0)$ és un màxim relatiu; $f''\\!\\left(\\pm\\dfrac{1}{\\sqrt2}\\right)=4>0$, per tant $\\left(\\pm\\dfrac{1}{\\sqrt2},-\\dfrac14\\right)$ són mínims relatius.\n\nPunts de tall: $x^2(x^2-1)=0$, és a dir, $(0,0)$, $(1,0)$ i $(-1,0)$.\n\nGràfica: corba simètrica respecte de l'eix $OY$, amb un màxim a $(0,0)$, dos mínims a $\\left(\\pm\\dfrac{1}{\\sqrt2},-\\dfrac14\\right)$ i que talla l'eix $OX$ en $x=-1$, $x=0$ i $x=1$.\n\nL'àrea del recinte entre la corba i l'eix d'abscisses (que és per sota de l'eix entre $-1$ i $1$) és:\n\n$$A=-\\int_{-1}^{1}\\left(x^4-x^2\\right)dx=-\\left[\\dfrac{x^5}{5}-\\dfrac{x^3}{3}\\right]_{-1}^{1}=\\dfrac{4}{15}$$",
+        "resultat": "màxim relatiu $(0,0)$; mínims relatius $\\left(\\pm\\dfrac{1}{\\sqrt2},-\\dfrac14\\right)$; talls $(-1,0)$, $(0,0)$ i $(1,0)$; àrea $=\\dfrac{4}{15}$ unitats d'àrea."
+      },
+      "punts_detall": "1 punt pel càlcul d'extrems, els punts de tall i la gràfica; 1 punt pel càlcul de l'àrea."
+    },
+    {
+      "id": "2007-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Trobeu l'equació de la recta continguda en el pla $\\pi:\\ x+2y+6z-2=0$, que talla els eixos $OY$ i $OZ$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Tall amb $OY$ ($x=0$, $z=0$): $2y=2$, és a dir, $y=1$, el punt és $(0,1,0)$.\n\nTall amb $OZ$ ($x=0$, $y=0$): $6z=2$, és a dir, $z=\\dfrac13$, el punt és $\\left(0,0,\\dfrac13\\right)$.\n\nLa recta que passa per tots dos punts té vector director $\\left(0,1,-\\dfrac13\\right)$ i equació $(x,y,z)=(0,1,0)+t\\,\\left(0,1,-\\dfrac13\\right)$, o bé $x=0$, $\\dfrac{y-1}{1}=\\dfrac{z}{-1/3}$.",
+        "resultat": "$x=0$, $\\dfrac{y-1}{1}=\\dfrac{z}{-1/3}$ (equivalentment, $x=0$, $y-1=-3z$)."
+      }
+    },
+    {
+      "id": "2007-ord-S1-P5",
+      "numero": 5,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu la recta d'equació $r:\\ x=\\dfrac{y-2}{2}=\\dfrac{z-1}{2}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Expresseu el quadrat de la distància d'un punt qualsevol $(x,y,z)$ de la recta al punt $P=(1,2,5)$ com una funció de la coordenada $x$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Trobeu quin valor de $x$ fa mínima aquesta funció, deduïu d'aquí quin punt $Q$ de la recta és el més proper a $P$ i calculeu la distància del punt a la recta."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Escriviu l'equació de la recta que passa per $P$ i $Q$ i comproveu que és perpendicular a $r$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El quadrat de la distància és $d^2=(x-1)^2+(y-2)^2+(z-5)^2$. Un punt qualsevol de $r$ compleix $y=2x+2$ i $z=2x+1$. Per tant:\n\n$$f(x)=(x-1)^2+(2x)^2+(2x-4)^2=9x^2-18x+17$$\n\nb) $f'(x)=18x-18=0$ si $x=1$, i $f''(x)=18>0$, per tant és un mínim. El punt de la recta més proper a $P$ és $Q=(1,4,3)$. Com que $f(1)=8$, la distància de $P$ a la recta és $\\sqrt8=2\\sqrt2$.\n\nc) La recta que passa per $P=(1,2,5)$ i $Q=(1,4,3)$ és $x=1$, $\\dfrac{y-2}{2}=\\dfrac{z-5}{-2}$, és a dir, $\\dfrac{x-1}{0}=\\dfrac{y-2}{2}=\\dfrac{z-5}{-2}$. Els vectors directors són $(0,2,-2)$ i $(1,2,2)$ (el de $r$), amb producte escalar $(1,2,2)\\cdot(0,2,-2)=0$. Per tant, les dues rectes són perpendiculars.",
+        "resultat": "a) $f(x)=9x^2-18x+17$; b) $x=1$, $Q=(1,4,3)$, distància $=2\\sqrt2$; c) $x=1$, $\\dfrac{y-2}{2}=\\dfrac{z-5}{-2}$, perpendicular a $r$ perquè $(1,2,2)\\cdot(0,2,-2)=0$."
+      }
+    },
+    {
+      "id": "2007-ord-S1-P6",
+      "numero": 6,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Discutiu el sistema següent en funció del paràmetre $p$:\n\n$$\\begin{cases} x+2y+z=5 \\\\ 2x+py+2z=10 \\\\ px+6y+3z=12 \\end{cases}$$\n\nDoneu la interpretació geomètrica del sistema en cada cas i resoleu-lo quan sigui compatible.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Esglaonant la matriu ampliada:\n\n$$\\left(\\begin{array}{ccc|c} 1 & 2 & 1 & 5 \\\\ 2 & p & 2 & 10 \\\\ p & 6 & 3 & 12 \\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c} 1 & 2 & 1 & 5 \\\\ 0 & p-4 & 0 & 0 \\\\ 0 & 6-2p & 3-p & 12-5p \\end{array}\\right)$$\n\n- **Si $p=4$:** la segona fila és nul·la i els rangs de la matriu de coeficients i de l'ampliada valen 2. El sistema és compatible indeterminat. La solució és $x=-3$, $z=8-2y$, amb $y$ lliure. Geomètricament, la primera i la segona equació són el mateix pla, i el tercer pla el talla segons la recta $x=-3$, $z=8-2y$.\n\n- **Si $p=3$:** la matriu queda amb la darrera fila $(0\\;0\\;0\\mid-3)$. El rang de la matriu de coeficients és 2 i el de l'ampliada és 3. El sistema és incompatible. Geomètricament, els plans primer i tercer són paral·lels (coeficients proporcionals $(1,2,1)$ i $(3,6,3)$) i el segon els talla, de manera que no hi ha cap punt comú.\n\n- **Si $p\\neq3$ i $p\\neq4$:** els dos rangs valen 3 i el sistema és compatible determinat. En un pas més d'esglaonament s'obté $y=0$, $z=\\dfrac{12-5p}{3-p}$ i $x=\\dfrac{3}{3-p}$. Geomètricament, els tres plans es tallen en un punt.\n\nComprovació del determinant: $\\begin{vmatrix} 1 & 2 & 1 \\\\ 2 & p & 2 \\\\ p & 6 & 3 \\end{vmatrix}=-p^2+7p-12=-(p-3)(p-4)$, que s'anul·la per a $p=3$ i $p=4$.",
+        "resultat": "SCD per a $p\\neq3$ i $p\\neq4$, amb $(x,y,z)=\\left(\\dfrac{3}{3-p},\\,0,\\,\\dfrac{12-5p}{3-p}\\right)$ (tres plans que es tallen en un punt); SI per a $p=3$ (dos plans paral·lels tallats per un tercer); SCI per a $p=4$, amb solucions $x=-3$, $z=8-2y$ (una recta comuna)."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

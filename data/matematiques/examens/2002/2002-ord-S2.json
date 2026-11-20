@@ -1,0 +1,173 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2002-ord-S2",
+  "assignatura": "matematiques",
+  "any": 2002,
+  "convocatoria": "ordinaria",
+  "serie": 2,
+  "tribunal": "ordinari",
+  "estructura": "4 qüestions i 2 problemes; es responen 3 qüestions i 1 problema",
+  "instruccions": "A continuació trobareu l'enunciat de quatre qüestions i dos problemes. Heu de respondre només tres de les quatre qüestions i resoldre només un dels dos problemes (podeu triar les qüestions i el problema que vulgueu). En les respostes que doneu heu d'explicar sempre què és el que voleu fer i per què.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2002/pau_mate02jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2002/pau_mate02jp.pdf",
+      "pagines": [
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2002-ord-S2-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'àrea compresa entre les gràfiques de les corbes $y=e^{2x}$ i $y=e^{-2x}$ i la recta $y=5$ representada en l'esquema següent.",
+      "apartats": [],
+      "figures": [
+        "la corba $y=e^{2|x|}$, en forma de U amb el mínim a $(0,1)$, formada per $y=e^{-2x}$ (per a $x>0$) i $y=e^{2x}$ (per a $x<0$); les dues branques s'acosten a l'eix d'abscisses per fora de la U. La recta $y=5$ és horitzontal. La regió ombrejada és la compresa entre la recta $y=5$ (per dalt) i la U (per baix), per a $x$ entre $-\\tfrac12\\ln5$ i $\\tfrac12\\ln5$."
+      ],
+      "solucio": {
+        "desenvolupament": "La regió és simètrica respecte de l'eix $OY$, i la recta $y=5$ talla $y=e^{2|x|}$ en $x=\\pm\\tfrac12\\ln5$. Per tant\n$$A=2\\int_0^{\\frac12\\ln5}\\left(5-e^{2x}\\right)dx=2\\left[5x-\\tfrac12e^{2x}\\right]_0^{\\frac12\\ln5}=2\\left(\\tfrac52\\ln5-2\\right)=5\\ln5-4\\approx4{,}0472.$$",
+        "resultat": "$A=5\\ln5-4\\approx4{,}0472$ u²."
+      },
+      "punts_detall": "fins a 1,5 punts pel plantejament i el càlcul de la primitiva (incloent-hi els límits d'integració); 0,5 punts pels càlculs."
+    },
+    {
+      "id": "2002-ord-S2-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sabent que la funció $y=(x+a)(x^2-4)$, on $a$ és un nombre real, té un màxim i un mínim relatius, i que el màxim relatiu s'assoleix en el punt $x=-\\dfrac13$, trobeu l'abscissa del mínim relatiu.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "$y'=3x^2+2ax-4$. Com que $-\\tfrac13$ és solució de $y'=0$, s'obté $a=-\\tfrac{11}{2}$. L'altra solució satisfà $-\\tfrac13\\cdot\\alpha=-\\tfrac43$, és a dir, $\\alpha=4$. Com que $y''=6x+2a$, $y''(-\\tfrac13)=-13<0$ (màxim) i $y''(4)=13>0$ (mínim).",
+        "resultat": "el mínim relatiu és a $x=4$."
+      }
+    },
+    {
+      "id": "2002-ord-S2-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $f(x)=\\dfrac{mx-2}{x-1}$, on $m$ és un paràmetre.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Determineu per a cada valor del paràmetre $m$ el valor del límit $\\lim_{x\\to1}f(x)$ (si existeix)."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Per a quins valors de $m$ la derivada $f'(x)$ de la funció $f(x)$ és positiva per a tot $x$?"
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Com que $f(x)=m+\\dfrac{m-2}{x-1}$: si $m\\neq2$, el límit és infinit (els límits laterals són infinits de signe contrari); si $m=2$, $f(x)=2$ per a $x\\neq1$ i $\\lim_{x\\to1}f(x)=2$.\n\nb) $f'(x)=\\dfrac{m(x-1)-(mx-2)}{(x-1)^2}=\\dfrac{2-m}{(x-1)^2}$, que és positiva per a tot $x\\neq1$ si i només si $2-m>0$, és a dir, $m<2$.",
+        "resultat": "a) si $m\\neq2$, límit infinit; si $m=2$, límit $2$; b) $m<2$."
+      },
+      "punts_detall": "1 punt per cada apartat."
+    },
+    {
+      "id": "2002-ord-S2-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Calculeu l'angle que forma el pla $x-2y+z=1$ amb la recta determinada per les equacions $x=t$, $y=1+t$, $z=2$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "La recta té vector director $\\vec u=(1,1,0)$ i el pla té vector normal $\\vec n=(1,-2,1)$. L'angle $\\theta$ entre la recta i el pla és el complementari de l'angle entre $\\vec u$ i $\\vec n$:\n$$\\sin\\theta=\\frac{|\\vec n\\cdot\\vec u|}{|\\vec n|\\,|\\vec u|}=\\frac{|1-2|}{\\sqrt6\\cdot\\sqrt2}=\\frac{\\sqrt3}{6}.$$\nPer tant $\\theta=\\arcsin\\dfrac{\\sqrt3}{6}\\approx16{,}78^\\circ$.",
+        "resultat": "$\\theta\\approx16{,}78^\\circ$.",
+        "nota": "els criteris donen $16{,}77^\\circ$ per arrodoniment i accepten també la resposta que pren com a angle el format entre el vector director de la recta i el normal del pla, sempre que sigui coherent amb aquesta definició."
+      }
+    },
+    {
+      "id": "2002-ord-S2-P1",
+      "numero": 1,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Considereu les rectes $r$ i $s$ amb les equacions següents:\n$$r:\\ \\begin{cases} x-y+3=0 \\\\ 2x-z+2=0 \\end{cases}\\qquad s:\\ \\begin{cases} y+\\dfrac13=0 \\\\ x-2z-3=0 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "Calculeu, de cada una de les rectes, un punt i un vector director."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "Determineu si existeix cada un dels següents objectes i en cas afirmatiu calculeu la seva equació:\n\ni) El pla paral·lel a la recta $s$ que conté la recta $r$.\n\nii) El pla perpendicular a la recta $s$ que conté la recta $r$.\n\niii) La recta perpendicular a les rectes $r$ i $s$ que passa per $(0,0,0)$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Solucionant els sistemes, $r:\\ (x,y,z)=(-1,2,0)+z\\left(\\tfrac12,\\tfrac12,1\\right)$ i $s:\\ (x,y,z)=\\left(3,-\\tfrac13,0\\right)+z(2,0,1)$. Així, un punt de $r$ és $(-1,2,0)$ amb vector director $\\left(\\tfrac12,\\tfrac12,1\\right)$ (equivalent a $(1,1,2)$), i un punt de $s$ és $\\left(3,-\\tfrac13,0\\right)$ amb vector director $(2,0,1)$.\n\nb) i) El pla té vectors directors $(1,1,2)$ (de $r$) i $(2,0,1)$ (de $s$), i passa per $(-1,2,0)$. El seu vector normal és $(1,1,2)\\times(2,0,1)=(1,3,-2)$, i l'equació és $(x+1)+3(y-2)-2z=0$, és a dir, $x+3y-2z=5$.\n\nii) Perquè el pla perpendicular a $s$ contingui $r$, cal que $r$ sigui perpendicular a $s$. Però $(1,1,2)\\cdot(2,0,1)=4\\neq0$, per tant el pla no existeix.\n\niii) La recta té per vector director el producte vectorial dels directors de $r$ i $s$, $(1,3,-2)$, i passa per l'origen: $(x,y,z)=\\lambda(1,3,-2)$. Comprovació: $(1,3,-2)\\cdot(1,1,2)=0$ i $(1,3,-2)\\cdot(2,0,1)=0$.",
+        "resultat": "a) $r$: punt $(-1,2,0)$, vector $\\left(\\tfrac12,\\tfrac12,1\\right)$; $s$: punt $\\left(3,-\\tfrac13,0\\right)$, vector $(2,0,1)$; b) i) $x+3y-2z=5$; ii) no existeix; iii) $(x,y,z)=\\lambda(1,3,-2)$.",
+        "nota": "els criteris escriuen el vector de l'apartat iii) com $(1,3,2)$; amb el signe corregit ($-2$) és perpendicular a les dues rectes, com es comprova."
+      },
+      "punts_detall": "1 punt per l'apartat a); 1 punt per cada un dels apartats i), ii) i iii)."
+    },
+    {
+      "id": "2002-ord-S2-P2",
+      "numero": 2,
+      "tipus": "problema",
+      "opcio": null,
+      "punts": 4.0,
+      "enunciat": "Sobre una circumferència de radi 1 m i centre en el punt $O$ considerem els cinc vèrtexs $A$, $B$, $C$, $D$, $E$ d'un pentàgon regular (és a dir, amb els cinc costats de la mateixa longitud) com el del dibuix següent.\n\n\nCalculeu:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": null,
+          "enunciat": "L'angle que formen el radi que acaba en el vèrtex $A$ amb el costat $AB$ i l'angle que formen en el vèrtex $A$ els dos costats que el tenen com extrem (és a dir, l'angle en $A$ entre els costats $EA$ i $AB$)."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "La longitud de cada un dels costats del pentàgon."
+        },
+        {
+          "lletra": "c",
+          "punts": null,
+          "enunciat": "La longitud de qualsevol de les diagonals (per exemple la $EB$)."
+        },
+        {
+          "lletra": "b",
+          "punts": null,
+          "enunciat": "L'àrea del triangle $EAB$."
+        }
+      ],
+      "figures": [
+        "pentàgon regular $ABCDE$ inscrit en una circumferència de centre $O$ i radi 1 m, amb $A$ a dalt, i $B$, $C$, $D$, $E$ en sentit horari. S'hi dibuixen els costats $AB$, $BC$, $CD$ i $DE$; les diagonals $AC$, $BD$, $CE$, $DA$ i $EB$; i els radis $OA$, $OB$, $OC$, $OD$ i $OE$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Al triangle isòsceles $OAB$, l'angle en $O$ és $\\dfrac{360^\\circ}{5}=72^\\circ$, així que l'angle $OAB$ és $\\dfrac{180^\\circ-72^\\circ}{2}=54^\\circ$. L'angle en $A$ entre $EA$ i $AB$ és el de l'interior del pentàgon regular, $2\\cdot54^\\circ=108^\\circ$.\n\nb) Teorema del cosinus al triangle $OAB$: $(AB)^2=1^2+1^2-2\\cos72^\\circ$, per tant $AB=2\\sin36^\\circ\\approx1{,}1756$ m.\n\nc) Al triangle $EAB$, amb angle $108^\\circ$ en $A$: $(EB)^2=2(AB)^2-2(AB)^2\\cos108^\\circ$, és a dir, $EB\\approx1{,}9021$ m.\n\nb) El triangle $EAB$ és isòsceles amb angles de $36^\\circ$ a $E$ i a $B$. L'altura des de $A$ és $h=AB\\sin36^\\circ\\approx0{,}6910$ m, i l'àrea és $\\dfrac{EB\\cdot h}{2}\\approx0{,}6572$ m².",
+        "resultat": "a) $54^\\circ$ (angle $OAB$) i $108^\\circ$ (angle $EAB$); b) $AB\\approx1{,}1756$ m; c) $EB\\approx1{,}9021$ m; b) àrea del triangle $EAB\\approx0{,}6572$ m².",
+        "nota": "a l'enunciat, l'últim apartat (àrea del triangle $EAB$) va etiquetat com a «b)», igual que el segon; es transcriu tal com és. Als criteris és l'apartat d)."
+      },
+      "punts_detall": "1 punt per cada apartat."
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge i amb càlcul",
+    "revisat_huma": false
+  }
+}

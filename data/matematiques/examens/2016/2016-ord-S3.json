@@ -1,0 +1,189 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2016-ord-S3",
+  "assignatura": "matematiques",
+  "any": 2016,
+  "convocatoria": "ordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2016/pau_mate16jl.pdf",
+      "pagines": [
+        1,
+        2
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2016/pau_mate16jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2016-ord-S3-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\begin{cases} 2x+4y+4z=4k-7 \\\\ 2x-ky=-1 \\\\ -2x=k+1 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre real $k$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Resoleu el sistema per al cas $k=0$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La matriu de coeficients és $A=\\begin{pmatrix} 2 & 4 & 4 \\\\ 2 & -k & 0 \\\\ -2 & 0 & 0 \\end{pmatrix}$ amb $\\det A=-8k$. Per tant $\\det A=0$ només per a $k=0$.\n\nCas I, $k\\neq 0$: $\\operatorname{rang}(A)=\\operatorname{rang}(A')=3$, igual al nombre d'incògnites. El sistema és compatible determinat.\n\nCas II, $k=0$: $\\operatorname{rang}(A)=2$ (perquè $\\begin{vmatrix} 2 & 4 \\\\ 2 & 0 \\end{vmatrix}=-8\\neq 0$). Orlant amb la columna dels termes independents, $\\begin{vmatrix} 2 & 4 & -7 \\\\ 2 & 0 & -1 \\\\ -2 & 0 & 1 \\end{vmatrix}=0$, i per tant $\\operatorname{rang}(A')=2$. El sistema és compatible indeterminat amb $3-2=1$ grau de llibertat.\n\nb) Per a $k=0$ el sistema és $2x+4y+4z=-7$, $2x=-1$, $-2x=1$. De la segona equació $x=-\\dfrac12$. Substituint a la primera: $-1+4y=-7-4z$, d'on $y=-\\dfrac{3+2z}{2}$, amb $z$ com a variable indeterminada.",
+        "resultat": "a) Si $k\\neq 0$, sistema compatible determinat; si $k=0$, sistema compatible indeterminat amb un grau de llibertat. b) $\\left(-\\dfrac12,\\; -\\dfrac{3+2z}{2},\\; z\\right)$, amb $z\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2016-ord-S3-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "A $\\mathbb{R}^3$, siguin la recta $r$ que té per equació $(x,y,z)=(1+\\lambda,\\,\\lambda,\\,1-\\lambda)$ i el pla $\\pi$ d'equació $2x-y+z=-2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Determineu la posició relativa de la recta $r$ i el pla $\\pi$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu la distància entre la recta $r$ i el pla $\\pi$.\n\nNOTA: Podeu calcular la distància d'un punt de coordenades $(x_0,y_0,z_0)$ al pla d'equació $Ax+By+Cz+D=0$ amb l'expressió $\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) La recta $r$ passa pel punt $P=(1,0,1)$ i té vector director $\\vec v_r=(1,1,-1)$. El vector normal del pla és $\\vec n=(2,-1,1)$. Com que $\\vec v_r\\cdot\\vec n=2-1-1=0$, la recta és paral·lela al pla. Com que $P$ no satisfà l'equació de $\\pi$ ($2\\cdot 1-0+1=3\\neq -2$), la recta és paral·lela exterior al pla (no està continguda en ell).\n\nb) Com que $r$ és paral·lela a $\\pi$, la distància és la de qualsevol punt de $r$ al pla, per exemple $P$:\n$$d(r,\\pi)=d(P,\\pi)=\\frac{|2\\cdot1-0+1+2|}{\\sqrt{2^2+(-1)^2+1^2}}=\\frac{5}{\\sqrt6}=\\frac{5\\sqrt6}{6}.$$",
+        "resultat": "a) $r$ és paral·lela a $\\pi$ i no està continguda en ell. b) $d(r,\\pi)=\\dfrac{5\\sqrt6}{6}$ unitats."
+      }
+    },
+    {
+      "id": "2016-ord-S3-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui la funció $f(x)=x\\,e^{x-1}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'abscissa $x=1$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu en quins intervals la funció $f$ és creixent i en quins intervals és decreixent."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) En el punt $x=a=1$ la recta tangent és $y=f'(a)(x-a)+f(a)$. Aquí $f(1)=1\\cdot e^0=1$ i, amb $f'(x)=(1+x)e^{x-1}$, $f'(1)=2$. Per tant $y=2(x-1)+1$.\n\nb) $f'(x)=(1+x)e^{x-1}$ s'anul·la només per a $x=-1$. Si $x<-1$, $f'(x)<0$ (decreixent); si $x>-1$, $f'(x)>0$ (creixent).",
+        "resultat": "a) $y=2x-1$. b) $f$ és decreixent a $(-\\infty,-1)$ i creixent a $(-1,+\\infty)$."
+      }
+    },
+    {
+      "id": "2016-ord-S3-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Responeu a les qüestions següents:",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu totes les matrius de la forma $A=\\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix}$ que satisfan la igualtat $A^2+A=2I$, en què $I$ és la matriu identitat, $I=\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Justifiqueu que si $A$ és una matriu quadrada que compleix la igualtat $A^2+A=2I$, aleshores $A$ és invertible, i calculeu l'expressió de $A^{-1}$ en funció de les matrius $A$ i $I$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2=\\begin{pmatrix} 1 & 0 \\\\ -m & 4 \\end{pmatrix}$, i per tant $A^2+A=\\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}=2I$. La igualtat es compleix per a qualsevol valor de $m$, de manera que totes les matrius de la forma indicada la satisfan.\n\nb) Traient factor comú: $A\\cdot(A+I)=2I=(A+I)\\cdot A$. Per tant $A\\cdot\\dfrac{A+I}{2}=I=\\dfrac{A+I}{2}\\cdot A$. Així $A$ és invertible i $A^{-1}=\\dfrac{A+I}{2}$.",
+        "resultat": "a) Totes les matrius $\\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix}$, per a $m\\in\\mathbb{R}$. b) $A^{-1}=\\dfrac{A+I}{2}$."
+      }
+    },
+    {
+      "id": "2016-ord-S3-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu el tetraedre que té per vèrtexs els punts $A=(x,0,1)$, $B=(0,x,1)$, $C=(3,0,0)$ i $D=(0,x,0)$, amb $0<x<3$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Comproveu que el volum del tetraedre és donat per l'expressió $V(x)=\\dfrac16(-x^2+3x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Determineu el valor de $x$ que fa que el volum sigui màxim i calculeu aquest volum màxim.\n\nNOTA: Podeu calcular el volum del tetraedre de vèrtexs $A$, $B$, $C$ i $D$ amb l'expressió $\\dfrac16\\left|\\det(\\overrightarrow{AB},\\overrightarrow{AC},\\overrightarrow{AD})\\right|$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els vectors aresta són $\\overrightarrow{AB}=(-x,x,0)$, $\\overrightarrow{AC}=(3-x,0,-1)$ i $\\overrightarrow{AD}=(-x,x,-1)$. El determinant és $\\det(\\overrightarrow{AB},\\overrightarrow{AC},\\overrightarrow{AD})=-x^2+3x$. Per tant $V(x)=\\dfrac16|-x^2+3x|=\\dfrac16x(3-x)=\\dfrac16(-x^2+3x)$, ja que $0<x<3$.\n\nb) $V'(x)=\\dfrac16(-2x+3)=0$ quan $x=\\dfrac32$. Com que $V''(x)=-\\dfrac13<0$, és un màxim. El volum màxim és $V\\!\\left(\\tfrac32\\right)=\\dfrac16\\cdot\\dfrac94=\\dfrac38$ unitats cúbiques.",
+        "resultat": "a) Queda comprovat que $V(x)=\\dfrac16(-x^2+3x)$. b) $x=\\dfrac32$ i el volum màxim és $\\dfrac38$ unitats cúbiques."
+      }
+    },
+    {
+      "id": "2016-ord-S3-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Siguin les paràboles $f(x)=x^2+k^2$ i $g(x)=-x^2+9k^2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Calculeu les abscisses, en funció de $k$, dels punts d'intersecció entre les dues paràboles."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu el valor del paràmetre $k$ perquè l'àrea compresa entre les paràboles sigui de 576 unitats quadrades."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Igualant $f(x)=g(x)$: $x^2+k^2=-x^2+9k^2$, és a dir $2x^2=8k^2$, d'on $x=\\pm 2k$.\n\nb) Per simetria,\n$$A=\\int_{-2k}^{2k}\\big[(-x^2+9k^2)-(x^2+k^2)\\big]\\,dx=4\\int_0^{2k}(-x^2+4k^2)\\,dx=4\\left[-\\frac{x^3}{3}+4k^2x\\right]_0^{2k}=\\frac{64k^3}{3}.$$\nImposant $\\dfrac{64k^3}{3}=576$ s'obté $k^3=27$, és a dir $k=3$.",
+        "resultat": "a) $x=-2k$ i $x=2k$. b) $k=3$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

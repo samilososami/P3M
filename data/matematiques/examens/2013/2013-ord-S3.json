@@ -1,0 +1,169 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2013-ord-S3",
+  "assignatura": "matematiques",
+  "any": 2013,
+  "convocatoria": "ordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 5",
+  "instruccions": "Responeu a CINC de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2 punts.\n\nPodeu utilitzar calculadora, però no s'autoritzarà l'ús de calculadores o altres aparells que portin informació emmagatzemada o que puguin transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2013/pau_mate13jl.pdf",
+      "pagines": [
+        3,
+        4
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2013/pau_mate13jp.pdf",
+      "pagines": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2013-ord-S3-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $\\pi: 3x-2y+z=10$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu l'equació contínua de la recta $r$ perpendicular a $\\pi$ que passa pel punt $P=(-1,3,2)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Trobeu també l'equació cartesiana (és a dir, de la forma $Ax+By+Cz+D=0$) del pla $\\pi_1$ paral·lel a $\\pi$ que passa pel mateix punt $P$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) El vector característic de $\\pi$ és un vector director de $r$, per tant\n$$r:\\ \\dfrac{x+1}{3}=\\dfrac{y-3}{-2}=\\dfrac{z-2}{1}.$$\n\nb) Els plans paral·lels a $\\pi$ tenen equació $3x-2y+z+D=0$. Imposant que passi per $P$: $3(-1)-2\\cdot3+2+D=0$, d'on $D=7$.",
+        "resultat": "a) $\\dfrac{x+1}{3}=\\dfrac{y-3}{-2}=\\dfrac{z-2}{1}$; b) $3x-2y+z+7=0$."
+      }
+    },
+    {
+      "id": "2013-ord-S3-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Considereu la matriu $A=\\begin{pmatrix} a-1 & 1 \\\\ 1 & a+1 \\end{pmatrix}$. Sigui $I$ la matriu identitat d'ordre 2.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.0,
+          "enunciat": "Trobeu el valor del paràmetre $a$ perquè es compleixi $A^2-2A=I$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu la matriu inversa de la matriu $A$ quan $a=-2$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A^2-2A=\\begin{pmatrix} a^2-4a+4 & 2a-2 \\\\ 2a-2 & a^2 \\end{pmatrix}$. Perquè sigui $I$ cal $a^2-4a+4=1$, $2a-2=0$ i $a^2=1$. De la segona equació, $a=1$, i aquest valor compleix també les altres dues.\n\nb) Per a $a=-2$, $A=\\begin{pmatrix} -3 & 1 \\\\ 1 & -1 \\end{pmatrix}$ i $\\det A=(-3)(-1)-1=2\\neq0$. Pel mètode dels adjunts,\n$$A^{-1}=\\dfrac{1}{\\det A}\\begin{pmatrix} A_{11} & A_{21} \\\\ A_{12} & A_{22} \\end{pmatrix}=\\dfrac{1}{2}\\begin{pmatrix} -1 & -1 \\\\ -1 & -3 \\end{pmatrix}.$$",
+        "resultat": "a) $a=1$; b) $A^{-1}=\\begin{pmatrix} -\\tfrac{1}{2} & -\\tfrac{1}{2} \\\\ -\\tfrac{1}{2} & -\\tfrac{3}{2} \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "2013-ord-S3-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Donada la funció $f(x)=\\sqrt{x-1}$ i la recta horitzontal $y=k$, amb $k>0$,",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Feu un esbós del recinte limitat per les gràfiques de la funció i la recta, i els eixos de coordenades."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Trobeu el valor de $k$ sabent que l'àrea d'aquest recinte és igual a $\\dfrac{14}{3}$."
+        }
+      ],
+      "figures": [
+        "el recinte té com a vèrtexs $(0,0)$, $(1,0)$, $(k^2+1,k)$ i $(0,k)$. Està limitat per l'eix $OY$ (de $(0,0)$ a $(0,k)$), per la recta $y=k$ (de $(0,k)$ a $(k^2+1,k)$), per la gràfica de $f(x)=\\sqrt{x-1}$ (de $(k^2+1,k)$ a $(1,0)$) i per l'eix $OX$ (de $(1,0)$ a $(0,0)$). La gràfica de $f$ talla l'eix $OX$ en $(1,0)$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) L'esbós és el de la figura anterior.\n\nb) La gràfica de $f$ i la recta es tallen en $\\sqrt{x-1}=k$, és a dir, en $x=k^2+1$. L'àrea és el rectangle de base $k^2+1$ i altura $k$ menys l'àrea sota la gràfica de $f$ entre $1$ i $k^2+1$:\n$$A=k(k^2+1)-\\int_1^{k^2+1}\\sqrt{x-1}\\,dx=k^3+k-\\dfrac{2k^3}{3}=\\dfrac{k^3}{3}+k.$$\nIgualant a $\\dfrac{14}{3}$: $k^3+3k-14=0$, que es pot escriure com $(k-2)(k^2+2k+7)=0$. L'única solució real és $k=2$.",
+        "resultat": "a) esbós segons la figura; b) $k=2$."
+      }
+    },
+    {
+      "id": "2013-ord-S3-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Un triangle d'àrea $\\dfrac{3}{2}$ té dos dels seus vèrtexs als punts $P=(0,0,0)$ i $Q=(2,0,1)$. El tercer vèrtex, $R$, és un punt de la recta\n$$r:\\ \\begin{cases} x+y+z=0 \\\\ y=1 \\end{cases}$$\ni té la primera coordenada no nul·la. Calculeu les coordenades del vèrtex $R$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "De les equacions de $r$, $R=(-1-z,\\,1,\\,z)$. Amb $\\overrightarrow{PQ}=(2,0,1)$ i $\\overrightarrow{PR}=(-1-z,1,z)$:\n$$\\overrightarrow{PQ}\\times\\overrightarrow{PR}=(-1,\\,-1-3z,\\,2), \\qquad \\text{àrea}=\\dfrac12\\sqrt{9z^2+6z+6}=\\dfrac32.$$\nCal $9z^2+6z+6=9$, és a dir $9z^2+6z-3=0$, d'on $z=-1$ o $z=\\dfrac13$.\n\nAixò dona $R_1=(0,1,-1)$ i $R_2=\\left(-\\dfrac43,1,\\dfrac13\\right)$. Com que la primera coordenada ha de ser no nul·la, $R=\\left(-\\dfrac43,1,\\dfrac13\\right)$.",
+        "resultat": "$R=\\left(-\\dfrac{4}{3},\\,1,\\,\\dfrac{1}{3}\\right)$."
+      }
+    },
+    {
+      "id": "2013-ord-S3-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "En una semiesfera de radi $R$ inscrivim un con situant el seu vèrtex al centre de la semiesfera, tal com es veu en el dibuix.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.5,
+          "enunciat": "Sabent que el volum d'un con és igual a l'àrea de la base multiplicada per l'altura i dividida per tres, comproveu que, en aquest cas, podem expressar el volum com\n$$V=\\dfrac{\\pi\\cdot h}{3}\\left(R^2-h^2\\right).$$"
+        },
+        {
+          "lletra": "b",
+          "punts": 1.5,
+          "enunciat": "Trobeu les dimensions d'aquest con (el radi de la base i l'altura) perquè el seu volum sigui màxim i comproveu que es tracta realment d'un màxim."
+        }
+      ],
+      "figures": [
+        "semiesfera de radi $R$ amb un con inscrit. El vèrtex del con és el centre de la semiesfera i la base és una circumferència de radi $r$, situada a l'altura $h$ sobre el centre, sobre la superfície esfèrica. Hi ha un triangle rectangle de catets $h$ i $r$ i hipotenusa $R$."
+      ],
+      "solucio": {
+        "desenvolupament": "a) $V=\\tfrac13\\pi r^2h$ i, pel teorema de Pitàgores, $h^2+r^2=R^2$, per tant $r^2=R^2-h^2$ i $V(h)=\\dfrac{1}{3}\\pi(R^2-h^2)h$.\n\nb) $V'(h)=\\dfrac{\\pi}{3}(R^2-3h^2)=0$ dóna $h=\\dfrac{R\\sqrt3}{3}$ (la solució negativa no té sentit). Llavors $r^2=R^2-\\dfrac{R^2}{3}=\\dfrac{2R^2}{3}$, és a dir, $r=\\dfrac{R\\sqrt6}{3}$.\n\nPer comprovar que és un màxim: $V''(h)=-2\\pi h<0$ per a $h>0$, per tant és un màxim.",
+        "resultat": "altura $h=\\dfrac{R\\sqrt3}{3}$ i radi de la base $r=\\dfrac{R\\sqrt6}{3}$; és un màxim."
+      }
+    },
+    {
+      "id": "2013-ord-S3-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.0,
+      "enunciat": "Sigui $f(x)=x^3+ax^2+bx+c$. Sabem que la gràfica d'aquesta funció és tangent a la recta $r: y=x+3$ en el punt d'abscissa $x=-1$, i que en el punt d'abscissa $x=1$ la recta tangent és paral·lela a la recta $r$. Calculeu el valor dels paràmetres $a$, $b$ i $c$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Ha de ser $f(-1)=2$, $f'(-1)=1$ i $f'(1)=1$. Com que $f'(x)=3x^2+2ax+b$, s'obté el sistema\n$$\\begin{cases} a-b+c=3 \\\\ -2a+b=-2 \\\\ 2a+b=-2 \\end{cases}$$\nque té per solució $a=0$, $b=-2$, $c=1$.",
+        "resultat": "$a=0$, $b=-2$, $c=1$.",
+        "nota": "al PDF de criteris, la derivada apareix escrita com \"$3x^2+2a+b$\"; el càlcul del sistema correspon a $f'(x)=3x^2+2ax+b$, que és la derivada correcta."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}

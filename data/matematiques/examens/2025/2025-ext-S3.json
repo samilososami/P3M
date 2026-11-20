@@ -1,0 +1,187 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2025-ext-S3",
+  "assignatura": "matematiques",
+  "any": 2025,
+  "convocatoria": "extraordinaria",
+  "serie": 3,
+  "tribunal": "ordinari",
+  "estructura": "4 exercicis; es responen tots (a l'exercici 4, opció A o B)",
+  "instruccions": "L'examen consta de QUATRE exercicis obligatoris. Cada exercici val 2,5 punts. Feu els exercicis 1, 2 i 3 responent a TOTES les qüestions que s'hi plantegen. A l'exercici 4, trieu UNA de les dues opcions (A o B) proposades.\n\nEn totes les respostes, expliqueu sempre què voleu fer i per què. Cal que la redacció de la resposta es faci de manera coherent, amb correcció i claredat, emprant la notació i el vocabulari matemàtic adequats i expressant la solució de manera clara.\n\nPodeu utilitzar les pàgines en blanc del final del quadern per a fer esquemes, esborranys, etc., o per a acabar de respondre a algun exercici si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de l'exercici corresponent.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells capaços d'emmagatzemar dades o de transmetre o rebre informació.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2025/pau_mate25sl.pdf",
+      "pagines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2025/pau_mate25sp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2025-ext-S3-E1",
+      "numero": 1,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Una família vol comprar un terreny per a fer-s'hi una casa envoltada de penya-segats amb vistes al mar. En aquella zona de la costa, els penya-segats segueixen les rectes $y=0$ i $y=3x$. A més, la família vol que el terreny sigui triangular i que el tercer costat del triangle passi pel punt $P=(1,1)$, tal com es pot veure a la figura.",
+      "apartats": [
+        {
+          "lletra": "1.1",
+          "punts": 1.0,
+          "enunciat": "Plantegeu l'equació de la recta $r$ que defineix el tercer costat del triangle en funció del seu pendent $m$, i comproveu que l'àrea del terreny ve donada per $A(m)=\\dfrac{3}{2}\\cdot\\dfrac{m^2-2m+1}{m^2-3m}$."
+        },
+        {
+          "lletra": "1.2",
+          "punts": 1.5,
+          "enunciat": "Calculeu el valor de $m$ que fa que l'àrea d'aquest terreny (i, per tant, el seu preu) sigui mínima. Quin és el valor d'aquesta àrea?"
+        }
+      ],
+      "figures": [
+        "triangle ombrejat amb un vèrtex a l'origen $O$, un costat sobre l'eix d'abscisses i un altre sobre la recta $y=3x$. El tercer costat és la recta $r$ (discontínua), que passa pel punt $P=(1,1)$ i talla els dos costats anteriors."
+      ],
+      "solucio": {
+        "desenvolupament": "1.1) La recta $r$ és $y-1=m(x-1)$. Talla l'eix $OX$ en $x=\\dfrac{m-1}{m}$ (base del triangle) i la recta $y=3x$ en $x=\\dfrac{m-1}{m-3}$, amb ordenada $y=\\dfrac{3(m-1)}{m-3}$ (alçada del triangle). Així $A(m)=\\dfrac12\\cdot\\dfrac{m-1}{m}\\cdot\\dfrac{3(m-1)}{m-3}=\\dfrac32\\cdot\\dfrac{m^2-2m+1}{m^2-3m}$.\n\n1.2) Segons l'esbós, el pendent és negatiu ($m<0$). Derivem: $A'(m)=\\dfrac32\\cdot\\dfrac{(m-1)(-m-3)}{(m^2-3m)^2}$. Els punts crítics són $m=1$ i $m=-3$; $m=1$ queda fora del domini. El signe de $A'$ és negatiu per a $m<-3$ i positiu per a $-3<m<0$, per tant $m=-3$ és un mínim. Àrea mínima: $A(-3)=\\dfrac32\\cdot\\dfrac{16}{18}=\\dfrac43$ u².",
+        "resultat": "$A(m)=\\dfrac32\\cdot\\dfrac{m^2-2m+1}{m^2-3m}$; l'àrea és mínima per a $m=-3$, i aleshores $A=\\dfrac43$ u²."
+      }
+    },
+    {
+      "id": "2025-ext-S3-E2",
+      "numero": 2,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\begin{cases} x+3y+z=5 \\\\ mx+2z=0 \\\\ my-z=m \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "2.1",
+          "punts": 1.25,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $m$."
+        },
+        {
+          "lletra": "2.2",
+          "punts": 0.5,
+          "enunciat": "Resoleu el sistema per a $m=1$."
+        },
+        {
+          "lletra": "2.3",
+          "punts": 0.75,
+          "enunciat": "Resoleu el sistema quan aquest tingui infinites solucions."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "2.1) La matriu de coeficients és $A=\\begin{pmatrix} 1 & 3 & 1 \\\\ m & 0 & 2 \\\\ 0 & m & -1 \\end{pmatrix}$, amb $|A|=m(m+1)$.\n\n- Si $m\\neq0$ i $m\\neq-1$: $\\operatorname{rang}A=\\operatorname{rang}A'=3$, sistema compatible determinat (SCD).\n- Si $m=0$: $\\operatorname{rang}A=\\operatorname{rang}A'=2$ (el menor $\\begin{vmatrix} 3 & 1 \\\\ 0 & 2 \\end{vmatrix}=6\\neq0$), sistema compatible indeterminat (SCI) amb un grau de llibertat.\n- Si $m=-1$: $\\operatorname{rang}A=2$, però el menor $\\begin{vmatrix} 3 & 1 & 5 \\\\ 0 & 2 & 0 \\\\ -1 & -1 & -1 \\end{vmatrix}=4\\neq0$ dona $\\operatorname{rang}A'=3$; sistema incompatible (SI).\n\n2.2) Per a $m=1$: $x+3y+z=5$, $x+2z=0$, $y-z=1$. Substituint $x=-2z$ i $y=1+z$ a la primera equació: $-2z+3(1+z)+z=5$, és a dir, $z=1$. Solució: $(x,y,z)=(-2,2,1)$.\n\n2.3) Infinites solucions només per a $m=0$. El sistema és aleshores $x+3y+z=5$, $2z=0$, $-z=0$, és a dir, $z=0$ i $x+3y=5$. Solucions: $(x,y,z)=(5-3\\lambda,\\ \\lambda,\\ 0)$, $\\lambda\\in\\mathbb{R}$.",
+        "resultat": "SCD si $m\\neq0,-1$; SCI si $m=0$; SI si $m=-1$. Per a $m=1$: $(-2,2,1)$. Per a $m=0$: $(x,y,z)=(5-3\\lambda,\\lambda,0)$, $\\lambda\\in\\mathbb{R}$."
+      }
+    },
+    {
+      "id": "2025-ext-S3-E3",
+      "numero": 3,
+      "tipus": "exercici",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "La lesió per sesamoïditis (inflamació de l'os sesamoide del peu) és relativament habitual entre la població que practica esports d'impacte (atletisme, bàsquet, tennis…). En una població d'esportistes, s'ha fet un estudi diferenciant entre els que practiquen esports d'impacte i els que practiquen esports sense impacte brusc (com ara natació, pilates, senderisme…). S'ha pogut determinar que el 45 % practiquen esports d'impacte. Entre aquests, un 10 % pateixen lesions per sesamoïditis, mentre que entre els que no practiquen esports d'impacte només un 3 % presenten aquesta lesió. Escollim un esportista a l'atzar.",
+      "apartats": [
+        {
+          "lletra": "3.1",
+          "punts": 0.75,
+          "enunciat": "Quina és la probabilitat que pateixi sesamoïditis?"
+        },
+        {
+          "lletra": "3.2",
+          "punts": 0.75,
+          "enunciat": "Si l'esportista escollit té una lesió per sesamoïditis, quina és la probabilitat que practiqui esports d'impacte?"
+        },
+        {
+          "lletra": "3.3",
+          "punts": 1.0,
+          "enunciat": "Una empresa de calçat esportiu ha creat una sabatilla amb amortiment per a minimitzar les lesions per sesamoïditis. Els beneficis generats per la venda d'aquest producte, en milers d'euros, segueixen una funció de la forma $f(x)=ax^3+bx^2+cx$, on $x$ són els anys transcorreguts des que la sabatilla va sortir a la venda i $a$, $b$ i $c$ són constants reals. Calculeu els valors de $a$, $b$ i $c$ sabent que el primer any es van obtenir el màxim de beneficis, amb un valor de 8 000 euros, i que el segon any va haver-hi un punt d'inflexió en els beneficis."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "3.1) Sigui $I$ = \"practicar un esport d'impacte\" i $S$ = \"patir sesamoïditis\". Tenim $P(I)=0{,}45$, $P(\\overline{I})=0{,}55$, $P(S|I)=0{,}1$ i $P(S|\\overline{I})=0{,}03$. Per la llei de la probabilitat total: $P(S)=0{,}1\\cdot0{,}45+0{,}03\\cdot0{,}55=0{,}0615$.\n\n3.2) Per la fórmula de Bayes: $P(I|S)=\\dfrac{P(S|I)\\,P(I)}{P(S)}=\\dfrac{0{,}1\\cdot0{,}45}{0{,}0615}=\\dfrac{30}{41}\\approx0{,}7317$.\n\n3.3) $f'(x)=3ax^2+2bx+c$ i $f''(x)=6ax+2b$. Condicions: $f'(1)=0 \\Rightarrow 3a+2b+c=0$; $f(1)=8 \\Rightarrow a+b+c=8$; $f''(2)=0 \\Rightarrow 12a+2b=0$. Restant les dues primeres: $2a+b=-8$; amb $b=-6a$ s'obté $a=2$, $b=-12$, i $c=8-a-b=18$. La funció és $f(x)=2x^3-12x^2+18x$.",
+        "resultat": "3.1) $P(S)=0{,}0615$; 3.2) $P(I|S)=\\dfrac{30}{41}\\approx0{,}73$; 3.3) $a=2$, $b=-12$, $c=18$, és a dir, $f(x)=2x^3-12x^2+18x$."
+      }
+    },
+    {
+      "id": "2025-ext-S3-E4A",
+      "numero": 4,
+      "tipus": "exercici",
+      "opcio": "A",
+      "punts": 2.5,
+      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen.\n\n**OPCIÓ A**\n\nUn vidrier està reparant un dels vitralls de la Sagrada Família la forma del qual és la de la part ombrejada de la figura adjunta. S'ha adonat que Gaudí el va dissenyar de manera que un dels costats segueix la funció $y=3\\sin(x/4)$ i un altre segueix la funció $y=3\\cos(x/4)$, on $x$ i $y$ estan expressades en metres.",
+      "apartats": [
+        {
+          "lletra": "4.1",
+          "punts": 1.0,
+          "enunciat": "Raoneu a quina funció correspon cada gràfica i calculeu les coordenades dels punts $B$ i $C$ assenyalats a la figura (tenint en compte que $A$ és l'origen de coordenades)."
+        },
+        {
+          "lletra": "4.2",
+          "punts": 1.5,
+          "enunciat": "Calculeu el preu del vitrall sabent que costa 750 €/m²."
+        }
+      ],
+      "figures": [
+        "eixos de coordenades amb l'origen $A$ (on es creuen la corba del sinus i l'eix d'abscisses). La corba del sinus puja des de $A$ fins a $C$; la corba del cosinus baixa des de $B$, situat sobre l'eix d'ordenades, fins a $C$. La regió ombrejada és la compresa entre l'eix d'ordenades (des de $B$ fins a $A$), la corba del cosinus (per sobre) i la corba del sinus (per sota), fins al punt $C$."
+      ],
+      "solucio": {
+        "desenvolupament": "4.1) La corba que passa per $A=(0,0)$ és $y=3\\sin(x/4)$, perquè $3\\sin0=0$; la que passa per $B$ és $y=3\\cos(x/4)$, perquè $3\\cos0=3$. Per tant $B=(0,3)$. El punt $C$ és el tall: $3\\sin(x/4)=3\\cos(x/4)\\iff\\tan(x/4)=1\\iff x=\\pi$, i $y=3\\sin(\\pi/4)=\\dfrac{3\\sqrt2}{2}$. Així $C=\\left(\\pi,\\dfrac{3\\sqrt2}{2}\\right)$.\n\n4.2) En $[0,\\pi]$ la corba superior és $3\\cos(x/4)$ i la inferior $3\\sin(x/4)$. Àrea: $\\displaystyle A=\\int_0^\\pi\\left(3\\cos\\tfrac x4-3\\sin\\tfrac x4\\right)dx=\\Big[12\\sin\\tfrac x4+12\\cos\\tfrac x4\\Big]_0^\\pi=12\\left(\\tfrac{\\sqrt2}{2}+\\tfrac{\\sqrt2}{2}-1\\right)=12(\\sqrt2-1)\\approx4{,}97\\ \\text{m}^2$. Preu: $12(\\sqrt2-1)\\cdot750=9000(\\sqrt2-1)\\approx3\\,727{,}9$ €.",
+        "resultat": "$B=(0,3)$, $C=\\left(\\pi,\\dfrac{3\\sqrt2}{2}\\right)$; àrea $12(\\sqrt2-1)\\approx4{,}97$ m²; preu del vitrall $9000(\\sqrt2-1)\\approx3\\,727{,}9$ €.",
+        "nota": "els criteris oficials donen $3.725{,}5$ € a partir de $4{,}97\\,\\text{m}^2\\cdot750$ €/m². Aquest càlcul és erroni: $4{,}97\\cdot750=3.727{,}5$ €, i el valor exacte és $9000(\\sqrt2-1)\\approx3.727{,}9$ €. Es manté el càlcul de l'enunciat."
+      }
+    },
+    {
+      "id": "2025-ext-S3-E4B",
+      "numero": 4,
+      "tipus": "exercici",
+      "opcio": "B",
+      "punts": 2.5,
+      "enunciat": "Trieu UNA de les dues opcions (A o B) i responeu a les qüestions que s'hi plantegen.\n\n**OPCIÓ B**\n\nConsidereu el pla $\\pi$: $2x-y+z=5$ i el punt $P=(0,1,3)$.",
+      "apartats": [
+        {
+          "lletra": "4.1",
+          "punts": 0.5,
+          "enunciat": "Comproveu que la distància del punt $P$ al pla $\\pi$ és $\\dfrac{\\sqrt6}{2}$."
+        },
+        {
+          "lletra": "4.2",
+          "punts": 0.75,
+          "enunciat": "Trobeu l'equació general d'un pla $\\pi_1$ paral·lel a $\\pi$ que passi pel punt $P$. Quina és la distància entre $\\pi_1$ i $\\pi$?"
+        },
+        {
+          "lletra": "4.3",
+          "punts": 1.25,
+          "enunciat": "Trobeu l'equació general d'un segon pla $\\pi_2$, diferent de $\\pi_1$, que és paral·lel a $\\pi$ i que estigui a una distància $\\dfrac{\\sqrt6}{2}$ de $\\pi$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "4.1) $d(P,\\pi)=\\dfrac{|2\\cdot0-1+3-5|}{\\sqrt{2^2+(-1)^2+1^2}}=\\dfrac{3}{\\sqrt6}=\\dfrac{\\sqrt6}{2}$.\n\n4.2) Els plans paral·lels a $\\pi$ tenen equació $2x-y+z=D$. Passant per $P$: $0-1+3=D$, és a dir, $D=2$, i $\\pi_1$: $2x-y+z=2$. La distància és $d(\\pi_1,\\pi)=\\dfrac{|5-2|}{\\sqrt6}=\\dfrac{\\sqrt6}{2}$.\n\n4.3) Per a un pla $2x-y+z=D$ a distància $\\dfrac{\\sqrt6}{2}$ de $\\pi$: $\\dfrac{|D-5|}{\\sqrt6}=\\dfrac{\\sqrt6}{2}\\iff|D-5|=3\\iff D=2$ (que és $\\pi_1$) o $D=8$. Per tant $\\pi_2$: $2x-y+z=8$. (Alternativament: el peu de la perpendicular des de $P$ a $\\pi$ és $M=\\left(1,\\tfrac12,\\tfrac72\\right)$, i el punt simètric és $P'=2M-P=(2,0,4)$, que dona $D=2\\cdot2-0+4=8$.)",
+        "resultat": "4.1) $d(P,\\pi)=\\dfrac{\\sqrt6}{2}$; 4.2) $\\pi_1$: $2x-y+z=2$, a distància $\\dfrac{\\sqrt6}{2}$ de $\\pi$; 4.3) $\\pi_2$: $2x-y+z=8$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastades amb el càlcul del transcriptor",
+    "revisat_huma": false
+  }
+}

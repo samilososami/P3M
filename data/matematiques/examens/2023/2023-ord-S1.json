@@ -1,0 +1,204 @@
+{
+  "schema": "p3m-examen/1",
+  "id": "2023-ord-S1",
+  "assignatura": "matematiques",
+  "any": 2023,
+  "convocatoria": "ordinaria",
+  "serie": 1,
+  "tribunal": "ordinari",
+  "estructura": "6 qüestions; es responen 4",
+  "instruccions": "Responeu a QUATRE de les sis qüestions següents. En les respostes, expliqueu sempre què voleu fer i per què. Cada qüestió val 2,5 punts.\n\nPodeu utilitzar calculadora, però no es permet l'ús de calculadores o altres aparells que poden emmagatzemar dades o que poden transmetre o rebre informació.\n\nPodeu utilitzar les pàgines en blanc (pàgines 14 i 15) per a fer esquemes, esborranys, etc., o per a acabar de respondre a alguna qüestió si necessiteu més espai. En aquest últim cas, cal que ho indiqueu clarament al final de la pàgina de la qüestió corresponent.",
+  "fonts": {
+    "enunciat": {
+      "fitxer": "examens/matematiques/2023/pau_mate23jl.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "criteris": {
+      "fitxer": "examens/matematiques/2023/pau_mate23jp.pdf",
+      "pagines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2023-ord-S1-Q1",
+      "numero": 1,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Calculeu els coeficients $a$, $b$, $c$ i $d$ de la funció $f(x)=ax^3+bx^2+cx+d$ si sabem que l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'inflexió $(1,0)$ és $y=-3x+3$ i que la funció té un extrem relatiu en el punt de la gràfica d'abscissa $x=0$.",
+      "apartats": [],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "Derivades: $f'(x)=3ax^2+2bx+c$ i $f''(x)=6ax+2b$.\n\nTraducció de les quatre condicions:\n- $f(1)=0$: $a+b+c+d=0$.\n- $(1,0)$ és punt d'inflexió: $f''(1)=0$, és a dir $6a+2b=0$.\n- Pendent de la tangent en $x=1$ igual a $-3$: $f'(1)=-3$, és a dir $3a+2b+c=-3$.\n- Extrem en $x=0$: $f'(0)=0$, és a dir $c=0$.\n\nResolent el sistema: $b=-3a$, $c=0$, $3a-6a=-3$, d'on $a=1$, $b=-3$, i $d=2$.",
+        "resultat": "$a=1$, $b=-3$, $c=0$, $d=2$; $f(x)=x^3-3x^2+2$"
+      }
+    },
+    {
+      "id": "2023-ord-S1-Q2",
+      "numero": 2,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Considereu les dues matrius següents:\n\n$$A=\\begin{pmatrix} 2 & -3 & -5 \\\\ -1 & 4 & 5 \\\\ 1 & -3 & -4 \\end{pmatrix} \\qquad B=\\begin{pmatrix} 2 & 2 & 0 \\\\ -1 & -1 & 0 \\\\ 1 & 2 & 1 \\end{pmatrix}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Calculeu les matrius $A\\cdot B$ i $B\\cdot A$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Siguin $C$ i $D$ dues matrius quadrades del mateix ordre que satisfan $C\\cdot D=C$ i $D\\cdot C=D$. Comproveu que les dues matrius, $C$ i $D$, són idempotents.\n\n**Nota:** Una matriu quadrada s'anomena *idempotent* si coincideix amb el seu quadrat."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) $A\\cdot B=\\begin{pmatrix} 2 & -3 & -5 \\\\ -1 & 4 & 5 \\\\ 1 & -3 & -4 \\end{pmatrix}=A$ i $B\\cdot A=\\begin{pmatrix} 2 & 2 & 0 \\\\ -1 & -1 & 0 \\\\ 1 & 2 & 1 \\end{pmatrix}=B$.\n\nb) $C^2=C\\cdot C=(C\\cdot D)\\cdot C=C\\cdot(D\\cdot C)=C\\cdot D=C$, per tant $C$ és idempotent. Anàlogament, $D^2=D\\cdot D=(D\\cdot C)\\cdot D=D\\cdot(C\\cdot D)=D\\cdot C=D$, per tant $D$ també és idempotent.",
+        "resultat": "$A\\cdot B=A$ i $B\\cdot A=B$; $C^2=C$ i $D^2=D$, és a dir, $C$ i $D$ són idempotents."
+      }
+    },
+    {
+      "id": "2023-ord-S1-Q3",
+      "numero": 3,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui $f'(x)=\\begin{cases} x-1, & \\text{si } x\\le 2 \\\\ \\dfrac{1}{x-1}, & \\text{si } x>2 \\end{cases}$ la funció derivada d'una funció derivable $f(x)$ que passa pel punt $A=(0,3)$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.5,
+          "enunciat": "Calculeu la funció $f(x)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.0,
+          "enunciat": "Calculeu l'equació de la recta tangent a la funció $f'(x)$ en el punt d'abscissa $x=3$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Integrant: per a $x\\le 2$, $f(x)=\\dfrac{x^2}{2}-x+k$; per a $x>2$, $f(x)=\\ln|x-1|+k'$.\n\nCom que $f$ passa per $(0,3)$: $k=3$.\n\nCom que $f$ és derivable, també és contínua en $x=2$: $\\dfrac{4}{2}-2+3=\\ln|1|+k'$, d'on $k'=3$.\n\nPer tant $f(x)=\\begin{cases} \\dfrac{x^2}{2}-x+3, & \\text{si } x\\le 2 \\\\ \\ln|x-1|+3, & \\text{si } x>2 \\end{cases}$\n\nb) La funció és $g(x)=f'(x)$. Per a $x>2$, $g(x)=\\dfrac{1}{x-1}$ i $g'(x)=-\\dfrac{1}{(x-1)^2}$. Així, $g(3)=\\dfrac12$ i $g'(3)=-\\dfrac14$. Aplicant $y-g(3)=g'(3)(x-3)$: $y-\\dfrac12=-\\dfrac14(x-3)$.",
+        "resultat": "$f(x)=\\dfrac{x^2}{2}-x+3$ si $x\\le 2$, i $f(x)=\\ln|x-1|+3$ si $x>2$; tangent a $f'$ en $x=3$: $y=-\\dfrac{1}{4}x+\\dfrac{5}{4}$"
+      }
+    },
+    {
+      "id": "2023-ord-S1-Q4",
+      "numero": 4,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Sigui el sistema d'equacions lineals següent, que depèn del paràmetre real $\\lambda$:\n\n$$\\begin{cases} x+2\\lambda y+(2+\\lambda)z=0 \\\\ (2+\\lambda)x+y+2\\lambda z=3 \\\\ 2\\lambda x+(2+\\lambda)y+z=-3 \\end{cases}$$",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.25,
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $\\lambda$."
+        },
+        {
+          "lletra": "b",
+          "punts": 1.25,
+          "enunciat": "Per al cas $\\lambda=-1$, resoleu el sistema, interpreteu-lo geomètricament i identifiqueu-ne la solució."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Matriu del sistema $M$ i matriu ampliada $M|b$. El determinant de $M$ és $|M|=9(\\lambda^3+1)$, que s'anul·la només per a $\\lambda=-1$.\n\nSi $\\lambda\\neq-1$: $|M|\\neq0$, $\\operatorname{rang}M=\\operatorname{rang}(M|b)=3$, SCD (solució única).\n\nSi $\\lambda=-1$: $M|b=\\left(\\begin{array}{ccc|c} 1 & -2 & 1 & 0 \\\\ 1 & 1 & -2 & 3 \\\\ -2 & 1 & 1 & -3 \\end{array}\\right)$. Com que el menor $\\begin{vmatrix} 1 & -2 \\\\ 1 & 1 \\end{vmatrix}=3\\neq0$ i el determinant orlat $\\begin{vmatrix} 1 & -2 & 0 \\\\ 1 & 1 & 3 \\\\ -2 & 1 & -3 \\end{vmatrix}=0$, $\\operatorname{rang}M=\\operatorname{rang}(M|b)=2<3$: SCI amb un grau de llibertat.\n\nb) Per a $\\lambda=-1$, les dues primeres equacions donen $\\begin{cases} x-2y=-z \\\\ x+y=3+2z \\end{cases}$. Per Cramer: $x=z+2$, $y=z+1$, amb $z$ paràmetre.\n\nLa solució és $(x,y,z)=(z+2,\\,z+1,\\,z)=(2,1,0)+z(1,1,1)$. Geomètricament, cada equació és un pla i els tres plans es tallen en una recta que passa pel punt $(2,1,0)$ i té vector director $(1,1,1)$.",
+        "resultat": "SCD si $\\lambda\\neq-1$; SCI si $\\lambda=-1$. Per a $\\lambda=-1$: $x=z+2$, $y=z+1$, $z\\in\\mathbb{R}$; recta que passa per $(2,1,0)$ amb vector director $(1,1,1)$."
+      }
+    },
+    {
+      "id": "2023-ord-S1-Q5",
+      "numero": 5,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "La Núria té un jardí rectangular i vol fer-hi un tancat (rectangular o quadrat) de $8\\ \\text{m}^2$ per al seu gos. Ha pensat de posar el tancat tocant al mur del jardí, tal com es mostra a la figura de la dreta, per estalviar-se així un dels quatre costats.\n\nEl preu de la tanca que vol fer servir és de $2,5\\ \\text{€/m}$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 1.75,
+          "enunciat": "Quines dimensions ha de tenir el tancat perquè el cost sigui mínim? Quin és aquest cost mínim?"
+        },
+        {
+          "lletra": "b",
+          "punts": 0.75,
+          "enunciat": "Si manteniu la forma rectangular o quadrada del tancat i feu que un dels vèrtexs del jardí coincideixi amb un vèrtex del tancat, quants euros us podeu estalviar? Raoneu com posaríeu el tancat i justifiqueu amb càlculs matemàtics les dimensions de la vostra proposta."
+        }
+      ],
+      "figures": [
+        "rectangle que representa el jardí, amb la indicació «Jardí». Dins seu hi ha un rectangle discontinu, etiquetat «Tancat per al gos», situat a la part superior del jardí i tocant el mur superior. Figura sense dades numèriques."
+      ],
+      "solucio": {
+        "desenvolupament": "a) Sigui $x$ la base i $y$ l'altura del tancat, amb $xy=8$, és a dir $y=\\dfrac{8}{x}$. El cost és $C=2,5(2y+x)$, i en funció de $x$: $C(x)=2,5\\cdot\\dfrac{16+x^2}{x}$.\n\n$C'(x)=2,5\\cdot\\dfrac{x^2-16}{x^2}=0 \\iff x=4$ (només té sentit la solució positiva). Com que $C''(x)=2,5\\cdot\\dfrac{32}{x^3}>0$ per a $x>0$, en $x=4$ hi ha un mínim.\n\nDimensions: 4 m de base i 2 m d'altura. Cost: $C(4)=2,5\\cdot\\dfrac{16+16}{4}=20\\ €$.\n\nb) Si el tancat es posa en una cantonada, toca dos murs i el cost és $C(x,y)=2,5(x+y)$, amb $y=\\dfrac{8}{x}$: $C(x)=2,5\\cdot\\dfrac{x^2+8}{x}$.\n\n$C'(x)=2,5\\cdot\\dfrac{x^2-8}{x^2}=0 \\iff x=2\\sqrt2$, i $C''(2\\sqrt2)>0$, és un mínim. El tancat és quadrat de costat $2\\sqrt2\\approx2,83$ m. El cost és $C(2\\sqrt2)=2,5\\cdot\\dfrac{16}{2\\sqrt2}=10\\sqrt2\\approx14,14\\ €$.\n\nEstalvi: $20-14,14=5,86\\ €$.",
+        "resultat": "(a) base 4 m i altura 2 m; cost mínim 20 €. (b) Quadrat de costat $2\\sqrt2$ m, col·locat en una cantonada; cost $10\\sqrt2\\approx14,14$ €; estalvi d'uns $5,86$ €."
+      }
+    },
+    {
+      "id": "2023-ord-S1-Q6",
+      "numero": 6,
+      "tipus": "questio",
+      "opcio": null,
+      "punts": 2.5,
+      "enunciat": "Siguin els plans $\\pi_1$ i $\\pi_2$, determinats respectivament per les equacions $\\pi_1:\\ x+y=3$ i $\\pi_2:\\ x-z=-2$.",
+      "apartats": [
+        {
+          "lletra": "a",
+          "punts": 0.75,
+          "enunciat": "Trobeu l'equació general ($Ax+By+Cz+D=0$) del pla $\\pi_3$, que és perpendicular a $\\pi_1$ i $\\pi_2$, i que passa pel punt $P=(4,1,2)$."
+        },
+        {
+          "lletra": "b",
+          "punts": 0.75,
+          "enunciat": "Sigui $r$ la recta d'intersecció de $\\pi_1$ i $\\pi_2$. Calculeu l'equació vectorial de la recta $r$."
+        },
+        {
+          "lletra": "c",
+          "punts": 1.0,
+          "enunciat": "Calculeu el punt $Q$ de la recta $r$ que és més a prop del punt $P$."
+        }
+      ],
+      "figures": [],
+      "solucio": {
+        "desenvolupament": "a) Els vectors normals de $\\pi_1$ i $\\pi_2$ són $(1,1,0)$ i $(1,0,-1)$, que són vectors directors de $\\pi_3$. Per tant, el pla té la forma $\\begin{vmatrix} x-4 & 1 & 1 \\\\ y-1 & 1 & 0 \\\\ z-2 & 0 & -1 \\end{vmatrix}=0$, és a dir $x-y+z-5=0$.\n\nb) Resolent el sistema fent $x=\\lambda$: $y=3-\\lambda$, $z=2+\\lambda$. Així, $r:\\ (x,y,z)=(0,3,2)+\\lambda(1,-1,1)$, $\\lambda\\in\\mathbb{R}$.\n\nc) El punt $Q$ és la projecció ortogonal de $P$ sobre $r$. Un punt genèric de $r$ és $Q=(\\lambda,3-\\lambda,2+\\lambda)$, i $\\overrightarrow{PQ}=(\\lambda-4,\\,2-\\lambda,\\,\\lambda)$. La condició $\\overrightarrow{PQ}\\cdot(1,-1,1)=0$ dóna $-4+\\lambda-2+\\lambda+\\lambda=0$, d'on $\\lambda=2$.\n\nAixí, $Q=(2,1,4)$. (Equivalentment, substituint $\\lambda=2$ al pla $\\pi_3$ de l'apartat a.)",
+        "resultat": "(a) $x-y+z-5=0$; (b) $r:\\ (x,y,z)=(0,3,2)+\\lambda(1,-1,1)$, $\\lambda\\in\\mathbb{R}$; (c) $Q=(2,1,4)$."
+      }
+    }
+  ],
+  "transcripcio": {
+    "metode": "enunciat per visió sobre el PDF; solucions a partir del text del PDF de criteris, contrastat amb la imatge",
+    "revisat_huma": false
+  }
+}
